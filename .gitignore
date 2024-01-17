@@ -1,6 +1,13 @@
 .idea
 hugging_cache
 data
-__pycache__
 .vscode
 logs
+
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*~
+.DS_Store
+.env
