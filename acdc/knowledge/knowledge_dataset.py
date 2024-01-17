@@ -331,16 +331,12 @@ def load_dataset(*paths) -> RelationDataset:
 class KnowledgeDataset:
     def __init__(
         self,
-        prompt_type: Union[
-            str, List[str]
-        ],  # if list, then it will be a list of templates
-        N=500,
-        knowledge_type='factual',
+        N = 1,
+        knowledge_type='factual/',
+        relation_name='city_in_country.json',
         tokenizer=None,
         prompts=None,
-        symmetric=False,
         data_path="./data/",
-        nb_templates=None,
         prepend_bos=False,
         seed=None,
     ):
@@ -348,7 +344,6 @@ class KnowledgeDataset:
         type:
             different knowledge type including: [factual, commonsense,linguistic]
         """
-
         assert seed is not None
         random.seed(seed)
 
@@ -360,15 +355,23 @@ class KnowledgeDataset:
             warnings.warn(
                 "Probably word_idx will be calculated incorrectly due to this formatting"
             )
-        assert not (symmetric and prompt_type == "ABC")
-        assert (
-            (prompts is not None) or (not symmetric) or (N % 2 == 0)
-        ), f"{symmetric} {N}"
-        assert nb_templates is None or (nb_templates % 2 == 0 or prompt_type != "mixed")
-        self.prompt_type = prompt_type
         
         if tokenizer is None:
             self.tokenizer = AutoTokenizer.from_pretrained("gpt2")
             self.tokenizer.pad_token = self.tokenizer.eos_token
         else:
             self.tokenizer = tokenizer
+            
+        self.relation = load_dataset(data_path+knowledge_type+relation_name)[0]
+        prompt_template = self.relation.prompt_templates[0]
+        self.sentences = [
+            prompt_template.format(sample.subject) for sample in self.relation.samples
+        ]  # a list of strings. Renamed as this should NOT be forward passed
+        self.answers = [
+            sample.object for sample in self.relation.samples
+        ]
+        # valid_data, test_data = relation.split(N)
+        self.toks = torch.Tensor(self.tokenizer(self.sentences, padding=True).input_ids).type(
+            torch.int
+        )
+        
