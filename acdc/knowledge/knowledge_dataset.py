@@ -255,10 +255,10 @@ def get_relation_fn_type(relation_dict: dict) -> RelationFnType:
 
 def load_relation_dict(file) -> dict:
     """Load dict for a single relation from a json file."""
-    file = Path(file)
-    if file.suffix != ".json":
-        raise ValueError(f"relation files must be json, got: {file}")
-    with file.open("r") as handle:
+    # file = Path(file)
+    # if file.suffix != ".json":
+    #     raise ValueError(f"relation files must be json, got: {file}")
+    with open(file,"r") as handle:
         relation_dict = json.load(handle)
     for key in ("domain", "range"):
         if key in relation_dict:
@@ -274,7 +274,7 @@ def load_relation_dict(file) -> dict:
             )
 
     # Compute the type of relation function (injection, surjection, bijection, etc.)
-    relation_dict["properties"]["fn_type"] = get_relation_fn_type(relation_dict)
+    relation_dict["properties"]["fn_type"] = get_relation_fn_type(relation_dict)#就是看下数据类型
 
     return relation_dict
 
@@ -291,21 +291,23 @@ def load_dataset(*paths) -> RelationDataset:
     be read as one relation. If a directory, will recursively search for all JSON files.
     """
     # Load all relation files
+    print(paths)
     files = []
     for path in paths:
-        path = Path(path)
-        if path.is_file():
-            logger.debug(f"found relation file: {path}")
-            files.append(path)
-        else:
-            logger.debug(f"{path} is directory, globbing for json files...")
-            for file in sorted(path.glob("**/*.json")):
-                logger.debug(f"found relation file: {file}")
-                files.append(file)
-
+        # path = Path(path)
+        files.append(path)
+        # if path.is_file():
+        #     print("hello")
+        #     logger.debug(f"found relation file: {path}")
+        #     files.append(path)
+        # else:
+        #     print("fuck")
+        #     logger.debug(f"{path} is directory, globbing for json files...")
+        #     for file in sorted(path.glob("**/*.json")):
+        #         logger.debug(f"found relation file: {file}")
+        #         files.append(file)
     logger.debug(f"found {len(files)} relation files total, loading...")
     relation_dicts = [load_relation_dict(file) for file in files]
-
     # Mark all disambiguating relations
     domain_range_pairs: dict[tuple[str, str], int] = {}
     for relation_dict in relation_dicts:
@@ -328,12 +330,16 @@ def load_dataset(*paths) -> RelationDataset:
 
     return RelationDataset(relations)
 
+def patch(sentence: str):
+
+    return sentence
+
 class KnowledgeDataset:
     def __init__(
         self,
         N = 1,
         knowledge_type='factual/',
-        relation_name='city_in_country.json',
+        relation_name='/city_in_country.json',
         tokenizer=None,
         prompts=None,
         data_path="./data/",
@@ -361,17 +367,21 @@ class KnowledgeDataset:
             self.tokenizer.pad_token = self.tokenizer.eos_token
         else:
             self.tokenizer = tokenizer
-            
-        self.relation = load_dataset(data_path+knowledge_type+relation_name)[0]
-        prompt_template = self.relation.prompt_templates[0]
+        self.relation = load_dataset(data_path+knowledge_type+relation_name).relations[0]#TODO 这个地方也有问题，先跑起来再说吧
+
+
+        prompt_template = self.relation.prompt_templates[0]#TODO 一个文件有2个模版我只选第一个
         self.sentences = [
             prompt_template.format(sample.subject) for sample in self.relation.samples
         ]  # a list of strings. Renamed as this should NOT be forward passed
+        self.patch_sentences = [
+            patch(prompt_template.format(sample.subject)) for sample in self.relation.samples
+        ]
         self.answers = [
             sample.object for sample in self.relation.samples
         ]
         # valid_data, test_data = relation.split(N)
-        self.toks = torch.Tensor(self.tokenizer(self.sentences, padding=True).input_ids).type(
-            torch.int
-        )
+        self.labels_toks= torch.Tensor(self.tokenizer(self.answers, padding=True).input_ids).type(torch.int)
+        self.patch_toks = torch.Tensor(self.tokenizer(self.patch_sentences, padding=True).input_ids).type(torch.int)
+        self.toks = torch.Tensor(self.tokenizer(self.sentences, padding=True).input_ids).type(torch.int)
         

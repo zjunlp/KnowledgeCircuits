@@ -40,6 +40,7 @@ from transformer_lens import HookedTransformer
 from acdc.acdc_utils import kl_divergence, negative_log_probs
 logger = logging.getLogger(__name__)
 
+
 GPT_J_NAME_SHORT = "gptj"  # A useful alias for the CLI.
 GPT_J_NAME = "EleutherAI/gpt-j-6B"
 
@@ -124,18 +125,19 @@ def get_model(name, device="cuda") -> HookedTransformer:
     tl_model = tl_model.to(device)
     tl_model.set_use_attn_result(True)
     tl_model.set_use_split_qkv_input(False)
+    #改了这个地方后面绘图应该会报错
     if "use_hook_mlp_in" in tl_model.cfg.to_dict():
         tl_model.set_use_hook_mlp_in(True)
-    logger.info(
-        f"dtype: {tl_model.dtype}, device: {tl_model.device}, memory: {tl_model.get_memory_footprint()}"
-    )
+    # logger.info(
+    #     f"dtype: {tl_model.type}, device: {tl_model.device}, memory: {tl_model.get_memory_footprint()}"
+    # )
     return tl_model
 
 def get_data(num_examples=None, seq_len=None, device=None):
     # validation_fname = huggingface_hub.hf_hub_download(
     #     repo_id="ArthurConmy/redwood_attn_2l", filename="validation_data.pt"
     # )
-    validation_fname = "/data/yunzhi/hugging_cache/redwood_attn_2l/validation_data.pt"
+    validation_fname = "/newdisk3/xzk/Knowledge-Circuit/data"
     validation_data = torch.load(validation_fname, map_location=device).long()
 
     if num_examples is None:
@@ -157,20 +159,28 @@ def get_mask_repeat_candidates(num_examples=None, seq_len=None, device=None):
         return mask_repeat_candidates[:num_examples, :seq_len]
 
 
-def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_seed=42, metric="kl_div", return_one_element=True) -> AllDataThings:
+def get_all_knowledge_things(
+        num_examples,
+        seq_len, device, 
+        model="gpt2",
+        data_seed=42, 
+        metric_name="kl_div", 
+        return_one_element=True
+    ) -> AllDataThings:
     tl_model = get_model(name=model,device=device)
     knowledge_data = KnowledgeDataset(
         knowledge_type="factual",
         N=num_examples*2,
-        nb_templates=1,
+        #nb_templates=1,
         seed = 0,
     )
     default_data = knowledge_data.toks[:num_examples].to(device)
-    labels = knowledge_data.toks[:num_examples]
-    labels = labels.to(device)
-    # TO DO
-    patch_data = s.toks.long()[:num_examples*2, : seq_len - 1].to(device) 
-    mask_orig = get_mask_repeat_candidates(num_examples=None, device=device) # None so we get all
+    labels = knowledge_data.labels_toks[:num_examples].to(device)
+    # TODO 
+    patch_data = knowledge_data.patch_toks[:num_examples].to(device)
+    # 我的理解是patch_data就是破坏的数据，明天问问💊博
+    
+    # mask_orig = get_mask_repeat_candidates(num_examples=None, device=device) # None so we get all #TODO 这个地方要干啥不太懂明天问问💊博
     
     validation_data = default_data[:num_examples, :]
     validation_patch_data = patch_data[:num_examples, :]
@@ -186,22 +196,22 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         base_val_logprobs = F.log_softmax(tl_model(validation_data), dim=-1).detach()
         base_test_logprobs = F.log_softmax(tl_model(test_data), dim=-1).detach()
 
-    if metric == "kl_div":
+    if metric_name == "kl_div":
         validation_metric = partial(
             kl_divergence,
             base_model_logprobs=base_val_logprobs,
-            mask_repeat_candidates=validation_mask,
+#            mask_repeat_candidates=validation_mask,
             last_seq_element_only=False,
             return_one_element=return_one_element,
         )
-    elif metric == "nll":
+    elif metric_name == "nll":
         validation_metric = partial(
             negative_log_probs,
             labels=validation_labels,
             mask_repeat_candidates=validation_mask,
             last_seq_element_only=False,
         )
-    elif metric == "match_nll":
+    elif metric_name == "match_nll":
         validation_metric = MatchNLLMetric(
             labels=validation_labels, base_model_logprobs=base_val_logprobs, mask_repeat_candidates=validation_mask,
             last_seq_element_only=False,
@@ -213,17 +223,19 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         "kl_div": partial(
             kl_divergence,
             base_model_logprobs=base_test_logprobs,
-            mask_repeat_candidates=test_mask,
+#            mask_repeat_candidates=test_mask,
             last_seq_element_only=False,
         ),
         "nll": partial(
             negative_log_probs,
             labels=test_labels,
-            mask_repeat_candidates=test_mask,
+#            mask_repeat_candidates=test_mask,
             last_seq_element_only=False,
         ),
         "match_nll": MatchNLLMetric(
-            labels=test_labels, base_model_logprobs=base_test_logprobs, mask_repeat_candidates=test_mask,
+            labels=test_labels, 
+            base_model_logprobs=base_test_logprobs, 
+#            mask_repeat_candidates=test_mask,
             last_seq_element_only=False,
         ),
     }
@@ -232,12 +244,12 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         validation_metric=validation_metric,
         validation_data=validation_data,
         validation_labels=validation_labels,
-        validation_mask=validation_mask,
+        validation_mask=None,#这个地方改了
         validation_patch_data=validation_patch_data,
         test_metrics=test_metrics,
         test_data=test_data,
         test_labels=test_labels,
-        test_mask=test_mask,
+        test_mask=None,#这个地方改了
         test_patch_data=test_patch_data,
     )
 
