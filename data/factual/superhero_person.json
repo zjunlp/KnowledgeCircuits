@@ -1,0 +1,417 @@
+{
+    "name": "superhero person",
+    "prompt_templates": [
+        "{}'s secret identity is"
+    ],
+    "prompt_templates_zs": [
+        "What is {}'s secret identity? Their name is"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "superhero",
+        "range_name": "person",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Superman",
+            "object": "Clark Kent"
+        },
+        {
+            "subject": "Batman",
+            "object": "Bruce Wayne"
+        },
+        {
+            "subject": "Wonder Woman",
+            "object": "Diana Prince"
+        },
+        {
+            "subject": "Spider-Man",
+            "object": "Peter Parker"
+        },
+        {
+            "subject": "Iron Man",
+            "object": "Tony Stark"
+        },
+        {
+            "subject": "Captain America",
+            "object": "Steve Rogers"
+        },
+        {
+            "subject": "The Flash",
+            "object": "Barry Allen"
+        },
+        {
+            "subject": "Green Lantern",
+            "object": "Hal Jordan"
+        },
+        {
+            "subject": "Green Arrow",
+            "object": "Oliver Queen"
+        },
+        {
+            "subject": "Aquaman",
+            "object": "Arthur Curry"
+        },
+        {
+            "subject": "Daredevil",
+            "object": "Matt Murdock"
+        },
+        {
+            "subject": "Cyclops",
+            "object": "Scott Summers"
+        },
+        {
+            "subject": "Storm",
+            "object": "Ororo Munroe"
+        },
+        {
+            "subject": "Mr. Fantastic",
+            "object": "Reed Richards"
+        },
+        {
+            "subject": "Invisible Woman",
+            "object": "Sue Storm"
+        },
+        {
+            "subject": "Human Torch",
+            "object": "Johnny Storm"
+        },
+        {
+            "subject": "The Thing",
+            "object": "Ben Grimm"
+        },
+        {
+            "subject": "Kid Flash",
+            "object": "Wally West"
+        },
+        {
+            "subject": "Nightwing",
+            "object": "Dick Grayson"
+        },
+        {
+            "subject": "Shazam",
+            "object": "Billy Batson"
+        },
+        {
+            "subject": "Green Lantern",
+            "object": "Kyle Rayner"
+        },
+        {
+            "subject": "Red Robin",
+            "object": "Tim Drake"
+        },
+        {
+            "subject": "Red Hood",
+            "object": "Jason Todd"
+        },
+        {
+            "subject": "Catwoman",
+            "object": "Selina Kyle"
+        },
+        {
+            "subject": "Phoenix",
+            "object": "Jean Grey"
+        },
+        {
+            "subject": "Wolverine",
+            "object": "Logan Howlett"
+        },
+        {
+            "subject": "Supergirl",
+            "object": "Kara Zor-El"
+        },
+        {
+            "subject": "Black Widow",
+            "object": "Natasha Romanoff"
+        },
+        {
+            "subject": "Hawkeye",
+            "object": "Clint Barton"
+        },
+        {
+            "subject": "Captain Marvel",
+            "object": "Carol Danvers"
+        },
+        {
+            "subject": "She-Hulk",
+            "object": "Jennifer Walters"
+        },
+        {
+            "subject": "Spider-Woman",
+            "object": "Jessica Drew"
+        },
+        {
+            "subject": "Spider-Man",
+            "object": "Miles Morales"
+        },
+        {
+            "subject": "Ms. Marvel",
+            "object": "Kamala Khan"
+        },
+        {
+            "subject": "Falcon",
+            "object": "Sam Wilson"
+        },
+        {
+            "subject": "Black Panther",
+            "object": "T'Challa"
+        },
+        {
+            "subject": "Doctor Strange",
+            "object": "Stephen Strange"
+        },
+        {
+            "subject": "Ant-Man",
+            "object": "Hank Pym"
+        },
+        {
+            "subject": "Wasp",
+            "object": "Janet Van Dyne"
+        },
+        {
+            "subject": "Blue Beetle",
+            "object": "Jaime Reyes"
+        },
+        {
+            "subject": "Batgirl",
+            "object": "Cassandra Cain"
+        },
+        {
+            "subject": "Spoiler",
+            "object": "Stephanie Brown"
+        },
+        {
+            "subject": "Oracle",
+            "object": "Barbara Gordon"
+        },
+        {
+            "subject": "Power Man",
+            "object": "Luke Cage"
+        },
+        {
+            "subject": "Iron Fist",
+            "object": "Danny Rand"
+        },
+        {
+            "subject": "Jewel",
+            "object": "Jessica Jones"
+        },
+        {
+            "subject": "Starfire",
+            "object": "Koriand'r"
+        },
+        {
+            "subject": "Cyborg",
+            "object": "Victor Stone"
+        },
+        {
+            "subject": "Raven",
+            "object": "Rachel Roth"
+        },
+        {
+            "subject": "Beast Boy",
+            "object": "Garfield Logan"
+        },
+        {
+            "subject": "Batwoman",
+            "object": "Kate Kane"
+        },
+        {
+            "subject": "Arsenal",
+            "object": "Roy Harper"
+        },
+        {
+            "subject": "Gambit",
+            "object": "Remy LeBeau"
+        },
+        {
+            "subject": "Iceman",
+            "object": "Bobby Drake"
+        },
+        {
+            "subject": "Shadowcat",
+            "object": "Kitty Pryde"
+        },
+        {
+            "subject": "Hellblazer",
+            "object": "John Constantine"
+        },
+        {
+            "subject": "Green Lantern",
+            "object": "Alan Scott"
+        },
+        {
+            "subject": "The Flash",
+            "object": "Jay Garrick"
+        },
+        {
+            "subject": "Blue Beetle",
+            "object": "Ted Kord"
+        },
+        {
+            "subject": "Booster Gold",
+            "object": "Michael Jon Carter"
+        },
+        {
+            "subject": "Huntress",
+            "object": "Helena Bertinelli"
+        },
+        {
+            "subject": "Zatanna",
+            "object": "Zatanna Zatara"
+        },
+        {
+            "subject": "Martian Manhunter",
+            "object": "J'onn J'onzz"
+        },
+        {
+            "subject": "Black Canary",
+            "object": "Dinah Lance"
+        },
+        {
+            "subject": "Firestar",
+            "object": "Angelica Jones"
+        },
+        {
+            "subject": "Silver Surfer",
+            "object": "Norrin Radd"
+        },
+        {
+            "subject": "Nightcrawler",
+            "object": "Kurt Wagner"
+        },
+        {
+            "subject": "Professor X",
+            "object": "Charles Xavier"
+        },
+        {
+            "subject": "Beast",
+            "object": "Hank McCoy"
+        },
+        {
+            "subject": "Colossus",
+            "object": "Piotr Rasputin"
+        },
+        {
+            "subject": "Mister Miracle",
+            "object": "Scott Free"
+        },
+        {
+            "subject": "Big Barda",
+            "object": "Big Barda"
+        },
+        {
+            "subject": "Firestorm",
+            "object": "Ronnie Raymond"
+        },
+        {
+            "subject": "Blue Power Ranger",
+            "object": "Billy Cranston"
+        },
+        {
+            "subject": "Green Lantern",
+            "object": "Simon Baz"
+        },
+        {
+            "subject": "Green Lantern",
+            "object": "Jessica Cruz"
+        },
+        {
+            "subject": "Wildcat",
+            "object": "Ted Grant"
+        },
+        {
+            "subject": "Hawkman",
+            "object": "Carter Hall"
+        },
+        {
+            "subject": "Hawkgirl",
+            "object": "Kendra Saunders"
+        },
+        {
+            "subject": "Black Lightning",
+            "object": "Jefferson Pierce"
+        },
+        {
+            "subject": "Green Arrow",
+            "object": "Connor Hawke"
+        },
+        {
+            "subject": "Ravager",
+            "object": "Rose Wilson"
+        },
+        {
+            "subject": "Wonder Girl",
+            "object": "Cassandra Sandsmark"
+        },
+        {
+            "subject": "Tim Hunter",
+            "object": "Tim Hunter"
+        },
+        {
+            "subject": "Winter Soldier",
+            "object": "Bucky Barnes"
+        },
+        {
+            "subject": "Captain Britain",
+            "object": "Brian Braddock"
+        },
+        {
+            "subject": "Pixie",
+            "object": "Megan Gwynn"
+        },
+        {
+            "subject": "X-23",
+            "object": "Laura Kinney"
+        },
+        {
+            "subject": "Spider-Girl",
+            "object": "Anya Corazon"
+        },
+        {
+            "subject": "Robin",
+            "object": "Damian Wayne"
+        },
+        {
+            "subject": "Nightwing",
+            "object": "Kyle Higgins"
+        },
+        {
+            "subject": "Brawn",
+            "object": "Amadeus Cho"
+        },
+        {
+            "subject": "Ghost Rider",
+            "object": "Robbie Reyes"
+        },
+        {
+            "subject": "The Atom",
+            "object": "Ray Palmer"
+        },
+        {
+            "subject": "The Atom",
+            "object": "Ryan Choi"
+        },
+        {
+            "subject": "Drax the Destroyer",
+            "object": "Arthur Douglas"
+        },
+        {
+            "subject": "Groot",
+            "object": "Groot"
+        },
+        {
+            "subject": "Rocket",
+            "object": "Rocket Raccoon"
+        },
+        {
+            "subject": "Gamora",
+            "object": "Gamora"
+        },
+        {
+            "subject": "Star-Lord",
+            "object": "Peter Quill"
+        }
+    ]
+}

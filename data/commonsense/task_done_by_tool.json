@@ -1,0 +1,226 @@
+{
+    "name": "task done by tool",
+    "prompt_templates": [
+        "The tool used for {} is called a"
+    ],
+    "prompt_templates_zs": [
+        "What tool is used for {}? Usually, you need a",
+        "To accomplish {}, you need a tool called a"
+    ],
+    "properties": {
+        "relation_type": "commonsense",
+        "domain_name": "task",
+        "range_name": "tool",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "hitting nails",
+            "object": "hammer"
+        },
+        {
+            "subject": "turning screws",
+            "object": "screwdriver"
+        },
+        {
+            "subject": "cutting",
+            "object": "knife"
+        },
+        {
+            "subject": "drilling holes",
+            "object": "drill"
+        },
+        {
+            "subject": "sawing wood",
+            "object": "saw"
+        },
+        {
+            "subject": "scraping paint",
+            "object": "scraper"
+        },
+        {
+            "subject": "painting walls",
+            "object": "paintbrush"
+        },
+        {
+            "subject": "mopping floors",
+            "object": "mop"
+        },
+        {
+            "subject": "sweeping floors",
+            "object": "broom"
+        },
+        {
+            "subject": "washing dishes",
+            "object": "sponge"
+        },
+        {
+            "subject": "ironing clothes",
+            "object": "iron"
+        },
+        {
+            "subject": "sewing",
+            "object": "needle and thread"
+        },
+        {
+            "subject": "knitting",
+            "object": "yarn"
+        },
+        {
+            "subject": "hunting",
+            "object": "gun"
+        },
+        {
+            "subject": "boating",
+            "object": "boat"
+        },
+        {
+            "subject": "stirring food",
+            "object": "spoon"
+        },
+        {
+            "subject": "measuring ingredients",
+            "object": "cup"
+        },
+        {
+            "subject": "baking",
+            "object": "oven"
+        },
+        {
+            "subject": "mixing batter",
+            "object": "whisk"
+        },
+        {
+            "subject": "digging soil",
+            "object": "shovel"
+        },
+        {
+            "subject": "raking leaves",
+            "object": "rake"
+        },
+        {
+            "subject": "cleaning windows",
+            "object": "squeegee"
+        },
+        {
+            "subject": "vacuuming carpets",
+            "object": "vacuum cleaner"
+        },
+        {
+            "subject": "washing clothes",
+            "object": "washing machine"
+        },
+        {
+            "subject": "drying clothes",
+            "object": "clothesline"
+        },
+        {
+            "subject": "polishing shoes",
+            "object": "shoe polish"
+        },
+        {
+            "subject": "painting furniture",
+            "object": "paint roller"
+        },
+        {
+            "subject": "sanding wood",
+            "object": "sandpaper"
+        },
+        {
+            "subject": "hiking",
+            "object": "hiking boots"
+        },
+        {
+            "subject": "biking",
+            "object": "bicycle"
+        },
+        {
+            "subject": "swimming",
+            "object": "swimsuit"
+        },
+        {
+            "subject": "cooking",
+            "object": "stove"
+        },
+        {
+            "subject": "writing",
+            "object": "pen and paper"
+        },
+        {
+            "subject": "drawing",
+            "object": "pencil and sketchbook"
+        },
+        {
+            "subject": "gardening",
+            "object": "gardening gloves"
+        },
+        {
+            "subject": "photography",
+            "object": "camera"
+        },
+        {
+            "subject": "playing sports",
+            "object": "ball"
+        },
+        {
+            "subject": "exercising",
+            "object": "dumbbells"
+        },
+        {
+            "subject": "dancing",
+            "object": "music"
+        },
+        {
+            "subject": "watching movies",
+            "object": "television"
+        },
+        {
+            "subject": "reading",
+            "object": "book"
+        },
+        {
+            "subject": "listening to music",
+            "object": "headphones"
+        },
+        {
+            "subject": "singing",
+            "object": "microphone"
+        },
+        {
+            "subject": "measuring",
+            "object": "scale"
+        },
+        {
+            "subject": "birdwatching",
+            "object": "binoculars"
+        },
+        {
+            "subject": "playing basketball",
+            "object": "basketball"
+        },
+        {
+            "subject": "playing soccer",
+            "object": "soccer ball"
+        },
+        {
+            "subject": "skateboarding",
+            "object": "skateboard"
+        },
+        {
+            "subject": "riding a scooter",
+            "object": "scooter"
+        },
+        {
+            "subject": "flying a kite",
+            "object": "kite"
+        },
+        {
+            "subject": "doing makeup",
+            "object": "makeup brushes"
+        },
+        {
+            "subject": "taking photographs",
+            "object": "camera"
+        }
+    ]
+}

@@ -1,0 +1,139 @@
+{
+    "name":"food from country",
+    "prompt_templates":[
+       "{} originates from",
+       "{} is from the country of"
+    ],
+    "prompt_templates_zs":[
+      "What is the country of origin for {}? It originates from",
+      "{} originates from the country of"
+   ],
+    "properties":{
+       "relation_type":"factual",
+       "domain_name":"food",
+       "range_name":"country",
+       "symmetric":false
+    },
+    "samples":[
+       {
+          "subject":"Pizza",
+          "object":"Italy"
+       },
+       {
+          "subject":"Sushi",
+          "object":"Japan"
+       },
+       {
+          "subject":"Tacos",
+          "object":"Mexico"
+       },
+       {
+          "subject":"Baguette",
+          "object":"France"
+       },
+       {
+          "subject":"Poutine",
+          "object":"Canada"
+       },
+       {
+          "subject":"Paella",
+          "object":"Spain"
+       },
+       {
+          "subject":"Chimichurri",
+          "object":"Argentina"
+       },
+       {
+          "subject":"Baklava",
+          "object":"Turkey"
+       },
+       {
+          "subject":"Feijoada",
+          "object":"Brazil"
+       },
+       {
+          "subject":"Borscht",
+          "object":"Ukraine"
+       },
+       {
+          "subject":"Fish and Chips",
+          "object":"United Kingdom"
+       },
+       {
+          "subject":"Dim Sum",
+          "object":"China"
+       },
+       {
+          "subject":"Kimchi",
+          "object":"South Korea"
+       },
+       {
+          "subject":"Goulash",
+          "object":"Hungary"
+       },
+       {
+          "subject":"Pierogi",
+          "object":"Poland"
+       },
+       {
+          "subject":"Pho",
+          "object":"Vietnam"
+       },
+       {
+          "subject":"Hummus",
+          "object":"Lebanon"
+       },
+       {
+          "subject":"Gyro",
+          "object":"Greece"
+       },
+       {
+          "subject":"Masala Dosa",
+          "object":"India"
+       },
+       {
+          "subject":"Rendang",
+          "object":"Indonesia"
+       },
+       {
+          "subject":"Moussaka",
+          "object":"Greece"
+       },
+       {
+          "subject":"Pavlova",
+          "object":"New Zealand"
+       },
+       {
+          "subject":"Shawarma",
+          "object":"Middle East"
+       },
+       {
+          "subject":"Falafel",
+          "object":"Middle East"
+       },
+       {
+          "subject":"Ceviche",
+          "object":"Peru"
+       },
+       {
+          "subject":"Biryani",
+          "object":"India"
+       },
+       {
+          "subject":"Wiener Schnitzel",
+          "object":"Austria"
+       },
+       {
+          "subject":"Fondue",
+          "object":"Switzerland"
+       },
+       {
+          "subject":"Pad Thai",
+          "object":"Thailand"
+       },
+       {
+          "subject":"Miso Soup",
+          "object":"Japan"
+       }
+    ]
+}

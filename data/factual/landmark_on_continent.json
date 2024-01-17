@@ -1,0 +1,3806 @@
+{
+    "name": "landmark on continent",
+    "prompt_templates": [
+        "{} is on the continent of"
+    ],
+    "prompt_templates_zs": [
+        "What continent is {} on? It is on",
+        "{} is on the continent of"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "landmark",
+        "range_name": "continent",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Pidgeon Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kryvyi Rih",
+            "object": "Europe"
+        },
+        {
+            "subject": "Howard Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Prydz Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "George V Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gabbro Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rutgers Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Teres Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Risemedet Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Markham",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kalahari Desert",
+            "object": "Africa"
+        },
+        {
+            "subject": "Matusevich Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Nizamabad district",
+            "object": "Asia"
+        },
+        {
+            "subject": "Mobiloil Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Trail Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Suvorov Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Romulus Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Argosy Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Delchev Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Umayyad Caliphate",
+            "object": "Europe"
+        },
+        {
+            "subject": "Alpha Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dniester",
+            "object": "Europe"
+        },
+        {
+            "subject": "East Ongul Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Spur Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hannah Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Morozumi Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Legoupil",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "North Brabant",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mount Karisimbi",
+            "object": "Africa"
+        },
+        {
+            "subject": "Harold Byrd Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Annamalai University",
+            "object": "Asia"
+        },
+        {
+            "subject": "Afghanistan",
+            "object": "Asia"
+        },
+        {
+            "subject": "Indira Gandhi National Open University",
+            "object": "Asia"
+        },
+        {
+            "subject": "Mount Fridtjof Nansen",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Niger",
+            "object": "Africa"
+        },
+        {
+            "subject": "Miller Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Crown Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tower Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Forrestal Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Davis Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Guadalquivir",
+            "object": "Europe"
+        },
+        {
+            "subject": "Vistula",
+            "object": "Europe"
+        },
+        {
+            "subject": "Pare Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Eureka Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mundraga Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Hornsby",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Himachal Pradesh",
+            "object": "Asia"
+        },
+        {
+            "subject": "Gair Mesa",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lamplugh Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Everett Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chambal River",
+            "object": "Asia"
+        },
+        {
+            "subject": "Lanterman Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Namibia",
+            "object": "Africa"
+        },
+        {
+            "subject": "Shackleton Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Japan",
+            "object": "Asia"
+        },
+        {
+            "subject": "Seal Nunataks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ravens Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lake Vida",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Monte San Giorgio",
+            "object": "Europe"
+        },
+        {
+            "subject": "Roman Four Promontory",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Scheldt",
+            "object": "Europe"
+        },
+        {
+            "subject": "Alsace-Lorraine",
+            "object": "Europe"
+        },
+        {
+            "subject": "Heritage Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Nile",
+            "object": "Africa"
+        },
+        {
+            "subject": "Mount Foster",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Swanson Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Eastern Bloc",
+            "object": "Europe"
+        },
+        {
+            "subject": "Pune",
+            "object": "Asia"
+        },
+        {
+            "subject": "Mount Stephenson",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Black",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Padda Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shahdol district",
+            "object": "Asia"
+        },
+        {
+            "subject": "Bowman Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ryder Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Reedy Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chamarajanagar district",
+            "object": "Asia"
+        },
+        {
+            "subject": "Entente Florale",
+            "object": "Europe"
+        },
+        {
+            "subject": "Cape Adriasola",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Merrick Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Spivey",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Read Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Queen Maud Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Boreas",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hudson Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Clothier Harbour",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Boyana Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Charlotte Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Grossglockner",
+            "object": "Europe"
+        },
+        {
+            "subject": "Svarthamaren Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Moldova",
+            "object": "Europe"
+        },
+        {
+            "subject": "River Clyde",
+            "object": "Europe"
+        },
+        {
+            "subject": "Kilby Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "The Gullet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Batterbee Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gadag district",
+            "object": "Asia"
+        },
+        {
+            "subject": "Dennistoun Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Neumayer Cliffs",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "South Pole Traverse",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Passel",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Kempe",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bertha Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Desko Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Turgai River",
+            "object": "Asia"
+        },
+        {
+            "subject": "Paulding Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rampart Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Whitehall Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Neuburg Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Possession Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Don Juan Pond",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yangtze",
+            "object": "Asia"
+        },
+        {
+            "subject": "Hammer Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chukotka Autonomous Okrug",
+            "object": "Asia"
+        },
+        {
+            "subject": "Odbert Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "United Kingdom of the Netherlands",
+            "object": "Europe"
+        },
+        {
+            "subject": "Rezen Knoll",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Basel",
+            "object": "Europe"
+        },
+        {
+            "subject": "Karun",
+            "object": "Asia"
+        },
+        {
+            "subject": "Palmer Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Udupi district",
+            "object": "Asia"
+        },
+        {
+            "subject": "Condor Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Wohlthat Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Iskar Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Athens",
+            "object": "Europe"
+        },
+        {
+            "subject": "Emmanuel Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Swedish Empire",
+            "object": "Europe"
+        },
+        {
+            "subject": "Gibbs Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tajikistan",
+            "object": "Asia"
+        },
+        {
+            "subject": "Gambia River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Skelton Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Schokalsky Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Austria-Hungary",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mount Queequeg",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tamil Nadu",
+            "object": "Asia"
+        },
+        {
+            "subject": "Armenia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Hoseason Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Festninga Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hood Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pirrit Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Macquarie Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yambol Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Antarctic Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bertram Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Air New Zealand Flight 901",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dufek Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Blaiklock Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Wallonia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Silverstein Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Convoy Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Darley Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Newell Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gordon Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Halpern Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cole Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "English Channel",
+            "object": "Europe"
+        },
+        {
+            "subject": "Viking Age",
+            "object": "Europe"
+        },
+        {
+            "subject": "Concordia Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Bird",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Thomas Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Willan Saddle",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Liberia",
+            "object": "Africa"
+        },
+        {
+            "subject": "Biscoe Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Avitohol Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ablation Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Guinea-Bissau",
+            "object": "Africa"
+        },
+        {
+            "subject": "Kingdom of Burgundy",
+            "object": "Europe"
+        },
+        {
+            "subject": "Ioannes Paulus II Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "David Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mendelssohn Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Catalonia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Beascochea Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Warren Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Granite Knolls",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Wright Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Astrolabe Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Danger Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Northwind Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hull Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Burks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Berwick Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Jammu and Kashmir",
+            "object": "Asia"
+        },
+        {
+            "subject": "Shinnan Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "William Scoresby Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Noll Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "British Graham Land Expedition",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Indian Institute of Science",
+            "object": "Asia"
+        },
+        {
+            "subject": "Nyamuragira",
+            "object": "Africa"
+        },
+        {
+            "subject": "Dutch Republic",
+            "object": "Europe"
+        },
+        {
+            "subject": "Germany",
+            "object": "Europe"
+        },
+        {
+            "subject": "Rydberg Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Zechstein",
+            "object": "Europe"
+        },
+        {
+            "subject": "Bruce Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Guest Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Balochistan",
+            "object": "Asia"
+        },
+        {
+            "subject": "Wilson Piedmont Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Avery Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kanchenjunga",
+            "object": "Asia"
+        },
+        {
+            "subject": "Eswatini",
+            "object": "Africa"
+        },
+        {
+            "subject": "Vantaa",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mackellar Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Carryer Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Chocolate",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Clare Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sobral Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Northeast Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Prespa Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Vestreskorve Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sequence Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Maharashtra",
+            "object": "Asia"
+        },
+        {
+            "subject": "Jennings Promontory",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dumoulin Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shipka Saddle",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Panzarini Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Moubray Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Metropolitan France",
+            "object": "Europe"
+        },
+        {
+            "subject": "Indonesia",
+            "object": "Asia"
+        },
+        {
+            "subject": "Mount Melbourne",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Garwood Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Newcomer Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Jhelum River",
+            "object": "Asia"
+        },
+        {
+            "subject": "James Ross Island group",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Jones Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yamato 000593",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Varna Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brabant Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cannonball Cliffs",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ray Promontory",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Weaver",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "United Arab Emirates",
+            "object": "Asia"
+        },
+        {
+            "subject": "Beaglehole Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hinkley Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Grossman Nunataks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Oates Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Benin",
+            "object": "Africa"
+        },
+        {
+            "subject": "Saffery Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pomorie Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Atbarah River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Mozambique",
+            "object": "Africa"
+        },
+        {
+            "subject": "Rennick Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Antim Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Warta",
+            "object": "Europe"
+        },
+        {
+            "subject": "Von Essen Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Toulouse",
+            "object": "Europe"
+        },
+        {
+            "subject": "South Korea",
+            "object": "Asia"
+        },
+        {
+            "subject": "Canisteo Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Vinson Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Foundation Ice Stream",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Aconcagua",
+            "object": "Americas"
+        },
+        {
+            "subject": "Tigris",
+            "object": "Asia"
+        },
+        {
+            "subject": "Fredriksen Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yugoslavia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Sykes Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Schytt Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Achaean Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Melnik Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Contell Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chuprene Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hilton Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Victor Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Laurie Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Peacock Sound",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Handel Ice Piedmont",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Nimrod Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shirase Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Panega Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Bursey",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ireland",
+            "object": "Europe"
+        },
+        {
+            "subject": "Exarchate of Ravenna",
+            "object": "Europe"
+        },
+        {
+            "subject": "Qatar",
+            "object": "Asia"
+        },
+        {
+            "subject": "Scott Base",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Craddock Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dion Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Scotland",
+            "object": "Europe"
+        },
+        {
+            "subject": "Watson Escarpment",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Steere",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Watt Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Colbert Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Prince Charles Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dundee Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "George VI Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chandigarh",
+            "object": "Asia"
+        },
+        {
+            "subject": "Minnesota Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Beaumont Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hercules Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Reinbolt Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "McCuddin Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Reeves Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Jeremy",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Berkner Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mariner Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Aprilov Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Turkmenistan",
+            "object": "Asia"
+        },
+        {
+            "subject": "Kingdom of Saxony",
+            "object": "Europe"
+        },
+        {
+            "subject": "Tupungato",
+            "object": "Americas"
+        },
+        {
+            "subject": "Helsinki",
+            "object": "Europe"
+        },
+        {
+            "subject": "Samuel Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Primorsky Krai",
+            "object": "Asia"
+        },
+        {
+            "subject": "Shiver Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Eros Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lambert Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Maitri",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Yelcho",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hays Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Irtysh river",
+            "object": "Asia"
+        },
+        {
+            "subject": "McDonald Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bowman Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Karonga",
+            "object": "Africa"
+        },
+        {
+            "subject": "Volga Bulgaria",
+            "object": "Europe"
+        },
+        {
+            "subject": "Otway Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Plateau Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Harsewinkel",
+            "object": "Europe"
+        },
+        {
+            "subject": "Arkell Cirque",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Middle East",
+            "object": "Europe"
+        },
+        {
+            "subject": "Arno",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mauritius",
+            "object": "Africa"
+        },
+        {
+            "subject": "Leverett Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Daugava River",
+            "object": "Europe"
+        },
+        {
+            "subject": "Kirkby Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Barrientos Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Argentina Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ancient Greece",
+            "object": "Europe"
+        },
+        {
+            "subject": "Hansen Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bellingshausen Sea",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ford Ranges",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Duchy of Brabant",
+            "object": "Europe"
+        },
+        {
+            "subject": "Spain",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mirabito Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Probuda Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Enterprise Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Venus Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Danco Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ismoil Somoni Peak",
+            "object": "Asia"
+        },
+        {
+            "subject": "Coppermine Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chad Basin",
+            "object": "Africa"
+        },
+        {
+            "subject": "Knobhead",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Honkala Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Royds",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Two Step Cliffs",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Neva",
+            "object": "Europe"
+        },
+        {
+            "subject": "Getz Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Law Dome",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Berkovitsa Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tagus river",
+            "object": "Europe"
+        },
+        {
+            "subject": "South Georgia Survey",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ardery Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Balham Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "United Kingdom of Great Britain and Ireland",
+            "object": "Europe"
+        },
+        {
+            "subject": "Kaloyan Nunatak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "California Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Adelaide Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rhine",
+            "object": "Europe"
+        },
+        {
+            "subject": "Cape Perez",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Manthe",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chester Cone",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Coulter Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cordiner Peaks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shipton Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Stonington Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pickwick Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Discovery Expedition",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mapple Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Crystal Sound",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rockefeller Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Black Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ice Runway",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Vaughan Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Penck",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Greenwood Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Azerbaijan",
+            "object": "Asia"
+        },
+        {
+            "subject": "Cambodia",
+            "object": "Asia"
+        },
+        {
+            "subject": "Kingdom of Mercia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Evans Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Beaufort Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Griffith Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Juan Carlos I Antarctic Base",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sudan",
+            "object": "Africa"
+        },
+        {
+            "subject": "Rubicon",
+            "object": "Europe"
+        },
+        {
+            "subject": "Owen Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Plana Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Loire",
+            "object": "Europe"
+        },
+        {
+            "subject": "Worcester Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Butler Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Posadowsky Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Recovery Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "The Hague",
+            "object": "Europe"
+        },
+        {
+            "subject": "Saudi Arabia",
+            "object": "Asia"
+        },
+        {
+            "subject": "Bihar",
+            "object": "Asia"
+        },
+        {
+            "subject": "Morgan Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "William Scoresby Archipelago",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Malaysia",
+            "object": "Asia"
+        },
+        {
+            "subject": "Kingdom of the Netherlands",
+            "object": "Europe"
+        },
+        {
+            "subject": "Hutton Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rouen Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "MacKenzie Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rufiji River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Long Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lake Vostok",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Booth Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Larsemann Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Knox Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Zemen Knoll",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Northern Foothills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Nye Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Melnik Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Phobos Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ferrer Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Holdsworth Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Voden Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Katowice",
+            "object": "Europe"
+        },
+        {
+            "subject": "Irrawaddy River",
+            "object": "Asia"
+        },
+        {
+            "subject": "Evans Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Churchill Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Saunders Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Electra",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "England",
+            "object": "Europe"
+        },
+        {
+            "subject": "New Swabia",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mawson Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cathedral Rocks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sevtopolis Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Douglas Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "George V Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Czechoslovakia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Fort William Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Liard Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Whillans Ice Stream",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Mentzel",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Beacon Supergroup",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Coronation Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Havre Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Somalia",
+            "object": "Africa"
+        },
+        {
+            "subject": "Apollo Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Meyer Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "South Beaches",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pautalia Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lucy Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gdynia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Hanoi",
+            "object": "Asia"
+        },
+        {
+            "subject": "Byrd Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "West Indies",
+            "object": "Americas"
+        },
+        {
+            "subject": "Nimbus Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Miers Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Grindley Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Herbert Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Luapula River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Schreckhorn",
+            "object": "Europe"
+        },
+        {
+            "subject": "Zucchelli Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mumbai",
+            "object": "Asia"
+        },
+        {
+            "subject": "Daman and Diu",
+            "object": "Asia"
+        },
+        {
+            "subject": "East Francia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mount Tyrrell",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Antarctic ice sheet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Balleny Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Norway Bight",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Terningskarvet Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tierney Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mercator Ice Piedmont",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Insel Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cartographers Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yovkov Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Krogh Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Banaskantha district",
+            "object": "Asia"
+        },
+        {
+            "subject": "Cugnot Ice Piedmont",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Anderson Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Selborne",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Denton Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chapman Snowfield",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Debenham Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Eland Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Washington Escarpment",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Coulman Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brugmann Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Srebarna Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Dido",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "New Delhi",
+            "object": "Asia"
+        },
+        {
+            "subject": "Arrival Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Murphy",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Monaco",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Surveyors Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Jones Bluffs",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Andvord Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Siple Dome",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Camp Academia",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Kinsey",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Uttar Pradesh",
+            "object": "Asia"
+        },
+        {
+            "subject": "Martel Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Medina Peaks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Madagascar",
+            "object": "Africa"
+        },
+        {
+            "subject": "Snakeskin Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pioneers Escarpment",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Breidnes Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rotch Dome",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Paris",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Wales",
+            "object": "Europe"
+        },
+        {
+            "subject": "Veleka Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Goa",
+            "object": "Asia"
+        },
+        {
+            "subject": "Carolingian Empire",
+            "object": "Europe"
+        },
+        {
+            "subject": "Manipur",
+            "object": "Asia"
+        },
+        {
+            "subject": "Crevasse Valley Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rayner Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Waite",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Segura",
+            "object": "Europe"
+        },
+        {
+            "subject": "Tbilisi",
+            "object": "Europe"
+        },
+        {
+            "subject": "Fournier Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shenzhen",
+            "object": "Asia"
+        },
+        {
+            "subject": "Thimphu",
+            "object": "Asia"
+        },
+        {
+            "subject": "Tashkent",
+            "object": "Asia"
+        },
+        {
+            "subject": "Bach Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Venta",
+            "object": "Europe"
+        },
+        {
+            "subject": "Publications Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Arab League",
+            "object": "Asia"
+        },
+        {
+            "subject": "Lisiya Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Jupiter Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "National Law School of India University",
+            "object": "Asia"
+        },
+        {
+            "subject": "Crosswell Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Craiova",
+            "object": "Europe"
+        },
+        {
+            "subject": "Misnomer Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Hallett",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Founders Peaks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cleveland Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Stabben",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sentinel Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Edinburgh Hill",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hong Kong",
+            "object": "Asia"
+        },
+        {
+            "subject": "Executive Committee Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Johnson Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Scott Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brooklyn Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Liv Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Archar Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rambo Nunataks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Filchner",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Benson Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Vestfold Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Strom Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Emona Anchorage",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Demas Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Adams",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Rey",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lyon Nunataks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kazakhstan",
+            "object": "Europe"
+        },
+        {
+            "subject": "Renier Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gambacorta Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gornergrat",
+            "object": "Europe"
+        },
+        {
+            "subject": "Kukri Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mertz Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tiber",
+            "object": "Europe"
+        },
+        {
+            "subject": "Shackleton Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Arctowski Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "La Grange Nunataks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Welcome Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Neny Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Balchen Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Marie Byrd Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "The Knoll",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mulock Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Iran",
+            "object": "Asia"
+        },
+        {
+            "subject": "Mount Discovery",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Beall Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Fold Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Maury Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tiruvannamalai district",
+            "object": "Asia"
+        },
+        {
+            "subject": "Masson Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Smith",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Storm Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Albanus Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Bentley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Huntress Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cobham Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Marsh Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Transantarctic Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "McKinnon Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tapsell Foreland",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sopot Ice Piedmont",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pendleton Strait",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dundee Whaling Expedition",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "McMurdo Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Umber Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pecora Escarpment",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Eritrea",
+            "object": "Africa"
+        },
+        {
+            "subject": "Violante Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ojos del Salado",
+            "object": "Americas"
+        },
+        {
+            "subject": "Flask Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Fish Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tarnovo Ice Piedmont",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Carlota Cove",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Harding",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Riiser-Larsen Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Botnneset Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Green Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hugi Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Chavez Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bowyer Butte",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "North Macedonia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Quinton Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lazarev Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yoruba religion",
+            "object": "Africa"
+        },
+        {
+            "subject": "Mars Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Vinson Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rothschild Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lake Vanda",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hesperides Hill",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shimla",
+            "object": "Asia"
+        },
+        {
+            "subject": "English Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Robertson Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Longing",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Wylie Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Abbasid Caliphate",
+            "object": "Africa"
+        },
+        {
+            "subject": "Husky Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Melilla",
+            "object": "Africa"
+        },
+        {
+            "subject": "Harris Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Holtedahl Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Wade",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Dallmann",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Longhurst",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Struma Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Jutulsessen",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kaliakra Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Nebraska Peaks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Willan Nunatak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yule Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Eisenhower Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rezen Saddle",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Slovenia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Bransfield Strait",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Terra Nova Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cameroon",
+            "object": "Africa"
+        },
+        {
+            "subject": "Stonehouse Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dominion Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rawson Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Southern Cross Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Malta Plateau",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Erickson Bluffs",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Africa"
+        },
+        {
+            "subject": "Mount Cameroon",
+            "object": "Africa"
+        },
+        {
+            "subject": "Whirlwind Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bani River",
+            "object": "Africa"
+        },
+        {
+            "subject": "McFarlane Strait",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Congo basin",
+            "object": "Africa"
+        },
+        {
+            "subject": "Tallinn",
+            "object": "Europe"
+        },
+        {
+            "subject": "Shirley Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Djibouti",
+            "object": "Africa"
+        },
+        {
+            "subject": "Wirth Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lomonosov Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Beardmore Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Bayonne",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Daniels Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Collins Harbour",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "MacAlpine Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Middle East",
+            "object": "Africa"
+        },
+        {
+            "subject": "Ma River",
+            "object": "Asia"
+        },
+        {
+            "subject": "Tisza",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mount Ignatiev",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Borg Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Morocco",
+            "object": "Africa"
+        },
+        {
+            "subject": "Walker Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Elbe",
+            "object": "Europe"
+        },
+        {
+            "subject": "Austkampane Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Barwick Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Anderson Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Marshall Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kotis Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Denfeld Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Staten Island Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Thiel Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Opalchenie Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Beaumont Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Orange Free State",
+            "object": "Africa"
+        },
+        {
+            "subject": "Forster Ice Piedmont",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Keltie Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Comoros",
+            "object": "Africa"
+        },
+        {
+            "subject": "Equatorial Guinea",
+            "object": "Africa"
+        },
+        {
+            "subject": "Eiger",
+            "object": "Europe"
+        },
+        {
+            "subject": "Lazarev Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brown Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kiev Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Saint Johns Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Portugal",
+            "object": "Europe"
+        },
+        {
+            "subject": "Bulgaria",
+            "object": "Europe"
+        },
+        {
+            "subject": "Ross Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Radnevo Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Yorkshire",
+            "object": "Europe"
+        },
+        {
+            "subject": "Skeidshovden Mountain",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Davis Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Miers Bluff",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Steventon Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Australian Antarctic Territory",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Roberts Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Koyambedu",
+            "object": "Asia"
+        },
+        {
+            "subject": "Foyn Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pensacola Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Vietnam",
+            "object": "Asia"
+        },
+        {
+            "subject": "Bern",
+            "object": "Europe"
+        },
+        {
+            "subject": "KU Leuven",
+            "object": "Europe"
+        },
+        {
+            "subject": "Weber Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pourquoi Pas Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Robinson Group",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Indigirka River",
+            "object": "Asia"
+        },
+        {
+            "subject": "Laos",
+            "object": "Asia"
+        },
+        {
+            "subject": "Byers Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Zed Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lovech Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "David Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Paulet Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bosnia and Herzegovina",
+            "object": "Europe"
+        },
+        {
+            "subject": "Ingrid Christensen Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sobat River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Shkhara",
+            "object": "Europe"
+        },
+        {
+            "subject": "Petvar Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Adare",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Trelech",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mont Blanc",
+            "object": "Europe"
+        },
+        {
+            "subject": "Palmer Archipelago",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Onyx River",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Herbert Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Drummond Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Solan District",
+            "object": "Asia"
+        },
+        {
+            "subject": "Pearse Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rose Valley Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Prussian Partition",
+            "object": "Europe"
+        },
+        {
+            "subject": "Block Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Marinid dynasty",
+            "object": "Africa"
+        },
+        {
+            "subject": "Kohler Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Melchior Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Breznik Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Arena Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bull Pass",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Paris",
+            "object": "Europe"
+        },
+        {
+            "subject": "Sjogren Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount McClintock",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pequod Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lesotho",
+            "object": "Africa"
+        },
+        {
+            "subject": "Pitt Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Land Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bigo Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Burundi",
+            "object": "Africa"
+        },
+        {
+            "subject": "Estonia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Gelderland",
+            "object": "Europe"
+        },
+        {
+            "subject": "British Empire",
+            "object": "Africa"
+        },
+        {
+            "subject": "Martin Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Soviet Union",
+            "object": "Europe"
+        },
+        {
+            "subject": "Supporters Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brown Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Napier Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mali",
+            "object": "Africa"
+        },
+        {
+            "subject": "Rutford Ice Stream",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shipley Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Balkan Snowfield",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Benson Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Nepal",
+            "object": "Asia"
+        },
+        {
+            "subject": "Niger River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Fosdick Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Euphrates",
+            "object": "Asia"
+        },
+        {
+            "subject": "Rothera Research Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Urdoviza Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Alexander Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Levski Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Victoria Upper Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tundzha Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Wilhelmina Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Neptune Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Austria",
+            "object": "Europe"
+        },
+        {
+            "subject": "Anare Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lions Rump",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Lister",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Saturn Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Aviator Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Williams",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Support Force Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Jorum Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hektoria Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Birchall Peaks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Cupola",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kaveri River",
+            "object": "Asia"
+        },
+        {
+            "subject": "Congo Free State",
+            "object": "Africa"
+        },
+        {
+            "subject": "Cape Hordern",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ellsworth Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ruppert Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Maglenik Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Antarctic Plate",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Wright Lower Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Minna Bluff",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Aitcho Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ol Doinyo Lengai",
+            "object": "Africa"
+        },
+        {
+            "subject": "Queen Elizabeth Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount McCoy",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mac. Robertson Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Piccard Cove",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Elgar Uplands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Largo Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Inn",
+            "object": "Europe"
+        },
+        {
+            "subject": "Juan de Nova Island",
+            "object": "Africa"
+        },
+        {
+            "subject": "Mikkelsen Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Murphy Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Evensen",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Scar Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Langnes Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Switzerland",
+            "object": "Europe"
+        },
+        {
+            "subject": "Quarles Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Andersson Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gibraltar",
+            "object": "Europe"
+        },
+        {
+            "subject": "Drygalski Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Moon Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Scylla Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tinker Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Southern Netherlands",
+            "object": "Europe"
+        },
+        {
+            "subject": "Kouilou-Niari River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Cape Rymill",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cosgrove Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Dunedin Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Smith Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Snowdon",
+            "object": "Europe"
+        },
+        {
+            "subject": "Cape Northrop",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Williams Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Newall",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pernik Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Fleming Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hurricane Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Scaife Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bowman Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Archer",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Frigate Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cieszyn",
+            "object": "Europe"
+        },
+        {
+            "subject": "Solvay Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Imperial Trans-Antarctic Expedition",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tapley Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Conrad Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Thailand",
+            "object": "Asia"
+        },
+        {
+            "subject": "Bourgeois Fjord",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Uranus Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Splettstoesser Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Moe Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Vernadsky Research Base",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Irish Free State",
+            "object": "Europe"
+        },
+        {
+            "subject": "Pitkevitch Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Moses",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Pechora River",
+            "object": "Europe"
+        },
+        {
+            "subject": "Salamander Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Mousse",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Eights Coast",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Totten Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Egypt",
+            "object": "Africa"
+        },
+        {
+            "subject": "Kondofrey Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Fendley Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Colbeck",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Ryder Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Moscow",
+            "object": "Europe"
+        },
+        {
+            "subject": "Thiruvananthapuram",
+            "object": "Asia"
+        },
+        {
+            "subject": "Clark Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kama River",
+            "object": "Europe"
+        },
+        {
+            "subject": "Senegambia Confederation",
+            "object": "Africa"
+        },
+        {
+            "subject": "San Marino",
+            "object": "Europe"
+        },
+        {
+            "subject": "Cape Barne",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Finland",
+            "object": "Europe"
+        },
+        {
+            "subject": "United Kingdom",
+            "object": "Europe"
+        },
+        {
+            "subject": "Indian Antarctic Program",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Douro",
+            "object": "Europe"
+        },
+        {
+            "subject": "Corner Cliffs",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mountaineer Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Tile Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lebanon",
+            "object": "Asia"
+        },
+        {
+            "subject": "Howchin Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Slovakia",
+            "object": "Europe"
+        },
+        {
+            "subject": "Elkhorn Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Victory Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Slab Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "French Southern and Antarctic Lands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kurze Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Barker Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Davis Sea",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Despotate of Epirus",
+            "object": "Europe"
+        },
+        {
+            "subject": "Palmer Land",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Bermel Escarpment",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Trinity Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Carlini Station",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Moubray Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Trakiya Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Taylor Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Williams Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mitchell Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Rajkot",
+            "object": "Asia"
+        },
+        {
+            "subject": "Lavoisier Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Douglas Peaks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Morris Rock",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "North Holland",
+            "object": "Europe"
+        },
+        {
+            "subject": "Cape Shirreff",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kirkpatrick Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Principality of Sealand",
+            "object": "Europe"
+        },
+        {
+            "subject": "Mayotte",
+            "object": "Africa"
+        },
+        {
+            "subject": "Mount Hallgren",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Evans",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brunt Ice Shelf",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Borchgrevink Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mule Peninsula",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Schuyler",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Detaille Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Gerlache Strait",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Payer Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Angola",
+            "object": "Africa"
+        },
+        {
+            "subject": "Frostlendet Valley",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Doyran Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Flatvaer Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Cocks",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Scotia Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Shebelle River",
+            "object": "Africa"
+        },
+        {
+            "subject": "Peshtera Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Planet Heights",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Berlin",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "British Empire",
+            "object": "Americas"
+        },
+        {
+            "subject": "Lemaire Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Russell East Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Khabarovsk",
+            "object": "Asia"
+        },
+        {
+            "subject": "Lillie Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Montenegro",
+            "object": "Europe"
+        },
+        {
+            "subject": "Bigourdan Fjord",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Saint Petersburg",
+            "object": "Europe"
+        },
+        {
+            "subject": "Millerand Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Molar Massif",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Hippocrates Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kuwait",
+            "object": "Asia"
+        },
+        {
+            "subject": "Mount Farrell",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Deep Freeze Range",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Curzon Islands",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Tyree",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Kochi",
+            "object": "Asia"
+        },
+        {
+            "subject": "Denmark",
+            "object": "Europe"
+        },
+        {
+            "subject": "Turkey",
+            "object": "Asia"
+        },
+        {
+            "subject": "Miziya Peak",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brahms Inlet",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Demay Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Aleko Rock",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Cape Ducorps",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Antarctic Treaty System",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Mount Harker",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Brialmont Cove",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Atlantic Club Ridge",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Seychelles",
+            "object": "Africa"
+        },
+        {
+            "subject": "Hull Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Sartorius Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Darwin Mountains",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Samuel Point",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Damavand",
+            "object": "Asia"
+        },
+        {
+            "subject": "Greece",
+            "object": "Europe"
+        },
+        {
+            "subject": "Ninnis Glacier",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Edward VIII Bay",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Quartz Hills",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Signy Island",
+            "object": "Antarctica"
+        },
+        {
+            "subject": "Lake Baikal",
+            "object": "Asia"
+        },
+        {
+            "subject": "Penney Bay",
+            "object": "Antarctica"
+        }
+    ]
+}

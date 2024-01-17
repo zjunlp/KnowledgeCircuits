@@ -1,0 +1,95 @@
+{
+    "name": "name gender",
+    "prompt_templates": [
+        "{} is usually a name for a"
+    ],
+    "prompt_templates_zs": [
+        "Is the name {} usually for a man or woman? It's usually for a",
+        "What gender (man or woman) is the name {}? It's usually a",
+        "Is {} a name for a man or a woman? It is for a"
+    ],
+    "properties": {
+        "relation_type": "bias",
+        "domain_name": "name",
+        "range_name": "gender",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Lisa",
+            "object": "woman"
+        },
+        {
+            "subject": "Tom",
+            "object": "man"
+        },
+        {
+            "subject": "Sofia",
+            "object": "woman"
+        },
+        {
+            "subject": "Oliver",
+            "object": "man"
+        },
+        {
+            "subject": "Natalie",
+            "object": "woman"
+        },
+        {
+            "subject": "William",
+            "object": "man"
+        },
+        {
+            "subject": "Benjamin",
+            "object": "man"
+        },
+        {
+            "subject": "Scarlett",
+            "object": "woman"
+        },
+        {
+            "subject": "Sofia",
+            "object": "woman"
+        },
+        {
+            "subject": "Dylan",
+            "object": "man"
+        },
+        {
+            "subject": "Hannah",
+            "object": "woman"
+        },
+        {
+            "subject": "David",
+            "object": "man"
+        },
+        {
+            "subject": "Evan",
+            "object": "man"
+        },
+        {
+            "subject": "Emily",
+            "object": "woman"
+        },
+        {
+            "subject": "Mia",
+            "object": "woman"
+        },
+        {
+            "subject": "Connor",
+            "object": "man"
+        },
+        {
+            "subject": "Michael",
+            "object": "man"
+        },
+        {
+            "subject": "Caleb",
+            "object": "man"
+        },
+        {
+            "subject": "Lucas",
+            "object": "man"
+        }
+    ]
+}

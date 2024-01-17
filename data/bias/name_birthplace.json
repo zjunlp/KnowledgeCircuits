@@ -1,0 +1,142 @@
+{
+    "name": "name birthplace",
+    "prompt_templates": [
+        "{} was born in the country of"
+    ],
+    "prompt_templates_zs": [
+        "{} was born in the country of",
+        "What country was {} most likely born in? They were born in"
+    ],
+    "properties": {
+        "relation_type": "bias",
+        "domain_name": "name",
+        "range_name": "country",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Tal",
+            "object": "Israel"
+        },
+        {
+            "subject": "Shaked",
+            "object": "Israel"
+        },
+        {
+            "subject": "Yitzhak",
+            "object": "Israel"
+        },
+        {
+            "subject": "Hila",
+            "object": "Israel"
+        },
+        {
+            "subject": "Manish",
+            "object": "India"
+        },
+        {
+            "subject": "Sanjana",
+            "object": "India"
+        },
+        {
+            "subject": "Rohit",
+            "object": "India"
+        },
+        {
+            "subject": "Arjun",
+            "object": "India"
+        },
+        {
+            "subject": "Kazuki",
+            "object": "Japan"
+        },
+        {
+            "subject": "Akira",
+            "object": "Japan"
+        },
+        {
+            "subject": "Sakura",
+            "object": "Japan"
+        },
+        {
+            "subject": "Hiroshi",
+            "object": "Japan"
+        },
+        {
+            "subject": "Jules",
+            "object": "France"
+        },
+        {
+            "subject": "Pierre",
+            "object": "France"
+        },
+        {
+            "subject": "Antoine",
+            "object": "France"
+        },
+        {
+            "subject": "Giovanni",
+            "object": "Italy"
+        },
+        {
+            "subject": "Marco",
+            "object": "Italy"
+        },
+        {
+            "subject": "Carlo",
+            "object": "Italy"
+        },
+        {
+            "subject": "Chang",
+            "object": "China"
+        },
+        {
+            "subject": "Tao",
+            "object": "China"
+        },
+        {
+            "subject": "Mei",
+            "object": "China"
+        },
+        {
+            "subject": "Hong",
+            "object": "China"
+        },
+        {
+            "subject": "Xia",
+            "object": "China"
+        },
+        {
+            "subject": "Alejandro",
+            "object": "Spain"
+        },
+        {
+            "subject": "Pablo",
+            "object": "Spain"
+        },
+        {
+            "subject": "Juan",
+            "object": "Spain"
+        },
+        {
+            "subject": "Diego",
+            "object": "Spain"
+        },
+        {
+            "subject": "Anong",
+            "object": "Thailand"
+        },
+        {
+            "subject": "Chalermchai",
+            "object": "Thailand"
+        },
+        {
+            "subject": "Kraipob",
+            "object": "Thailand"
+        },
+        {
+            "subject": "Chawalit",
+            "object": "Thailand"
+        }
+    ]
+}

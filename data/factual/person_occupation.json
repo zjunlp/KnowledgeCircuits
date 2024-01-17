@@ -1,0 +1,3303 @@
+{
+  "name": "person occupation",
+  "prompt_templates": [
+    "{} works as a",
+    "By profession, {} is a"
+  ],
+  "prompt_templates_zs": [
+    "By profession, {} is a",
+    "{} works professionally as a"
+  ],
+  "properties": {
+    "relation_type": "factual",
+    "domain_name": "person",
+    "range_name": "occupation",
+    "symmetric": false
+  },
+  "samples": [
+    {
+      "subject": "Billy Roche",
+      "object": "actor"
+    },
+    {
+      "subject": "Arun Nehru",
+      "object": "politician"
+    },
+    {
+      "subject": "Gregg Edelman",
+      "object": "actor"
+    },
+    {
+      "subject": "Pat Crowley",
+      "object": "actor"
+    },
+    {
+      "subject": "Luana Walters",
+      "object": "actor"
+    },
+    {
+      "subject": "Mary Collinson",
+      "object": "actor"
+    },
+    {
+      "subject": "Patrick Manson",
+      "object": "physician"
+    },
+    {
+      "subject": "Shreela Ghosh",
+      "object": "actor"
+    },
+    {
+      "subject": "M. S. Viswanathan",
+      "object": "composer"
+    },
+    {
+      "subject": "Noon Meem Rashid",
+      "object": "poet"
+    },
+    {
+      "subject": "Sepala Attygalle",
+      "object": "diplomat"
+    },
+    {
+      "subject": "John Cygan",
+      "object": "actor"
+    },
+    {
+      "subject": "Donald McCaig",
+      "object": "poet"
+    },
+    {
+      "subject": "David Yost",
+      "object": "actor"
+    },
+    {
+      "subject": "Ethyl Eichelberger",
+      "object": "actor"
+    },
+    {
+      "subject": "Jane Leeves",
+      "object": "actor"
+    },
+    {
+      "subject": "Raoul Trujillo",
+      "object": "actor"
+    },
+    {
+      "subject": "Dolly Wells",
+      "object": "actor"
+    },
+    {
+      "subject": "Georges Altman",
+      "object": "journalist"
+    },
+    {
+      "subject": "Eduardo De Filippo",
+      "object": "poet"
+    },
+    {
+      "subject": "Emmanuelle Devos",
+      "object": "actor"
+    },
+    {
+      "subject": "John Ashburnham, 1st Baron Ashburnham",
+      "object": "politician"
+    },
+    {
+      "subject": "Johann von Rist",
+      "object": "poet"
+    },
+    {
+      "subject": "Li Yining",
+      "object": "economist"
+    },
+    {
+      "subject": "Pierre Paradis",
+      "object": "politician"
+    },
+    {
+      "subject": "Kurt Furgler",
+      "object": "politician"
+    },
+    {
+      "subject": "Earl Zindars",
+      "object": "composer"
+    },
+    {
+      "subject": "David Tree",
+      "object": "actor"
+    },
+    {
+      "subject": "Malcolm Arthur Smith",
+      "object": "physician"
+    },
+    {
+      "subject": "Robert David Hall",
+      "object": "actor"
+    },
+    {
+      "subject": "George Thalben-Ball",
+      "object": "composer"
+    },
+    {
+      "subject": "Jeff Bova",
+      "object": "composer"
+    },
+    {
+      "subject": "Murli Deora",
+      "object": "politician"
+    },
+    {
+      "subject": "Ilia Chavchavadze",
+      "object": "poet"
+    },
+    {
+      "subject": "Rolf Thommessen",
+      "object": "politician"
+    },
+    {
+      "subject": "Esther Ralston",
+      "object": "actor"
+    },
+    {
+      "subject": "Hugh Bonneville",
+      "object": "actor"
+    },
+    {
+      "subject": "Giovanni Battista Vitali",
+      "object": "composer"
+    },
+    {
+      "subject": "Junsang Bahk",
+      "object": "composer"
+    },
+    {
+      "subject": "Trevor Dunn",
+      "object": "composer"
+    },
+    {
+      "subject": "Guy Pratt",
+      "object": "actor"
+    },
+    {
+      "subject": "Arno Allan Penzias",
+      "object": "astronomer"
+    },
+    {
+      "subject": "Jeffrey Carlson",
+      "object": "actor"
+    },
+    {
+      "subject": "Erle Cox",
+      "object": "journalist"
+    },
+    {
+      "subject": "Ranjitha",
+      "object": "actor"
+    },
+    {
+      "subject": "George Buza",
+      "object": "actor"
+    },
+    {
+      "subject": "Nicholas John Hannen",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Debra Jo Rupp",
+      "object": "actor"
+    },
+    {
+      "subject": "Lark Voorhies",
+      "object": "actor"
+    },
+    {
+      "subject": "Niyi Osundare",
+      "object": "poet"
+    },
+    {
+      "subject": "Hugo Eberlein",
+      "object": "politician"
+    },
+    {
+      "subject": "Jean Titelouze",
+      "object": "composer"
+    },
+    {
+      "subject": "Edy Ganem",
+      "object": "actor"
+    },
+    {
+      "subject": "Charles FitzGerald, 1st Baron Lecale",
+      "object": "politician"
+    },
+    {
+      "subject": "John Horgan",
+      "object": "journalist"
+    },
+    {
+      "subject": "Lisa Haydon",
+      "object": "actor"
+    },
+    {
+      "subject": "Juan Blanco",
+      "object": "composer"
+    },
+    {
+      "subject": "William Hardy Wilson",
+      "object": "architect"
+    },
+    {
+      "subject": "Gregory Scott",
+      "object": "actor"
+    },
+    {
+      "subject": "Paolo Casati",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Mark Andrew Green",
+      "object": "politician"
+    },
+    {
+      "subject": "Krister Henriksson",
+      "object": "actor"
+    },
+    {
+      "subject": "Kiersten Warren",
+      "object": "actor"
+    },
+    {
+      "subject": "George Ward Hunt",
+      "object": "politician"
+    },
+    {
+      "subject": "Michael Romanoff",
+      "object": "actor"
+    },
+    {
+      "subject": "Ethan Wayne",
+      "object": "actor"
+    },
+    {
+      "subject": "Guruprasad",
+      "object": "actor"
+    },
+    {
+      "subject": "Giuseppe Saracco",
+      "object": "politician"
+    },
+    {
+      "subject": "Edmond Leung",
+      "object": "actor"
+    },
+    {
+      "subject": "Bibb Graves",
+      "object": "politician"
+    },
+    {
+      "subject": "Stefano Vagnini",
+      "object": "poet"
+    },
+    {
+      "subject": "Sondra Gotlieb",
+      "object": "journalist"
+    },
+    {
+      "subject": "Sairam Shankar",
+      "object": "actor"
+    },
+    {
+      "subject": "Akshaye Khanna",
+      "object": "actor"
+    },
+    {
+      "subject": "Subagio Sastrowardoyo",
+      "object": "poet"
+    },
+    {
+      "subject": "James Broughton",
+      "object": "poet"
+    },
+    {
+      "subject": "Georg Joseph Kamel",
+      "object": "missionary"
+    },
+    {
+      "subject": "Ross Garnaut",
+      "object": "economist"
+    },
+    {
+      "subject": "Cyril Wong",
+      "object": "poet"
+    },
+    {
+      "subject": "Ellar Coltrane",
+      "object": "actor"
+    },
+    {
+      "subject": "Candace Kita",
+      "object": "actor"
+    },
+    {
+      "subject": "John Gawsworth",
+      "object": "poet"
+    },
+    {
+      "subject": "Daeg Faerch",
+      "object": "actor"
+    },
+    {
+      "subject": "Douglas Fowley",
+      "object": "actor"
+    },
+    {
+      "subject": "Malcolm MacDonald",
+      "object": "politician"
+    },
+    {
+      "subject": "Ledisi",
+      "object": "actor"
+    },
+    {
+      "subject": "Resham Tipnis",
+      "object": "actor"
+    },
+    {
+      "subject": "Joan Marion",
+      "object": "actor"
+    },
+    {
+      "subject": "Doro Merande",
+      "object": "actor"
+    },
+    {
+      "subject": "Chandan Mitra",
+      "object": "journalist"
+    },
+    {
+      "subject": "Marie Versini",
+      "object": "actor"
+    },
+    {
+      "subject": "Milt Kogan",
+      "object": "actor"
+    },
+    {
+      "subject": "Trevor Sargent",
+      "object": "politician"
+    },
+    {
+      "subject": "Kate Garven",
+      "object": "actor"
+    },
+    {
+      "subject": "John Vivyan",
+      "object": "actor"
+    },
+    {
+      "subject": "Raj Kapoor",
+      "object": "actor"
+    },
+    {
+      "subject": "Ernst Jaakson",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Gregory Chamitoff",
+      "object": "astronaut"
+    },
+    {
+      "subject": "Jill Hyem",
+      "object": "actor"
+    },
+    {
+      "subject": "Eduardo Fajardo",
+      "object": "actor"
+    },
+    {
+      "subject": "Halle Berry",
+      "object": "model"
+    },
+    {
+      "subject": "Carl Hatch",
+      "object": "politician"
+    },
+    {
+      "subject": "Johnathon Schaech",
+      "object": "actor"
+    },
+    {
+      "subject": "Rudolf Maister",
+      "object": "poet"
+    },
+    {
+      "subject": "Poojappura Ravi",
+      "object": "actor"
+    },
+    {
+      "subject": "Jon Rose",
+      "object": "composer"
+    },
+    {
+      "subject": "Gian-Carlo Wick",
+      "object": "physicist"
+    },
+    {
+      "subject": "Elaine Yiu",
+      "object": "actor"
+    },
+    {
+      "subject": "Leo Fong",
+      "object": "actor"
+    },
+    {
+      "subject": "William John Gruffydd",
+      "object": "poet"
+    },
+    {
+      "subject": "Bernard de Marigny",
+      "object": "politician"
+    },
+    {
+      "subject": "Charles Herbert Allen",
+      "object": "politician"
+    },
+    {
+      "subject": "Laura Antoniou",
+      "object": "novelist"
+    },
+    {
+      "subject": "Troy Donahue",
+      "object": "actor"
+    },
+    {
+      "subject": "Gustave Le Gray",
+      "object": "photographer"
+    },
+    {
+      "subject": "Renato Ruggiero",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Paulo Pires",
+      "object": "model"
+    },
+    {
+      "subject": "Alfred Hickman",
+      "object": "actor"
+    },
+    {
+      "subject": "Avi Wigderson",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Ernest Armstrong",
+      "object": "politician"
+    },
+    {
+      "subject": "KevJumba",
+      "object": "actor"
+    },
+    {
+      "subject": "Dino Saluzzi",
+      "object": "composer"
+    },
+    {
+      "subject": "Lori Singer",
+      "object": "actor"
+    },
+    {
+      "subject": "Shibdas Ghosh",
+      "object": "politician"
+    },
+    {
+      "subject": "Klemens von Metternich",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Caradog Roberts",
+      "object": "composer"
+    },
+    {
+      "subject": "Serhiy Taruta",
+      "object": "politician"
+    },
+    {
+      "subject": "Zvika Hadar",
+      "object": "actor"
+    },
+    {
+      "subject": "Judah Loew ben Bezalel",
+      "object": "rabbi"
+    },
+    {
+      "subject": "Peter Arnett",
+      "object": "journalist"
+    },
+    {
+      "subject": "Juan Hidalgo Codorniu",
+      "object": "composer"
+    },
+    {
+      "subject": "J. Gwyn Griffiths",
+      "object": "poet"
+    },
+    {
+      "subject": "David Wagoner",
+      "object": "poet"
+    },
+    {
+      "subject": "Steve Swallow",
+      "object": "composer"
+    },
+    {
+      "subject": "Henry Chaplin, 1st Viscount Chaplin",
+      "object": "politician"
+    },
+    {
+      "subject": "Jon Jerde",
+      "object": "architect"
+    },
+    {
+      "subject": "Mandy Rain",
+      "object": "actor"
+    },
+    {
+      "subject": "Adam Carolla",
+      "object": "journalist"
+    },
+    {
+      "subject": "Amy Stoch",
+      "object": "actor"
+    },
+    {
+      "subject": "Robert Stout",
+      "object": "politician"
+    },
+    {
+      "subject": "Johnny Yune",
+      "object": "comedian"
+    },
+    {
+      "subject": "Gordon Scott",
+      "object": "actor"
+    },
+    {
+      "subject": "Laurie Anderson",
+      "object": "poet"
+    },
+    {
+      "subject": "Malcolm Keen",
+      "object": "actor"
+    },
+    {
+      "subject": "Giovanni Francesco Sagredo",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Carl Barron",
+      "object": "comedian"
+    },
+    {
+      "subject": "Daniel Abineri",
+      "object": "actor"
+    },
+    {
+      "subject": "Thomas Hailes Lacy",
+      "object": "actor"
+    },
+    {
+      "subject": "Sophia Elisabet Brenner",
+      "object": "poet"
+    },
+    {
+      "subject": "Hugh Manning",
+      "object": "actor"
+    },
+    {
+      "subject": "Arthur Creech Jones",
+      "object": "politician"
+    },
+    {
+      "subject": "William Shiels",
+      "object": "politician"
+    },
+    {
+      "subject": "Peter Abelard",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Gu Seung-hyeon",
+      "object": "actor"
+    },
+    {
+      "subject": "Iliana Fox",
+      "object": "actor"
+    },
+    {
+      "subject": "Ronan Hardiman",
+      "object": "composer"
+    },
+    {
+      "subject": "Raoul Walsh",
+      "object": "actor"
+    },
+    {
+      "subject": "Henry Pottinger Stephens",
+      "object": "journalist"
+    },
+    {
+      "subject": "Barbara Tyson",
+      "object": "actor"
+    },
+    {
+      "subject": "Kazuo Ishiguro",
+      "object": "novelist"
+    },
+    {
+      "subject": "Mary Renault",
+      "object": "novelist"
+    },
+    {
+      "subject": "Trevor Wright",
+      "object": "actor"
+    },
+    {
+      "subject": "Jack Buetel",
+      "object": "actor"
+    },
+    {
+      "subject": "Gabriel Horn",
+      "object": "biologist"
+    },
+    {
+      "subject": "James Fenimore Cooper",
+      "object": "novelist"
+    },
+    {
+      "subject": "Robert Lepage",
+      "object": "actor"
+    },
+    {
+      "subject": "Marcus Manilius",
+      "object": "poet"
+    },
+    {
+      "subject": "Julius Shulman",
+      "object": "architect"
+    },
+    {
+      "subject": "George Waggner",
+      "object": "actor"
+    },
+    {
+      "subject": "Wolfe Morris",
+      "object": "actor"
+    },
+    {
+      "subject": "Yang Wanli",
+      "object": "poet"
+    },
+    {
+      "subject": "Johan Herman Wessel",
+      "object": "poet"
+    },
+    {
+      "subject": "Julian Beck",
+      "object": "poet"
+    },
+    {
+      "subject": "Michel Mossessian",
+      "object": "architect"
+    },
+    {
+      "subject": "Cristina Peri Rossi",
+      "object": "novelist"
+    },
+    {
+      "subject": "J. Anthony Lukas",
+      "object": "journalist"
+    },
+    {
+      "subject": "Susanna Haavisto",
+      "object": "actor"
+    },
+    {
+      "subject": "Juan Rulfo",
+      "object": "novelist"
+    },
+    {
+      "subject": "Joyce Quin, Baroness Quin",
+      "object": "politician"
+    },
+    {
+      "subject": "Marco Minnemann",
+      "object": "composer"
+    },
+    {
+      "subject": "Danny Dayton",
+      "object": "actor"
+    },
+    {
+      "subject": "Jim Griffiths",
+      "object": "politician"
+    },
+    {
+      "subject": "Rashida Jones",
+      "object": "actor"
+    },
+    {
+      "subject": "Barbara Britton",
+      "object": "actor"
+    },
+    {
+      "subject": "Tico Wells",
+      "object": "actor"
+    },
+    {
+      "subject": "Mary-Kate Olsen",
+      "object": "actor"
+    },
+    {
+      "subject": "Sunny Hundal",
+      "object": "journalist"
+    },
+    {
+      "subject": "Gary Waldhorn",
+      "object": "actor"
+    },
+    {
+      "subject": "Ya\u00ebl Abecassis",
+      "object": "actor"
+    },
+    {
+      "subject": "Nan Wood Honeyman",
+      "object": "politician"
+    },
+    {
+      "subject": "Rayner Taylor",
+      "object": "composer"
+    },
+    {
+      "subject": "Riky Rick",
+      "object": "actor"
+    },
+    {
+      "subject": "Eva Longoria",
+      "object": "actor"
+    },
+    {
+      "subject": "David Rivett",
+      "object": "chemist"
+    },
+    {
+      "subject": "Martin Kosleck",
+      "object": "actor"
+    },
+    {
+      "subject": "Augustin-Jean Fresnel",
+      "object": "physicist"
+    },
+    {
+      "subject": "Ruth Marshall",
+      "object": "actor"
+    },
+    {
+      "subject": "Andreas Embirikos",
+      "object": "poet"
+    },
+    {
+      "subject": "Hans Magnus Enzensberger",
+      "object": "poet"
+    },
+    {
+      "subject": "Pierre Alcover",
+      "object": "actor"
+    },
+    {
+      "subject": "Brian McNamara",
+      "object": "actor"
+    },
+    {
+      "subject": "Hilaire Belloc",
+      "object": "journalist"
+    },
+    {
+      "subject": "Michael Denis",
+      "object": "poet"
+    },
+    {
+      "subject": "Jesse McCartney",
+      "object": "actor"
+    },
+    {
+      "subject": "Billy Aaron Brown",
+      "object": "actor"
+    },
+    {
+      "subject": "Andrew Ross Sorkin",
+      "object": "journalist"
+    },
+    {
+      "subject": "Morris Carnovsky",
+      "object": "actor"
+    },
+    {
+      "subject": "Said Mohamed Djohar",
+      "object": "politician"
+    },
+    {
+      "subject": "Bryant Butler Brooks",
+      "object": "politician"
+    },
+    {
+      "subject": "Enrique Granados",
+      "object": "composer"
+    },
+    {
+      "subject": "Alfred Easton Poor",
+      "object": "architect"
+    },
+    {
+      "subject": "Wes Bentley",
+      "object": "actor"
+    },
+    {
+      "subject": "Nathaniel Bright Emerson",
+      "object": "physician"
+    },
+    {
+      "subject": "Sumanth",
+      "object": "actor"
+    },
+    {
+      "subject": "Menachem Mendel Schneerson",
+      "object": "rabbi"
+    },
+    {
+      "subject": "Keen Johnson",
+      "object": "journalist"
+    },
+    {
+      "subject": "Dov Ber of Mezeritch",
+      "object": "rabbi"
+    },
+    {
+      "subject": "Manuel Sadosky",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Juliet Aubrey",
+      "object": "actor"
+    },
+    {
+      "subject": "David Monrad Johansen",
+      "object": "composer"
+    },
+    {
+      "subject": "Lane Smith",
+      "object": "actor"
+    },
+    {
+      "subject": "Linda Kaye Henning",
+      "object": "actor"
+    },
+    {
+      "subject": "Werner Heisenberg",
+      "object": "physicist"
+    },
+    {
+      "subject": "Patrick Joseph Sullivan",
+      "object": "politician"
+    },
+    {
+      "subject": "W. Arundel Orchard",
+      "object": "composer"
+    },
+    {
+      "subject": "Rebecca Pidgeon",
+      "object": "actor"
+    },
+    {
+      "subject": "Ysanne Churchman",
+      "object": "actor"
+    },
+    {
+      "subject": "Alston G. Dayton",
+      "object": "politician"
+    },
+    {
+      "subject": "Bruno Lawrence",
+      "object": "actor"
+    },
+    {
+      "subject": "Dianne Kay",
+      "object": "actor"
+    },
+    {
+      "subject": "Yuvraj Hans",
+      "object": "actor"
+    },
+    {
+      "subject": "Grace Williams",
+      "object": "composer"
+    },
+    {
+      "subject": "Albert Sharpe",
+      "object": "actor"
+    },
+    {
+      "subject": "Paolo Soleri",
+      "object": "architect"
+    },
+    {
+      "subject": "Shelby Foote",
+      "object": "novelist"
+    },
+    {
+      "subject": "Reginald Cooray",
+      "object": "politician"
+    },
+    {
+      "subject": "Frederick Volpe",
+      "object": "actor"
+    },
+    {
+      "subject": "Lisa Ryder",
+      "object": "actor"
+    },
+    {
+      "subject": "Judy Davis",
+      "object": "actor"
+    },
+    {
+      "subject": "Olive Blakeney",
+      "object": "actor"
+    },
+    {
+      "subject": "John Mainwaring",
+      "object": "composer"
+    },
+    {
+      "subject": "Bryshere Y. Gray",
+      "object": "actor"
+    },
+    {
+      "subject": "Rico Yan",
+      "object": "actor"
+    },
+    {
+      "subject": "Mircea Diaconu",
+      "object": "actor"
+    },
+    {
+      "subject": "Thunder",
+      "object": "actor"
+    },
+    {
+      "subject": "Spencer Treat Clark",
+      "object": "actor"
+    },
+    {
+      "subject": "Mayuko Fukuda",
+      "object": "actor"
+    },
+    {
+      "subject": "Johann Moriaen",
+      "object": "chemist"
+    },
+    {
+      "subject": "Jean Gabriel Marchand",
+      "object": "lawyer"
+    },
+    {
+      "subject": "Micachu",
+      "object": "composer"
+    },
+    {
+      "subject": "Harry Ham",
+      "object": "actor"
+    },
+    {
+      "subject": "Rowland Hill",
+      "object": "politician"
+    },
+    {
+      "subject": "Paul Baxendale-Walker",
+      "object": "actor"
+    },
+    {
+      "subject": "Franco Albini",
+      "object": "architect"
+    },
+    {
+      "subject": "Stewart Alexander",
+      "object": "politician"
+    },
+    {
+      "subject": "Kenneth Koch",
+      "object": "poet"
+    },
+    {
+      "subject": "Arthur Drews",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Samuel Jackson Pratt",
+      "object": "novelist"
+    },
+    {
+      "subject": "Robert Grudin",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Lusia Strus",
+      "object": "actor"
+    },
+    {
+      "subject": "David Gascoyne",
+      "object": "poet"
+    },
+    {
+      "subject": "Vic Chou",
+      "object": "model"
+    },
+    {
+      "subject": "Dumitru Prunariu",
+      "object": "astronaut"
+    },
+    {
+      "subject": "Michael Kidd",
+      "object": "actor"
+    },
+    {
+      "subject": "Fiona Russell Powell",
+      "object": "journalist"
+    },
+    {
+      "subject": "Adam Rapacki",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Johannes Nucius",
+      "object": "composer"
+    },
+    {
+      "subject": "Giovanni Poleni",
+      "object": "mathematician"
+    },
+    {
+      "subject": "John Jacob Niles",
+      "object": "composer"
+    },
+    {
+      "subject": "Nils Strindberg",
+      "object": "photographer"
+    },
+    {
+      "subject": "Claude Corea",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Obaidullah Aleem",
+      "object": "poet"
+    },
+    {
+      "subject": "Harris Allan",
+      "object": "actor"
+    },
+    {
+      "subject": "Roland Pertwee",
+      "object": "actor"
+    },
+    {
+      "subject": "Darius McCrary",
+      "object": "actor"
+    },
+    {
+      "subject": "Mathira",
+      "object": "actor"
+    },
+    {
+      "subject": "George Santayana",
+      "object": "novelist"
+    },
+    {
+      "subject": "Leonard Wood",
+      "object": "politician"
+    },
+    {
+      "subject": "Herb Greene",
+      "object": "photographer"
+    },
+    {
+      "subject": "Isabel Bassett",
+      "object": "politician"
+    },
+    {
+      "subject": "Sean Nelson",
+      "object": "journalist"
+    },
+    {
+      "subject": "Akira Emoto",
+      "object": "actor"
+    },
+    {
+      "subject": "Kether Donohue",
+      "object": "actor"
+    },
+    {
+      "subject": "Frederick W. Seward",
+      "object": "politician"
+    },
+    {
+      "subject": "John Koethe",
+      "object": "poet"
+    },
+    {
+      "subject": "Stanley Lebowsky",
+      "object": "composer"
+    },
+    {
+      "subject": "Peter Early",
+      "object": "politician"
+    },
+    {
+      "subject": "Raimundo Pereira",
+      "object": "politician"
+    },
+    {
+      "subject": "Carl Herold",
+      "object": "politician"
+    },
+    {
+      "subject": "Jinpachi Nezu",
+      "object": "actor"
+    },
+    {
+      "subject": "Erin Murphy",
+      "object": "actor"
+    },
+    {
+      "subject": "David Crockett",
+      "object": "politician"
+    },
+    {
+      "subject": "Joel Barlow",
+      "object": "poet"
+    },
+    {
+      "subject": "Noon Meem Danish",
+      "object": "poet"
+    },
+    {
+      "subject": "Biagio Marini",
+      "object": "composer"
+    },
+    {
+      "subject": "Haim Corfu",
+      "object": "politician"
+    },
+    {
+      "subject": "Ron Rash",
+      "object": "poet"
+    },
+    {
+      "subject": "Kamaal Khan",
+      "object": "actor"
+    },
+    {
+      "subject": "Georgy Lvov",
+      "object": "politician"
+    },
+    {
+      "subject": "Lawrence Scott",
+      "object": "novelist"
+    },
+    {
+      "subject": "Heinz Salfner",
+      "object": "actor"
+    },
+    {
+      "subject": "Jacobo Zabludovsky",
+      "object": "journalist"
+    },
+    {
+      "subject": "Ian Hanomansing",
+      "object": "journalist"
+    },
+    {
+      "subject": "Giovanni Battista Guarini",
+      "object": "poet"
+    },
+    {
+      "subject": "Nikolai Myaskovsky",
+      "object": "composer"
+    },
+    {
+      "subject": "Agostinho Neto",
+      "object": "poet"
+    },
+    {
+      "subject": "Yoo So-young",
+      "object": "actor"
+    },
+    {
+      "subject": "Anna Neagle",
+      "object": "actor"
+    },
+    {
+      "subject": "Benedict Calvert, 4th Baron Baltimore",
+      "object": "politician"
+    },
+    {
+      "subject": "Maxine Miller",
+      "object": "actor"
+    },
+    {
+      "subject": "Gustave Kahn",
+      "object": "poet"
+    },
+    {
+      "subject": "John Clayton Allen",
+      "object": "politician"
+    },
+    {
+      "subject": "Christiane Noll",
+      "object": "actor"
+    },
+    {
+      "subject": "Herbert Romulus O'Conor",
+      "object": "lawyer"
+    },
+    {
+      "subject": "Ron Grainer",
+      "object": "composer"
+    },
+    {
+      "subject": "Karen Gillan",
+      "object": "actor"
+    },
+    {
+      "subject": "Paul Hedqvist",
+      "object": "architect"
+    },
+    {
+      "subject": "Anna Louisa Karsch",
+      "object": "poet"
+    },
+    {
+      "subject": "Gianfranco Terenzi",
+      "object": "politician"
+    },
+    {
+      "subject": "Peter Macdissi",
+      "object": "actor"
+    },
+    {
+      "subject": "Erika Toda",
+      "object": "actor"
+    },
+    {
+      "subject": "Michael William Balfe",
+      "object": "composer"
+    },
+    {
+      "subject": "Roger Bowen",
+      "object": "actor"
+    },
+    {
+      "subject": "Rodolfo Gambini",
+      "object": "physicist"
+    },
+    {
+      "subject": "Takuya \u014cnishi",
+      "object": "astronaut"
+    },
+    {
+      "subject": "Fritzi Brunette",
+      "object": "actor"
+    },
+    {
+      "subject": "Giovanni Maria Nanino",
+      "object": "composer"
+    },
+    {
+      "subject": "Aristotle",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Anders Fogh Rasmussen",
+      "object": "politician"
+    },
+    {
+      "subject": "William Bowen Rowlands",
+      "object": "politician"
+    },
+    {
+      "subject": "James Craig Annan",
+      "object": "photographer"
+    },
+    {
+      "subject": "Teala Dunn",
+      "object": "actor"
+    },
+    {
+      "subject": "William Pember Reeves",
+      "object": "politician"
+    },
+    {
+      "subject": "Shawn Fanning",
+      "object": "programmer"
+    },
+    {
+      "subject": "Bernard Vonnegut",
+      "object": "chemist"
+    },
+    {
+      "subject": "Jason Paige",
+      "object": "actor"
+    },
+    {
+      "subject": "Simon Gosejohann",
+      "object": "actor"
+    },
+    {
+      "subject": "Naomi Shihab Nye",
+      "object": "poet"
+    },
+    {
+      "subject": "Nick Nolte",
+      "object": "actor"
+    },
+    {
+      "subject": "Cledwyn Hughes, Baron Cledwyn of Penrhos",
+      "object": "politician"
+    },
+    {
+      "subject": "David Scarboro",
+      "object": "actor"
+    },
+    {
+      "subject": "John Adams Whipple",
+      "object": "photographer"
+    },
+    {
+      "subject": "Mayra Alejandra",
+      "object": "actor"
+    },
+    {
+      "subject": "Michel Corrette",
+      "object": "composer"
+    },
+    {
+      "subject": "Ctesias",
+      "object": "physician"
+    },
+    {
+      "subject": "Andrei Bely",
+      "object": "poet"
+    },
+    {
+      "subject": "Walter Dinsdale",
+      "object": "politician"
+    },
+    {
+      "subject": "John Boyle O'Reilly",
+      "object": "poet"
+    },
+    {
+      "subject": "Lucha Villa",
+      "object": "actor"
+    },
+    {
+      "subject": "Barry Sobel",
+      "object": "actor"
+    },
+    {
+      "subject": "Matthew Sharpe",
+      "object": "novelist"
+    },
+    {
+      "subject": "Cigoli",
+      "object": "architect"
+    },
+    {
+      "subject": "Maynard Sonntag",
+      "object": "politician"
+    },
+    {
+      "subject": "Humberto Lay",
+      "object": "politician"
+    },
+    {
+      "subject": "Paruyr Sevak",
+      "object": "poet"
+    },
+    {
+      "subject": "Robin Padilla",
+      "object": "actor"
+    },
+    {
+      "subject": "Grace Chan",
+      "object": "actor"
+    },
+    {
+      "subject": "Tracey Ross",
+      "object": "actor"
+    },
+    {
+      "subject": "Howard Sounes",
+      "object": "journalist"
+    },
+    {
+      "subject": "Ellen Dubin",
+      "object": "actor"
+    },
+    {
+      "subject": "Lawrence Hargrave",
+      "object": "astronomer"
+    },
+    {
+      "subject": "Agnes Miegel",
+      "object": "journalist"
+    },
+    {
+      "subject": "Konrad Ekhof",
+      "object": "actor"
+    },
+    {
+      "subject": "Yanis Varoufakis",
+      "object": "economist"
+    },
+    {
+      "subject": "Dudley R. Herschbach",
+      "object": "chemist"
+    },
+    {
+      "subject": "Robert I. Soare",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Evan Bayh",
+      "object": "politician"
+    },
+    {
+      "subject": "Henry Maudsley",
+      "object": "psychiatrist"
+    },
+    {
+      "subject": "Georgina Leonidas",
+      "object": "actor"
+    },
+    {
+      "subject": "Geoffrey Lehmann",
+      "object": "poet"
+    },
+    {
+      "subject": "Mikey North",
+      "object": "actor"
+    },
+    {
+      "subject": "Daiki Arioka",
+      "object": "actor"
+    },
+    {
+      "subject": "Kim Sun-a",
+      "object": "actor"
+    },
+    {
+      "subject": "David Weigel",
+      "object": "journalist"
+    },
+    {
+      "subject": "Polina Gagarina",
+      "object": "actor"
+    },
+    {
+      "subject": "Anu Choudhury",
+      "object": "actor"
+    },
+    {
+      "subject": "William S. Hart",
+      "object": "actor"
+    },
+    {
+      "subject": "Vanessa Ray",
+      "object": "actor"
+    },
+    {
+      "subject": "Henri Dutrochet",
+      "object": "physician"
+    },
+    {
+      "subject": "Edmond Panariti",
+      "object": "politician"
+    },
+    {
+      "subject": "Barbara Farrell Vucanovich",
+      "object": "politician"
+    },
+    {
+      "subject": "George Bennard",
+      "object": "composer"
+    },
+    {
+      "subject": "Jessica Harper",
+      "object": "actor"
+    },
+    {
+      "subject": "Carolyn Conwell",
+      "object": "actor"
+    },
+    {
+      "subject": "Theodor Rosetti",
+      "object": "politician"
+    },
+    {
+      "subject": "Daniel D. Tompkins",
+      "object": "politician"
+    },
+    {
+      "subject": "Giacinto Andrea Cicognini",
+      "object": "poet"
+    },
+    {
+      "subject": "Maurice Duverger",
+      "object": "politician"
+    },
+    {
+      "subject": "Philip Warren Anderson",
+      "object": "physicist"
+    },
+    {
+      "subject": "Joseph Shivers",
+      "object": "chemist"
+    },
+    {
+      "subject": "J. B. Priestley",
+      "object": "novelist"
+    },
+    {
+      "subject": "Alberto Prebisch",
+      "object": "architect"
+    },
+    {
+      "subject": "Graham Linehan",
+      "object": "actor"
+    },
+    {
+      "subject": "Paul Hellyer",
+      "object": "politician"
+    },
+    {
+      "subject": "Bob Uecker",
+      "object": "actor"
+    },
+    {
+      "subject": "Conchita Montenegro",
+      "object": "actor"
+    },
+    {
+      "subject": "Shlomo Hillel",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Mary Carlisle",
+      "object": "actor"
+    },
+    {
+      "subject": "Anne Simpson",
+      "object": "novelist"
+    },
+    {
+      "subject": "Herbert Leon",
+      "object": "politician"
+    },
+    {
+      "subject": "William Jennings Bryan",
+      "object": "politician"
+    },
+    {
+      "subject": "Pearse Doherty",
+      "object": "politician"
+    },
+    {
+      "subject": "Yitzhak Levy",
+      "object": "rabbi"
+    },
+    {
+      "subject": "Gargi Roychowdhury",
+      "object": "actor"
+    },
+    {
+      "subject": "Juliet Ibrahim",
+      "object": "actor"
+    },
+    {
+      "subject": "Haruko Sugimura",
+      "object": "actor"
+    },
+    {
+      "subject": "Henny Moan",
+      "object": "actor"
+    },
+    {
+      "subject": "Moses ben Joshua",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Carlo Lizzani",
+      "object": "actor"
+    },
+    {
+      "subject": "Guy Doleman",
+      "object": "actor"
+    },
+    {
+      "subject": "Alfonso Fontanelli",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Tariq Saleh",
+      "object": "journalist"
+    },
+    {
+      "subject": "Charles H. Goode",
+      "object": "politician"
+    },
+    {
+      "subject": "Mia Freedman",
+      "object": "journalist"
+    },
+    {
+      "subject": "John Rentoul",
+      "object": "journalist"
+    },
+    {
+      "subject": "Sir William Hart Dyke, 7th Baronet",
+      "object": "politician"
+    },
+    {
+      "subject": "Thomas W. Knox",
+      "object": "journalist"
+    },
+    {
+      "subject": "Nureddin Pasha",
+      "object": "politician"
+    },
+    {
+      "subject": "Heath Ledger",
+      "object": "actor"
+    },
+    {
+      "subject": "Virginia Wetherell",
+      "object": "actor"
+    },
+    {
+      "subject": "Mori Arinori",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Pirkka-Pekka Petelius",
+      "object": "actor"
+    },
+    {
+      "subject": "Marti Emerald",
+      "object": "journalist"
+    },
+    {
+      "subject": "Carla Camurati",
+      "object": "actor"
+    },
+    {
+      "subject": "Rob Owen",
+      "object": "journalist"
+    },
+    {
+      "subject": "John McCririck",
+      "object": "journalist"
+    },
+    {
+      "subject": "Jean Henri van Swinden",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Sekhar Menon",
+      "object": "actor"
+    },
+    {
+      "subject": "Sue Lyon",
+      "object": "actor"
+    },
+    {
+      "subject": "James E. Ferguson",
+      "object": "politician"
+    },
+    {
+      "subject": "Henry Jackman",
+      "object": "composer"
+    },
+    {
+      "subject": "Varsha Bhosle",
+      "object": "journalist"
+    },
+    {
+      "subject": "Margarete Schlegel",
+      "object": "actor"
+    },
+    {
+      "subject": "Hans Driesch",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Lucio Fulci",
+      "object": "actor"
+    },
+    {
+      "subject": "Nolan Gerard Funk",
+      "object": "actor"
+    },
+    {
+      "subject": "Hermann Hagedorn",
+      "object": "poet"
+    },
+    {
+      "subject": "Leopold Gratz",
+      "object": "politician"
+    },
+    {
+      "subject": "Michael Penn",
+      "object": "actor"
+    },
+    {
+      "subject": "Jacobo Ficher",
+      "object": "composer"
+    },
+    {
+      "subject": "Murad Velshi",
+      "object": "politician"
+    },
+    {
+      "subject": "Francis Stuart",
+      "object": "novelist"
+    },
+    {
+      "subject": "Grigore Gafencu",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Hamdeen Sabahi",
+      "object": "politician"
+    },
+    {
+      "subject": "Harlan Carey Brewster",
+      "object": "politician"
+    },
+    {
+      "subject": "Jef Gaitan",
+      "object": "actor"
+    },
+    {
+      "subject": "Augusto Boal",
+      "object": "politician"
+    },
+    {
+      "subject": "Roger Pigaut",
+      "object": "actor"
+    },
+    {
+      "subject": "Emmanuel Chabrier",
+      "object": "composer"
+    },
+    {
+      "subject": "Anya Lahiri",
+      "object": "actor"
+    },
+    {
+      "subject": "Leila Schneps",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Mullanezhi",
+      "object": "actor"
+    },
+    {
+      "subject": "Bertold Hummel",
+      "object": "composer"
+    },
+    {
+      "subject": "Bombay Jayashri",
+      "object": "composer"
+    },
+    {
+      "subject": "Beth Ostrosky Stern",
+      "object": "actor"
+    },
+    {
+      "subject": "Michelangelo",
+      "object": "poet"
+    },
+    {
+      "subject": "Reginald Fox",
+      "object": "actor"
+    },
+    {
+      "subject": "Geraldine McNulty",
+      "object": "actor"
+    },
+    {
+      "subject": "Adelaide Crapsey",
+      "object": "poet"
+    },
+    {
+      "subject": "Clive Granger",
+      "object": "economist"
+    },
+    {
+      "subject": "Patricia Idlette",
+      "object": "actor"
+    },
+    {
+      "subject": "Anne Watanabe",
+      "object": "actor"
+    },
+    {
+      "subject": "Rory O'Hanlon",
+      "object": "politician"
+    },
+    {
+      "subject": "Ervin Marton",
+      "object": "photographer"
+    },
+    {
+      "subject": "Madhuri Dixit",
+      "object": "actor"
+    },
+    {
+      "subject": "Noriyuki Higashiyama",
+      "object": "actor"
+    },
+    {
+      "subject": "Viktor Uspaskich",
+      "object": "politician"
+    },
+    {
+      "subject": "Alisa Reyes",
+      "object": "actor"
+    },
+    {
+      "subject": "Tom Terriss",
+      "object": "actor"
+    },
+    {
+      "subject": "Femi Jacobs",
+      "object": "actor"
+    },
+    {
+      "subject": "Maurice Nicoll",
+      "object": "psychiatrist"
+    },
+    {
+      "subject": "Ruggero Settimo",
+      "object": "politician"
+    },
+    {
+      "subject": "Louis Racine",
+      "object": "poet"
+    },
+    {
+      "subject": "Michael Healy-Rae",
+      "object": "politician"
+    },
+    {
+      "subject": "Tony Pua",
+      "object": "politician"
+    },
+    {
+      "subject": "Lou Reed",
+      "object": "photographer"
+    },
+    {
+      "subject": "Whitney Houston",
+      "object": "composer"
+    },
+    {
+      "subject": "Mat Fraser",
+      "object": "actor"
+    },
+    {
+      "subject": "Kazys Lozoraitis",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Emily Barton",
+      "object": "novelist"
+    },
+    {
+      "subject": "Nida Blanca",
+      "object": "actor"
+    },
+    {
+      "subject": "Edward Frankland",
+      "object": "chemist"
+    },
+    {
+      "subject": "Dr. Rajasekhar",
+      "object": "actor"
+    },
+    {
+      "subject": "Chris Brochu",
+      "object": "actor"
+    },
+    {
+      "subject": "Sivaramakrishna Chandrasekhar",
+      "object": "physicist"
+    },
+    {
+      "subject": "George Washington Julian",
+      "object": "politician"
+    },
+    {
+      "subject": "Cheryl Tiegs",
+      "object": "actor"
+    },
+    {
+      "subject": "Shungicu Uchida",
+      "object": "novelist"
+    },
+    {
+      "subject": "Ian Khama",
+      "object": "politician"
+    },
+    {
+      "subject": "Charles Kaiser",
+      "object": "journalist"
+    },
+    {
+      "subject": "Rannvijay Singh",
+      "object": "actor"
+    },
+    {
+      "subject": "Felix Salmon",
+      "object": "journalist"
+    },
+    {
+      "subject": "Adrian Lewis Morgan",
+      "object": "actor"
+    },
+    {
+      "subject": "Jonathan Kwitny",
+      "object": "journalist"
+    },
+    {
+      "subject": "Morris McGregor",
+      "object": "politician"
+    },
+    {
+      "subject": "Patricia Haines",
+      "object": "actor"
+    },
+    {
+      "subject": "Giorgio Tuinfort",
+      "object": "composer"
+    },
+    {
+      "subject": "Sarah Vandenbergh",
+      "object": "actor"
+    },
+    {
+      "subject": "Oswald Ottendorfer",
+      "object": "journalist"
+    },
+    {
+      "subject": "Gerald Kyd",
+      "object": "actor"
+    },
+    {
+      "subject": "Robert Rusler",
+      "object": "actor"
+    },
+    {
+      "subject": "Jack Huston",
+      "object": "actor"
+    },
+    {
+      "subject": "Aleksandr Solzhenitsyn",
+      "object": "poet"
+    },
+    {
+      "subject": "Jeanne Coyne",
+      "object": "actor"
+    },
+    {
+      "subject": "Tomomi Inada",
+      "object": "politician"
+    },
+    {
+      "subject": "Anton Walter",
+      "object": "composer"
+    },
+    {
+      "subject": "David McIlwraith",
+      "object": "actor"
+    },
+    {
+      "subject": "Thomas de Waal",
+      "object": "journalist"
+    },
+    {
+      "subject": "Jeremy Allen White",
+      "object": "actor"
+    },
+    {
+      "subject": "Benjamin Fondane",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Henry Brassey",
+      "object": "politician"
+    },
+    {
+      "subject": "Ignaz Paul Vital Troxler",
+      "object": "politician"
+    },
+    {
+      "subject": "Claudine Clark",
+      "object": "composer"
+    },
+    {
+      "subject": "Karl Taylor Compton",
+      "object": "physicist"
+    },
+    {
+      "subject": "Jean-Joseph Rab\u00e9arivelo",
+      "object": "poet"
+    },
+    {
+      "subject": "Edward Braddon",
+      "object": "politician"
+    },
+    {
+      "subject": "Amber Gurung",
+      "object": "composer"
+    },
+    {
+      "subject": "Desi Arnaz, Jr.",
+      "object": "actor"
+    },
+    {
+      "subject": "Guy Babylon",
+      "object": "composer"
+    },
+    {
+      "subject": "H. P. Lovecraft",
+      "object": "journalist"
+    },
+    {
+      "subject": "Janet Jackson",
+      "object": "model"
+    },
+    {
+      "subject": "John Fortune",
+      "object": "comedian"
+    },
+    {
+      "subject": "Jean-Louis Tixier-Vignancour",
+      "object": "politician"
+    },
+    {
+      "subject": "Abrar Alvi",
+      "object": "actor"
+    },
+    {
+      "subject": "Danielle Winits",
+      "object": "actor"
+    },
+    {
+      "subject": "Leyla Saz",
+      "object": "poet"
+    },
+    {
+      "subject": "Lupita Tovar",
+      "object": "actor"
+    },
+    {
+      "subject": "Andrea Byrne",
+      "object": "journalist"
+    },
+    {
+      "subject": "Peret",
+      "object": "composer"
+    },
+    {
+      "subject": "Boris Tchaikovsky",
+      "object": "composer"
+    },
+    {
+      "subject": "Marion Post Wolcott",
+      "object": "photographer"
+    },
+    {
+      "subject": "Alexander Wittek",
+      "object": "architect"
+    },
+    {
+      "subject": "Montserrat Lombard",
+      "object": "actor"
+    },
+    {
+      "subject": "Claude Antoine Dacosta",
+      "object": "politician"
+    },
+    {
+      "subject": "Nikolaj Frederik Severin Grundtvig",
+      "object": "poet"
+    },
+    {
+      "subject": "Rick Genest",
+      "object": "actor"
+    },
+    {
+      "subject": "Raymond Radiguet",
+      "object": "novelist"
+    },
+    {
+      "subject": "Francis Conyngham, 2nd Marquess Conyngham",
+      "object": "politician"
+    },
+    {
+      "subject": "Jourdan Miller",
+      "object": "model"
+    },
+    {
+      "subject": "Melinda Kinnaman",
+      "object": "actor"
+    },
+    {
+      "subject": "Bobby Andrews",
+      "object": "actor"
+    },
+    {
+      "subject": "Mitr Chaibancha",
+      "object": "actor"
+    },
+    {
+      "subject": "Carlo Rosselli",
+      "object": "journalist"
+    },
+    {
+      "subject": "Charles James Mathews",
+      "object": "actor"
+    },
+    {
+      "subject": "Karl Hampton",
+      "object": "politician"
+    },
+    {
+      "subject": "Kim Kye-gwan",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Sabahattin Ali",
+      "object": "novelist"
+    },
+    {
+      "subject": "Moammar Rana",
+      "object": "actor"
+    },
+    {
+      "subject": "Steven Mercurio",
+      "object": "composer"
+    },
+    {
+      "subject": "Audrey Wise",
+      "object": "politician"
+    },
+    {
+      "subject": "Christian Darnton",
+      "object": "composer"
+    },
+    {
+      "subject": "Hjalmar Welhaven",
+      "object": "architect"
+    },
+    {
+      "subject": "William Averell Harriman",
+      "object": "politician"
+    },
+    {
+      "subject": "Shruti Sharma",
+      "object": "actor"
+    },
+    {
+      "subject": "Michie Mee",
+      "object": "actor"
+    },
+    {
+      "subject": "Don Hannah",
+      "object": "novelist"
+    },
+    {
+      "subject": "Annie Proulx",
+      "object": "novelist"
+    },
+    {
+      "subject": "Martha Nussbaum",
+      "object": "philosopher"
+    },
+    {
+      "subject": "John Crewe, 1st Baron Crewe",
+      "object": "politician"
+    },
+    {
+      "subject": "Rob Gifford",
+      "object": "journalist"
+    },
+    {
+      "subject": "A. Edward Sutherland",
+      "object": "actor"
+    },
+    {
+      "subject": "Marpessa Dawn",
+      "object": "actor"
+    },
+    {
+      "subject": "Crawford Williamson Long",
+      "object": "surgeon"
+    },
+    {
+      "subject": "Kikunae Ikeda",
+      "object": "chemist"
+    },
+    {
+      "subject": "Oskar Lafontaine",
+      "object": "politician"
+    },
+    {
+      "subject": "Nicolle Dickson",
+      "object": "actor"
+    },
+    {
+      "subject": "Joe Malloori",
+      "object": "actor"
+    },
+    {
+      "subject": "Philip Ahn",
+      "object": "actor"
+    },
+    {
+      "subject": "Huo Guang",
+      "object": "politician"
+    },
+    {
+      "subject": "Michael Dorn",
+      "object": "actor"
+    },
+    {
+      "subject": "Ennio Girolami",
+      "object": "actor"
+    },
+    {
+      "subject": "Jung Ryeo-won",
+      "object": "actor"
+    },
+    {
+      "subject": "Emad Hamdy",
+      "object": "actor"
+    },
+    {
+      "subject": "Richard Brauer",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Dhanush",
+      "object": "actor"
+    },
+    {
+      "subject": "Ken Murray",
+      "object": "actor"
+    },
+    {
+      "subject": "Peter Jason",
+      "object": "actor"
+    },
+    {
+      "subject": "Ryu Hyeon-kyeong",
+      "object": "actor"
+    },
+    {
+      "subject": "Wilhelm Marx",
+      "object": "politician"
+    },
+    {
+      "subject": "Colleen Zenk Pinter",
+      "object": "actor"
+    },
+    {
+      "subject": "Maheswari",
+      "object": "actor"
+    },
+    {
+      "subject": "Egon Brunswik",
+      "object": "psychologist"
+    },
+    {
+      "subject": "Hauk Aabel",
+      "object": "actor"
+    },
+    {
+      "subject": "Charles Gwathmey",
+      "object": "architect"
+    },
+    {
+      "subject": "Steve Hughes",
+      "object": "comedian"
+    },
+    {
+      "subject": "Ciara",
+      "object": "actor"
+    },
+    {
+      "subject": "Roberto Gerhard",
+      "object": "composer"
+    },
+    {
+      "subject": "Karle Warren",
+      "object": "actor"
+    },
+    {
+      "subject": "Miltos Sachtouris",
+      "object": "poet"
+    },
+    {
+      "subject": "Reza Baraheni",
+      "object": "novelist"
+    },
+    {
+      "subject": "Janet Gunn",
+      "object": "actor"
+    },
+    {
+      "subject": "Rosie Malek-Yonan",
+      "object": "actor"
+    },
+    {
+      "subject": "James Reese Europe",
+      "object": "composer"
+    },
+    {
+      "subject": "Thomas Troelsen",
+      "object": "composer"
+    },
+    {
+      "subject": "Nuri as-Said",
+      "object": "politician"
+    },
+    {
+      "subject": "Isidore de Lara",
+      "object": "composer"
+    },
+    {
+      "subject": "Paul Kehoe",
+      "object": "politician"
+    },
+    {
+      "subject": "Gedeon Burkhard",
+      "object": "actor"
+    },
+    {
+      "subject": "Aldo Fiorelli",
+      "object": "actor"
+    },
+    {
+      "subject": "Craig Charles",
+      "object": "comedian"
+    },
+    {
+      "subject": "Ernst von Possart",
+      "object": "actor"
+    },
+    {
+      "subject": "Anthony Cannella",
+      "object": "politician"
+    },
+    {
+      "subject": "Rajakokila",
+      "object": "actor"
+    },
+    {
+      "subject": "Walter Hines Page",
+      "object": "journalist"
+    },
+    {
+      "subject": "Vic Sotto",
+      "object": "comedian"
+    },
+    {
+      "subject": "Harshika Poonacha",
+      "object": "actor"
+    },
+    {
+      "subject": "Yakubu Gowon",
+      "object": "politician"
+    },
+    {
+      "subject": "Dude Harlino",
+      "object": "actor"
+    },
+    {
+      "subject": "Lillian Leighton",
+      "object": "actor"
+    },
+    {
+      "subject": "Helen Lederer",
+      "object": "comedian"
+    },
+    {
+      "subject": "Frank Knox",
+      "object": "politician"
+    },
+    {
+      "subject": "Hiroshi Hase",
+      "object": "politician"
+    },
+    {
+      "subject": "Kinuyo Tanaka",
+      "object": "actor"
+    },
+    {
+      "subject": "Dimitris Horn",
+      "object": "actor"
+    },
+    {
+      "subject": "Charmaine Sheh",
+      "object": "actor"
+    },
+    {
+      "subject": "Steven Hartley",
+      "object": "actor"
+    },
+    {
+      "subject": "Anwan Glover",
+      "object": "actor"
+    },
+    {
+      "subject": "Louis Moreau Gottschalk",
+      "object": "composer"
+    },
+    {
+      "subject": "Diablo Cody",
+      "object": "journalist"
+    },
+    {
+      "subject": "Suzanne Roberts",
+      "object": "photographer"
+    },
+    {
+      "subject": "Akshay Kumar Boral",
+      "object": "poet"
+    },
+    {
+      "subject": "Valentino Bucchi",
+      "object": "composer"
+    },
+    {
+      "subject": "Lynne Carol",
+      "object": "actor"
+    },
+    {
+      "subject": "Joseph Evans Sperry",
+      "object": "architect"
+    },
+    {
+      "subject": "Bec Hewitt",
+      "object": "actor"
+    },
+    {
+      "subject": "Linda Marlowe",
+      "object": "actor"
+    },
+    {
+      "subject": "Laurent Lafforgue",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Michael Kimball",
+      "object": "novelist"
+    },
+    {
+      "subject": "Daniel Showalter",
+      "object": "politician"
+    },
+    {
+      "subject": "George Pitt, 1st Baron Rivers",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Antonio Negri",
+      "object": "economist"
+    },
+    {
+      "subject": "Philoxenus of Cythera",
+      "object": "poet"
+    },
+    {
+      "subject": "Berry Berenson",
+      "object": "actor"
+    },
+    {
+      "subject": "Peter Bergman",
+      "object": "actor"
+    },
+    {
+      "subject": "Steve Edge",
+      "object": "actor"
+    },
+    {
+      "subject": "Josephine Mitchell",
+      "object": "actor"
+    },
+    {
+      "subject": "Anton Fier",
+      "object": "composer"
+    },
+    {
+      "subject": "Christopher Guest",
+      "object": "comedian"
+    },
+    {
+      "subject": "Stephen Colbert",
+      "object": "journalist"
+    },
+    {
+      "subject": "Jancee Dunn",
+      "object": "journalist"
+    },
+    {
+      "subject": "Barbara Leigh",
+      "object": "actor"
+    },
+    {
+      "subject": "Karl-Theodor zu Guttenberg",
+      "object": "politician"
+    },
+    {
+      "subject": "Habakkuk",
+      "object": "prophet"
+    },
+    {
+      "subject": "Stafford Cripps",
+      "object": "politician"
+    },
+    {
+      "subject": "Davey Lee",
+      "object": "actor"
+    },
+    {
+      "subject": "Ulf Lundell",
+      "object": "composer"
+    },
+    {
+      "subject": "Willem de Sitter",
+      "object": "physicist"
+    },
+    {
+      "subject": "Kevin Norton",
+      "object": "composer"
+    },
+    {
+      "subject": "Hilary Putnam",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Beatrice Hutton",
+      "object": "architect"
+    },
+    {
+      "subject": "David L. Lawrence",
+      "object": "politician"
+    },
+    {
+      "subject": "Robert C. Frasure",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Suzanne Virdee",
+      "object": "journalist"
+    },
+    {
+      "subject": "Lee Hyori",
+      "object": "actor"
+    },
+    {
+      "subject": "Martin Burrell",
+      "object": "politician"
+    },
+    {
+      "subject": "Joseph Cowen",
+      "object": "politician"
+    },
+    {
+      "subject": "Joyce Steele",
+      "object": "politician"
+    },
+    {
+      "subject": "Georges Aperghis",
+      "object": "composer"
+    },
+    {
+      "subject": "Robert d'Escourt Atkinson",
+      "object": "astronomer"
+    },
+    {
+      "subject": "Edward Burtynsky",
+      "object": "photographer"
+    },
+    {
+      "subject": "Hugo Stiglitz",
+      "object": "actor"
+    },
+    {
+      "subject": "Philip Wharton, 4th Baron Wharton",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Peter McCardle",
+      "object": "politician"
+    },
+    {
+      "subject": "Jan Tennant",
+      "object": "journalist"
+    },
+    {
+      "subject": "Jeff Beal",
+      "object": "composer"
+    },
+    {
+      "subject": "Susannah Harker",
+      "object": "actor"
+    },
+    {
+      "subject": "Michel Houellebecq",
+      "object": "poet"
+    },
+    {
+      "subject": "Wan Azizah Wan Ismail",
+      "object": "politician"
+    },
+    {
+      "subject": "Samuel Fessenden",
+      "object": "politician"
+    },
+    {
+      "subject": "Dave Darling",
+      "object": "composer"
+    },
+    {
+      "subject": "Li Zhaoxing",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Moshe Levinger",
+      "object": "rabbi"
+    },
+    {
+      "subject": "Jay Mohr",
+      "object": "actor"
+    },
+    {
+      "subject": "Michael McKell",
+      "object": "actor"
+    },
+    {
+      "subject": "Jim Grimsley",
+      "object": "novelist"
+    },
+    {
+      "subject": "John Danvers",
+      "object": "politician"
+    },
+    {
+      "subject": "Sadhu Kokila",
+      "object": "actor"
+    },
+    {
+      "subject": "Wang Lequan",
+      "object": "politician"
+    },
+    {
+      "subject": "Ann Bell",
+      "object": "actor"
+    },
+    {
+      "subject": "Phong Bui",
+      "object": "curator"
+    },
+    {
+      "subject": "Pallavi Kulkarni",
+      "object": "actor"
+    },
+    {
+      "subject": "Friedrich Akel",
+      "object": "politician"
+    },
+    {
+      "subject": "Paul Mercurio",
+      "object": "actor"
+    },
+    {
+      "subject": "Taku Iwasaki",
+      "object": "composer"
+    },
+    {
+      "subject": "Robin Phillips",
+      "object": "actor"
+    },
+    {
+      "subject": "Carmelita Geraghty",
+      "object": "actor"
+    },
+    {
+      "subject": "Luisella Boni",
+      "object": "actor"
+    },
+    {
+      "subject": "Paul McGann",
+      "object": "actor"
+    },
+    {
+      "subject": "Dipankar Bhattacharya",
+      "object": "politician"
+    },
+    {
+      "subject": "Vauro Senesi",
+      "object": "journalist"
+    },
+    {
+      "subject": "Carlo Allioni",
+      "object": "physician"
+    },
+    {
+      "subject": "Samuel Medary",
+      "object": "journalist"
+    },
+    {
+      "subject": "Gunnar Birkerts",
+      "object": "architect"
+    },
+    {
+      "subject": "Giannina Braschi",
+      "object": "poet"
+    },
+    {
+      "subject": "Kathleen Nolan",
+      "object": "actor"
+    },
+    {
+      "subject": "Clancy Cooper",
+      "object": "actor"
+    },
+    {
+      "subject": "Boethius",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Saskia Mulder",
+      "object": "actor"
+    },
+    {
+      "subject": "Chris Barrie",
+      "object": "comedian"
+    },
+    {
+      "subject": "Muhammad Iqbal",
+      "object": "poet"
+    },
+    {
+      "subject": "Walter Noll",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Vondell Darr",
+      "object": "actor"
+    },
+    {
+      "subject": "Edward Dodsley Barrow",
+      "object": "politician"
+    },
+    {
+      "subject": "Elfriede Jelinek",
+      "object": "poet"
+    },
+    {
+      "subject": "Andrew Salkey",
+      "object": "poet"
+    },
+    {
+      "subject": "Jack Boucher",
+      "object": "photographer"
+    },
+    {
+      "subject": "Phil Coulter",
+      "object": "composer"
+    },
+    {
+      "subject": "Nicolai Abildgaard",
+      "object": "architect"
+    },
+    {
+      "subject": "Andrew Oliver",
+      "object": "politician"
+    },
+    {
+      "subject": "Sy Smith",
+      "object": "actor"
+    },
+    {
+      "subject": "Bellina Logan",
+      "object": "actor"
+    },
+    {
+      "subject": "Jude Wanniski",
+      "object": "journalist"
+    },
+    {
+      "subject": "Bruce Mahler",
+      "object": "actor"
+    },
+    {
+      "subject": "Horatio Nelson Lay",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Franco Sacchetti",
+      "object": "poet"
+    },
+    {
+      "subject": "Pip Carter",
+      "object": "actor"
+    },
+    {
+      "subject": "Sabina Spielrein",
+      "object": "psychologist"
+    },
+    {
+      "subject": "Choi Myeong-gil",
+      "object": "actor"
+    },
+    {
+      "subject": "Don Durant",
+      "object": "actor"
+    },
+    {
+      "subject": "Wang Yaping",
+      "object": "astronaut"
+    },
+    {
+      "subject": "James Whitney Dunn",
+      "object": "politician"
+    },
+    {
+      "subject": "Martin Klebba",
+      "object": "actor"
+    },
+    {
+      "subject": "Johann Wolfgang von Goethe",
+      "object": "politician"
+    },
+    {
+      "subject": "Genki Sudo",
+      "object": "actor"
+    },
+    {
+      "subject": "Edward Gregson",
+      "object": "composer"
+    },
+    {
+      "subject": "Julien Carette",
+      "object": "actor"
+    },
+    {
+      "subject": "Maliha Lodhi",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Justin I",
+      "object": "politician"
+    },
+    {
+      "subject": "Boris Barnet",
+      "object": "actor"
+    },
+    {
+      "subject": "John Munch",
+      "object": "detective"
+    },
+    {
+      "subject": "Ashok Mitra",
+      "object": "economist"
+    },
+    {
+      "subject": "William Burnside",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Linda Ulvaeus",
+      "object": "actor"
+    },
+    {
+      "subject": "Tom Leopold",
+      "object": "novelist"
+    },
+    {
+      "subject": "Kurt Kreuger",
+      "object": "actor"
+    },
+    {
+      "subject": "Beata Tyszkiewicz",
+      "object": "actor"
+    },
+    {
+      "subject": "Margherita Missoni",
+      "object": "actor"
+    },
+    {
+      "subject": "Drew Droege",
+      "object": "actor"
+    },
+    {
+      "subject": "Mircea Florian",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Wilhelm Magnus",
+      "object": "mathematician"
+    },
+    {
+      "subject": "James Elroy Flecker",
+      "object": "poet"
+    },
+    {
+      "subject": "Mark Weiss",
+      "object": "photographer"
+    },
+    {
+      "subject": "George Osborne",
+      "object": "politician"
+    },
+    {
+      "subject": "Antoine Augustin Cournot",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Kazimierz Kuratowski",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Lim Chin Siong",
+      "object": "politician"
+    },
+    {
+      "subject": "Nikki Giovanni",
+      "object": "poet"
+    },
+    {
+      "subject": "Maurice Joly",
+      "object": "lawyer"
+    },
+    {
+      "subject": "Rie Miyazawa",
+      "object": "model"
+    },
+    {
+      "subject": "Eric Etebari",
+      "object": "actor"
+    },
+    {
+      "subject": "Santiago Segura",
+      "object": "actor"
+    },
+    {
+      "subject": "Rudolf Lipschitz",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Horatio Bottomley",
+      "object": "politician"
+    },
+    {
+      "subject": "Lupus of Sens",
+      "object": "priest"
+    },
+    {
+      "subject": "Nadja Tiller",
+      "object": "actor"
+    },
+    {
+      "subject": "Frank Comerford Walker",
+      "object": "politician"
+    },
+    {
+      "subject": "Bob Shacochis",
+      "object": "novelist"
+    },
+    {
+      "subject": "James Arness",
+      "object": "actor"
+    },
+    {
+      "subject": "Sahir Ali Bagga",
+      "object": "composer"
+    },
+    {
+      "subject": "R. H. Bruce Lockhart",
+      "object": "journalist"
+    },
+    {
+      "subject": "Rita Bahuguna",
+      "object": "politician"
+    },
+    {
+      "subject": "Harald Gram",
+      "object": "politician"
+    },
+    {
+      "subject": "Lisa Nicole Carson",
+      "object": "actor"
+    },
+    {
+      "subject": "Hassan ibn Thabit",
+      "object": "poet"
+    },
+    {
+      "subject": "Torey Hayden",
+      "object": "psychologist"
+    },
+    {
+      "subject": "Henri Hauser",
+      "object": "economist"
+    },
+    {
+      "subject": "Claude Louis Hector de Villars",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Constand Viljoen",
+      "object": "politician"
+    },
+    {
+      "subject": "Dhananjay Singh",
+      "object": "actor"
+    },
+    {
+      "subject": "Nao Takasugi",
+      "object": "politician"
+    },
+    {
+      "subject": "Alleppey Vincent",
+      "object": "actor"
+    },
+    {
+      "subject": "Arturo Jauretche",
+      "object": "politician"
+    },
+    {
+      "subject": "Ignazio Silone",
+      "object": "politician"
+    },
+    {
+      "subject": "Fifi D'Orsay",
+      "object": "actor"
+    },
+    {
+      "subject": "Yun Chi-ho",
+      "object": "politician"
+    },
+    {
+      "subject": "Adolf Dymsza",
+      "object": "actor"
+    },
+    {
+      "subject": "Bowie Lam",
+      "object": "actor"
+    },
+    {
+      "subject": "Samuel Hill-Wood",
+      "object": "politician"
+    },
+    {
+      "subject": "Ermanno Wolf-Ferrari",
+      "object": "composer"
+    },
+    {
+      "subject": "Lionel Rogg",
+      "object": "composer"
+    },
+    {
+      "subject": "Madeleine Peyroux",
+      "object": "composer"
+    },
+    {
+      "subject": "Eja",
+      "object": "actor"
+    },
+    {
+      "subject": "Simon Dallow",
+      "object": "journalist"
+    },
+    {
+      "subject": "Tom Verica",
+      "object": "actor"
+    },
+    {
+      "subject": "Ari Telch",
+      "object": "actor"
+    },
+    {
+      "subject": "Peter Florin",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Arun Kumar Ahuja",
+      "object": "actor"
+    },
+    {
+      "subject": "Colin Kenny",
+      "object": "actor"
+    },
+    {
+      "subject": "Five Star Krishna",
+      "object": "actor"
+    },
+    {
+      "subject": "Masato Wada",
+      "object": "actor"
+    },
+    {
+      "subject": "Mustafa Khalil",
+      "object": "politician"
+    },
+    {
+      "subject": "Corinne Luchaire",
+      "object": "actor"
+    },
+    {
+      "subject": "Alonzo Bodden",
+      "object": "actor"
+    },
+    {
+      "subject": "Kimika Yoshino",
+      "object": "actor"
+    },
+    {
+      "subject": "Cal Lampley",
+      "object": "composer"
+    },
+    {
+      "subject": "Dietrich Eckart",
+      "object": "politician"
+    },
+    {
+      "subject": "Alfred Francis Russell",
+      "object": "politician"
+    },
+    {
+      "subject": "Aruna Irani",
+      "object": "actor"
+    },
+    {
+      "subject": "Eoin Ryan, Jnr",
+      "object": "politician"
+    },
+    {
+      "subject": "Manuel Aznar Zubigaray",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Te Ata Fisher",
+      "object": "actor"
+    },
+    {
+      "subject": "Ben Joseph Green",
+      "object": "mathematician"
+    },
+    {
+      "subject": "Josefina Pla",
+      "object": "journalist"
+    },
+    {
+      "subject": "Suzanne Crouch",
+      "object": "politician"
+    },
+    {
+      "subject": "Jenny Powers",
+      "object": "actor"
+    },
+    {
+      "subject": "Michelan Sisti",
+      "object": "actor"
+    },
+    {
+      "subject": "Elmore Leonard",
+      "object": "novelist"
+    },
+    {
+      "subject": "Paul Abraham",
+      "object": "composer"
+    },
+    {
+      "subject": "Frits Helmuth",
+      "object": "actor"
+    },
+    {
+      "subject": "Callixtus II",
+      "object": "diplomat"
+    },
+    {
+      "subject": "Pierfrancesco Favino",
+      "object": "actor"
+    },
+    {
+      "subject": "Ann Cusack",
+      "object": "actor"
+    },
+    {
+      "subject": "Trond Kirkvaag",
+      "object": "actor"
+    },
+    {
+      "subject": "Max Volmer",
+      "object": "chemist"
+    },
+    {
+      "subject": "Jack Wild",
+      "object": "actor"
+    },
+    {
+      "subject": "Perrin Beatty",
+      "object": "politician"
+    },
+    {
+      "subject": "Carlo Porta",
+      "object": "poet"
+    },
+    {
+      "subject": "Dominic Dierkes",
+      "object": "actor"
+    },
+    {
+      "subject": "Joan Leslie",
+      "object": "actor"
+    },
+    {
+      "subject": "Ludvig Holberg",
+      "object": "philosopher"
+    },
+    {
+      "subject": "Subair",
+      "object": "actor"
+    }
+  ]
+}

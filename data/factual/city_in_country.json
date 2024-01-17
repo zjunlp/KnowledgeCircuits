@@ -1,0 +1,127 @@
+{
+    "name":"city in country",
+    "prompt_templates":[
+       "{} is part of",
+       "{} is in the country of"
+    ],
+    "prompt_templates_zs":[
+      "{} is part of the country of",
+      "{} is located in the country of"
+   ],
+    "properties":{
+       "relation_type":"factual",
+       "domain_name":"city",
+       "range_name":"country",
+       "symmetric":false
+    },
+    "samples":[
+       {
+          "subject":"New York City",
+          "object":"United States"
+       },
+       {
+          "subject":"Rio de Janeiro",
+          "object":"Brazil"
+       },
+       {
+          "subject":"Buenos Aires",
+          "object":"Argentina"
+       },
+       {
+          "subject":"Mexico City",
+          "object":"Mexico"
+       },
+       {
+          "subject":"São Paulo",
+          "object":"Brazil"
+       },
+       {
+          "subject":"Los Angeles",
+          "object":"United States"
+       },
+       {
+          "subject":"Saint Petersburg",
+          "object":"Russia"
+       },
+       {
+          "subject":"San Francisco",
+          "object":"United States"
+       },
+       {
+          "subject":"Ho Chi Minh City",
+          "object":"Vietnam"
+       },
+       {
+          "subject":"Kuala Lumpur",
+          "object":"Malaysia"
+       },
+       {
+          "subject":"Abu Dhabi",
+          "object":"United Arab Emirates"
+       },
+       {
+          "subject":"Cape Town",
+          "object":"South Africa"
+       },
+       {
+          "subject":"New Delhi",
+          "object":"India"
+       },
+       {
+          "subject":"Las Vegas",
+          "object":"United States"
+       },
+       {
+          "subject":"Hong Kong",
+          "object":"China"
+       },
+       {
+          "subject":"Tel Aviv",
+          "object":"Israel"
+       },
+       {
+          "subject":"Johannesburg",
+          "object":"South Africa"
+       },
+       {
+          "subject":"Santo Domingo",
+          "object":"Dominican Republic"
+       },
+       {
+          "subject":"Port-au-Prince",
+          "object":"Haiti"
+       },
+       {
+          "subject":"Santiago de Chile",
+          "object":"Chile"
+       },
+       {
+          "subject":"Panama City",
+          "object":"Panama"
+       },
+       {
+          "subject":"Siem Reap",
+          "object":"Cambodia"
+       },
+       {
+          "subject":"Casablanca",
+          "object":"Morocco"
+       },
+       {
+          "subject":"San Juan",
+          "object":"Puerto Rico"
+       },
+       {
+          "subject":"Costa Rica",
+          "object":"San José"
+       },
+       {
+          "subject":"Addis Ababa",
+          "object":"Ethiopia"
+       },
+       {
+          "subject":"Punta Cana",
+          "object":"Dominican Republic"
+       }
+    ]
+}

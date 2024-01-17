@@ -1,0 +1,258 @@
+{
+    "name": "word sentiment",
+    "prompt_templates": [
+        "The sentiment of '{}' is"
+    ],
+    "prompt_templates_zs": [
+        "Is the sentiment of the word '{}' positive, negative, or neutral? It is",
+        "What is the sentiment (positive, negative, neutral) of '{}'? It is"
+    ],
+    "properties": {
+        "relation_type": "commonsense",
+        "domain_name": "word",
+        "range_name": "sentiment",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "happy",
+            "object": "positive"
+        },
+        {
+            "subject": "joy",
+            "object": "positive"
+        },
+        {
+            "subject": "love",
+            "object": "positive"
+        },
+        {
+            "subject": "peace",
+            "object": "positive"
+        },
+        {
+            "subject": "hope",
+            "object": "positive"
+        },
+        {
+            "subject": "excited",
+            "object": "positive"
+        },
+        {
+            "subject": "grateful",
+            "object": "positive"
+        },
+        {
+            "subject": "proud",
+            "object": "positive"
+        },
+        {
+            "subject": "blessed",
+            "object": "positive"
+        },
+        {
+            "subject": "confident",
+            "object": "positive"
+        },
+        {
+            "subject": "content",
+            "object": "positive"
+        },
+        {
+            "subject": "satisfied",
+            "object": "positive"
+        },
+        {
+            "subject": "optimistic",
+            "object": "positive"
+        },
+        {
+            "subject": "cheerful",
+            "object": "positive"
+        },
+        {
+            "subject": "ecstatic",
+            "object": "positive"
+        },
+        {
+            "subject": "delighted",
+            "object": "positive"
+        },
+        {
+            "subject": "thrilled",
+            "object": "positive"
+        },
+        {
+            "subject": "overjoyed",
+            "object": "positive"
+        },
+        {
+            "subject": "elated",
+            "object": "positive"
+        },
+        {
+            "subject": "blissful",
+            "object": "positive"
+        },
+        {
+            "subject": "sad",
+            "object": "negative"
+        },
+        {
+            "subject": "unhappy",
+            "object": "negative"
+        },
+        {
+            "subject": "depressed",
+            "object": "negative"
+        },
+        {
+            "subject": "lonely",
+            "object": "negative"
+        },
+        {
+            "subject": "heartbroken",
+            "object": "negative"
+        },
+        {
+            "subject": "anxious",
+            "object": "negative"
+        },
+        {
+            "subject": "frustrated",
+            "object": "negative"
+        },
+        {
+            "subject": "angry",
+            "object": "negative"
+        },
+        {
+            "subject": "jealous",
+            "object": "negative"
+        },
+        {
+            "subject": "hateful",
+            "object": "negative"
+        },
+        {
+            "subject": "disappointed",
+            "object": "negative"
+        },
+        {
+            "subject": "gloomy",
+            "object": "negative"
+        },
+        {
+            "subject": "dejected",
+            "object": "negative"
+        },
+        {
+            "subject": "hopeless",
+            "object": "negative"
+        },
+        {
+            "subject": "despairing",
+            "object": "negative"
+        },
+        {
+            "subject": "frightened",
+            "object": "negative"
+        },
+        {
+            "subject": "terrified",
+            "object": "negative"
+        },
+        {
+            "subject": "scared",
+            "object": "negative"
+        },
+        {
+            "subject": "worried",
+            "object": "negative"
+        },
+        {
+            "subject": "apprehensive",
+            "object": "negative"
+        },
+        {
+            "subject": "nervous",
+            "object": "negative"
+        },
+        {
+            "subject": "neutral",
+            "object": "neutral"
+        },
+        {
+            "subject": "computer",
+            "object": "neutral"
+        },
+        {
+            "subject": "car",
+            "object": "neutral"
+        },
+        {
+            "subject": "house",
+            "object": "neutral"
+        },
+        {
+            "subject": "tree",
+            "object": "neutral"
+        },
+        {
+            "subject": "book",
+            "object": "neutral"
+        },
+        {
+            "subject": "money",
+            "object": "neutral"
+        },
+        {
+            "subject": "time",
+            "object": "neutral"
+        },
+        {
+            "subject": "day",
+            "object": "neutral"
+        },
+        {
+            "subject": "week",
+            "object": "neutral"
+        },
+        {
+            "subject": "ordinary",
+            "object": "neutral"
+        },
+        {
+            "subject": "common",
+            "object": "neutral"
+        },
+        {
+            "subject": "typical",
+            "object": "neutral"
+        },
+        {
+            "subject": "average",
+            "object": "neutral"
+        },
+        {
+            "subject": "indifferent",
+            "object": "neutral"
+        },
+        {
+            "subject": "unbiased",
+            "object": "neutral"
+        },
+        {
+            "subject": "impartial",
+            "object": "neutral"
+        },
+        {
+            "subject": "objective",
+            "object": "neutral"
+        },
+        {
+            "subject": "neutral",
+            "object": "neutral"
+        }
+    ]
+}

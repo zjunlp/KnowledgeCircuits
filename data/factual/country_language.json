@@ -1,0 +1,117 @@
+{
+    "name": "country language",
+    "prompt_templates": [
+        "People in {} speak",
+        "The language used in {} is",
+        "In {}, the primary language is"
+    ],
+    "prompt_templates_zs": [
+        "{}, where most people speak",
+        "In {}, people speak the language of",
+        "People in {} speak the language of"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "country",
+        "range_name": "language",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "United States",
+            "object": "English"
+        },
+        {
+            "subject": "Canada",
+            "object": "English"
+        },
+        {
+            "subject": "Mexico",
+            "object": "Spanish"
+        },
+        {
+            "subject": "Brazil",
+            "object": "Portuguese"
+        },
+        {
+            "subject": "Argentina",
+            "object": "Spanish"
+        },
+        {
+            "subject": "Chile",
+            "object": "Spanish"
+        },
+        {
+            "subject": "Peru",
+            "object": "Spanish"
+        },
+        {
+            "subject": "Colombia",
+            "object": "Spanish"
+        },
+        {
+            "subject": "Venezuela",
+            "object": "Spanish"
+        },
+        {
+            "subject": "Spain",
+            "object": "Spanish"
+        },
+        {
+            "subject": "France",
+            "object": "French"
+        },
+        {
+            "subject": "Germany",
+            "object": "German"
+        },
+        {
+            "subject": "Italy",
+            "object": "Italian"
+        },
+        {
+            "subject": "Russia",
+            "object": "Russian"
+        },
+        {
+            "subject": "China",
+            "object": "Mandarin Chinese"
+        },
+        {
+            "subject": "Japan",
+            "object": "Japanese"
+        },
+        {
+            "subject": "South Korea",
+            "object": "Korean"
+        },
+        {
+            "subject": "India",
+            "object": "Hindi"
+        },
+        {
+            "subject": "Pakistan",
+            "object": "Urdu"
+        },
+        {
+            "subject": "Nigeria",
+            "object": "English"
+        },
+        {
+            "subject": "Egypt",
+            "object": "Arabic"
+        },
+        {
+            "subject": "Saudi Arabia",
+            "object": "Arabic"
+        },
+        {
+            "subject": "Turkey",
+            "object": "Turkish"
+        },
+        {
+            "subject": "Australia",
+            "object": "English"
+        }
+    ]
+}

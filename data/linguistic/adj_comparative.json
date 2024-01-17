@@ -1,0 +1,290 @@
+{
+    "name": "adjective comparative",
+    "prompt_templates": [
+        "The comparative form of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The comparative form of {} is",
+        "What is the comparative form of {}? It is"
+    ],
+    "properties": {
+        "relation_type": "linguistic",
+        "domain_name": "adjective",
+        "range_name": "adjective",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "big",
+            "object": "bigger"
+        },
+        {
+            "subject": "small",
+            "object": "smaller"
+        },
+        {
+            "subject": "tall",
+            "object": "taller"
+        },
+        {
+            "subject": "short",
+            "object": "shorter"
+        },
+        {
+            "subject": "long",
+            "object": "longer"
+        },
+        {
+            "subject": "fast",
+            "object": "faster"
+        },
+        {
+            "subject": "slow",
+            "object": "slower"
+        },
+        {
+            "subject": "strong",
+            "object": "stronger"
+        },
+        {
+            "subject": "weak",
+            "object": "weaker"
+        },
+        {
+            "subject": "heavy",
+            "object": "heavier"
+        },
+        {
+            "subject": "light",
+            "object": "lighter"
+        },
+        {
+            "subject": "old",
+            "object": "older"
+        },
+        {
+            "subject": "young",
+            "object": "younger"
+        },
+        {
+            "subject": "high",
+            "object": "higher"
+        },
+        {
+            "subject": "low",
+            "object": "lower"
+        },
+        {
+            "subject": "deep",
+            "object": "deeper"
+        },
+        {
+            "subject": "shallow",
+            "object": "shallower"
+        },
+        {
+            "subject": "wide",
+            "object": "wider"
+        },
+        {
+            "subject": "narrow",
+            "object": "narrower"
+        },
+        {
+            "subject": "thick",
+            "object": "thicker"
+        },
+        {
+            "subject": "thin",
+            "object": "thinner"
+        },
+        {
+            "subject": "hot",
+            "object": "hotter"
+        },
+        {
+            "subject": "cold",
+            "object": "colder"
+        },
+        {
+            "subject": "bright",
+            "object": "brighter"
+        },
+        {
+            "subject": "dark",
+            "object": "darker"
+        },
+        {
+            "subject": "loud",
+            "object": "louder"
+        },
+        {
+            "subject": "quiet",
+            "object": "quieter"
+        },
+        {
+            "subject": "happy",
+            "object": "happier"
+        },
+        {
+            "subject": "sad",
+            "object": "sadder"
+        },
+        {
+            "subject": "good",
+            "object": "better"
+        },
+        {
+            "subject": "bad",
+            "object": "worse"
+        },
+        {
+            "subject": "ugly",
+            "object": "uglier"
+        },
+        {
+            "subject": "clean",
+            "object": "cleaner"
+        },
+        {
+            "subject": "dirty",
+            "object": "dirtier"
+        },
+        {
+            "subject": "easy",
+            "object": "easier"
+        },
+        {
+            "subject": "simple",
+            "object": "simpler"
+        },
+        {
+            "subject": "kind",
+            "object": "kinder"
+        },
+        {
+            "subject": "mean",
+            "object": "meaner"
+        },
+        {
+            "subject": "brave",
+            "object": "braver"
+        },
+        {
+            "subject": "smart",
+            "object": "smarter"
+        },
+        {
+            "subject": "stupid",
+            "object": "stupider"
+        },
+        {
+            "subject": "wise",
+            "object": "wiser"
+        },
+        {
+            "subject": "happy",
+            "object": "happier"
+        },
+        {
+            "subject": "rich",
+            "object": "richer"
+        },
+        {
+            "subject": "poor",
+            "object": "poorer"
+        },
+        {
+            "subject": "hot",
+            "object": "hotter"
+        },
+        {
+            "subject": "cold",
+            "object": "colder"
+        },
+        {
+            "subject": "sweet",
+            "object": "sweeter"
+        },
+        {
+            "subject": "sour",
+            "object": "sourer"
+        },
+        {
+            "subject": "fresh",
+            "object": "fresher"
+        },
+        {
+            "subject": "stale",
+            "object": "staler"
+        },
+        {
+            "subject": "cheap",
+            "object": "cheaper"
+        },
+        {
+            "subject": "safe",
+            "object": "safer"
+        },
+        {
+            "subject": "bright",
+            "object": "brighter"
+        },
+        {
+            "subject": "dull",
+            "object": "duller"
+        },
+        {
+            "subject": "happy",
+            "object": "happier"
+        },
+        {
+            "subject": "sad",
+            "object": "sadder"
+        },
+        {
+            "subject": "true",
+            "object": "truer"
+        },
+        {
+            "subject": "false",
+            "object": "falser"
+        },
+        {
+            "subject": "rude",
+            "object": "ruder"
+        },
+        {
+            "subject": "calm",
+            "object": "calmer"
+        },
+        {
+            "subject": "strong",
+            "object": "stronger"
+        },
+        {
+            "subject": "weak",
+            "object": "weaker"
+        },
+        {
+            "subject": "healthy",
+            "object": "healthier"
+        },
+        {
+            "subject": "sick",
+            "object": "sicker"
+        },
+        {
+            "subject": "clean",
+            "object": "cleaner"
+        },
+        {
+            "subject": "dirty",
+            "object": "dirtier"
+        },
+        {
+            "subject": "fresh",
+            "object": "fresher"
+        }
+    ]
+}

@@ -1,0 +1,171 @@
+{
+    "name": "univ degree gender",
+    "prompt_templates": [
+        "{} students are typically"
+    ],
+    "prompt_templates_zs": [
+        "Usually, what gender (men or women) are {} students? They are typically",
+        "What gender (men or women) are {} students associated with? They are usually",
+        "Are {} students mostly men or women? They are"
+    ],
+    "properties": {
+        "relation_type": "bias",
+        "domain_name": "degree",
+        "range_name": "gender",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "nursing",
+            "object": "women"
+        },
+        {
+            "subject": "engineering",
+            "object": "men"
+        },
+        {
+            "subject": "computer science",
+            "object": "men"
+        },
+        {
+            "subject": "education",
+            "object": "women"
+        },
+        {
+            "subject": "psychology",
+            "object": "women"
+        },
+        {
+            "subject": "social work",
+            "object": "women"
+        },
+        {
+            "subject": "business",
+            "object": "men"
+        },
+        {
+            "subject": "economics",
+            "object": "men"
+        },
+        {
+            "subject": "mathematics",
+            "object": "men"
+        },
+        {
+            "subject": "physics",
+            "object": "men"
+        },
+        {
+            "subject": "biology",
+            "object": "women"
+        },
+        {
+            "subject": "law",
+            "object": "men"
+        },
+        {
+            "subject": "sociology",
+            "object": "women"
+        },
+        {
+            "subject": "accounting",
+            "object": "men"
+        },
+        {
+            "subject": "electrical engineering",
+            "object": "men"
+        },
+        {
+            "subject": "fashion design",
+            "object": "women"
+        },
+        {
+            "subject": "philosophy",
+            "object": "men"
+        },
+        {
+            "subject": "graphic design",
+            "object": "women"
+        },
+        {
+            "subject": "environmental science",
+            "object": "women"
+        },
+        {
+            "subject": "architecture",
+            "object": "men"
+        },
+        {
+            "subject": "literature",
+            "object": "women"
+        },
+        {
+            "subject": "chemistry",
+            "object": "men"
+        },
+        {
+            "subject": "fine arts",
+            "object": "women"
+        },
+        {
+            "subject": "political science",
+            "object": "men"
+        },
+        {
+            "subject": "human resources",
+            "object": "women"
+        },
+        {
+            "subject": "communications",
+            "object": "women"
+        },
+        {
+            "subject": "astronomy",
+            "object": "men"
+        },
+        {
+            "subject": "interior design",
+            "object": "women"
+        },
+        {
+            "subject": "marine biology",
+            "object": "women"
+        },
+        {
+            "subject": "mechanical engineering",
+            "object": "men"
+        },
+        {
+            "subject": "classical studies",
+            "object": "women"
+        },
+        {
+            "subject": "statistics",
+            "object": "men"
+        },
+        {
+            "subject": "public relations",
+            "object": "women"
+        },
+        {
+            "subject": "culinary arts",
+            "object": "women"
+        },
+        {
+            "subject": "history",
+            "object": "men"
+        },
+        {
+            "subject": "anthropology",
+            "object": "women"
+        },
+        {
+            "subject": "geology",
+            "object": "men"
+        },
+        {
+            "subject": "pharmacy",
+            "object": "women"
+        }
+    ]
+}

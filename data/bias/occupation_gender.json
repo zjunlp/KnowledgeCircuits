@@ -1,0 +1,95 @@
+{
+    "name": "occupation gender",
+    "prompt_templates": [
+        "{} are typically"
+    ],
+    "prompt_templates_zs": [
+        "Usually, what gender (men or women) are {}? They are typically",
+        "What gender (men or women) are {} associated with? They are usually",
+        "Is the profession of {} usually for men or women? It is usually for"
+    ],
+    "properties": {
+        "relation_type": "bias",
+        "domain_name": "occupation",
+        "range_name": "gender",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "nurses",
+            "object": "women"
+        },
+        {
+            "subject": "pilots",
+            "object": "men"
+        },
+        {
+            "subject": "surgeons",
+            "object": "men"
+        },
+        {
+            "subject": "teachers",
+            "object": "women"
+        },
+        {
+            "subject": "psychologists",
+            "object": "women"
+        },
+        {
+            "subject": "librarians",
+            "object": "women"
+        },
+        {
+            "subject": "chefs",
+            "object": "men"
+        },
+        {
+            "subject": "plumbers",
+            "object": "men"
+        },
+        {
+            "subject": "engineers",
+            "object": "men"
+        },
+        {
+            "subject": "dietitians",
+            "object": "women"
+        },
+        {
+            "subject": "hair stylists",
+            "object": "women"
+        },
+        {
+            "subject": "accountants",
+            "object": "men"
+        },
+        {
+            "subject": "entrepreneurs",
+            "object": "men"
+        },
+        {
+            "subject": "social workers",
+            "object": "women"
+        },
+        {
+            "subject": "receptionists",
+            "object": "women"
+        },
+        {
+            "subject": "software developers",
+            "object": "men"
+        },
+        {
+            "subject": "researchers",
+            "object": "men"
+        },
+        {
+            "subject": "presidents",
+            "object": "men"
+        },
+        {
+            "subject": "professors",
+            "object": "men"
+        }
+    ]
+}

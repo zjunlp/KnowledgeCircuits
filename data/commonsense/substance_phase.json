@@ -1,0 +1,218 @@
+{
+    "name": "substance phase of matter",
+    "prompt_templates": [
+        "{}'s phase of matter at room temperature is a"
+    ],
+    "prompt_templates_zs": [
+        "{}'s phase of matter at room temperature is a",
+        "What is the phase of matter of {} at room temperature? It is"
+    ],
+    "properties": {
+        "relation_type": "commonsense",
+        "domain_name": "substance",
+        "range_name": "phase of matter",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "water",
+            "object": "liquid"
+        },
+        {
+            "subject": "iron",
+            "object": "solid"
+        },
+        {
+            "subject": "oxygen",
+            "object": "gas"
+        },
+        {
+            "subject": "gold",
+            "object": "solid"
+        },
+        {
+            "subject": "mercury",
+            "object": "liquid"
+        },
+        {
+            "subject": "aluminum",
+            "object": "solid"
+        },
+        {
+            "subject": "nitrogen",
+            "object": "gas"
+        },
+        {
+            "subject": "silicon",
+            "object": "solid"
+        },
+        {
+            "subject": "neon",
+            "object": "gas"
+        },
+        {
+            "subject": "ethanol",
+            "object": "liquid"
+        },
+        {
+            "subject": "sulfur",
+            "object": "solid"
+        },
+        {
+            "subject": "helium",
+            "object": "gas"
+        },
+        {
+            "subject": "lead",
+            "object": "solid"
+        },
+        {
+            "subject": "ice cream",
+            "object": "solid"
+        },
+        {
+            "subject": "coffee",
+            "object": "liquid"
+        },
+        {
+            "subject": "wood",
+            "object": "solid"
+        },
+        {
+            "subject": "plastic",
+            "object": "solid"
+        },
+        {
+            "subject": "butter",
+            "object": "solid"
+        },
+        {
+            "subject": "honey",
+            "object": "liquid"
+        },
+        {
+            "subject": "wine",
+            "object": "liquid"
+        },
+        {
+            "subject": "glass",
+            "object": "solid"
+        },
+        {
+            "subject": "carbon dioxide",
+            "object": "gas"
+        },
+        {
+            "subject": "paper",
+            "object": "solid"
+        },
+        {
+            "subject": "copper",
+            "object": "solid"
+        },
+        {
+            "subject": "chocolate",
+            "object": "solid"
+        },
+        {
+            "subject": "petroleum",
+            "object": "liquid"
+        },
+        {
+            "subject": "steam",
+            "object": "gas"
+        },
+        {
+            "subject": "ice",
+            "object": "solid"
+        },
+        {
+            "subject": "diamond",
+            "object": "solid"
+        },
+        {
+            "subject": "milk",
+            "object": "liquid"
+        },
+        {
+            "subject": "olive oil",
+            "object": "liquid"
+        },
+        {
+            "subject": "soap",
+            "object": "solid"
+        },
+        {
+            "subject": "rubber",
+            "object": "solid"
+        },
+        {
+            "subject": "glycerin",
+            "object": "liquid"
+        },
+        {
+            "subject": "tea",
+            "object": "liquid"
+        },
+        {
+            "subject": "hydrogen",
+            "object": "gas"
+        },
+        {
+            "subject": "salt",
+            "object": "solid"
+        },
+        {
+            "subject": "sugar",
+            "object": "solid"
+        },
+        {
+            "subject": "vinegar",
+            "object": "liquid"
+        },
+        {
+            "subject": "silver",
+            "object": "solid"
+        },
+        {
+            "subject": "leather",
+            "object": "solid"
+        },
+        {
+            "subject": "argon",
+            "object": "gas"
+        },
+        {
+            "subject": "wax",
+            "object": "solid"
+        },
+        {
+            "subject": "beer",
+            "object": "liquid"
+        },
+        {
+            "subject": "radium",
+            "object": "solid"
+        },
+        {
+            "subject": "platinum",
+            "object": "solid"
+        },
+        {
+            "subject": "juice",
+            "object": "liquid"
+        },
+        {
+            "subject": "tungsten",
+            "object": "solid"
+        },
+        {
+            "subject": "kerosene",
+            "object": "liquid"
+        },
+        {
+            "subject": "champagne",
+            "object": "liquid"
+        }
+    ]
+}

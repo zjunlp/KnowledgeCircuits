@@ -1,0 +1,322 @@
+{
+    "name": "verb past tense",
+    "prompt_templates": [
+        "The past tense of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The past tense of {} is",
+        "What is the past tense of {}? It is"
+    ],
+    "properties": {
+        "relation_type": "linguistic",
+        "domain_name": "verb",
+        "range_name": "verb",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "ask",
+            "object": "asked"
+        },
+        {
+            "subject": "believe",
+            "object": "believed"
+        },
+        {
+            "subject": "break",
+            "object": "broke"
+        },
+        {
+            "subject": "bring",
+            "object": "brought"
+        },
+        {
+            "subject": "build",
+            "object": "built"
+        },
+        {
+            "subject": "call",
+            "object": "called"
+        },
+        {
+            "subject": "catch",
+            "object": "caught"
+        },
+        {
+            "subject": "change",
+            "object": "changed"
+        },
+        {
+            "subject": "choose",
+            "object": "chose"
+        },
+        {
+            "subject": "clean",
+            "object": "cleaned"
+        },
+        {
+            "subject": "climb",
+            "object": "climbed"
+        },
+        {
+            "subject": "close",
+            "object": "closed"
+        },
+        {
+            "subject": "come",
+            "object": "came"
+        },
+        {
+            "subject": "cry",
+            "object": "cried"
+        },
+        {
+            "subject": "cut",
+            "object": "cut"
+        },
+        {
+            "subject": "dance",
+            "object": "danced"
+        },
+        {
+            "subject": "decide",
+            "object": "decided"
+        },
+        {
+            "subject": "do",
+            "object": "did"
+        },
+        {
+            "subject": "drive",
+            "object": "drove"
+        },
+        {
+            "subject": "drink",
+            "object": "drank"
+        },
+        {
+            "subject": "eat",
+            "object": "ate"
+        },
+        {
+            "subject": "fall",
+            "object": "fell"
+        },
+        {
+            "subject": "finish",
+            "object": "finished"
+        },
+        {
+            "subject": "find",
+            "object": "found"
+        },
+        {
+            "subject": "fly",
+            "object": "flew"
+        },
+        {
+            "subject": "follow",
+            "object": "followed"
+        },
+        {
+            "subject": "forget",
+            "object": "forgot"
+        },
+        {
+            "subject": "frown",
+            "object": "frowned"
+        },
+        {
+            "subject": "get",
+            "object": "got"
+        },
+        {
+            "subject": "give",
+            "object": "gave"
+        },
+        {
+            "subject": "go",
+            "object": "went"
+        },
+        {
+            "subject": "hate",
+            "object": "hated"
+        },
+        {
+            "subject": "have",
+            "object": "had"
+        },
+        {
+            "subject": "hear",
+            "object": "heard"
+        },
+        {
+            "subject": "help",
+            "object": "helped"
+        },
+        {
+            "subject": "hit",
+            "object": "hit"
+        },
+        {
+            "subject": "jump",
+            "object": "jumped"
+        },
+        {
+            "subject": "know",
+            "object": "knew"
+        },
+        {
+            "subject": "laugh",
+            "object": "laughed"
+        },
+        {
+            "subject": "learn",
+            "object": "learned"
+        },
+        {
+            "subject": "leave",
+            "object": "left"
+        },
+        {
+            "subject": "like",
+            "object": "liked"
+        },
+        {
+            "subject": "live",
+            "object": "lived"
+        },
+        {
+            "subject": "look",
+            "object": "looked"
+        },
+        {
+            "subject": "lose",
+            "object": "lost"
+        },
+        {
+            "subject": "love",
+            "object": "loved"
+        },
+        {
+            "subject": "make",
+            "object": "made"
+        },
+        {
+            "subject": "meet",
+            "object": "met"
+        },
+        {
+            "subject": "need",
+            "object": "needed"
+        },
+        {
+            "subject": "open",
+            "object": "opened"
+        },
+        {
+            "subject": "play",
+            "object": "played"
+        },
+        {
+            "subject": "read",
+            "object": "read"
+        },
+        {
+            "subject": "remember",
+            "object": "remembered"
+        },
+        {
+            "subject": "run",
+            "object": "ran"
+        },
+        {
+            "subject": "say",
+            "object": "said"
+        },
+        {
+            "subject": "see",
+            "object": "saw"
+        },
+        {
+            "subject": "shake",
+            "object": "shook"
+        },
+        {
+            "subject": "sit",
+            "object": "sat"
+        },
+        {
+            "subject": "sleep",
+            "object": "slept"
+        },
+        {
+            "subject": "smile",
+            "object": "smiled"
+        },
+        {
+            "subject": "speak",
+            "object": "spoke"
+        },
+        {
+            "subject": "start",
+            "object": "started"
+        },
+        {
+            "subject": "stand",
+            "object": "stood"
+        },
+        {
+            "subject": "study",
+            "object": "studied"
+        },
+        {
+            "subject": "swim",
+            "object": "swam"
+        },
+        {
+            "subject": "take",
+            "object": "took"
+        },
+        {
+            "subject": "talk",
+            "object": "talked"
+        },
+        {
+            "subject": "think",
+            "object": "thought"
+        },
+        {
+            "subject": "try",
+            "object": "tried"
+        },
+        {
+            "subject": "understand",
+            "object": "understood"
+        },
+        {
+            "subject": "walk",
+            "object": "walked"
+        },
+        {
+            "subject": "want",
+            "object": "wanted"
+        },
+        {
+            "subject": "wear",
+            "object": "wore"
+        },
+        {
+            "subject": "win",
+            "object": "won"
+        },
+        {
+            "subject": "work",
+            "object": "worked"
+        },
+        {
+            "subject": "write",
+            "object": "wrote"
+        }
+    ]
+}

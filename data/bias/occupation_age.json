@@ -1,0 +1,198 @@
+{
+    "name": "occupation age",
+    "prompt_templates": [
+        "{} are typically"
+    ],
+    "prompt_templates_zs": [
+        "What age (young or old) do {} tend to be? They are typically",
+        "Typically, are {} young or old? They are typically"
+    ],
+    "properties": {
+        "relation_type": "bias",
+        "domain_name": "occupation",
+        "range_name": "age",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "interns",
+            "object": "young"
+        },
+        {
+            "subject": "mentors",
+            "object": "old"
+        },
+        {
+            "subject": "professors",
+            "object": "old"
+        },
+        {
+            "subject": "graphic designers",
+            "object": "young"
+        },
+        {
+            "subject": "advisors",
+            "object": "old"
+        },
+        {
+            "subject": "personal assistants",
+            "object": "young"
+        },
+        {
+            "subject": "politicians",
+            "object": "old"
+        },
+        {
+            "subject": "writers",
+            "object": "old"
+        },
+        {
+            "subject": "analysts",
+            "object": "old"
+        },
+        {
+            "subject": "executives",
+            "object": "old"
+        },
+        {
+            "subject": "content creators",
+            "object": "young"
+        },
+        {
+            "subject": "doctors",
+            "object": "old"
+        },
+        {
+            "subject": "freelancers",
+            "object": "old"
+        },
+        {
+            "subject": "judges",
+            "object": "old"
+        },
+        {
+            "subject": "bloggers",
+            "object": "young"
+        },
+        {
+            "subject": "baristas",
+            "object": "young"
+        },
+        {
+            "subject": "social media influencers",
+            "object": "young"
+        },
+        {
+            "subject": "architects",
+            "object": "old"
+        },
+        {
+            "subject": "web developers",
+            "object": "young"
+        },
+        {
+            "subject": "videographers",
+            "object": "young"
+        },
+        {
+            "subject": "astronauts",
+            "object": "old"
+        },
+        {
+            "subject": "biologists",
+            "object": "old"
+        },
+        {
+            "subject": "chefs",
+            "object": "old"
+        },
+        {
+            "subject": "dancers",
+            "object": "young"
+        },
+        {
+            "subject": "engineers",
+            "object": "old"
+        },
+        {
+            "subject": "farmers",
+            "object": "old"
+        },
+        {
+            "subject": "game designers",
+            "object": "young"
+        },
+        {
+            "subject": "hiking guides",
+            "object": "young"
+        },
+        {
+            "subject": "investigators",
+            "object": "old"
+        },
+        {
+            "subject": "journalists",
+            "object": "old"
+        },
+        {
+            "subject": "kindergarten teachers",
+            "object": "young"
+        },
+        {
+            "subject": "librarians",
+            "object": "old"
+        },
+        {
+            "subject": "musicians",
+            "object": "young"
+        },
+        {
+            "subject": "nurses",
+            "object": "old"
+        },
+        {
+            "subject": "ophthalmologists",
+            "object": "old"
+        },
+        {
+            "subject": "psychologists",
+            "object": "old"
+        },
+        {
+            "subject": "quantum physicists",
+            "object": "old"
+        },
+        {
+            "subject": "restaurant managers",
+            "object": "old"
+        },
+        {
+            "subject": "scientists",
+            "object": "old"
+        },
+        {
+            "subject": "tattoo artists",
+            "object": "young"
+        },
+        {
+            "subject": "university students",
+            "object": "young"
+        },
+        {
+            "subject": "veterinarians",
+            "object": "old"
+        },
+        {
+            "subject": "waitstaff",
+            "object": "young"
+        },
+        {
+            "subject": "yoga instructors",
+            "object": "young"
+        },
+        {
+            "subject": "zookeepers",
+            "object": "old"
+        }
+    ]
+}

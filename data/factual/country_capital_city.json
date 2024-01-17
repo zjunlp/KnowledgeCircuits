@@ -1,0 +1,115 @@
+{
+    "name": "country capital city",
+    "prompt_templates": [
+        "The capital city of {} is",
+        "The capital of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The capital of {} is the city of",
+        "What is the capital of {}? It is the city of"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "country",
+        "range_name": "city",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "United States",
+            "object": "Washington D.C."
+        },
+        {
+            "subject": "Canada",
+            "object": "Ottawa"
+        },
+        {
+            "subject": "Mexico",
+            "object": "Mexico City"
+        },
+        {
+            "subject": "Brazil",
+            "object": "Bras\\u00edlia"
+        },
+        {
+            "subject": "Argentina",
+            "object": "Buenos Aires"
+        },
+        {
+            "subject": "Chile",
+            "object": "Santiago"
+        },
+        {
+            "subject": "Peru",
+            "object": "Lima"
+        },
+        {
+            "subject": "Colombia",
+            "object": "Bogot\\u00e1"
+        },
+        {
+            "subject": "Venezuela",
+            "object": "Caracas"
+        },
+        {
+            "subject": "Spain",
+            "object": "Madrid"
+        },
+        {
+            "subject": "France",
+            "object": "Paris"
+        },
+        {
+            "subject": "Germany",
+            "object": "Berlin"
+        },
+        {
+            "subject": "Italy",
+            "object": "Rome"
+        },
+        {
+            "subject": "Russia",
+            "object": "Moscow"
+        },
+        {
+            "subject": "China",
+            "object": "Beijing"
+        },
+        {
+            "subject": "Japan",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "South Korea",
+            "object": "Seoul"
+        },
+        {
+            "subject": "India",
+            "object": "New Delhi"
+        },
+        {
+            "subject": "Pakistan",
+            "object": "Islamabad"
+        },
+        {
+            "subject": "Nigeria",
+            "object": "Abuja"
+        },
+        {
+            "subject": "Egypt",
+            "object": "Cairo"
+        },
+        {
+            "subject": "Saudi Arabia",
+            "object": "Riyadh"
+        },
+        {
+            "subject": "Turkey",
+            "object": "Ankara"
+        },
+        {
+            "subject": "Australia",
+            "object": "Canberra"
+        }
+    ]
+}

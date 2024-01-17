@@ -1,0 +1,102 @@
+{
+    "name": "person lead singer of band",
+    "prompt_templates": [
+        "{} is the lead singer of"
+    ],
+    "prompt_templates_zs": [
+        "{} is the lead singer of the band named",
+        "What band is {} lead singer of? They lead the band named"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "person",
+        "range_name": "band",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Brian Johnson",
+            "object": "AC/DC"
+        },
+        {
+            "subject": "Steven Tyler",
+            "object": "Aerosmith"
+        },
+        {
+            "subject": "Chris Martin",
+            "object": "Coldplay"
+        },
+        {
+            "subject": "Dave Grohl",
+            "object": "Foo Fighters"
+        },
+        {
+            "subject": "Axl Rose",
+            "object": "Guns N' Roses"
+        },
+        {
+            "subject": "Robert Plant",
+            "object": "Led Zeppelin"
+        },
+        {
+            "subject": "James Hetfield",
+            "object": "Metallica"
+        },
+        {
+            "subject": "Kurt Cobain",
+            "object": "Nirvana"
+        },
+        {
+            "subject": "Freddie Mercury",
+            "object": "Queen"
+        },
+        {
+            "subject": "Anthony Kiedis",
+            "object": "Red Hot Chili Peppers"
+        },
+        {
+            "subject": "Mick Jagger",
+            "object": "The Rolling Stones"
+        },
+        {
+            "subject": "John Lennon",
+            "object": "The Beatles"
+        },
+        {
+            "subject": "Jim Morrison",
+            "object": "The Doors"
+        },
+        {
+            "subject": "Bono",
+            "object": "U2"
+        },
+        {
+            "subject": "Ozzy Osbourne",
+            "object": "Black Sabbath"
+        },
+        {
+            "subject": "Billie Joe Armstrong",
+            "object": "Green Day"
+        },
+        {
+            "subject": "Eddie Vedder",
+            "object": "Pearl Jam"
+        },
+        {
+            "subject": "Jon Bon Jovi",
+            "object": "Bon Jovi "
+        },
+        {
+            "subject": "Don Henley",
+            "object": "The Eagles"
+        },
+        {
+            "subject": "Liam Gallagher",
+            "object": "Oasis"
+        },
+        {
+            "subject": "Serj Tankian",
+            "object": "System of a Down"
+        }
+    ]
+}

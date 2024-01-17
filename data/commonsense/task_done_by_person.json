@@ -1,0 +1,146 @@
+{
+    "name": "task person type",
+    "prompt_templates": [
+        "{} is best suited for someone with the role of a"
+    ],
+    "prompt_templates_zs": [
+        "The task of {} would be best performed by someone with the role of a",
+        "The professional role most suited to handle {} is a"
+    ],
+    "properties": {
+        "relation_type": "commonsense",
+        "domain_name": "task",
+        "range_name": "occupation type",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "researching history",
+            "object": "historian"
+        },
+        {
+            "subject": "delivering mail",
+            "object": "mail carrier"
+        },
+        {
+            "subject": "photographing weddings",
+            "object": "photographer"
+        },
+        {
+            "subject": "baking cakes",
+            "object": "baker"
+        },
+        {
+            "subject": "leading teams",
+            "object": "leader"
+        },
+        {
+            "subject": "directing movies",
+            "object": "director"
+        },
+        {
+            "subject": "investigating diseases",
+            "object": "epidemiologist"
+        },
+        {
+            "subject": "designing buildings",
+            "object": "architect"
+        },
+        {
+            "subject": "playing piano concertos",
+            "object": "pianist"
+        },
+        {
+            "subject": "translating books",
+            "object": "translator"
+        },
+        {
+            "subject": "repairing computers",
+            "object": "technician"
+        },
+        {
+            "subject": "selling houses",
+            "object": "real estate agent"
+        },
+        {
+            "subject": "managing hotels",
+            "object": "hotel manager"
+        },
+        {
+            "subject": "farming",
+            "object": "farmer"
+        },
+        {
+            "subject": "rescuing mountaineers",
+            "object": "rescuer"
+        },
+        {
+            "subject": "analyzing genetics",
+            "object": "geneticist"
+        },
+        {
+            "subject": "flying airplanes",
+            "object": "pilot"
+        },
+        {
+            "subject": "writing novels",
+            "object": "author"
+        },
+        {
+            "subject": "investigating crimes",
+            "object": "detective"
+        },
+        {
+            "subject": "making clothes",
+            "object": "fashion designer"
+        },
+        {
+            "subject": "conducting an orchestra",
+            "object": "conductor"
+        },
+        {
+            "subject": "building bridges",
+            "object": "civil engineer"
+        },
+        {
+            "subject": "treating animals",
+            "object": "veterinarian"
+        },
+        {
+            "subject": "driving trucks",
+            "object": "truck driver"
+        },
+        {
+            "subject": "providing legal advice",
+            "object": "lawyer"
+        },
+        {
+            "subject": "coding software",
+            "object": "software engineer"
+        },
+        {
+            "subject": "reporting news",
+            "object": "journalist"
+        },
+        {
+            "subject": "managing finances",
+            "object": "financial advisor"
+        },
+        {
+            "subject": "exploring space",
+            "object": "astronaut"
+        },
+        {
+            "subject": "teaching students",
+            "object": "teacher"
+        },
+        {
+            "subject": "cooking meals",
+            "object": "chef"
+        },
+        {
+            "subject": "performing surgeries",
+            "object": "surgeon"
+        }
+    ]
+}

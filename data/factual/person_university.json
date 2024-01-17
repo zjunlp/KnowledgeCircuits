@@ -1,0 +1,383 @@
+{
+   "name": "person university",
+   "prompt_templates": [
+      "For university, {} attended",
+      "{} went to university at"
+   ],
+   "prompt_templates_zs": [
+      "Which university did {} attend? They attended",
+      "What is the university that {} went to? They went to"
+   ],
+   "properties": {
+      "relation_type": "factual",
+      "domain_name": "person",
+      "range_name": "university",
+      "symmetric": false
+   },
+   "samples": [
+      {
+         "subject": "Michelle Obama",
+         "object": "Princeton University"
+      },
+      {
+         "subject": "Bill Gates",
+         "object": "Harvard University"
+      },
+      {
+         "subject": "Mark Zuckerberg",
+         "object": "Harvard University"
+      },
+      {
+         "subject": "Oprah Winfrey",
+         "object": "Tennessee State University"
+      },
+      {
+         "subject": "Emma Watson",
+         "object": "Brown University"
+      },
+      {
+         "subject": "Natalie Portman",
+         "object": "Harvard University"
+      },
+      {
+         "subject": "George W. Bush",
+         "object": "Yale University"
+      },
+      {
+         "subject": "Hillary Clinton",
+         "object": "Wellesley College"
+      },
+      {
+         "subject": "Neil Armstrong",
+         "object": "Purdue University"
+      },
+      {
+         "subject": "James Franco",
+         "object": "UCLA"
+      },
+      {
+         "subject": "Cindy Crawford",
+         "object": "Northwestern University"
+      },
+      {
+         "subject": "Matt Damon",
+         "object": "Harvard University"
+      },
+      {
+         "subject": "Conan O'Brien",
+         "object": "Harvard University"
+      },
+      {
+         "subject": "Leonardo DiCaprio",
+         "object": "UCLA"
+      },
+      {
+         "subject": "Winston Churchill",
+         "object": "Royal Military Academy Sandhurst"
+      },
+      {
+         "subject": "Sandra Bullock",
+         "object": "East Carolina University"
+      },
+      {
+         "subject": "Tom Hanks",
+         "object": "California State University, Sacramento"
+      },
+      {
+         "subject": "Peter Paul Rubens",
+         "object": "Old University of Leuven"
+      },
+      {
+         "subject": "Madonna",
+         "object": "University of Michigan School of Music, Theatre & Dance"
+      },
+      {
+         "subject": "Lady Gaga",
+         "object": "New York University Tisch School of the Arts"
+      },
+      {
+         "subject": "Rembrandt",
+         "object": "Leiden University"
+      },
+      {
+         "subject": "Vladimir Putin",
+         "object": "Faculty of Law, Saint Petersburg State University"
+      },
+      {
+         "subject": "Albert Einstein",
+         "object": "University of Zurich"
+      },
+      {
+         "subject": "Johann Wolfgang von Goethe",
+         "object": "University of Strasbourg"
+      },
+      {
+         "subject": "Leo Tolstoy",
+         "object": "Kazan Imperial University"
+      },
+      {
+         "subject": "Shakira",
+         "object": "University of California, Los Angeles"
+      },
+      {
+         "subject": "Donald Trump",
+         "object": "Fordham University"
+      },
+      {
+         "subject": "Victor Hugo",
+         "object": "University of Paris"
+      },
+      {
+         "subject": "Britney Spears",
+         "object": "University of Nebraska High School"
+      },
+      {
+         "subject": "Barack Obama",
+         "object": "University of Chicago Law School"
+      },
+      {
+         "subject": "Henry Moore",
+         "object": "Leeds Arts University"
+      },
+      {
+         "subject": "Michelangelo",
+         "object": "University of Florence"
+      },
+      {
+         "subject": "Marilyn Monroe",
+         "object": "University High School"
+      },
+      {
+         "subject": "Charles Darwin",
+         "object": "University of Edinburgh Medical School"
+      },
+      {
+         "subject": "Paul C\u00e9zanne",
+         "object": "Aix-Marseille University"
+      },
+      {
+         "subject": "Friedrich Nietzsche",
+         "object": "Leipzig University"
+      },
+      {
+         "subject": "Andy Warhol",
+         "object": "Carnegie Mellon University"
+      },
+      {
+         "subject": "Lewis Carroll",
+         "object": "University of Oxford"
+      },
+      {
+         "subject": "Edgar Allan Poe",
+         "object": "University of Virginia"
+      },
+      {
+         "subject": "Angelina Jolie",
+         "object": "New York University"
+      },
+      {
+         "subject": "David Bowie",
+         "object": "Ravensbourne University London"
+      },
+      {
+         "subject": "Bob Dylan",
+         "object": "University of Minnesota system"
+      },
+      {
+         "subject": "Vladimir Lenin",
+         "object": "Kazan Imperial University"
+      },
+      {
+         "subject": "Ursula K. Le Guin",
+         "object": "Columbia University"
+      },
+      {
+         "subject": "Stephen Hawking",
+         "object": "University College, Oxford"
+      },
+      {
+         "subject": "Alicia Keys",
+         "object": "Columbia University"
+      },
+      {
+         "subject": "Martin Luther",
+         "object": "University of Erfurt"
+      },
+      {
+         "subject": "Gottfried Wilhelm Leibniz",
+         "object": "University of Altdorf"
+      },
+      {
+         "subject": "Arthur Conan Doyle",
+         "object": "University of Edinburgh Medical School"
+      },
+      {
+         "subject": "Wassily Kandinsky",
+         "object": "Moscow State University, Faculty of Law"
+      },
+      {
+         "subject": "Hans Christian Andersen",
+         "object": "University of Copenhagen"
+      },
+      {
+         "subject": "J. K. Rowling",
+         "object": "University of Exeter"
+      },
+      {
+         "subject": "Garry Kasparov",
+         "object": "Azerbaijan University of Languages"
+      },
+      {
+         "subject": "Noam Chomsky",
+         "object": "University of Pennsylvania"
+      },
+      {
+         "subject": "Angela Merkel",
+         "object": "Leipzig University"
+      },
+      {
+         "subject": "Woody Allen",
+         "object": "New York University Tisch School of the Arts"
+      },
+      {
+         "subject": "John Paul II",
+         "object": "Theology faculty of the Jagiellonian University"
+      },
+      {
+         "subject": "Benedict XVI",
+         "object": "Ludwig Maximilian University of Munich"
+      },
+      {
+         "subject": "Fyodor Dostoyevsky",
+         "object": "Military Engineering-Technical University"
+      },
+      {
+         "subject": "John F. Kennedy",
+         "object": "Princeton University"
+      },
+      {
+         "subject": "Ren\u00e9 Descartes",
+         "object": "Utrecht University"
+      },
+      {
+         "subject": "Benito Mussolini",
+         "object": "University of Lausanne"
+      },
+      {
+         "subject": "Richard Wagner",
+         "object": "Leipzig University"
+      },
+      {
+         "subject": "V\u00e1clav Havel",
+         "object": "Czech Technical University in Prague"
+      },
+      {
+         "subject": "Karl Marx",
+         "object": "University of Jena"
+      },
+      {
+         "subject": "Max Ernst",
+         "object": "University of Bonn"
+      },
+      {
+         "subject": "J. R. R. Tolkien",
+         "object": "University of Oxford"
+      },
+      {
+         "subject": "Thomas Mann",
+         "object": "Technical University of Munich"
+      },
+      {
+         "subject": "Fr\u00e9d\u00e9ric Chopin",
+         "object": "Chopin University of Music"
+      },
+      {
+         "subject": "Lord Byron",
+         "object": "University of Cambridge"
+      },
+      {
+         "subject": "Franz Liszt",
+         "object": "University of Music and Performing Arts Vienna"
+      },
+      {
+         "subject": "Meryl Streep",
+         "object": "Yale University"
+      },
+      {
+         "subject": "Olivia Newton-John",
+         "object": "University High School"
+      },
+      {
+         "subject": "Sigmund Freud",
+         "object": "University of Vienna"
+      },
+      {
+         "subject": "Batman",
+         "object": "University of Paris"
+      },
+      {
+         "subject": "Paul Klee",
+         "object": "State University of Music and Performing Arts Stuttgart"
+      },
+      {
+         "subject": "Franz Kafka",
+         "object": "Faculty of Law, German University in Prague"
+      },
+      {
+         "subject": "Alexander von Humboldt",
+         "object": "Freiberg University of Mining and Technology"
+      },
+      {
+         "subject": "Yukio Mishima",
+         "object": "University of Tokyo Graduate School for Law and Politics"
+      },
+      {
+         "subject": "Isaac Newton",
+         "object": "University of Cambridge"
+      },
+      {
+         "subject": "August Strindberg",
+         "object": "Uppsala University"
+      },
+      {
+         "subject": "Honor\u00e9 de Balzac",
+         "object": "University of Paris"
+      },
+      {
+         "subject": "Charles III",
+         "object": "Aberystwyth University"
+      },
+      {
+         "subject": "Thomas Aquinas",
+         "object": "University of Paris"
+      },
+      {
+         "subject": "Rabindranath Tagore",
+         "object": "University College London"
+      },
+      {
+         "subject": "George Frideric Handel",
+         "object": "University of Halle-Wittenberg"
+      },
+      {
+         "subject": "Friedrich Schiller",
+         "object": "University of Jena"
+      },
+      {
+         "subject": "Bertrand Russell",
+         "object": "University of Cambridge"
+      },
+      {
+         "subject": "Mahatma Gandhi",
+         "object": "University College London"
+      },
+      {
+         "subject": "Albert Camus",
+         "object": "Algiers 1 University"
+      },
+      {
+         "subject": "Carl Linnaeus",
+         "object": "University of Harderwijk"
+      }
+   ]
+}

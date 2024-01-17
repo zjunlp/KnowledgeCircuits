@@ -1,0 +1,1211 @@
+{
+    "name": "company CEO",
+    "prompt_templates": [
+        "{}'s CEO is",
+        "The CEO of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The name of the CEO of {} is",
+        "Who is the CEO of {}? Their name is"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "company",
+        "range_name": "person",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Alphabet",
+            "object": "Sundar Pichai"
+        },
+        {
+            "subject": "Tesla",
+            "object": "Elon Musk"
+        },
+        {
+            "subject": "NVIDIA",
+            "object": "Jensen Huang"
+        },
+        {
+            "subject": "Meta",
+            "object": "Mark Zuckerberg"
+        },
+        {
+            "subject": "China Construction Bank",
+            "object": "Yi Gang"
+        },
+        {
+            "subject": "Alibaba",
+            "object": "Daniel Zhang"
+        },
+        {
+            "subject": "Goldman Sachs",
+            "object": "David Solomon"
+        },
+        {
+            "subject": "Nasdaq",
+            "object": "Adena Friedma"
+        },
+        {
+            "subject": "Apple",
+            "object": "Tim Cook"
+        },
+        {
+            "subject": "Cisco Systems",
+            "object": "Chuck Robbins"
+        },
+        {
+            "subject": "Samsung Electronics",
+            "object": "Kim Ki Nam"
+        },
+        {
+            "subject": "Microsoft",
+            "object": "Satya Nadella"
+        },
+        {
+            "subject": "Huawei",
+            "object": "Ren Zhengfei"
+        },
+        {
+            "subject": "Google",
+            "object": "Sundar Pichai"
+        },
+        {
+            "subject": "Intel",
+            "object": "Bob Swan"
+        },
+        {
+            "subject": "The Walt Disney Company",
+            "object": "Bob Iger"
+        },
+        {
+            "subject": "Nokia",
+            "object": "Pekka Lundmark"
+        },
+        {
+            "subject": "FC Barcelona",
+            "object": "Ferran Reverter"
+        },
+        {
+            "subject": "Amazon",
+            "object": "Andy Jassy"
+        },
+        {
+            "subject": "IBM",
+            "object": "Arvind Krishna"
+        },
+        {
+            "subject": "Netflix",
+            "object": "Ted Sarandos"
+        },
+        {
+            "subject": "Uber Technology",
+            "object": "Dara Khosrowshahi"
+        },
+        {
+            "subject": "McDonald\u2019s",
+            "object": "Chris Kempczinski"
+        },
+        {
+            "subject": "Hewlett-Packard",
+            "object": "Meg Whitman"
+        },
+        {
+            "subject": "East Japan Railway Company",
+            "object": "Y\u016bji Fukasawa"
+        },
+        {
+            "subject": "Nintendo",
+            "object": "Shuntaro Furukawa"
+        },
+        {
+            "subject": "Twinkl",
+            "object": "Jonathan Seaton"
+        },
+        {
+            "subject": "Siemens",
+            "object": "Joe Kaeser"
+        },
+        {
+            "subject": "Tesla, Inc.",
+            "object": "Elon Musk"
+        },
+        {
+            "subject": "The Coca-Cola Company",
+            "object": "James Quincey"
+        },
+        {
+            "subject": "Meta Platforms",
+            "object": "Mark Zuckerberg"
+        },
+        {
+            "subject": "Sony",
+            "object": "Ken'ichiro Yoshida"
+        },
+        {
+            "subject": "Koninklijke Philips NV",
+            "object": "Roy Jakobs"
+        },
+        {
+            "subject": "Dell Inc.",
+            "object": "Michael Dell"
+        },
+        {
+            "subject": "Volkswagen Group",
+            "object": "Oliver Blume"
+        },
+        {
+            "subject": "Wikimedia Foundation",
+            "object": "Maryana Iskander"
+        },
+        {
+            "subject": "Boeing",
+            "object": "Dennis Muilenburg"
+        },
+        {
+            "subject": "AT&T",
+            "object": "John Stankey"
+        },
+        {
+            "subject": "International Monetary Fund",
+            "object": "Kristalina Georgieva"
+        },
+        {
+            "subject": "Deutsche Telekom",
+            "object": "Timotheus H\u00f6ttges"
+        },
+        {
+            "subject": "Ford Motor Company",
+            "object": "Jim Farley"
+        },
+        {
+            "subject": "Walmart",
+            "object": "Doug McMillon"
+        },
+        {
+            "subject": "Electronic Arts",
+            "object": "Andrew Wilson"
+        },
+        {
+            "subject": "Renault",
+            "object": "Luca de Meo"
+        },
+        {
+            "subject": "Delta Air Lines",
+            "object": "Ed Bastian"
+        },
+        {
+            "subject": "Paris-Charles de Gaulle Airport",
+            "object": "Marc Houalla"
+        },
+        {
+            "subject": "Deutsche Bank AG",
+            "object": "Christian Sewing"
+        },
+        {
+            "subject": "TotalEnergies",
+            "object": "Patrick Pouyann\u00e9"
+        },
+        {
+            "subject": "Robert Bosch",
+            "object": "Stefan Hartung"
+        },
+        {
+            "subject": "Commerzbank AG",
+            "object": "Manfred Knof"
+        },
+        {
+            "subject": "Orange",
+            "object": "Christel Heydemann"
+        },
+        {
+            "subject": "\u0160koda Auto",
+            "object": "Klaus Zellmer"
+        },
+        {
+            "subject": "Meise Botanic Garden",
+            "object": "Steven Dessein"
+        },
+        {
+            "subject": "Foxconn",
+            "object": "Terry Gou"
+        },
+        {
+            "subject": "Mercedes-Benz Group",
+            "object": "Ola K\u00e4llenius"
+        },
+        {
+            "subject": "Ubisoft",
+            "object": "Yves Guillemot"
+        },
+        {
+            "subject": "LVMH",
+            "object": "Bernard Arnault"
+        },
+        {
+            "subject": "Panasonic Corporation",
+            "object": "Kazuhiro Tsuga"
+        },
+        {
+            "subject": "General Electric",
+            "object": "H. Lawrence Culp Jr."
+        },
+        {
+            "subject": "Unilever",
+            "object": "Alan Jope"
+        },
+        {
+            "subject": "Adobe",
+            "object": "Shantanu Narayen"
+        },
+        {
+            "subject": "General Motors",
+            "object": "Mary Barra"
+        },
+        {
+            "subject": "Procter & Gamble",
+            "object": "Jon Moeller"
+        },
+        {
+            "subject": "Auckland Airport",
+            "object": "Simon Moutter"
+        },
+        {
+            "subject": "eBay",
+            "object": "Jamie Iannone"
+        },
+        {
+            "subject": "Lufthansa",
+            "object": "Carsten Spohr"
+        },
+        {
+            "subject": "BMW",
+            "object": "Oliver Zipse"
+        },
+        {
+            "subject": "Johnson & Johnson",
+            "object": "Alex Gorsky"
+        },
+        {
+            "subject": "Orly Airport",
+            "object": "R\u00e9gis Lacote"
+        },
+        {
+            "subject": "PepsiCo",
+            "object": "Ramon Laguarta"
+        },
+        {
+            "subject": "National Institutes of Health",
+            "object": "Lawrence A. Tabak"
+        },
+        {
+            "subject": "Shell",
+            "object": "Wael Sawan"
+        },
+        {
+            "subject": "Radio Free Europe/Radio Liberty",
+            "object": "Jamie Fly"
+        },
+        {
+            "subject": "Yandex",
+            "object": "Arkady Volozh"
+        },
+        {
+            "subject": "Starbucks",
+            "object": "Kevin Johnson"
+        },
+        {
+            "subject": "ExxonMobil",
+            "object": "Darren Woods"
+        },
+        {
+            "subject": "Bank of America",
+            "object": "Brian Moynihan"
+        },
+        {
+            "subject": "Bayer",
+            "object": "Werner Baumann"
+        },
+        {
+            "subject": "\u010cEZ Group",
+            "object": "Daniel Bene\u0161"
+        },
+        {
+            "subject": "Gazprom",
+            "object": "Alexey Miller"
+        },
+        {
+            "subject": "Pfizer",
+            "object": "Albert Bourla"
+        },
+        {
+            "subject": "American Airlines",
+            "object": "Doug Parker"
+        },
+        {
+            "subject": "Deutsche Post AG",
+            "object": "Frank Appel"
+        },
+        {
+            "subject": "Nvidia",
+            "object": "Jen-Hsun Huang"
+        },
+        {
+            "subject": "DuPont",
+            "object": "Charles O. Holliday"
+        },
+        {
+            "subject": "Porsche",
+            "object": "Oliver Blume"
+        },
+        {
+            "subject": "BASF",
+            "object": "Martin Bruderm\u00fcller"
+        },
+        {
+            "subject": "AMD",
+            "object": "Lisa Su"
+        },
+        {
+            "subject": "Nissan",
+            "object": "Makoto Uchida"
+        },
+        {
+            "subject": "Kodak",
+            "object": "Jeff Clarke"
+        },
+        {
+            "subject": "Nike",
+            "object": "John Donahoe"
+        },
+        {
+            "subject": "Vinci",
+            "object": "Xavier Huillard"
+        },
+        {
+            "subject": "RWE",
+            "object": "Rolf Martin Schmitz"
+        },
+        {
+            "subject": "Alphabet Inc.",
+            "object": "Sundar Pichai"
+        },
+        {
+            "subject": "West Japan Railway Company",
+            "object": "Kazuaki Hasegawa"
+        },
+        {
+            "subject": "Lockheed Martin",
+            "object": "Marillyn Hewson"
+        },
+        {
+            "subject": "British Airways",
+            "object": "\u00c1lex Cruz"
+        },
+        {
+            "subject": "American Library Association",
+            "object": "Tracie D. Hall"
+        },
+        {
+            "subject": "Czech Airlines",
+            "object": "Petr Kudela"
+        },
+        {
+            "subject": "Southwest Airlines",
+            "object": "Bob Jordan"
+        },
+        {
+            "subject": "HSBC",
+            "object": "Stuart Gulliver"
+        },
+        {
+            "subject": "Warner Bros.",
+            "object": "Barry Meyer"
+        },
+        {
+            "subject": "Verizon",
+            "object": "Hans Vestberg"
+        },
+        {
+            "subject": "Agrofert",
+            "object": "Zbyn\u011bk Pr\u016f\u0161a"
+        },
+        {
+            "subject": "Berkshire Hathaway",
+            "object": "Warren Buffett"
+        },
+        {
+            "subject": "JPMorgan Chase",
+            "object": "Jamie Dimon"
+        },
+        {
+            "subject": "L\u2019Or\u00e9al",
+            "object": "Nicolas Hieronimus"
+        },
+        {
+            "subject": "Russian Railways",
+            "object": "Oleg Belozyorov"
+        },
+        {
+            "subject": "Citigroup",
+            "object": "Jane Fraser"
+        },
+        {
+            "subject": "Society of Jesus",
+            "object": "Arturo Sosa Abascal"
+        },
+        {
+            "subject": "Xiaomi",
+            "object": "Lei Jun"
+        },
+        {
+            "subject": "Central Japan Railway Company",
+            "object": "Shin Kaneko"
+        },
+        {
+            "subject": "Northrop Grumman",
+            "object": "Kathy J. Warden"
+        },
+        {
+            "subject": "Hewlett Packard Enterprise",
+            "object": "Antonio Neri"
+        },
+        {
+            "subject": "Toulouse-Blagnac",
+            "object": "Philippe Cr\u00e9bassa"
+        },
+        {
+            "subject": "Universal Music Group",
+            "object": "Lucian Grainge"
+        },
+        {
+            "subject": "Tencent",
+            "object": "Ma Huateng"
+        },
+        {
+            "subject": "Salesforce",
+            "object": "Marc Benioff"
+        },
+        {
+            "subject": "Caterpillar Inc.",
+            "object": "Jim Umpleby"
+        },
+        {
+            "subject": "United Parcel Service",
+            "object": "David Abney"
+        },
+        {
+            "subject": "PayPal",
+            "object": "Dan Schulman"
+        },
+        {
+            "subject": "Toyota",
+            "object": "Akio Toyoda"
+        },
+        {
+            "subject": "Vodafone",
+            "object": "Nick Read"
+        },
+        {
+            "subject": "SoftBank Group",
+            "object": "Masayoshi Son"
+        },
+        {
+            "subject": "Air Liquide",
+            "object": "Beno\u00eet Potier"
+        },
+        {
+            "subject": "Visa Inc.",
+            "object": "Alfred F. Kelly"
+        },
+        {
+            "subject": "Klinikum Ernst von Bergmann",
+            "object": "Dorothea Fischer"
+        },
+        {
+            "subject": "Air France",
+            "object": "Fr\u00e9d\u00e9ric Gagey"
+        },
+        {
+            "subject": "Sanofi",
+            "object": "Olivier Brandicourt"
+        },
+        {
+            "subject": "Goldman Sachs & Co. (US)",
+            "object": "David M. Solomon"
+        },
+        {
+            "subject": "BP",
+            "object": "Bernard Looney"
+        },
+        {
+            "subject": "Schneider Electric",
+            "object": "Jean-Pascal Tricoire"
+        },
+        {
+            "subject": "Continental AG",
+            "object": "Elmar Degenhart"
+        },
+        {
+            "subject": "Energetick\u00fd a pr\u016fmyslov\u00fd holding",
+            "object": "Daniel K\u0159et\u00ednsk\u00fd"
+        },
+        {
+            "subject": "American Express",
+            "object": "Stephen Squeri"
+        },
+        {
+            "subject": "Institute of Biological Sciences",
+            "object": "Andr\u00e9 Le Bivic"
+        },
+        {
+            "subject": "FedEx",
+            "object": "Raj Subramaniam"
+        },
+        {
+            "subject": "General Dynamics",
+            "object": "Phebe Novakovic"
+        },
+        {
+            "subject": "Warner Music Group",
+            "object": "Stephen Cooper"
+        },
+        {
+            "subject": "BNP Paribas",
+            "object": "Jean-Laurent Bonnaf\u00e9"
+        },
+        {
+            "subject": "Juniper Networks",
+            "object": "Rami Rahim"
+        },
+        {
+            "subject": "Alliance '90/The Greens",
+            "object": "Emily B\u00fcning"
+        },
+        {
+            "subject": "Audi",
+            "object": "Markus Duesmann"
+        },
+        {
+            "subject": "U.S. Steel",
+            "object": "David Burritt"
+        },
+        {
+            "subject": "AstraZeneca",
+            "object": "Pascal Soriot"
+        },
+        {
+            "subject": "Target Corporation",
+            "object": "Brian Cornell"
+        },
+        {
+            "subject": "\u010cesk\u00e1 spo\u0159itelna",
+            "object": "Tom\u00e1\u0161 Salomon"
+        },
+        {
+            "subject": "STMicroelectronics",
+            "object": "Jean-Marc Ch\u00e9ry"
+        },
+        {
+            "subject": "Brussels Airport",
+            "object": "Arnaud Feist"
+        },
+        {
+            "subject": "Aspen Institute",
+            "object": "Daniel R. Porterfield"
+        },
+        {
+            "subject": "Christian Social Union of Bavaria",
+            "object": "Hans Michael Strepp"
+        },
+        {
+            "subject": "World Wide Fund for Nature",
+            "object": "Marco Lambertini"
+        },
+        {
+            "subject": "Morgan Stanley",
+            "object": "James P. Gorman"
+        },
+        {
+            "subject": "Globcal International",
+            "object": "David J. Wright"
+        },
+        {
+            "subject": "Abbott Laboratories",
+            "object": "Robert B. Ford"
+        },
+        {
+            "subject": "Qualcomm Inc.",
+            "object": "Cristiano Amon"
+        },
+        {
+            "subject": "Maersk",
+            "object": "S\u00f8ren Skou"
+        },
+        {
+            "subject": "Bertelsmann",
+            "object": "Thomas Rabe"
+        },
+        {
+            "subject": "University of Leeds",
+            "object": "Alan Langlands"
+        },
+        {
+            "subject": "LinkedIn",
+            "object": "Ryan Roslansky"
+        },
+        {
+            "subject": "Thales Group",
+            "object": "Patrice Caine"
+        },
+        {
+            "subject": "The Home Depot",
+            "object": "Craig Menear"
+        },
+        {
+            "subject": "Gilead Sciences",
+            "object": "Daniel O'Day"
+        },
+        {
+            "subject": "Wells Fargo",
+            "object": "Charlie Scharf"
+        },
+        {
+            "subject": "Deere & Company",
+            "object": "Charles Deere Wiman"
+        },
+        {
+            "subject": "Saudi Aramco",
+            "object": "Amin H. Al-Nasser"
+        },
+        {
+            "subject": "Chevron Corporation",
+            "object": "Mike Wirth"
+        },
+        {
+            "subject": "ArcelorMittal",
+            "object": "Aditya Mittal"
+        },
+        {
+            "subject": "HP Inc.",
+            "object": "Dion Weisler"
+        },
+        {
+            "subject": "Airbus Group",
+            "object": "Guillaume Faury"
+        },
+        {
+            "subject": "Accor",
+            "object": "Sven Boinet"
+        },
+        {
+            "subject": "Adidas AG",
+            "object": "Bj\u00f8rn Gulden"
+        },
+        {
+            "subject": "O2 Czech Republic",
+            "object": "Jind\u0159ich Fremuth"
+        },
+        {
+            "subject": "Toshiba",
+            "object": "Nobuaki Kurumatani"
+        },
+        {
+            "subject": "The Salvation Army",
+            "object": "Brian Peddle"
+        },
+        {
+            "subject": "The Lego Group",
+            "object": "Niels B. Christiansen"
+        },
+        {
+            "subject": "SAP",
+            "object": "Jennifer Morgan"
+        },
+        {
+            "subject": "Qantas",
+            "object": "Alan Joyce"
+        },
+        {
+            "subject": "\u00c9lectricit\u00e9 de France",
+            "object": "Jean-Bernard L\u00e9vy"
+        },
+        {
+            "subject": "Ericsson",
+            "object": "B\u00f6rje Ekholm"
+        },
+        {
+            "subject": "Major League Soccer",
+            "object": "Don Garber"
+        },
+        {
+            "subject": "Costco",
+            "object": "W. Craig Jelinek"
+        },
+        {
+            "subject": "Merck & Co.",
+            "object": "Kenneth Frazier"
+        },
+        {
+            "subject": "Airbus",
+            "object": "Guillaume Faury"
+        },
+        {
+            "subject": "Cloudflare",
+            "object": "Matthew Prince"
+        },
+        {
+            "subject": "Allwyn International",
+            "object": "Robert Chv\u00e1tal"
+        },
+        {
+            "subject": "Vivendi",
+            "object": "Yannick Bollor\u00e9"
+        },
+        {
+            "subject": "Mastercard",
+            "object": "Ajaypal Singh Banga"
+        },
+        {
+            "subject": "Valeo",
+            "object": "Jacques Aschenbroich"
+        },
+        {
+            "subject": "Naturschutzbund Deutschland",
+            "object": "Susanne Baumann"
+        },
+        {
+            "subject": "British Council",
+            "object": "Ciar\u00e1n Devane"
+        },
+        {
+            "subject": "Philip Morris International",
+            "object": "Jacek Olczak"
+        },
+        {
+            "subject": "Rheinmetall AG",
+            "object": "Armin Papperger"
+        },
+        {
+            "subject": "FC Bayern Munich",
+            "object": "Herbert Hainer"
+        },
+        {
+            "subject": "Mapbox",
+            "object": "Peter Sirota"
+        },
+        {
+            "subject": "Alibaba Group",
+            "object": "Daniel Zhang"
+        },
+        {
+            "subject": "\u010cesk\u00e9 dr\u00e1hy",
+            "object": "Michal Krapinec"
+        },
+        {
+            "subject": "Activision Blizzard",
+            "object": "Bobby Kotick"
+        },
+        {
+            "subject": "KLM",
+            "object": "Pieter Elbers"
+        },
+        {
+            "subject": "Comcast",
+            "object": "Brian L. Roberts"
+        },
+        {
+            "subject": "DR",
+            "object": "Maria R\u00f8rbye R\u00f8nn"
+        },
+        {
+            "subject": "Paramount Global",
+            "object": "Robert Bakish"
+        },
+        {
+            "subject": "Accenture",
+            "object": "Julie Sweet"
+        },
+        {
+            "subject": "Channel One Russia",
+            "object": "Konstantin Ernst"
+        },
+        {
+            "subject": "AOL",
+            "object": "Tim Armstrong"
+        },
+        {
+            "subject": "CVS Health",
+            "object": "Larry Merlo"
+        },
+        {
+            "subject": "SpaceX",
+            "object": "Elon Musk"
+        },
+        {
+            "subject": "Finnair",
+            "object": "Pekka Vauramo"
+        },
+        {
+            "subject": "Kroger",
+            "object": "Rodney McMullen"
+        },
+        {
+            "subject": "Colgate-Palmolive Company",
+            "object": "Ian M. Cook"
+        },
+        {
+            "subject": "ConocoPhillips",
+            "object": "Ryan Lance"
+        },
+        {
+            "subject": "Lenovo",
+            "object": "Yang Yuanqing"
+        },
+        {
+            "subject": "Kering",
+            "object": "Fran\u00e7ois-Henri Pinault"
+        },
+        {
+            "subject": "Honeywell International, Inc.",
+            "object": "Darius Adamczyk"
+        },
+        {
+            "subject": "Viacom",
+            "object": "Robert Bakish"
+        },
+        {
+            "subject": "Honda",
+            "object": "Takahiro Hachig\u014d"
+        },
+        {
+            "subject": "Sberbank of Russia",
+            "object": "Herman Gref"
+        },
+        {
+            "subject": "Chartered Institute of Library and Information Professionals",
+            "object": "Nick Poole"
+        },
+        {
+            "subject": "Kyushu Railway Company",
+            "object": "Y\u014dji Furumiya"
+        },
+        {
+            "subject": "Heineken",
+            "object": "Freddy Heineken"
+        },
+        {
+            "subject": "Amazon Web Services",
+            "object": "Andy Jassy"
+        },
+        {
+            "subject": "Paramount Pictures",
+            "object": "Jim Gianopulos"
+        },
+        {
+            "subject": "Nortel",
+            "object": "Mike S. Zafirovski"
+        },
+        {
+            "subject": "Mondelez International",
+            "object": "Dirk Van de Put"
+        },
+        {
+            "subject": "United Airlines",
+            "object": "Scott Kirby"
+        },
+        {
+            "subject": "Institute of Human and Social Sciences",
+            "object": "Marie Gaille"
+        },
+        {
+            "subject": "Ferrari S.p.A.",
+            "object": "Benedetto Vigna"
+        },
+        {
+            "subject": "H&M",
+            "object": "Karl-Johan Persson"
+        },
+        {
+            "subject": "Hokkaido Railway Company",
+            "object": "Yasuyuki Watanuki"
+        },
+        {
+            "subject": "Dassault Syst\u00e8mes",
+            "object": "Bernard Charl\u00e8s"
+        },
+        {
+            "subject": "Kimberly-Clark",
+            "object": "Thomas J. Falk"
+        },
+        {
+            "subject": "Eli Lilly and Company",
+            "object": "David A. Ricks"
+        },
+        {
+            "subject": "Hitachi",
+            "object": "Toshiaki Higashihara"
+        },
+        {
+            "subject": "\u0160koda Transportation",
+            "object": "Petr Brzezina"
+        },
+        {
+            "subject": "Bristol-Myers Squibb",
+            "object": "Giovanni Caforio"
+        },
+        {
+            "subject": "University of Gothenburg",
+            "object": "Pam Fredman"
+        },
+        {
+            "subject": "Seagate Technology",
+            "object": "Stephen J. Luczo"
+        },
+        {
+            "subject": "Lukoil",
+            "object": "Vagit Alekperov"
+        },
+        {
+            "subject": "\u010ceskoslovensk\u00e1 obchodn\u00ed banka",
+            "object": "Ale\u0161 Bla\u017eek"
+        },
+        {
+            "subject": "International Telecommunication Union",
+            "object": "Houlin Zhao"
+        },
+        {
+            "subject": "M\u00e9decins Sans Fronti\u00e8res",
+            "object": "Christos Christou"
+        },
+        {
+            "subject": "Capgemini",
+            "object": "Paul Hermelin"
+        },
+        {
+            "subject": "GitHub",
+            "object": "Nat Friedman"
+        },
+        {
+            "subject": "Netgear",
+            "object": "Patrick Lo"
+        },
+        {
+            "subject": "ABB Group",
+            "object": "Ulrich Spiesshofer"
+        },
+        {
+            "subject": "Komer\u010dn\u00ed banka",
+            "object": "Jan Juchelka"
+        },
+        {
+            "subject": "Electrolux",
+            "object": "Jonas Samuelson"
+        },
+        {
+            "subject": "Bell Resources",
+            "object": "Mark Avery"
+        },
+        {
+            "subject": "TIM Group",
+            "object": "Salvatore Rossi"
+        },
+        {
+            "subject": "Novartis",
+            "object": "Joseph Jimenez"
+        },
+        {
+            "subject": "Yum! Brands",
+            "object": "Greg Creed"
+        },
+        {
+            "subject": "GlaxoSmithKline",
+            "object": "Emma Walmsley"
+        },
+        {
+            "subject": "Solvay",
+            "object": "Ilham Kadri"
+        },
+        {
+            "subject": "METRO AG",
+            "object": "Steffen Greubel"
+        },
+        {
+            "subject": "Infineon Technologies",
+            "object": "Jochen Hanebeck"
+        },
+        {
+            "subject": "BlackRock",
+            "object": "Larry Fink"
+        },
+        {
+            "subject": "Food and Agriculture Organization",
+            "object": "Mohammed Shia' Al Sudani"
+        },
+        {
+            "subject": "Simon & Schuster",
+            "object": "Richard E. Snyder"
+        },
+        {
+            "subject": "Best Buy",
+            "object": "Hubert Joly"
+        },
+        {
+            "subject": "Humana",
+            "object": "Bruce Broussard"
+        },
+        {
+            "subject": "GMV Innovating Solutions",
+            "object": "Jes\u00fas Serrano Mart\u00ednez"
+        },
+        {
+            "subject": "T-Mobile US",
+            "object": "Mike Sievert"
+        },
+        {
+            "subject": "FC Viktoria K\u00f6ln",
+            "object": "Axel Freisewinkel"
+        },
+        {
+            "subject": "Broderbund",
+            "object": "Doug Carlston"
+        },
+        {
+            "subject": "Hasbro",
+            "object": "Brian Goldner"
+        },
+        {
+            "subject": "Hyundai Motor Company",
+            "object": "Chung Eui-sun"
+        },
+        {
+            "subject": "Nederlandse Spoorwegen",
+            "object": "Marjan Rintel"
+        },
+        {
+            "subject": "NBCUniversal",
+            "object": "Steve Burke"
+        },
+        {
+            "subject": "Peterson Institute for International Economics",
+            "object": "C. Fred Bergsten"
+        },
+        {
+            "subject": "Orlen Unipetrol",
+            "object": "Andrzej Modrzejewski"
+        },
+        {
+            "subject": "Valve Corporation",
+            "object": "Gabe Newell"
+        },
+        {
+            "subject": "Tesco",
+            "object": "Ken Murph"
+        },
+        {
+            "subject": "TV Rain",
+            "object": "Natalya Sindeyeva"
+        },
+        {
+            "subject": "PricewaterhouseCoopers",
+            "object": "Samuel DiPiazza"
+        },
+        {
+            "subject": "UBS",
+            "object": "Sergio Ermotti"
+        },
+        {
+            "subject": "Opera Software",
+            "object": "Jon Stephenson von Tetzchner"
+        },
+        {
+            "subject": "Publicis",
+            "object": "Maurice L\u00e9vy"
+        },
+        {
+            "subject": "BT Group",
+            "object": "Philip Jansen"
+        },
+        {
+            "subject": "Smartwings",
+            "object": "Roman Vik"
+        },
+        {
+            "subject": "Cognizant",
+            "object": "Francisco D'Souza"
+        },
+        {
+            "subject": "BlackBerry",
+            "object": "John S. Chen"
+        },
+        {
+            "subject": "Wolters Kluwer",
+            "object": "Nancy McKinstry"
+        },
+        {
+            "subject": "Yle",
+            "object": "Merja Yl\u00e4-Anttila"
+        },
+        {
+            "subject": "Biogen",
+            "object": "Michel Vounatsos"
+        },
+        {
+            "subject": "Bethesda Softworks",
+            "object": "Todd Howard"
+        },
+        {
+            "subject": "Carrefour Group",
+            "object": "Alexandre Bompard"
+        },
+        {
+            "subject": "Aeroflot",
+            "object": "Sergei Alexandrovsky"
+        },
+        {
+            "subject": "ICANN",
+            "object": "G\u00f6ran Marby"
+        },
+        {
+            "subject": "AC Sparta Prague",
+            "object": "Daniel K\u0159et\u00ednsk\u00fd"
+        },
+        {
+            "subject": "Dow Chemical Company",
+            "object": "Jim Fitterling"
+        },
+        {
+            "subject": "Legrand",
+            "object": "Beno\u00eet Coquart"
+        },
+        {
+            "subject": "Institut de chimie",
+            "object": "Jacques Maddaluno"
+        },
+        {
+            "subject": "Pinterest",
+            "object": "Ben Silbermann"
+        },
+        {
+            "subject": "thyssenkrupp AG",
+            "object": "Ulrich Lehner"
+        },
+        {
+            "subject": "Raytheon Company",
+            "object": "Thomas Kennedy"
+        },
+        {
+            "subject": "Fannie Mae",
+            "object": "Timothy Mayopoulos"
+        },
+        {
+            "subject": "Red Hat",
+            "object": "Matt Hicks"
+        },
+        {
+            "subject": "Vertex Pharmaceuticals",
+            "object": "Reshma Kewalramani"
+        }
+    ]
+}

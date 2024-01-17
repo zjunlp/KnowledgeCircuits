@@ -1,0 +1,170 @@
+{
+    "name": "work location",
+    "prompt_templates": [
+        "A {} typically works at a"
+    ],
+    "prompt_templates_zs": [
+        "A {} typically works at a",
+        "You can usually find a {} working in a"
+    ],
+    "properties": {
+        "relation_type": "commonsense",
+        "domain_name": "occupation",
+        "range_name": "location",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "farmer",
+            "object": "farm"
+        },
+        {
+            "subject": "lawyer",
+            "object": "courthouse"
+        },
+        {
+            "subject": "teacher",
+            "object": "school"
+        },
+        {
+            "subject": "accountant",
+            "object": "office"
+        },
+        {
+            "subject": "artist",
+            "object": "studio"
+        },
+        {
+            "subject": "athlete",
+            "object": "stadium"
+        },
+        {
+            "subject": "baker",
+            "object": "bakery"
+        },
+        {
+            "subject": "barber",
+            "object": "barbershop"
+        },
+        {
+            "subject": "chef",
+            "object": "kitchen"
+        },
+        {
+            "subject": "doctor",
+            "object": "hospital"
+        },
+        {
+            "subject": "fashion designer",
+            "object": "studio"
+        },
+        {
+            "subject": "firefighter",
+            "object": "fire station"
+        },
+        {
+            "subject": "florist",
+            "object": "flower shop"
+        },
+        {
+            "subject": "flight attendant",
+            "object": "airplane"
+        },
+        {
+            "subject": "hairdresser",
+            "object": "salon"
+        },
+        {
+            "subject": "historian",
+            "object": "library"
+        },
+        {
+            "subject": "insurance agent",
+            "object": "office"
+        },
+        {
+            "subject": "journalist",
+            "object": "office"
+        },
+        {
+            "subject": "librarian",
+            "object": "library"
+        },
+        {
+            "subject": "mechanic",
+            "object": "garage"
+        },
+        {
+            "subject": "musician",
+            "object": "concert hall"
+        },
+        {
+            "subject": "nurse",
+            "object": "hospital"
+        },
+        {
+            "subject": "painter",
+            "object": "studio"
+        },
+        {
+            "subject": "pharmacist",
+            "object": "pharmacy"
+        },
+        {
+            "subject": "photographer",
+            "object": "studio"
+        },
+        {
+            "subject": "pilot",
+            "object": "airplane"
+        },
+        {
+            "subject": "researcher",
+            "object": "laboratory"
+        },
+        {
+            "subject": "salesperson",
+            "object": "store"
+        },
+        {
+            "subject": "scientist",
+            "object": "laboratory"
+        },
+        {
+            "subject": "secretary",
+            "object": "office"
+        },
+        {
+            "subject": "soldier",
+            "object": "military base"
+        },
+        {
+            "subject": "software engineer",
+            "object": "office"
+        },
+        {
+            "subject": "student",
+            "object": "school"
+        },
+        {
+            "subject": "surgeon",
+            "object": "hospital"
+        },
+        {
+            "subject": "trainer",
+            "object": "gym"
+        },
+        {
+            "subject": "truck driver",
+            "object": "truck"
+        },
+        {
+            "subject": "waitress",
+            "object": "restaurant"
+        },
+        {
+            "subject": "waiter",
+            "object": "restaurant"
+        }
+    ]
+}

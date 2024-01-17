@@ -1,0 +1,418 @@
+{
+    "name": "adjective antonym",
+    "prompt_templates": [
+        "The opposite of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The opposite of {} is",
+        "The antonym of {} is"
+    ],
+    "properties": {
+        "relation_type": "linguistic",
+        "domain_name": "adjective",
+        "range_name": "adjective",
+        "symmetric": true
+    },
+    "samples": [
+        {
+            "subject": "love",
+            "object": "hate"
+        },
+        {
+            "subject": "create",
+            "object": "destroy"
+        },
+        {
+            "subject": "happy",
+            "object": "sad"
+        },
+        {
+            "subject": "full",
+            "object": "empty"
+        },
+        {
+            "subject": "brave",
+            "object": "cowardly"
+        },
+        {
+            "subject": "open",
+            "object": "closed"
+        },
+        {
+            "subject": "safe",
+            "object": "dangerous"
+        },
+        {
+            "subject": "beautiful",
+            "object": "ugly"
+        },
+        {
+            "subject": "friend",
+            "object": "enemy"
+        },
+        {
+            "subject": "day",
+            "object": "night"
+        },
+        {
+            "subject": "buy",
+            "object": "sell"
+        },
+        {
+            "subject": "big",
+            "object": "small"
+        },
+        {
+            "subject": "old",
+            "object": "young"
+        },
+        {
+            "subject": "quiet",
+            "object": "loud"
+        },
+        {
+            "subject": "true",
+            "object": "false"
+        },
+        {
+            "subject": "fast",
+            "object": "slow"
+        },
+        {
+            "subject": "hot",
+            "object": "cold"
+        },
+        {
+            "subject": "good",
+            "object": "bad"
+        },
+        {
+            "subject": "start",
+            "object": "stop"
+        },
+        {
+            "subject": "inside",
+            "object": "outside"
+        },
+        {
+            "subject": "win",
+            "object": "lose"
+        },
+        {
+            "subject": "give",
+            "object": "take"
+        },
+        {
+            "subject": "light",
+            "object": "dark"
+        },
+        {
+            "subject": "healthy",
+            "object": "sick"
+        },
+        {
+            "subject": "clean",
+            "object": "dirty"
+        },
+        {
+            "subject": "right",
+            "object": "wrong"
+        },
+        {
+            "subject": "up",
+            "object": "down"
+        },
+        {
+            "subject": "strong",
+            "object": "weak"
+        },
+        {
+            "subject": "happy",
+            "object": "angry"
+        },
+        {
+            "subject": "tall",
+            "object": "short"
+        },
+        {
+            "subject": "wise",
+            "object": "foolish"
+        },
+        {
+            "subject": "connect",
+            "object": "disconnect"
+        },
+        {
+            "subject": "soft",
+            "object": "hard"
+        },
+        {
+            "subject": "yes",
+            "object": "no"
+        },
+        {
+            "subject": "smooth",
+            "object": "rough"
+        },
+        {
+            "subject": "front",
+            "object": "back"
+        },
+        {
+            "subject": "forgive",
+            "object": "blame"
+        },
+        {
+            "subject": "simple",
+            "object": "complex"
+        },
+        {
+            "subject": "open",
+            "object": "shut"
+        },
+        {
+            "subject": "shallow",
+            "object": "deep"
+        },
+        {
+            "subject": "smile",
+            "object": "frown"
+        },
+        {
+            "subject": "laugh",
+            "object": "cry"
+        },
+        {
+            "subject": "fast",
+            "object": "stop"
+        },
+        {
+            "subject": "up",
+            "object": "below"
+        },
+        {
+            "subject": "positive",
+            "object": "negative"
+        },
+        {
+            "subject": "honest",
+            "object": "dishonest"
+        },
+        {
+            "subject": "push",
+            "object": "pull"
+        },
+        {
+            "subject": "wet",
+            "object": "dry"
+        },
+        {
+            "subject": "up",
+            "object": "out"
+        },
+        {
+            "subject": "narrow",
+            "object": "wide"
+        },
+        {
+            "subject": "up",
+            "object": "off"
+        },
+        {
+            "subject": "straight",
+            "object": "curved"
+        },
+        {
+            "subject": "accept",
+            "object": "reject"
+        },
+        {
+            "subject": "build",
+            "object": "demolish"
+        },
+        {
+            "subject": "gentle",
+            "object": "rough"
+        },
+        {
+            "subject": "include",
+            "object": "exclude"
+        },
+        {
+            "subject": "past",
+            "object": "future"
+        },
+        {
+            "subject": "arrive",
+            "object": "depart"
+        },
+        {
+            "subject": "inhale",
+            "object": "exhale"
+        },
+        {
+            "subject": "scatter",
+            "object": "gather"
+        },
+        {
+            "subject": "borrow",
+            "object": "lend"
+        },
+        {
+            "subject": "separate",
+            "object": "unite"
+        },
+        {
+            "subject": "arrive",
+            "object": "leave"
+        },
+        {
+            "subject": "open",
+            "object": "lock"
+        },
+        {
+            "subject": "float",
+            "object": "sink"
+        },
+        {
+            "subject": "bend",
+            "object": "straighten"
+        },
+        {
+            "subject": "scatter",
+            "object": "collect"
+        },
+        {
+            "subject": "rise",
+            "object": "fall"
+        },
+        {
+            "subject": "praise",
+            "object": "criticize"
+        },
+        {
+            "subject": "vanish",
+            "object": "appear"
+        },
+        {
+            "subject": "start",
+            "object": "end"
+        },
+        {
+            "subject": "enter",
+            "object": "exit"
+        },
+        {
+            "subject": "attract",
+            "object": "repel"
+        },
+        {
+            "subject": "give",
+            "object": "receive"
+        },
+        {
+            "subject": "find",
+            "object": "lose"
+        },
+        {
+            "subject": "begin",
+            "object": "finish"
+        },
+        {
+            "subject": "pull",
+            "object": "push"
+        },
+        {
+            "subject": "increase",
+            "object": "decrease"
+        },
+        {
+            "subject": "win",
+            "object": "surrender"
+        },
+        {
+            "subject": "calm",
+            "object": "agitated"
+        },
+        {
+            "subject": "expand",
+            "object": "contract"
+        },
+        {
+            "subject": "attack",
+            "object": "defend"
+        },
+        {
+            "subject": "save",
+            "object": "spend"
+        },
+        {
+            "subject": "remember",
+            "object": "forget"
+        },
+        {
+            "subject": "lend",
+            "object": "borrow"
+        },
+        {
+            "subject": "together",
+            "object": "apart"
+        },
+        {
+            "subject": "question",
+            "object": "answer"
+        },
+        {
+            "subject": "close",
+            "object": "open"
+        },
+        {
+            "subject": "clockwise",
+            "object": "counterclockwise"
+        },
+        {
+            "subject": "put",
+            "object": "remove"
+        },
+        {
+            "subject": "laugh",
+            "object": "sob"
+        },
+        {
+            "subject": "play",
+            "object": "work"
+        },
+        {
+            "subject": "up",
+            "object": "down"
+        },
+        {
+            "subject": "succeed",
+            "object": "fail"
+        },
+        {
+            "subject": "expand",
+            "object": "shrink"
+        },
+        {
+            "subject": "inhale",
+            "object": "exhale"
+        },
+        {
+            "subject": "bless",
+            "object": "curse"
+        },
+        {
+            "subject": "fast",
+            "object": "crawl"
+        },
+        {
+            "subject": "cheer",
+            "object": "boo"
+        },
+        {
+            "subject": "whisper",
+            "object": "shout"
+        }
+    ]
+}

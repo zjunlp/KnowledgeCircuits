@@ -1,0 +1,3982 @@
+{
+    "name": "person father",
+    "prompt_templates": [
+        "{}'s father is named"
+    ],
+    "prompt_templates_zs": [
+        "Who is {}'s father? Their father is named",
+        "{}'s father is named"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "person",
+        "range_name": "person",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Beyonc\u00e9 Knowles",
+            "object": "Mathew Knowles"
+        },
+        {
+            "subject": "David Beckham",
+            "object": "David Edward Alan Beckham"
+        },
+        {
+            "subject": "Reese Witherspoon",
+            "object": "John Witherspoon"
+        },
+        {
+            "subject": "Paris Jackson",
+            "object": "Michael Jackson"
+        },
+        {
+            "subject": "Scott Eastwood",
+            "object": "Clint Eastwood"
+        },
+        {
+            "subject": "Rumer Willis",
+            "object": "Bruce Willis"
+        },
+        {
+            "subject": "Zoe Kravitz",
+            "object": "Lenny Kravitz"
+        },
+        {
+            "subject": "Dylan Brosnan",
+            "object": "Pierce Brosnan"
+        },
+        {
+            "subject": "Abby Elliott",
+            "object": "Chris Elliott"
+        },
+        {
+            "subject": "Georgia May Jagger",
+            "object": "Mick Jagger"
+        },
+        {
+            "subject": "Paula Abdul",
+            "object": "Harry Abdul"
+        },
+        {
+            "subject": "Chet Hanks",
+            "object": "Tom Hanks"
+        },
+        {
+            "subject": "Ivanka Trump",
+            "object": "Donald Trump"
+        },
+        {
+            "subject": "Patrick Schwarzenegger",
+            "object": "Arnold Schwarzenegger"
+        },
+        {
+            "subject": "Tracy Reiner",
+            "object": "Rob Reiner"
+        },
+        {
+            "subject": "Jakob Dylan",
+            "object": "Bob Dylan"
+        },
+        {
+            "subject": "Max Irons",
+            "object": "Jeremy Irons"
+        },
+        {
+            "subject": "Eva Amurri",
+            "object": "Franco Amurri"
+        },
+        {
+            "subject": "Jason Schwartzman",
+            "object": "Francis Ford Coppola"
+        },
+        {
+            "subject": "Colin Hanks",
+            "object": "Tom Hanks"
+        },
+        {
+            "subject": "Sosie Bacon",
+            "object": "Kevin Bacon"
+        },
+        {
+            "subject": "Stella McCartney",
+            "object": "Paul McCartney"
+        },
+        {
+            "subject": "Jessica Capshaw",
+            "object": "Steven Spielberg"
+        },
+        {
+            "subject": "Peter Paul Rubens",
+            "object": "Jan Rubens"
+        },
+        {
+            "subject": "Madonna",
+            "object": "Silvio P. (Tony) Ciccone"
+        },
+        {
+            "subject": "Pablo Picasso",
+            "object": "Jos\u00e9 Ruiz y Blanco"
+        },
+        {
+            "subject": "Lady Gaga",
+            "object": "Joe Germanotta"
+        },
+        {
+            "subject": "Rembrandt",
+            "object": "Harmen Gerritszoon van Rijn"
+        },
+        {
+            "subject": "Vladimir Putin",
+            "object": "Vladimir Spiridonovich Putin"
+        },
+        {
+            "subject": "Anthony van Dyck",
+            "object": "Franchois Van Dyck"
+        },
+        {
+            "subject": "Michael Jackson",
+            "object": "Joe Jackson"
+        },
+        {
+            "subject": "William Shakespeare",
+            "object": "John Shakespeare"
+        },
+        {
+            "subject": "Albrecht D\u00fcrer",
+            "object": "Albrecht D\u00fcrer the Elder"
+        },
+        {
+            "subject": "Vincent van Gogh",
+            "object": "Theodorus van Gogh"
+        },
+        {
+            "subject": "Aretha Franklin",
+            "object": "C. L. Franklin"
+        },
+        {
+            "subject": "Albert Einstein",
+            "object": "Hermann Einstein"
+        },
+        {
+            "subject": "Leonardo da Vinci",
+            "object": "Ser Piero da Vinci"
+        },
+        {
+            "subject": "Adolf Hitler",
+            "object": "Alois Hitler"
+        },
+        {
+            "subject": "Johann Wolfgang von Goethe",
+            "object": "Johann Caspar Goethe"
+        },
+        {
+            "subject": "Elizabeth II",
+            "object": "George VI"
+        },
+        {
+            "subject": "Leo Tolstoy",
+            "object": "Nikolay Tolstoy"
+        },
+        {
+            "subject": "Taylor Swift",
+            "object": "Scott Swift"
+        },
+        {
+            "subject": "Donald Trump",
+            "object": "Fred Trump"
+        },
+        {
+            "subject": "Jennifer Lopez",
+            "object": "Juan Lopez"
+        },
+        {
+            "subject": "Eug\u00e8ne Delacroix",
+            "object": "Charles-Fran\u00e7ois Delacroix"
+        },
+        {
+            "subject": "Napoleon",
+            "object": "Carlo Bonaparte"
+        },
+        {
+            "subject": "Paul Gauguin",
+            "object": "Clovis Gauguin"
+        },
+        {
+            "subject": "Camille Pissarro",
+            "object": "Fr\u00e9d\u00e9ric-Abraham-Gabriel Pissarro"
+        },
+        {
+            "subject": "Victor Hugo",
+            "object": "Joseph L\u00e9opold Sigisbert Hugo"
+        },
+        {
+            "subject": "Beyonc\u00e9",
+            "object": "Mathew Knowles"
+        },
+        {
+            "subject": "Britney Spears",
+            "object": "James Parnell Spears"
+        },
+        {
+            "subject": "Barack Obama",
+            "object": "Barack Obama Sr."
+        },
+        {
+            "subject": "Cher",
+            "object": "John Sarkisian"
+        },
+        {
+            "subject": "Jesus",
+            "object": "God the Father"
+        },
+        {
+            "subject": "Michelangelo",
+            "object": "Lodovico di Leonardo Buonarroti Simoni"
+        },
+        {
+            "subject": "Lucas Cranach the Elder",
+            "object": "Hans Maler"
+        },
+        {
+            "subject": "Marilyn Monroe",
+            "object": "Charles Stanley Gifford"
+        },
+        {
+            "subject": "Wolfgang Amadeus Mozart",
+            "object": "Leopold Mozart"
+        },
+        {
+            "subject": "Ludwig van Beethoven",
+            "object": "Johann van Beethoven"
+        },
+        {
+            "subject": "Katy Perry",
+            "object": "Keith Hudson"
+        },
+        {
+            "subject": "Johann Sebastian Bach",
+            "object": "Johann Ambrosius Bach"
+        },
+        {
+            "subject": "Charles Darwin",
+            "object": "Robert Darwin"
+        },
+        {
+            "subject": "Paul C\u00e9zanne",
+            "object": "Louis-Auguste C\u00e9zanne"
+        },
+        {
+            "subject": "Francisco de Goya",
+            "object": "Jos\u00e9 Benito de Goya y Franque"
+        },
+        {
+            "subject": "Charles Dickens",
+            "object": "John Dickens"
+        },
+        {
+            "subject": "Friedrich Nietzsche",
+            "object": "Carl Ludwig Nietzsche"
+        },
+        {
+            "subject": "Joseph Stalin",
+            "object": "Besarion Jughashvili"
+        },
+        {
+            "subject": "Voltaire",
+            "object": "Fran\u00e7ois d'Arouet"
+        },
+        {
+            "subject": "Plato",
+            "object": "Ariston of Athens"
+        },
+        {
+            "subject": "Salvador Dal\u00ed",
+            "object": "Salvador Dal\u00ed i Cus\u00ed"
+        },
+        {
+            "subject": "Dante Alighieri",
+            "object": "Alighiero di Bellincione"
+        },
+        {
+            "subject": "John Lennon",
+            "object": "Alfred Lennon"
+        },
+        {
+            "subject": "Raphael",
+            "object": "Giovanni Santi"
+        },
+        {
+            "subject": "Andy Warhol",
+            "object": "Andrej Warhola"
+        },
+        {
+            "subject": "L. Frank Baum",
+            "object": "Benjamin Ward Baum"
+        },
+        {
+            "subject": "Shania Twain",
+            "object": "Clarence Edwards"
+        },
+        {
+            "subject": "Edgar Allan Poe",
+            "object": "David Poe, Jr."
+        },
+        {
+            "subject": "Lewis Carroll",
+            "object": "Charles Dodgson"
+        },
+        {
+            "subject": "\u00c9douard Manet",
+            "object": "Auguste Manet"
+        },
+        {
+            "subject": "Walt Disney",
+            "object": "Elias Disney"
+        },
+        {
+            "subject": "Angelina Jolie",
+            "object": "Jon Voight"
+        },
+        {
+            "subject": "Jane Fonda",
+            "object": "Henry Fonda"
+        },
+        {
+            "subject": "Bob Dylan",
+            "object": "Abram Zimmerman"
+        },
+        {
+            "subject": "William Blake",
+            "object": "James Blake"
+        },
+        {
+            "subject": "Vladimir Lenin",
+            "object": "Ilya Ulyanov"
+        },
+        {
+            "subject": "Janet Jackson",
+            "object": "Joe Jackson"
+        },
+        {
+            "subject": "Edgar Degas",
+            "object": "Auguste Degas"
+        },
+        {
+            "subject": "Ursula K. Le Guin",
+            "object": "Alfred L. Kroeber"
+        },
+        {
+            "subject": "Stephen Hawking",
+            "object": "Frank Hawking"
+        },
+        {
+            "subject": "Martin Luther",
+            "object": "Hans Luther"
+        },
+        {
+            "subject": "Alicia Keys",
+            "object": "Craig Cook"
+        },
+        {
+            "subject": "Gottfried Wilhelm Leibniz",
+            "object": "Friedrich Leibniz"
+        },
+        {
+            "subject": "Alexander Pushkin",
+            "object": "Sergey Pushkin"
+        },
+        {
+            "subject": "Marlene Dietrich",
+            "object": "Louis Erich Otto Dietrich"
+        },
+        {
+            "subject": "Dolly Parton",
+            "object": "Robert Lee Parton"
+        },
+        {
+            "subject": "Arthur Conan Doyle",
+            "object": "Charles Altamont Doyle"
+        },
+        {
+            "subject": "Hans Christian Andersen",
+            "object": "Hans Andersen"
+        },
+        {
+            "subject": "J. K. Rowling",
+            "object": "Peter James Rowling"
+        },
+        {
+            "subject": "Noam Chomsky",
+            "object": "William Chomsky"
+        },
+        {
+            "subject": "Paul McCartney",
+            "object": "Jim McCartney"
+        },
+        {
+            "subject": "Angela Merkel",
+            "object": "Horst Kasner"
+        },
+        {
+            "subject": "Woody Allen",
+            "object": "Martin K\u00f6nigsberg"
+        },
+        {
+            "subject": "John Paul II",
+            "object": "Karol Wojty\u0142a"
+        },
+        {
+            "subject": "Nadia Boulanger",
+            "object": "Ernest Boulanger"
+        },
+        {
+            "subject": "Benedict XVI",
+            "object": "Joseph Ratzinger, Sr."
+        },
+        {
+            "subject": "Fyodor Dostoyevsky",
+            "object": "Mikhail Andreyevich Dostoevsky"
+        },
+        {
+            "subject": "Liza Minnelli",
+            "object": "Vincente Minnelli"
+        },
+        {
+            "subject": "John F. Kennedy",
+            "object": "Joseph P. Kennedy Sr."
+        },
+        {
+            "subject": "Julius Caesar",
+            "object": "Gaius Julius Caesar"
+        },
+        {
+            "subject": "Oscar Wilde",
+            "object": "William Wilde"
+        },
+        {
+            "subject": "Ren\u00e9 Descartes",
+            "object": "Joachim Descartes"
+        },
+        {
+            "subject": "Auguste Rodin",
+            "object": "Jean Baptiste Rodin"
+        },
+        {
+            "subject": "Benito Mussolini",
+            "object": "Alessandro Mussolini"
+        },
+        {
+            "subject": "Aristotle",
+            "object": "Nicomachus"
+        },
+        {
+            "subject": "Nicole Kidman",
+            "object": "Antony Kidman"
+        },
+        {
+            "subject": "Richard Wagner",
+            "object": "Carl Friedrich Wagner"
+        },
+        {
+            "subject": "V\u00e1clav Havel",
+            "object": "V\u00e1clav Maria Havel"
+        },
+        {
+            "subject": "Amy Winehouse",
+            "object": "Mitch Winehouse"
+        },
+        {
+            "subject": "Karl Marx",
+            "object": "Heinrich Marx"
+        },
+        {
+            "subject": "Charles-Fran\u00e7ois Daubigny",
+            "object": "Edm\u00e9-Fran\u00e7ois Daubigny"
+        },
+        {
+            "subject": "Jean Auguste Dominique Ingres",
+            "object": "Jean-Marie-Joseph Ingres"
+        },
+        {
+            "subject": "Cicero",
+            "object": "Marcus Tullius Cicero"
+        },
+        {
+            "subject": "Elizabeth Taylor",
+            "object": "Francis Lenn Taylor"
+        },
+        {
+            "subject": "Scarlett Johansson",
+            "object": "Karsten Olaf Johansson"
+        },
+        {
+            "subject": "Max Ernst",
+            "object": "Philipp Ernst"
+        },
+        {
+            "subject": "Thomas Mann",
+            "object": "Thomas Johann Heinrich Mann"
+        },
+        {
+            "subject": "Chulalongkorn",
+            "object": "Mongkut"
+        },
+        {
+            "subject": "J. R. R. Tolkien",
+            "object": "Arthur Reuel Tolkien"
+        },
+        {
+            "subject": "Zeus",
+            "object": "Kronos"
+        },
+        {
+            "subject": "Fr\u00e9d\u00e9ric Chopin",
+            "object": "Nicolas Chopin"
+        },
+        {
+            "subject": "Titian",
+            "object": "Gregorio Vecellio"
+        },
+        {
+            "subject": "Lord Byron",
+            "object": "John Byron"
+        },
+        {
+            "subject": "Jules Verne",
+            "object": "Pierre Gabriel Verne"
+        },
+        {
+            "subject": "Augustine of Hippo",
+            "object": "Patricius"
+        },
+        {
+            "subject": "Franz Liszt",
+            "object": "Adam Liszt"
+        },
+        {
+            "subject": "Agatha Christie",
+            "object": "Frederick Alvah Miller"
+        },
+        {
+            "subject": "Olivia Newton-John",
+            "object": "Brinley Newton-John"
+        },
+        {
+            "subject": "Lionel Messi",
+            "object": "Jorge Messi"
+        },
+        {
+            "subject": "David Teniers the Younger",
+            "object": "David Teniers the Elder"
+        },
+        {
+            "subject": "Batman",
+            "object": "Thomas Wayne"
+        },
+        {
+            "subject": "Sigmund Freud",
+            "object": "Jacob Freud"
+        },
+        {
+            "subject": "Guido Gezelle",
+            "object": "Pieter Jan Gezelle"
+        },
+        {
+            "subject": "Ronald Reagan",
+            "object": "Jack Reagan"
+        },
+        {
+            "subject": "Mark Twain",
+            "object": "John Marshall Clemens"
+        },
+        {
+            "subject": "Franz Kafka",
+            "object": "Hermann Kafka"
+        },
+        {
+            "subject": "Hilary Duff",
+            "object": "Robert Erhard Duff"
+        },
+        {
+            "subject": "Alexander von Humboldt",
+            "object": "Alexander Georg von Humboldt"
+        },
+        {
+            "subject": "Yukio Mishima",
+            "object": "Azusa Hiraoka"
+        },
+        {
+            "subject": "Frans Hals",
+            "object": "Franchois Fransz. Hals van Mechelen"
+        },
+        {
+            "subject": "Alfred Sisley",
+            "object": "William Sisley"
+        },
+        {
+            "subject": "Isaac Newton",
+            "object": "Isaac Newton Sr."
+        },
+        {
+            "subject": "Charles III",
+            "object": "Prince Philip, Duke of Edinburgh"
+        },
+        {
+            "subject": "Honor\u00e9 de Balzac",
+            "object": "Bernard-Fran\u00e7ois Balzac"
+        },
+        {
+            "subject": "Thomas Aquinas",
+            "object": "Landulphe d'Aquino"
+        },
+        {
+            "subject": "Halle Berry",
+            "object": "Jerome Jesse Berry"
+        },
+        {
+            "subject": "Brigitte Bardot",
+            "object": "Louis Bardot"
+        },
+        {
+            "subject": "August Strindberg",
+            "object": "Carl Oscar Strindberg"
+        },
+        {
+            "subject": "Rabindranath Tagore",
+            "object": "Debendranath Tagore"
+        },
+        {
+            "subject": "Friedrich Schiller",
+            "object": "Johann Kaspar Schiller"
+        },
+        {
+            "subject": "George Frideric Handel",
+            "object": "Georg H\u00e4ndel"
+        },
+        {
+            "subject": "Charlie Chaplin",
+            "object": "Charles Chaplin Sr."
+        },
+        {
+            "subject": "Bertrand Russell",
+            "object": "John Russell, Viscount Amberley"
+        },
+        {
+            "subject": "George Washington",
+            "object": "Augustine Washington"
+        },
+        {
+            "subject": "Jean-Jacques Rousseau",
+            "object": "Isaac Rousseau"
+        },
+        {
+            "subject": "Mahatma Gandhi",
+            "object": "Karamchand Uttamchand Gandhi"
+        },
+        {
+            "subject": "Edvard Munch",
+            "object": "Christian Munch"
+        },
+        {
+            "subject": "Carl Linnaeus",
+            "object": "Nils Ingemarsson Linnaeus"
+        },
+        {
+            "subject": "Miley Cyrus",
+            "object": "Billy Ray Cyrus"
+        },
+        {
+            "subject": "George Bernard Shaw",
+            "object": "George Carr Shaw"
+        },
+        {
+            "subject": "George Sand",
+            "object": "Maurice Dupin de Francueil"
+        },
+        {
+            "subject": "Henri de Toulouse-Lautrec",
+            "object": "Alphonse de Toulouse-Lautrec-Monfa"
+        },
+        {
+            "subject": "Victoria",
+            "object": "Prince Edward, Duke of Kent and Strathearn"
+        },
+        {
+            "subject": "Superman",
+            "object": "Jonathan Kent"
+        },
+        {
+            "subject": "Joshua Reynolds",
+            "object": "Samuel Reynolds"
+        },
+        {
+            "subject": "Aldous Huxley",
+            "object": "Leonard Huxley"
+        },
+        {
+            "subject": "Jorge Luis Borges",
+            "object": "Jorge Guillermo Borges Haslam"
+        },
+        {
+            "subject": "Diego Vel\u00e1zquez",
+            "object": "Jo\u00e3o Rodrigues da Silva"
+        },
+        {
+            "subject": "Andr\u00e9 Derain",
+            "object": "Louis Derain"
+        },
+        {
+            "subject": "Barbra Streisand",
+            "object": "Emanuel Streisand"
+        },
+        {
+            "subject": "Jacques-Louis David",
+            "object": "Louis Maurice David"
+        },
+        {
+            "subject": "Galileo Galilei",
+            "object": "Vincenzo Galilei"
+        },
+        {
+            "subject": "Jane Austen",
+            "object": "George Austen"
+        },
+        {
+            "subject": "Joe Biden",
+            "object": "Joseph R. Biden Sr."
+        },
+        {
+            "subject": "H. P. Lovecraft",
+            "object": "Winfield Scott Lovecraft"
+        },
+        {
+            "subject": "T. S. Eliot",
+            "object": "Henry Ware Eliot"
+        },
+        {
+            "subject": "Walter Scott",
+            "object": "Walter Scott"
+        },
+        {
+            "subject": "Kate Winslet",
+            "object": "Roger John Winslet"
+        },
+        {
+            "subject": "Nelson Mandela",
+            "object": "Gadla Henry Mphakanyiswa"
+        },
+        {
+            "subject": "Pyotr Ilyich Tchaikovsky",
+            "object": "Ilya Petrovich Tchaikovsky"
+        },
+        {
+            "subject": "Miguel de Cervantes",
+            "object": "Rodrigo de Cervantes"
+        },
+        {
+            "subject": "Catherine Zeta-Jones",
+            "object": "David James Jones"
+        },
+        {
+            "subject": "Hans Holbein the Younger",
+            "object": "Hans Holbein the Elder"
+        },
+        {
+            "subject": "Steven Spielberg",
+            "object": "Arnold Spielberg"
+        },
+        {
+            "subject": "Le Corbusier",
+            "object": "Georges-\u00c9douard Jeanneret"
+        },
+        {
+            "subject": "Marcel Duchamp",
+            "object": "Justin-Isidore Eug\u00e8ne Duchamp"
+        },
+        {
+            "subject": "Dua Lipa",
+            "object": "Dukagjin Lipa"
+        },
+        {
+            "subject": "George Harrison",
+            "object": "Harold Hargreaves Harrison"
+        },
+        {
+            "subject": "Alexandre Dumas",
+            "object": "Thomas-Alexandre Dumas"
+        },
+        {
+            "subject": "Robert Louis Stevenson",
+            "object": "Thomas Stevenson"
+        },
+        {
+            "subject": "Abraham Lincoln",
+            "object": "Thomas Lincoln"
+        },
+        {
+            "subject": "Giovanni Battista Tiepolo",
+            "object": "Domenico Tiepolo"
+        },
+        {
+            "subject": "Jean-Paul Sartre",
+            "object": "Alex Pazos Bellon"
+        },
+        {
+            "subject": "Arnold Schwarzenegger",
+            "object": "Gustav Schwarzenegger"
+        },
+        {
+            "subject": "Pen\u00e9lope Cruz",
+            "object": "Eduardo Cruz"
+        },
+        {
+            "subject": "Elton John",
+            "object": "Stanley Dwight"
+        },
+        {
+            "subject": "Rudyard Kipling",
+            "object": "John Lockwood Kipling"
+        },
+        {
+            "subject": "Elvis Presley",
+            "object": "Vernon Elvis Presley"
+        },
+        {
+            "subject": "Stephen King",
+            "object": "Donald Edwin King"
+        },
+        {
+            "subject": "Leonard Cohen",
+            "object": "Nathan Bernard Cohen"
+        },
+        {
+            "subject": "\u00c9lisabeth Louise Vig\u00e9e Le Brun",
+            "object": "Louis Vig\u00e9e"
+        },
+        {
+            "subject": "Henry VIII of England",
+            "object": "Henry VII"
+        },
+        {
+            "subject": "Denis Diderot",
+            "object": "Didier Diderot"
+        },
+        {
+            "subject": "James Joyce",
+            "object": "John Stanislaus Joyce"
+        },
+        {
+            "subject": "Ivan Turgenev",
+            "object": "Sergey Turgenev"
+        },
+        {
+            "subject": "Frank Sinatra",
+            "object": "Anthony Martin Sinatra"
+        },
+        {
+            "subject": "Milla Jovovich",
+            "object": "Bogdan Jovovich"
+        },
+        {
+            "subject": "Otto von Bismarck",
+            "object": "Ferdinand von Bismarck"
+        },
+        {
+            "subject": "Sean Connery",
+            "object": "Joseph Connery"
+        },
+        {
+            "subject": "Benjamin Franklin",
+            "object": "Josiah Franklin"
+        },
+        {
+            "subject": "Ernest Hemingway",
+            "object": "Clarence Hemingway"
+        },
+        {
+            "subject": "John Singer Sargent",
+            "object": "FitzWilliam Sargent"
+        },
+        {
+            "subject": "\u00c9mile Zola",
+            "object": "Francesco Zola"
+        },
+        {
+            "subject": "Giorgio de Chirico",
+            "object": "Evaristo de Chirico"
+        },
+        {
+            "subject": "Jonathan Swift",
+            "object": "Jonathan Swift"
+        },
+        {
+            "subject": "Petrarch",
+            "object": "Petracco"
+        },
+        {
+            "subject": "Virginia Woolf",
+            "object": "Leslie Stephen"
+        },
+        {
+            "subject": "Anton Chekhov",
+            "object": "Pavel Chekhov"
+        },
+        {
+            "subject": "C. S. Lewis",
+            "object": "Albert James Lewis"
+        },
+        {
+            "subject": "Henri Fantin-Latour",
+            "object": "Th\u00e9odore Fantin-Latour"
+        },
+        {
+            "subject": "William Hogarth",
+            "object": "Richard Hogarth"
+        },
+        {
+            "subject": "Alanis Morissette",
+            "object": "Alan Richard Morissette"
+        },
+        {
+            "subject": "Canaletto",
+            "object": "Bernardo Canal"
+        },
+        {
+            "subject": "Alec Baldwin",
+            "object": "Alexander Baldwin"
+        },
+        {
+            "subject": "Anton\u00edn Dvo\u0159\u00e1k",
+            "object": "Franti\u0161ek Dvo\u0159\u00e1k"
+        },
+        {
+            "subject": "Maurice Denis",
+            "object": "Constant Eug\u00e8ne Denis"
+        },
+        {
+            "subject": "Felix Mendelssohn",
+            "object": "Abraham Mendelssohn Bartholdy"
+        },
+        {
+            "subject": "Jacob Grimm",
+            "object": "Philipp Grimm"
+        },
+        {
+            "subject": "Hillary Clinton",
+            "object": "Hugh E. Rodham"
+        },
+        {
+            "subject": "Rita Hayworth",
+            "object": "Eduardo Cansino, Sr."
+        },
+        {
+            "subject": "Dmitri Shostakovich",
+            "object": "Dmitry Shostakovich"
+        },
+        {
+            "subject": "Marie Curie",
+            "object": "W\u0142adys\u0142aw Sk\u0142odowski"
+        },
+        {
+            "subject": "Moli\u00e8re",
+            "object": "Jean Poquelin"
+        },
+        {
+            "subject": "Charlotte Bront\u00eb",
+            "object": "Patrick Bront\u00eb"
+        },
+        {
+            "subject": "Catherine Deneuve",
+            "object": "Maurice Dorl\u00e9ac"
+        },
+        {
+            "subject": "Piet Mondrian",
+            "object": "Pieter Cornelis Sr."
+        },
+        {
+            "subject": "Dwight D. Eisenhower",
+            "object": "David Jacob Eisenhower"
+        },
+        {
+            "subject": "Igor Stravinsky",
+            "object": "Fyodor Stravinsky"
+        },
+        {
+            "subject": "S\u00f8ren Kierkegaard",
+            "object": "Michael Pedersen Kierkegaard"
+        },
+        {
+            "subject": "Immanuel Kant",
+            "object": "Johann Georg Kant"
+        },
+        {
+            "subject": "Arnold Schoenberg",
+            "object": "Samuel Sch\u00f6nberg"
+        },
+        {
+            "subject": "Mario Vargas Llosa",
+            "object": "Ernesto Vargas Maldonado"
+        },
+        {
+            "subject": "Helen Mirren",
+            "object": "Basil Mirren"
+        },
+        {
+            "subject": "Alfred Hitchcock",
+            "object": "William Hitchcock"
+        },
+        {
+            "subject": "Charlotte Gainsbourg",
+            "object": "Serge Gainsbourg"
+        },
+        {
+            "subject": "Kobe Bryant",
+            "object": "Joe Bryant"
+        },
+        {
+            "subject": "Thomas Jefferson",
+            "object": "Peter Jefferson"
+        },
+        {
+            "subject": "Angela Lansbury",
+            "object": "Edgar Lansbury"
+        },
+        {
+            "subject": "Nikolai Gogol",
+            "object": "Vasyl Panasovych Gogol-Yanovsky"
+        },
+        {
+            "subject": "Antoine de Saint-Exup\u00e9ry",
+            "object": "Jean Marc de Saint-Exup\u00e9ry"
+        },
+        {
+            "subject": "Mary Shelley",
+            "object": "William Godwin"
+        },
+        {
+            "subject": "Jane Birkin",
+            "object": "David Leslie Birkin"
+        },
+        {
+            "subject": "Sophia Loren",
+            "object": "Riccardo Scicolone"
+        },
+        {
+            "subject": "Salman Rushdie",
+            "object": "Anis Ahmed Rushdie"
+        },
+        {
+            "subject": "Hermann Hesse",
+            "object": "Johannes Hesse"
+        },
+        {
+            "subject": "Bhumibol Adulyadej",
+            "object": "Mahidol Adulyadej, Prince Father"
+        },
+        {
+            "subject": "Thomas More",
+            "object": "John More"
+        },
+        {
+            "subject": "George Orwell",
+            "object": "Richard Walmesley Blair"
+        },
+        {
+            "subject": "Jessica Simpson",
+            "object": "Joe Simpson"
+        },
+        {
+            "subject": "Federico Garc\u00eda Lorca",
+            "object": "Federico Garc\u00eda Rodr\u00edguez"
+        },
+        {
+            "subject": "Louis XIV of France",
+            "object": "Louis XIII of France"
+        },
+        {
+            "subject": "Confucius",
+            "object": "Shu-liang He"
+        },
+        {
+            "subject": "Charles de Gaulle",
+            "object": "Henri de Gaulle"
+        },
+        {
+            "subject": "Leonard Bernstein",
+            "object": "Samuel Joseph Bernstein"
+        },
+        {
+            "subject": "Spock",
+            "object": "Sarek"
+        },
+        {
+            "subject": "Jacob van Ruisdael",
+            "object": "Isaack van Ruisdael"
+        },
+        {
+            "subject": "Leonhard Euler",
+            "object": "Paul III Euler"
+        },
+        {
+            "subject": "Vladimir Nabokov",
+            "object": "Vladimir Dmitrievich Nabokov"
+        },
+        {
+            "subject": "Georg Wilhelm Friedrich Hegel",
+            "object": "Georg Ludwig Hegel"
+        },
+        {
+            "subject": "James McNeill Whistler",
+            "object": "George Washington Whistler"
+        },
+        {
+            "subject": "Prince",
+            "object": "John L. Nelson"
+        },
+        {
+            "subject": "Hayao Miyazaki",
+            "object": "Katsuji Miyazaki"
+        },
+        {
+            "subject": "Louis Pasteur",
+            "object": "Jean-Joseph Pasteur"
+        },
+        {
+            "subject": "Henri Bergson",
+            "object": "Micha\u0142 Bergson"
+        },
+        {
+            "subject": "Charles Baudelaire",
+            "object": "Joseph-Fran\u00e7ois Baudelaire"
+        },
+        {
+            "subject": "Theodore Roosevelt",
+            "object": "Theodore Roosevelt Sr."
+        },
+        {
+            "subject": "Benedictus de Spinoza",
+            "object": "Miguel de Espinoza"
+        },
+        {
+            "subject": "Jennifer Lawrence",
+            "object": "Francis Lawrence"
+        },
+        {
+            "subject": "Shirley MacLaine",
+            "object": "Ira Owens Beaty"
+        },
+        {
+            "subject": "Leonid Brezhnev",
+            "object": "Ilya Yakovlevich Brezhnev"
+        },
+        {
+            "subject": "Bill Clinton",
+            "object": "William Jefferson Blythe Jr."
+        },
+        {
+            "subject": "H. G. Wells",
+            "object": "Joseph Wells"
+        },
+        {
+            "subject": "Andr\u00e9 Gide",
+            "object": "Paul Gide"
+        },
+        {
+            "subject": "Giorgio Vasari",
+            "object": "Antonio Vasari"
+        },
+        {
+            "subject": "Henri Poincar\u00e9",
+            "object": "\u00c9mile-L\u00e9on Poincar\u00e9"
+        },
+        {
+            "subject": "Jan Brueghel the Elder",
+            "object": "Pieter Brueghel the Elder"
+        },
+        {
+            "subject": "Charlemagne",
+            "object": "Pepin the Short"
+        },
+        {
+            "subject": "William Butler Yeats",
+            "object": "John Butler Yeats"
+        },
+        {
+            "subject": "Claude Debussy",
+            "object": "Manuel Debussy"
+        },
+        {
+            "subject": "Franklin Delano Roosevelt",
+            "object": "James Roosevelt"
+        },
+        {
+            "subject": "Poseidon",
+            "object": "Kronos"
+        },
+        {
+            "subject": "Niccol\u00f2 Machiavelli",
+            "object": "Bernardo di Niccol\u00f2 Machiavelli"
+        },
+        {
+            "subject": "Emily Bront\u00eb",
+            "object": "Patrick Bront\u00eb"
+        },
+        {
+            "subject": "John Ruskin",
+            "object": "John James Ruskin"
+        },
+        {
+            "subject": "Audrey Hepburn",
+            "object": "Joseph Victor Anthony Hepburn-Ruston"
+        },
+        {
+            "subject": "Gustav Klimt",
+            "object": "Ernst Klimt"
+        },
+        {
+            "subject": "Charles V",
+            "object": "Philip I of Castile"
+        },
+        {
+            "subject": "Johannes Brahms",
+            "object": "Johann Jakob Brahms"
+        },
+        {
+            "subject": "Cameron Diaz",
+            "object": "Emilio Diaz"
+        },
+        {
+            "subject": "Max Planck",
+            "object": "Wilhelm von Planck"
+        },
+        {
+            "subject": "Neil Young",
+            "object": "Scott Young"
+        },
+        {
+            "subject": "Cristiano Ronaldo",
+            "object": "Jos\u00e9 Dinis Aveiro"
+        },
+        {
+            "subject": "Niels Bohr",
+            "object": "Christian Bohr"
+        },
+        {
+            "subject": "Martin Luther King Jr.",
+            "object": "Martin Luther King Sr."
+        },
+        {
+            "subject": "Henrik Ibsen",
+            "object": "Knud Ibsen"
+        },
+        {
+            "subject": "George W. Bush",
+            "object": "George H. W. Bush"
+        },
+        {
+            "subject": "Aeschylus",
+            "object": "Euphorion of Eleusis"
+        },
+        {
+            "subject": "Osamu Tezuka",
+            "object": "Yutaka Tezuka"
+        },
+        {
+            "subject": "Peter Gabriel",
+            "object": "Ralph Parton Gabriel"
+        },
+        {
+            "subject": "Nicolaus Copernicus",
+            "object": "Niklas Koppernigk the Elder"
+        },
+        {
+            "subject": "Angelica Kauffmann",
+            "object": "Joseph Johann Kauffmann"
+        },
+        {
+            "subject": "Douglas Adams",
+            "object": "Christopher Douglas Adams"
+        },
+        {
+            "subject": "Karl Popper",
+            "object": "Simon Siegmund Carl Popper"
+        },
+        {
+            "subject": "Seneca",
+            "object": "Seneca the Elder"
+        },
+        {
+            "subject": "George H. W. Bush",
+            "object": "Prescott Bush"
+        },
+        {
+            "subject": "Joseph Haydn",
+            "object": "Mathias Haydn"
+        },
+        {
+            "subject": "Karel \u010capek",
+            "object": "Anton\u00edn \u010capek"
+        },
+        {
+            "subject": "Julia Roberts",
+            "object": "Walter Grady Roberts"
+        },
+        {
+            "subject": "Thomas Gainsborough",
+            "object": "John Gainsborough"
+        },
+        {
+            "subject": "Ingmar Bergman",
+            "object": "Erik Bergman"
+        },
+        {
+            "subject": "Hector Berlioz",
+            "object": "Louis Berlioz"
+        },
+        {
+            "subject": "Leon Trotsky",
+            "object": "David Bronstein"
+        },
+        {
+            "subject": "Wilhelm II",
+            "object": "Friedrich III of Germany"
+        },
+        {
+            "subject": "Robert Schumann",
+            "object": "August Schumann"
+        },
+        {
+            "subject": "Michael Jordan",
+            "object": "James R. Jordan, Sr."
+        },
+        {
+            "subject": "Orson Welles",
+            "object": "Richard Head Welles"
+        },
+        {
+            "subject": "Ella Fitzgerald",
+            "object": "William Fitzgerald"
+        },
+        {
+            "subject": "Gian Lorenzo Bernini",
+            "object": "Pietro Bernini"
+        },
+        {
+            "subject": "Marcus Aurelius",
+            "object": "Marcus Annius Verus"
+        },
+        {
+            "subject": "William Ewart Gladstone",
+            "object": "Sir John Gladstone, 1st Baronet"
+        },
+        {
+            "subject": "Glenn Close",
+            "object": "William Close"
+        },
+        {
+            "subject": "C\u00e9line Dion",
+            "object": "Adh\u00e9mar Dion"
+        },
+        {
+            "subject": "Ray Bradbury",
+            "object": "Leonard Spaulding Bradbury, Sr."
+        },
+        {
+            "subject": "Giovanni Bellini",
+            "object": "Jacopo Bellini"
+        },
+        {
+            "subject": "Lily Allen",
+            "object": "Keith Allen"
+        },
+        {
+            "subject": "Uma Thurman",
+            "object": "Robert Thurman"
+        },
+        {
+            "subject": "Joseph Vernet",
+            "object": "Antoine Vernet"
+        },
+        {
+            "subject": "Alexander the Great",
+            "object": "Philip II of Macedon"
+        },
+        {
+            "subject": "Dante Gabriel Rossetti",
+            "object": "Gabriele Rossetti"
+        },
+        {
+            "subject": "Jack London",
+            "object": "William Henry Chaney"
+        },
+        {
+            "subject": "Stendhal",
+            "object": "Ch\u00e9rubin Beyle"
+        },
+        {
+            "subject": "Werner Heisenberg",
+            "object": "August Heisenberg"
+        },
+        {
+            "subject": "Selma Lagerl\u00f6f",
+            "object": "Erik Gustaf Lagerl\u00f6f"
+        },
+        {
+            "subject": "Ernest Rutherford",
+            "object": "James Rutherford"
+        },
+        {
+            "subject": "Frederick II of Prussia",
+            "object": "Friedrich Wilhelm I of Prussia"
+        },
+        {
+            "subject": "Joseph Conrad",
+            "object": "Apollo Korzeniowski"
+        },
+        {
+            "subject": "Gwyneth Paltrow",
+            "object": "Bruce Paltrow"
+        },
+        {
+            "subject": "John Milton",
+            "object": "John Milton"
+        },
+        {
+            "subject": "Caravaggio",
+            "object": "Fermo Merixio"
+        },
+        {
+            "subject": "Francis Bacon",
+            "object": "Capt. Anthony Edward Mortimer Bacon"
+        },
+        {
+            "subject": "George Eliot",
+            "object": "Robert Evans"
+        },
+        {
+            "subject": "George VI",
+            "object": "George V"
+        },
+        {
+            "subject": "Christopher Columbus",
+            "object": "Domenico Colombo"
+        },
+        {
+            "subject": "Henry Wadsworth Longfellow",
+            "object": "Stephen Longfellow"
+        },
+        {
+            "subject": "Neil Gaiman",
+            "object": "David Gaiman"
+        },
+        {
+            "subject": "Tom Hanks",
+            "object": "Amos Mefford Hanks"
+        },
+        {
+            "subject": "Sarah Bernhardt",
+            "object": "Edouard Bernhardt"
+        },
+        {
+            "subject": "Boethius",
+            "object": "Manlius Boethius"
+        },
+        {
+            "subject": "\u00c9dith Piaf",
+            "object": "Louis Gassion"
+        },
+        {
+            "subject": "Franz Schubert",
+            "object": "Franz Theodor Schubert"
+        },
+        {
+            "subject": "Alberto Giacometti",
+            "object": "Giovanni Giacometti"
+        },
+        {
+            "subject": "Emma Thompson",
+            "object": "Eric Thompson"
+        },
+        {
+            "subject": "Henry James",
+            "object": "Henry James, Sr."
+        },
+        {
+            "subject": "Jackie Chan",
+            "object": "Charles Chan"
+        },
+        {
+            "subject": "Ernst Ludwig Kirchner",
+            "object": "Ernst Kirchner"
+        },
+        {
+            "subject": "Francis of Assisi",
+            "object": "Pietro di Bernardone dei Moriconi"
+        },
+        {
+            "subject": "Michel Foucault",
+            "object": "Paul Foucault"
+        },
+        {
+            "subject": "Johnny Cash",
+            "object": "Ray Cash"
+        },
+        {
+            "subject": "Rosa Bonheur",
+            "object": "Raymond Bonheur"
+        },
+        {
+            "subject": "Jean-Luc Godard",
+            "object": "Paul Godard"
+        },
+        {
+            "subject": "Aleksandr Solzhenitsyn",
+            "object": "Isaackly Semyonovich Solzhenitsyn"
+        },
+        {
+            "subject": "B\u00e9la Bart\u00f3k",
+            "object": "B\u00e9la Bart\u00f3k"
+        },
+        {
+            "subject": "Judit Polg\u00e1r",
+            "object": "L\u00e1szl\u00f3 Polg\u00e1r"
+        },
+        {
+            "subject": "Bernard of Clairvaux",
+            "object": "Tescelin de Fontaine"
+        },
+        {
+            "subject": "Robin Williams",
+            "object": "Robert Williams"
+        },
+        {
+            "subject": "Bhimrao Ramji Ambedkar",
+            "object": "Ramji Maloji Sakpal"
+        },
+        {
+            "subject": "Bette Davis",
+            "object": "Harlow Morrell Davis"
+        },
+        {
+            "subject": "Judy Garland",
+            "object": "Francis Avent Gumm"
+        },
+        {
+            "subject": "Jean Sibelius",
+            "object": "Christian Gustaf Sibelius"
+        },
+        {
+            "subject": "Antonio Vivaldi",
+            "object": "Giovanni Battista Vivaldi"
+        },
+        {
+            "subject": "Graham Greene",
+            "object": "Charles Henry Greene"
+        },
+        {
+            "subject": "Joan Crawford",
+            "object": "Thomas Le Sueur"
+        },
+        {
+            "subject": "Alessandro Manzoni",
+            "object": "Pietro Manzoni"
+        },
+        {
+            "subject": "Arthur Schopenhauer",
+            "object": "Heinrich Floris Schopenhauer"
+        },
+        {
+            "subject": "Daniel Defoe",
+            "object": "James Foe"
+        },
+        {
+            "subject": "Michelle Yeoh",
+            "object": "Yeoh Kian Teik"
+        },
+        {
+            "subject": "Gustave Flaubert",
+            "object": "Achille Cl\u00e9ophas Flaubert"
+        },
+        {
+            "subject": "Jimmy Carter",
+            "object": "James Earl Carter Sr."
+        },
+        {
+            "subject": "Albert Schweitzer",
+            "object": "Louis Th\u00e9ophile Schweitzer"
+        },
+        {
+            "subject": "Hugo von Hofmannsthal",
+            "object": "Dr. Hugo Hofmann, Edler von Hofmannsthal"
+        },
+        {
+            "subject": "Blaise Pascal",
+            "object": "\u00c9tienne Pascal"
+        },
+        {
+            "subject": "Mao Zedong",
+            "object": "Mao Yichang"
+        },
+        {
+            "subject": "Edward Bulwer-Lytton",
+            "object": "William Earle Bulwer"
+        },
+        {
+            "subject": "Clint Eastwood",
+            "object": "Clint Eastwood Sr."
+        },
+        {
+            "subject": "Euripides",
+            "object": "Mnesarchus"
+        },
+        {
+            "subject": "Nancy Sinatra",
+            "object": "Frank Sinatra"
+        },
+        {
+            "subject": "Edward VII",
+            "object": "Albert, Prince Consort"
+        },
+        {
+            "subject": "Susan Polgar",
+            "object": "L\u00e1szl\u00f3 Polg\u00e1r"
+        },
+        {
+            "subject": "Alexander Calder",
+            "object": "Alexander Stirling Calder"
+        },
+        {
+            "subject": "Jodie Foster",
+            "object": "Lucius Fisher Foster"
+        },
+        {
+            "subject": "Nicholas II of Russia",
+            "object": "Alexander III of Russia"
+        },
+        {
+            "subject": "Fidel Castro",
+            "object": "\u00c1ngel Castro y Argu\u00edz"
+        },
+        {
+            "subject": "Margaret Thatcher",
+            "object": "Alfred Roberts"
+        },
+        {
+            "subject": "Prosper M\u00e9rim\u00e9e",
+            "object": "L\u00e9onor M\u00e9rim\u00e9e"
+        },
+        {
+            "subject": "Bernie Sanders",
+            "object": "Eli Sanders"
+        },
+        {
+            "subject": "Winona Ryder",
+            "object": "Michael Horowitz"
+        },
+        {
+            "subject": "Fran\u00e7ois-Ren\u00e9 de Chateaubriand",
+            "object": "Ren\u00e9-Auguste de Chateaubriand"
+        },
+        {
+            "subject": "Ennio Morricone",
+            "object": "Mario Morricone"
+        },
+        {
+            "subject": "Stefan Zweig",
+            "object": "Moritz Zweig"
+        },
+        {
+            "subject": "Richard Feynman",
+            "object": "Melville Arthur Feynman"
+        },
+        {
+            "subject": "Simon Villeneuve",
+            "object": "Claude Villeneuve"
+        },
+        {
+            "subject": "Carl Friedrich Gauss",
+            "object": "Gebhard Dietrich Gauss"
+        },
+        {
+            "subject": "Bill Gates",
+            "object": "Bill Gates Sr."
+        },
+        {
+            "subject": "Percy Bysshe Shelley",
+            "object": "Timothy Shelley"
+        },
+        {
+            "subject": "Aristophanes",
+            "object": "Philippus"
+        },
+        {
+            "subject": "Norman Mailer",
+            "object": "Isaac Barnett Mailer"
+        },
+        {
+            "subject": "John Constable",
+            "object": "Golding Constable"
+        },
+        {
+            "subject": "Charles Aznavour",
+            "object": "Misha Aznavourian"
+        },
+        {
+            "subject": "George Gershwin",
+            "object": "Morris Gershwine"
+        },
+        {
+            "subject": "Mariah Carey",
+            "object": "Alfred Roy Carey"
+        },
+        {
+            "subject": "Ludwig Wittgenstein",
+            "object": "Karl Wittgenstein"
+        },
+        {
+            "subject": "Arthur Wellesley, 1st Duke of Wellington",
+            "object": "Garret Wesley, 1st Earl of Mornington"
+        },
+        {
+            "subject": "Justin Bieber",
+            "object": "Jeremy Bieber"
+        },
+        {
+            "subject": "Jean-Christophe Yoccoz",
+            "object": "Jean Yoccoz"
+        },
+        {
+            "subject": "John Everett Millais",
+            "object": "John William Millais"
+        },
+        {
+            "subject": "Thomas Alva Edison",
+            "object": "Samuel Ogden Edison"
+        },
+        {
+            "subject": "Lauren Bacall",
+            "object": "Wulf William Perski"
+        },
+        {
+            "subject": "Carl Jung",
+            "object": "Johann Paul Achilles Jung"
+        },
+        {
+            "subject": "Franz Joseph I of Austria",
+            "object": "Archduke Franz Karl of Austria"
+        },
+        {
+            "subject": "Catherine II of Russia",
+            "object": "Christian August, Prince of Anhalt-Zerbst"
+        },
+        {
+            "subject": "Theodore von K\u00e1rm\u00e1n",
+            "object": "M\u00f3r K\u00e1rm\u00e1n"
+        },
+        {
+            "subject": "Woodrow Wilson",
+            "object": "Joseph Ruggles Wilson"
+        },
+        {
+            "subject": "Adam Mickiewicz",
+            "object": "Miko\u0142aj Mickiewicz"
+        },
+        {
+            "subject": "Pablo Neruda",
+            "object": "Jos\u00e9 del Carmen Reyes Morales"
+        },
+        {
+            "subject": "Henry David Thoreau",
+            "object": "John Thoreau Jr."
+        },
+        {
+            "subject": "Will Smith",
+            "object": "Willard Carroll Smith Sr."
+        },
+        {
+            "subject": "Heracles",
+            "object": "Zeus"
+        },
+        {
+            "subject": "Wilhelm Grimm",
+            "object": "Philipp Grimm"
+        },
+        {
+            "subject": "Robert De Niro",
+            "object": "Robert De Niro Sr."
+        },
+        {
+            "subject": "Quentin Tarantino",
+            "object": "Tony Tarantino"
+        },
+        {
+            "subject": "Giotto",
+            "object": "Bondone"
+        },
+        {
+            "subject": "Mary Cassatt",
+            "object": "Robert S. Cassatt"
+        },
+        {
+            "subject": "Kanye West",
+            "object": "Ray West"
+        },
+        {
+            "subject": "Claude L\u00e9vi-Strauss",
+            "object": "Raymond Levi-strauss"
+        },
+        {
+            "subject": "Jacques Chirac",
+            "object": "Fran\u00e7ois Chirac"
+        },
+        {
+            "subject": "Herman Melville",
+            "object": "Allan Melville"
+        },
+        {
+            "subject": "Georgia O'Keeffe",
+            "object": "Francis O'Keeffe"
+        },
+        {
+            "subject": "Quincy Jones",
+            "object": "Quincy Delight Jones"
+        },
+        {
+            "subject": "Jean Racine",
+            "object": "Jean Racine"
+        },
+        {
+            "subject": "Andrzej Wajda",
+            "object": "Jakub Wajda"
+        },
+        {
+            "subject": "Carl Maria von Weber",
+            "object": "Franz Anton von Weber"
+        },
+        {
+            "subject": "Che Guevara",
+            "object": "Ernesto Guevara Lynch"
+        },
+        {
+            "subject": "Demi Moore",
+            "object": "Charles Harmon"
+        },
+        {
+            "subject": "Johannes Kepler",
+            "object": "Heinrich Kepler"
+        },
+        {
+            "subject": "Nicolaes Pieterszoon Berchem",
+            "object": "Pieter Claesz"
+        },
+        {
+            "subject": "Alfred de Musset",
+            "object": "Victor-Donatien de Musset-Pathay"
+        },
+        {
+            "subject": "John Calvin",
+            "object": "G\u00e9rard Cauvin"
+        },
+        {
+            "subject": "Miles Davis",
+            "object": "Miles Henry Davis"
+        },
+        {
+            "subject": "Thomas Lawrence",
+            "object": "Thomas Lawrence"
+        },
+        {
+            "subject": "Pliny the Elder",
+            "object": "Gaius Plinius Celer"
+        },
+        {
+            "subject": "Napoleon III",
+            "object": "Louis Bonaparte"
+        },
+        {
+            "subject": "Richard Strauss",
+            "object": "Franz Strauss"
+        },
+        {
+            "subject": "Greta Thunberg",
+            "object": "Svante Thunberg"
+        },
+        {
+            "subject": "Edward Burne-Jones",
+            "object": "Edward Richard Jones"
+        },
+        {
+            "subject": "Walt Whitman",
+            "object": "Walter Whitman, Sr."
+        },
+        {
+            "subject": "Gregory I",
+            "object": "Gordianus"
+        },
+        {
+            "subject": "Augustus",
+            "object": "Gaius Octavius"
+        },
+        {
+            "subject": "W. H. Auden",
+            "object": "George Augustus Auden"
+        },
+        {
+            "subject": "Bj\u00f6rk",
+            "object": "Gu\u00f0mundur Gunnarsson"
+        },
+        {
+            "subject": "Fred Astaire",
+            "object": "Fritz Austerlitz"
+        },
+        {
+            "subject": "Nathaniel Hawthorne",
+            "object": "Nathaniel Hathorne"
+        },
+        {
+            "subject": "D. H. Lawrence",
+            "object": "Arthur John Lawrence"
+        },
+        {
+            "subject": "L. L. Zamenhof",
+            "object": "Markus Zamenhof"
+        },
+        {
+            "subject": "Sigourney Weaver",
+            "object": "Sylvester Weaver"
+        },
+        {
+            "subject": "Leonardo DiCaprio",
+            "object": "George DiCaprio"
+        },
+        {
+            "subject": "Tupac Shakur",
+            "object": "Billy Garland"
+        },
+        {
+            "subject": "Gustav Mahler",
+            "object": "Bernhard Mahler"
+        },
+        {
+            "subject": "Laurence Olivier",
+            "object": "Gerald Kerr Olivier"
+        },
+        {
+            "subject": "Ringo Starr",
+            "object": "Richard Henry Parkin Starkey"
+        },
+        {
+            "subject": "Phil Collins",
+            "object": "Greville Bernard Philip A Collins"
+        },
+        {
+            "subject": "Ambrose",
+            "object": "Aurelius Ambrosius"
+        },
+        {
+            "subject": "George Clooney",
+            "object": "Nick Clooney"
+        },
+        {
+            "subject": "Roald Dahl",
+            "object": "Harald Dahl"
+        },
+        {
+            "subject": "Berthe Morisot",
+            "object": "Edm\u00e9 Tiburce Morisot"
+        },
+        {
+            "subject": "Arthur Miller",
+            "object": "Isidore Miller"
+        },
+        {
+            "subject": "John Updike",
+            "object": "Wesley Russell Updike"
+        },
+        {
+            "subject": "Anne Frank",
+            "object": "Otto Frank"
+        },
+        {
+            "subject": "George III of Great Britain",
+            "object": "Frederick, Prince of Wales"
+        },
+        {
+            "subject": "Jean le Rond d'Alembert",
+            "object": "L\u00e9opold Philippe d'Arenberg"
+        },
+        {
+            "subject": "Mikhail Bulgakov",
+            "object": "Afanasiy Bulgakov"
+        },
+        {
+            "subject": "Giacomo Puccini",
+            "object": "Michele Puccini"
+        },
+        {
+            "subject": "Ralph Waldo Emerson",
+            "object": "William Emerson"
+        },
+        {
+            "subject": "Thomas Henry Huxley",
+            "object": "George Huxley"
+        },
+        {
+            "subject": "Bing Crosby",
+            "object": "Harry Lowe Crosby"
+        },
+        {
+            "subject": "Washington Irving",
+            "object": "William Irving"
+        },
+        {
+            "subject": "Mel Brooks",
+            "object": "Max James Kaminsky"
+        },
+        {
+            "subject": "Ezra Pound",
+            "object": "Homer Loomis Pound"
+        },
+        {
+            "subject": "Colette",
+            "object": "Jules Colette"
+        },
+        {
+            "subject": "Billie Holiday",
+            "object": "Clarence Holiday"
+        },
+        {
+            "subject": "Satyajit Ray",
+            "object": "Sukumar Ray"
+        },
+        {
+            "subject": "Mick Jagger",
+            "object": "Basil Fashawe Jagger"
+        },
+        {
+            "subject": "Barbara Hund",
+            "object": "Gerhard Hund"
+        },
+        {
+            "subject": "Marcel Proust",
+            "object": "Adrien Proust"
+        },
+        {
+            "subject": "Gustave Moreau",
+            "object": "Louis Moreau"
+        },
+        {
+            "subject": "Francis Mitterrand",
+            "object": "Joseph Mitterrand"
+        },
+        {
+            "subject": "Josephus",
+            "object": "Matthias"
+        },
+        {
+            "subject": "Sting",
+            "object": "Ernest Matthew Sumner"
+        },
+        {
+            "subject": "Maupassant",
+            "object": "Gustave de Maupassant"
+        },
+        {
+            "subject": "Elizabeth I of England",
+            "object": "Henry VIII of England"
+        },
+        {
+            "subject": "Harriet Beecher Stowe",
+            "object": "Lyman Beecher"
+        },
+        {
+            "subject": "Grace Kelly",
+            "object": "John B. Kelly Sr."
+        },
+        {
+            "subject": "Dennis Hopper",
+            "object": "Jay Millard Hopper"
+        },
+        {
+            "subject": "Geoffrey Chaucer",
+            "object": "John Chaucer"
+        },
+        {
+            "subject": "John Steinbeck",
+            "object": "John Steinbeck"
+        },
+        {
+            "subject": "Muhammad",
+            "object": "Abdullah ibn Abdul-Muttalib"
+        },
+        {
+            "subject": "Marie Antoinette",
+            "object": "Francis I, Holy Roman Emperor"
+        },
+        {
+            "subject": "James VI and I",
+            "object": "Henry Stuart, Lord Darnley"
+        },
+        {
+            "subject": "Friedrich Engels",
+            "object": "Friedrich Engels"
+        },
+        {
+            "subject": "Michel de Montaigne",
+            "object": "Pierre Eyquem de Montaigne"
+        },
+        {
+            "subject": "Samuel Taylor Coleridge",
+            "object": "John Coleridge"
+        },
+        {
+            "subject": "Tennessee Williams",
+            "object": "Cornelius Coffin Williams"
+        },
+        {
+            "subject": "George V",
+            "object": "Edward VII"
+        },
+        {
+            "subject": "Constantine the Great",
+            "object": "Constantius Chlorus"
+        },
+        {
+            "subject": "Tenzin Gyatso",
+            "object": "Choekyong Tsering"
+        },
+        {
+            "subject": "Francisco Franco",
+            "object": "Nicol\u00e1s Franco Salgado-Ara\u00fajo"
+        },
+        {
+            "subject": "Tom\u00e1\u0161 Garrigue Masaryk",
+            "object": "Jozef Masz\u00e1rik"
+        },
+        {
+            "subject": "Georges Bizet",
+            "object": "Adolphe Armand Bizet"
+        },
+        {
+            "subject": "John van der Neumann",
+            "object": "Max von Neumann"
+        },
+        {
+            "subject": "Robert Baden-Powell, 1st Baron Baden-Powell",
+            "object": "Baden Powell"
+        },
+        {
+            "subject": "Pius XII",
+            "object": "Filippo Pacelli"
+        },
+        {
+            "subject": "Franz Marc",
+            "object": "Wilhelm Marc"
+        },
+        {
+            "subject": "Allen Ginsberg",
+            "object": "Louis Ginsberg"
+        },
+        {
+            "subject": "John Locke",
+            "object": "John Locke"
+        },
+        {
+            "subject": "Henry Fuseli",
+            "object": "Johann Caspar F\u00fcssli"
+        },
+        {
+            "subject": "Benjamin Netanyahu",
+            "object": "Benzion Netanyahu"
+        },
+        {
+            "subject": "Hieronymus Bosch",
+            "object": "Anthonis van Aken"
+        },
+        {
+            "subject": "Alfred Tennyson",
+            "object": "George Clayton Tennyson"
+        },
+        {
+            "subject": "William Makepeace Thackeray",
+            "object": "Richmond Thackeray"
+        },
+        {
+            "subject": "Deborah Kerr",
+            "object": "Arthur Charles Kerr Trimmer"
+        },
+        {
+            "subject": "Romy Schneider",
+            "object": "Wolf Albach-Retty"
+        },
+        {
+            "subject": "Horace Vernet",
+            "object": "Carle Vernet"
+        },
+        {
+            "subject": "Robert Graves",
+            "object": "Alfred Perceval Graves"
+        },
+        {
+            "subject": "Katharine Hepburn",
+            "object": "Thomas Norval Hepburn"
+        },
+        {
+            "subject": "Benjamin West",
+            "object": "John West"
+        },
+        {
+            "subject": "Philipp Melanchthon",
+            "object": "Georg Schwarzerdt"
+        },
+        {
+            "subject": "David Hume",
+            "object": "Alex Pazos Bellon"
+        },
+        {
+            "subject": "Stanis\u0142aw Lem",
+            "object": "Samuel Lem"
+        },
+        {
+            "subject": "Al Gore",
+            "object": "Albert Arnold Gore"
+        },
+        {
+            "subject": "Martin Scorsese",
+            "object": "Charles Scorsese"
+        },
+        {
+            "subject": "Gotthold Ephraim Lessing",
+            "object": "Johann Gottfried Lessing"
+        },
+        {
+            "subject": "Giacomo Leopardi",
+            "object": "Monaldo Leopardi"
+        },
+        {
+            "subject": "John Cale",
+            "object": "William Arthur George Cale"
+        },
+        {
+            "subject": "Elon Musk",
+            "object": "Errol Musk"
+        },
+        {
+            "subject": "Brad Pitt",
+            "object": "William Alvin Pitt"
+        },
+        {
+            "subject": "Fridtjof Nansen",
+            "object": "Baldur Fridtjof Nansen"
+        },
+        {
+            "subject": "Johnny Depp",
+            "object": "John Christopher Depp"
+        },
+        {
+            "subject": "Max Weber",
+            "object": "Max Weber"
+        },
+        {
+            "subject": "Aelbert Cuyp",
+            "object": "Jacob Gerritsz. Cuyp"
+        },
+        {
+            "subject": "Socrates",
+            "object": "Sophroniscus"
+        },
+        {
+            "subject": "M. C. Escher",
+            "object": "George Arnold Escher"
+        },
+        {
+            "subject": "Richard Nixon",
+            "object": "Francis A. Nixon"
+        },
+        {
+            "subject": "Seamus Heaney",
+            "object": "Patrick Heaney"
+        },
+        {
+            "subject": "Justin Timberlake",
+            "object": "Randall Timberlake"
+        },
+        {
+            "subject": "Pius II",
+            "object": "Silvio Piccolomini"
+        },
+        {
+            "subject": "William Faulkner",
+            "object": "Murry Faulkner"
+        },
+        {
+            "subject": "Asia Argento",
+            "object": "Dario Argento"
+        },
+        {
+            "subject": "Jonathan Mestel",
+            "object": "Leon Mestel"
+        },
+        {
+            "subject": "Francesco Guardi",
+            "object": "Domenico Guardi"
+        },
+        {
+            "subject": "Val\u00e9ry Giscard d'Estaing",
+            "object": "Edmond Giscard d'Estaing"
+        },
+        {
+            "subject": "Jean de La Fontaine",
+            "object": "Charles de la fontaine"
+        },
+        {
+            "subject": "Jacques Offenbach",
+            "object": "Isaac Offenbach"
+        },
+        {
+            "subject": "Apollo",
+            "object": "Zeus"
+        },
+        {
+            "subject": "John Stuart Mill",
+            "object": "James Rodr\u00edguez"
+        },
+        {
+            "subject": "Gerard ter Borch",
+            "object": "Gerard ter Borch the Elder"
+        },
+        {
+            "subject": "Maurice Ravel",
+            "object": "Pierre-Joseph Ravel"
+        },
+        {
+            "subject": "Paul Claudel",
+            "object": "Louis Prosper Claudel"
+        },
+        {
+            "subject": "Astrid Lindgren",
+            "object": "Samuel August Ericsson"
+        },
+        {
+            "subject": "Emma Roberts",
+            "object": "Eric Roberts"
+        },
+        {
+            "subject": "Pythagoras",
+            "object": "Mnesarchus"
+        },
+        {
+            "subject": "Iolo Ceredig Jones",
+            "object": "T. Llew Jones"
+        },
+        {
+            "subject": "Naomi Watts",
+            "object": "Peter Watts"
+        },
+        {
+            "subject": "Rita Ora",
+            "object": "Besnik Sahat\u00e7iu"
+        },
+        {
+            "subject": "Romain Rolland",
+            "object": "\u00c9mile Rolland"
+        },
+        {
+            "subject": "Andrew Lloyd Webber",
+            "object": "William Lloyd Webber"
+        },
+        {
+            "subject": "Fran\u00e7ois G\u00e9rard",
+            "object": "Deividcitoxdlol"
+        },
+        {
+            "subject": "Frank Lloyd Wright",
+            "object": "William Carey Wright"
+        },
+        {
+            "subject": "Alexander III of Russia",
+            "object": "Alexander II of Russia"
+        },
+        {
+            "subject": "Tim Krabb\u00e9",
+            "object": "Maarten Krabb\u00e9"
+        },
+        {
+            "subject": "Alphonse Daudet",
+            "object": "Vincent Daudet"
+        },
+        {
+            "subject": "Roman Polanski",
+            "object": "Ryszard Pola\u0144ski"
+        },
+        {
+            "subject": "Benjamin Britten",
+            "object": "Robert Victor Britten"
+        },
+        {
+            "subject": "Doris Day",
+            "object": "Frederick Wilhelm Kappelhoff"
+        },
+        {
+            "subject": "Gabriel Faur\u00e9",
+            "object": "Toussaint Faur\u00e9"
+        },
+        {
+            "subject": "Sergei Eisenstein",
+            "object": "Mikhail Eisenstein"
+        },
+        {
+            "subject": "Frida Kahlo",
+            "object": "Guillermo Kahlo"
+        },
+        {
+            "subject": "Charlotte Rampling",
+            "object": "Godfrey Rampling"
+        },
+        {
+            "subject": "Tom Wedberg",
+            "object": "Anders Wedberg"
+        },
+        {
+            "subject": "Arthur Rimbaud",
+            "object": "Fr\u00e9d\u00e9ric Rimbaud"
+        },
+        {
+            "subject": "Boris Yeltsin",
+            "object": "Nikolai Ignatievich Yeltsin"
+        },
+        {
+            "subject": "Philip II of Spain",
+            "object": "Charles V"
+        },
+        {
+            "subject": "Karen Blixen",
+            "object": "Wilhelm Dinesen"
+        },
+        {
+            "subject": "Louisa May Alcott",
+            "object": "Amos Bronson Alcott"
+        },
+        {
+            "subject": "Francis Ford Coppola",
+            "object": "Carmine Coppola"
+        },
+        {
+            "subject": "Bruce Lee",
+            "object": "Lee Hoi-chuen"
+        },
+        {
+            "subject": "Benjamin Disraeli",
+            "object": "Isaac D'Israeli"
+        },
+        {
+            "subject": "Silvio Berlusconi",
+            "object": "Luigi Berlusconi"
+        },
+        {
+            "subject": "Charles Gounod",
+            "object": "Fran\u00e7ois-Louis Gounod"
+        },
+        {
+            "subject": "Johannes Vermeer",
+            "object": "Reijnier Janszoon Vermeer"
+        },
+        {
+            "subject": "Theodor Fontane",
+            "object": "Louis Henri Fontane"
+        },
+        {
+            "subject": "Hugo Grotius",
+            "object": "Jan Cornets de Groot"
+        },
+        {
+            "subject": "Olivier Messiaen",
+            "object": "Pierre Messiaen"
+        },
+        {
+            "subject": "Helmut Kohl",
+            "object": "Hans Kohl"
+        },
+        {
+            "subject": "Jaan Ehlvest",
+            "object": "Juhan Ehlvest"
+        },
+        {
+            "subject": "Anders Zorn",
+            "object": "Leonhard Zorn"
+        },
+        {
+            "subject": "Harry S. Truman",
+            "object": "John Anderson Truman"
+        },
+        {
+            "subject": "Nicholas I of Russia",
+            "object": "Paul I of Russia"
+        },
+        {
+            "subject": "Mary, Queen of Scots",
+            "object": "James V of Scotland"
+        },
+        {
+            "subject": "Edward VIII of the United Kingdom",
+            "object": "George V"
+        },
+        {
+            "subject": "Caspar David Friedrich",
+            "object": "Adolph Gottlieb Friedrich"
+        },
+        {
+            "subject": "Stanis\u0142aw Ignacy Witkiewicz",
+            "object": "Stanis\u0142aw Witkiewicz"
+        },
+        {
+            "subject": "Samuel Finley Breese Morse",
+            "object": "Jedidiah Morse"
+        },
+        {
+            "subject": "Friedrich D\u00fcrrenmatt",
+            "object": "Reinhold D\u00fcrrenmatt"
+        },
+        {
+            "subject": "Ignatius of Loyola",
+            "object": "Beltr\u00e1n II Ib\u00e1\u00f1ez de Loyola"
+        },
+        {
+            "subject": "Alexander I of Russia",
+            "object": "Paul I of Russia"
+        },
+        {
+            "subject": "Godfrey Kneller",
+            "object": "Zacharias Kniller"
+        },
+        {
+            "subject": "Alfonso X of Castile and Leon",
+            "object": "Ferdinand III of Le\u00f3n"
+        },
+        {
+            "subject": "Peter Ustinov",
+            "object": "Jona von Ustinov"
+        },
+        {
+            "subject": "Shinz\u014d Abe",
+            "object": "Shintar\u014d Abe"
+        },
+        {
+            "subject": "Louis Aragon",
+            "object": "Louis Andrieux"
+        },
+        {
+            "subject": "Basil of Caesarea",
+            "object": "Basil the Elder"
+        },
+        {
+            "subject": "Fiona Apple",
+            "object": "Brandon Maggart"
+        },
+        {
+            "subject": "Kurt Vonnegut",
+            "object": "Kurt Vonnegut, Sr."
+        },
+        {
+            "subject": "Tony Blair",
+            "object": "Leo Blair"
+        },
+        {
+            "subject": "John XXIII",
+            "object": "Giovanni Battista Roncalli"
+        },
+        {
+            "subject": "Czes\u0142aw Mi\u0142osz",
+            "object": "Aleksander Mi\u0142osz"
+        },
+        {
+            "subject": "William Somerset Maugham",
+            "object": "Robert Ormond Maugham"
+        },
+        {
+            "subject": "David Lloyd George",
+            "object": "William George"
+        },
+        {
+            "subject": "Winslow Homer",
+            "object": "Charles Savage Homer"
+        },
+        {
+            "subject": "Sarah Jessica Parker",
+            "object": "Stephen Parker"
+        },
+        {
+            "subject": "Sofia Polgar",
+            "object": "L\u00e1szl\u00f3 Polg\u00e1r"
+        },
+        {
+            "subject": "Sven Hedin",
+            "object": "Abraham Ludvig Hedin"
+        },
+        {
+            "subject": "Irving Berlin",
+            "object": "Moses Beilin"
+        },
+        {
+            "subject": "No\u00ebl Coward",
+            "object": "Arthur Sabin Coward"
+        },
+        {
+            "subject": "Jonathan Penrose",
+            "object": "Lionel Penrose"
+        },
+        {
+            "subject": "Anton Raphael Mengs",
+            "object": "Ismael Israel Mengs"
+        },
+        {
+            "subject": "Madeleine Albright",
+            "object": "Josef Korbel"
+        },
+        {
+            "subject": "Robert Burns",
+            "object": "William Burnes"
+        },
+        {
+            "subject": "Agnieszka Brustman",
+            "object": "Jan Brustman"
+        },
+        {
+            "subject": "Nikolai Rimsky-Korsakov",
+            "object": "Andrey Rimsky-Korsakov"
+        },
+        {
+            "subject": "Emmanuel Macron",
+            "object": "Jean-Michel Macron"
+        },
+        {
+            "subject": "Paul Verlaine",
+            "object": "Nicolas Verlaine"
+        },
+        {
+            "subject": "Muammar Gaddafi",
+            "object": "Mohammed Abdus-Salam"
+        },
+        {
+            "subject": "George IV of the United Kingdom",
+            "object": "George III of Great Britain"
+        },
+        {
+            "subject": "Paul Dirac",
+            "object": "Charles Dirac"
+        },
+        {
+            "subject": "Italo Calvino",
+            "object": "Mario Calvino"
+        },
+        {
+            "subject": "Billie Eilish",
+            "object": "Patrick O'Connell"
+        },
+        {
+            "subject": "Fran\u00e7ois Guizot",
+            "object": "Andr\u00e9 Guizot"
+        },
+        {
+            "subject": "Freddie Mercury",
+            "object": "Bomi Bulsara"
+        },
+        {
+            "subject": "Buckminster Fuller",
+            "object": "Richard Buckminster Fuller"
+        },
+        {
+            "subject": "John McCain",
+            "object": "John S. McCain, Jr."
+        },
+        {
+            "subject": "Mustafa Kemal Atat\u00fcrk",
+            "object": "Ali R\u0131za Efendi"
+        },
+        {
+            "subject": "Max Born",
+            "object": "Gustav Jacob Born"
+        },
+        {
+            "subject": "John Adams",
+            "object": "John Adams, Sr."
+        },
+        {
+            "subject": "Teresa of \u00c1vila",
+            "object": "Alonso S\u00e1nchez de Cepeda"
+        },
+        {
+            "subject": "William Wordsworth",
+            "object": "John Wordsworth"
+        },
+        {
+            "subject": "Karlheinz Stockhausen",
+            "object": "Simon Stockhausen"
+        },
+        {
+            "subject": "Pel\u00e9",
+            "object": "Dondinho"
+        },
+        {
+            "subject": "Elizabeth Barrett Browning",
+            "object": "Edward Moulton-Barrett"
+        },
+        {
+            "subject": "Joan of Arc",
+            "object": "Jacques d'Arc"
+        },
+        {
+            "subject": "Sylvester Stallone",
+            "object": "Frank Stallone"
+        },
+        {
+            "subject": "Jules Massenet",
+            "object": "Alexis Massenet"
+        },
+        {
+            "subject": "Kofi Annan",
+            "object": "Henry Reginald Annan"
+        },
+        {
+            "subject": "Frederic Leighton",
+            "object": "Frederick Septimus Leighton"
+        },
+        {
+            "subject": "Jimi Hendrix",
+            "object": "Al Hendrix"
+        },
+        {
+            "subject": "Henry Kissinger",
+            "object": "Louis Kissinger"
+        },
+        {
+            "subject": "George Romney",
+            "object": "John Rumney"
+        },
+        {
+            "subject": "Epicurus",
+            "object": "Neocles"
+        },
+        {
+            "subject": "Dwayne Johnson",
+            "object": "Rocky Johnson"
+        },
+        {
+            "subject": "Hans-Georg Gadamer",
+            "object": "Johannes Gadamer"
+        },
+        {
+            "subject": "Zaha Hadid",
+            "object": "Mohammed Ali Haded"
+        },
+        {
+            "subject": "Bob Marley",
+            "object": "Norval Marley"
+        },
+        {
+            "subject": "Nam June Paik",
+            "object": "Paik Nak-seung"
+        },
+        {
+            "subject": "G\u00e9rard Depardieu",
+            "object": "Ren\u00e9 Depardieu"
+        },
+        {
+            "subject": "Johann Strauss II",
+            "object": "Johann Strauss I"
+        },
+        {
+            "subject": "Ted Kennedy",
+            "object": "Joseph P. Kennedy Sr."
+        },
+        {
+            "subject": "Jean-Luc Picard",
+            "object": "Maurice Picard"
+        },
+        {
+            "subject": "John Dryden",
+            "object": "Erasmus Dryden"
+        },
+        {
+            "subject": "F. Scott Fitzgerald",
+            "object": "Edward Fitzgerald"
+        },
+        {
+            "subject": "Louis-Ferdinand C\u00e9line",
+            "object": "Fernand Destouches"
+        },
+        {
+            "subject": "Gy\u00f6rgy Ligeti",
+            "object": "S\u00e1ndor Ligeti"
+        },
+        {
+            "subject": "Fran\u00e7ois Rabelais",
+            "object": "Antoine Rabelais"
+        },
+        {
+            "subject": "Louis Roos",
+            "object": "Michel Roos"
+        },
+        {
+            "subject": "Nicolas Sarkozy",
+            "object": "Paul Sarkozy"
+        },
+        {
+            "subject": "Yehudi Menuhin",
+            "object": "Moshe Menuhin"
+        },
+        {
+            "subject": "Raymond Aron",
+            "object": "Gustave Aron"
+        },
+        {
+            "subject": "Frederic Edwin Church",
+            "object": "Joseph Church"
+        },
+        {
+            "subject": "Arielle Dombasle",
+            "object": "Jean Louis Melchior Sonnery"
+        },
+        {
+            "subject": "John Maynard Keynes",
+            "object": "John Neville Keynes"
+        },
+        {
+            "subject": "Emily Dickinson",
+            "object": "Edward Dickinson"
+        },
+        {
+            "subject": "Natalia Goncharova",
+            "object": "Sergey Goncharov"
+        },
+        {
+            "subject": "Muhammad Ali",
+            "object": "Cassius Marcellus Clay Sr."
+        },
+        {
+            "subject": "Ary Scheffer",
+            "object": "Johann Baptist Scheffer"
+        },
+        {
+            "subject": "Melanie Griffith",
+            "object": "Peter Griffith"
+        },
+        {
+            "subject": "Karen Mok",
+            "object": "Alan Morris"
+        },
+        {
+            "subject": "Shimon Peres",
+            "object": "Yitzhak Perski"
+        },
+        {
+            "subject": "Pope Francis",
+            "object": "Mario Jos\u00e9 Bergoglio"
+        },
+        {
+            "subject": "Raquel Welch",
+            "object": "Armando Carlos Tejada Urquizo"
+        },
+        {
+            "subject": "Kirk Douglas",
+            "object": "Harry Danielovitch"
+        },
+        {
+            "subject": "John Frederick William Herschel",
+            "object": "William Herschel"
+        },
+        {
+            "subject": "Albert, Prince Consort",
+            "object": "Ernest I, Duke of Saxe-Coburg and Gotha"
+        },
+        {
+            "subject": "Boris Pasternak",
+            "object": "Leonid Pasternak"
+        },
+        {
+            "subject": "Albert I of Belgium",
+            "object": "Prince Philippe, Count of Flanders"
+        },
+        {
+            "subject": "Kim Il-sung",
+            "object": "Kim Hy\u014fng-jik"
+        },
+        {
+            "subject": "Torquato Tasso",
+            "object": "Bernardo Tasso"
+        },
+        {
+            "subject": "Fran\u00e7ois Arago",
+            "object": "Fran\u00e7ois Bonaventure Arago"
+        },
+        {
+            "subject": "Walter Gropius",
+            "object": "Walter Gropius"
+        },
+        {
+            "subject": "Pearl S. Buck",
+            "object": "Absalom Sydenstricker"
+        },
+        {
+            "subject": "Mikhail Lermontov",
+            "object": "Yury Lermontov"
+        },
+        {
+            "subject": "Antoine-Jean Gros",
+            "object": "Jean-Antoine Gros"
+        },
+        {
+            "subject": "Germaine de Sta\u00ebl",
+            "object": "Jacques Necker"
+        },
+        {
+            "subject": "Alexis de Tocqueville",
+            "object": "Herv\u00e9 Cl\u00e9rel de Tocqueville"
+        },
+        {
+            "subject": "Daniel Roos",
+            "object": "Michel Roos"
+        },
+        {
+            "subject": "Lucian Freud",
+            "object": "Ernst L. Freud"
+        },
+        {
+            "subject": "Tim Berners-Lee",
+            "object": "Conway Berners-Lee"
+        },
+        {
+            "subject": "James Fenimore Cooper",
+            "object": "William Cooper"
+        },
+        {
+            "subject": "Cecil Beaton",
+            "object": "Ernest Walter Hardy Beaton"
+        },
+        {
+            "subject": "Peter Kropotkin",
+            "object": "Aleksey Kropotkin"
+        },
+        {
+            "subject": "Juliette Binoche",
+            "object": "Jean-Marie Binoche"
+        },
+        {
+            "subject": "Franz Werfel",
+            "object": "Rudolf Werfel"
+        },
+        {
+            "subject": "Pierre Loti",
+            "object": "Th\u00e9odore Viaud"
+        },
+        {
+            "subject": "Jennifer Garner",
+            "object": "William John Garner"
+        },
+        {
+            "subject": "Erwin Schr\u00f6dinger",
+            "object": "Rudolf Schr\u00f6dinger"
+        },
+        {
+            "subject": "Gabor Kallai",
+            "object": "Istv\u00e1n K\u00e1llai"
+        },
+        {
+            "subject": "A. R. Rahman",
+            "object": "R. K. Shekhar"
+        },
+        {
+            "subject": "Camilla Baginskaite",
+            "object": "Tadas Baginskas"
+        },
+        {
+            "subject": "Isabelle Adjani",
+            "object": "Mohammed Ch\u00e9rif Adjani"
+        },
+        {
+            "subject": "Friedrich H\u00f6lderlin",
+            "object": "Heinrich Friedrich H\u00f6lderlin"
+        },
+        {
+            "subject": "Helmut Schmidt",
+            "object": "Gustav Ludwig Schmidt"
+        },
+        {
+            "subject": "Ernst Haeckel",
+            "object": "Carl Haeckel"
+        },
+        {
+            "subject": "Giosu\u00e8 Carducci",
+            "object": "Michele Carducci"
+        },
+        {
+            "subject": "Narendra Modi",
+            "object": "Damodardas Mulchand Modi"
+        },
+        {
+            "subject": "Mary Wollstonecraft",
+            "object": "Edward John Wollstonecraft"
+        },
+        {
+            "subject": "Norman Foster",
+            "object": "Robert Foster"
+        },
+        {
+            "subject": "Walter Benjamin",
+            "object": "Emil Benjamin"
+        },
+        {
+            "subject": "Harold Pinter",
+            "object": "Jack Haim Pinter"
+        },
+        {
+            "subject": "Mila Kunis",
+            "object": "Mark Kunis"
+        },
+        {
+            "subject": "John Quincy Adams",
+            "object": "John Adams"
+        },
+        {
+            "subject": "Gerald Ford",
+            "object": "Leslie Lynch King, Sr."
+        },
+        {
+            "subject": "Slim Belkhodja",
+            "object": "N\u00e9jib Belkhodja"
+        },
+        {
+            "subject": "Carl Gustaf Emil Mannerheim",
+            "object": "Carl Robert Mannerheim"
+        },
+        {
+            "subject": "Luis Bu\u00f1uel",
+            "object": "Leonardo Bu\u00f1uel Gonz\u00e1lez"
+        },
+        {
+            "subject": "Neil Armstrong",
+            "object": "Stephen Koenig Armstrong"
+        },
+        {
+            "subject": "Jan Both",
+            "object": "Dirck Joriaensz. Both"
+        },
+        {
+            "subject": "Richard von Weizs\u00e4cker",
+            "object": "Ernst von Weizs\u00e4cker"
+        },
+        {
+            "subject": "Juan Carlos I of Spain",
+            "object": "Infante Juan, Count of Barcelona"
+        },
+        {
+            "subject": "Joan Baez",
+            "object": "Albert Baez"
+        },
+        {
+            "subject": "Bernardo Bertolucci",
+            "object": "Attilio Bertolucci"
+        },
+        {
+            "subject": "Tycho Brahe",
+            "object": "Otte Brahe"
+        },
+        {
+            "subject": "Edmond Rostand",
+            "object": "Eug\u00e8ne Rostand"
+        },
+        {
+            "subject": "Giacomo Casanova",
+            "object": "Michele Grimani"
+        },
+        {
+            "subject": "Nicolas Cage",
+            "object": "August Coppola"
+        },
+        {
+            "subject": "David Attenborough",
+            "object": "Frederick Attenborough"
+        },
+        {
+            "subject": "Marlon Brando",
+            "object": "Marlon Brando, Sr."
+        },
+        {
+            "subject": "George Berkeley",
+            "object": "William Berkeley"
+        },
+        {
+            "subject": "Elisabeth P\u00e4htz",
+            "object": "Thomas P\u00e4htz"
+        },
+        {
+            "subject": "Diana, Princess of Wales",
+            "object": "John Spencer, 8th Earl Spencer"
+        },
+        {
+            "subject": "Lyndon B. Johnson",
+            "object": "Samuel Ealy Johnson"
+        },
+        {
+            "subject": "Joseph Addison",
+            "object": "Lancelot Addison"
+        },
+        {
+            "subject": "Elie Wiesel",
+            "object": "Shlomo Wiesel"
+        },
+        {
+            "subject": "Niki de Saint Phalle",
+            "object": "Andr\u00e9, Comte de Saint Phalle"
+        },
+        {
+            "subject": "Kate Beckinsale",
+            "object": "Richard Beckinsale"
+        },
+        {
+            "subject": "C\u00e9line Roos",
+            "object": "Michel Roos"
+        },
+        {
+            "subject": "Abraham Bloemaert",
+            "object": "Cornelis Bloemaert"
+        },
+        {
+            "subject": "William Thomson, 1st Baron Kelvin",
+            "object": "James Thomson"
+        },
+        {
+            "subject": "Fernando Pessoa",
+            "object": "Joaquim de Seabra Pessoa"
+        },
+        {
+            "subject": "Beatrix Potter",
+            "object": "Rupert William Potter"
+        },
+        {
+            "subject": "Eric Hobsbawm",
+            "object": "Leopold Percy Hobsbaum"
+        },
+        {
+            "subject": "Mikhail Bakunin",
+            "object": "Aleksandr Bakunin"
+        },
+        {
+            "subject": "Charles I of England",
+            "object": "James VI and I"
+        },
+        {
+            "subject": "Frederick II, Holy Roman Emperor",
+            "object": "Henry VI"
+        },
+        {
+            "subject": "Julian",
+            "object": "Julius Constantius"
+        },
+        {
+            "subject": "Adolf Erik Nordenski\u00f6ld",
+            "object": "Nils Gustaf Nordenski\u00f6ld"
+        },
+        {
+            "subject": "Paris Hilton",
+            "object": "Richard Hilton"
+        },
+        {
+            "subject": "James Clerk Maxwell",
+            "object": "John Clerk-Maxwell of Middlebie"
+        },
+        {
+            "subject": "Nikola Tesla",
+            "object": "Milutin Tesla"
+        },
+        {
+            "subject": "Pl\u00e1cido Domingo",
+            "object": "Pl\u00e1cido Domingo Ferrer"
+        },
+        {
+            "subject": "Charles-Maurice de Talleyrand-P\u00e9rigord",
+            "object": "Charles-Daniel de Talleyrand-P\u00e9rigord"
+        },
+        {
+            "subject": "Christopher Lee",
+            "object": "Geoffrey Trollope Lee"
+        },
+        {
+            "subject": "Ingrid Bergman",
+            "object": "Justus Bergman"
+        },
+        {
+            "subject": "Archimedes",
+            "object": "Fidias"
+        },
+        {
+            "subject": "Romain Gary",
+            "object": "Arieh-Le\u00efb Kacew"
+        },
+        {
+            "subject": "Karl-Heinz Podzielny",
+            "object": "Karlheinz Podzielny"
+        },
+        {
+            "subject": "John Cox",
+            "object": "Jeffrey James Cox"
+        },
+        {
+            "subject": "Hilary Swank",
+            "object": "Stephen Michael Swank"
+        },
+        {
+            "subject": "Henry IV of France",
+            "object": "Antoine of Navarre"
+        },
+        {
+            "subject": "Roger Penrose",
+            "object": "Lionel Penrose"
+        },
+        {
+            "subject": "Nina Hagen",
+            "object": "Hans Oliva-Hagen"
+        },
+        {
+            "subject": "Jean-Luc Roos",
+            "object": "Michel Roos"
+        },
+        {
+            "subject": "Gore Vidal",
+            "object": "Eugene Luther Vidal"
+        },
+        {
+            "subject": "Alexander VI",
+            "object": "Jofr\u00e9 Llan\u00e7ol i Escriv\u00e0"
+        },
+        {
+            "subject": "Robert Frost",
+            "object": "William Prescott Frost"
+        },
+        {
+            "subject": "Alexandre Dumas fils",
+            "object": "Alexandre Dumas"
+        },
+        {
+            "subject": "Carl Philipp Emanuel Bach",
+            "object": "Johann Sebastian Bach"
+        },
+        {
+            "subject": "Lise Meitner",
+            "object": "Philipp Meitner"
+        },
+        {
+            "subject": "Liudmila Belavenets",
+            "object": "Sergey Belavenets"
+        },
+        {
+            "subject": "Paul VI",
+            "object": "Giorgio Montini"
+        },
+        {
+            "subject": "Marco Polo",
+            "object": "Niccol\u00f2 Polo"
+        },
+        {
+            "subject": "Mother Teresa",
+            "object": "Nikoll\u00eb Bojaxhiu"
+        },
+        {
+            "subject": "Pavel Eljanov",
+            "object": "Vladimir Eljanov"
+        },
+        {
+            "subject": "Wilhelm von Humboldt",
+            "object": "Alexander Georg von Humboldt"
+        },
+        {
+            "subject": "Kamala Harris",
+            "object": "Donald J. Harris"
+        },
+        {
+            "subject": "Wilhelm Ostwald",
+            "object": "Gottfried Ostwald"
+        },
+        {
+            "subject": "Serge Gainsbourg",
+            "object": "Joseph Ginsburg"
+        },
+        {
+            "subject": "Heinrich von Kleist",
+            "object": "Joachim Friedrich von Kleist"
+        },
+        {
+            "subject": "Leo\u0161 Jan\u00e1\u010dek",
+            "object": "Ji\u0159\u00ed Jan\u00e1\u010dek"
+        },
+        {
+            "subject": "George Soros",
+            "object": "Tivadar Soros"
+        },
+        {
+            "subject": "Friedrich Hayek",
+            "object": "August von Hayek"
+        },
+        {
+            "subject": "Louis XV of France",
+            "object": "Louis, Dauphin of France, Duke of Burgundy"
+        },
+        {
+            "subject": "Louis de Broglie",
+            "object": "Victor de Broglie"
+        },
+        {
+            "subject": "Mickey Rooney",
+            "object": "Joe Yule"
+        },
+        {
+            "subject": "Anna Akhmatova",
+            "object": "Andrey Gorenko"
+        },
+        {
+            "subject": "Paracelsus",
+            "object": "Wilhelm Bombast von Hohenheim"
+        },
+        {
+            "subject": "Gustaf VI Adolf of Sweden",
+            "object": "Gustaf V of Sweden"
+        },
+        {
+            "subject": "Charles II of England",
+            "object": "Charles I of England"
+        },
+        {
+            "subject": "Arthur Schnitzler",
+            "object": "Johann Schnitzler"
+        },
+        {
+            "subject": "Maria Theresa of Austria",
+            "object": "Charles VI, Holy Roman Emperor"
+        },
+        {
+            "subject": "Prince Philip, Duke of Edinburgh",
+            "object": "Prince Andrew of Greece and Denmark"
+        },
+        {
+            "subject": "Hermann G\u00f6ring",
+            "object": "Heinrich Ernst G\u00f6ring"
+        },
+        {
+            "subject": "Galen",
+            "object": "Aelius Nicon"
+        },
+        {
+            "subject": "Eug\u00e8ne Viollet-le-Duc",
+            "object": "Emmanuel Louis Nicolas Viollet-le-Duc"
+        },
+        {
+            "subject": "Henry Fielding",
+            "object": "Edmund Fielding"
+        },
+        {
+            "subject": "Greta Garbo",
+            "object": "Karl Alfred Gustafsson"
+        },
+        {
+            "subject": "Augustus John",
+            "object": "Edwin William John"
+        },
+        {
+            "subject": "Keanu Reeves",
+            "object": "Samuel Nowlin Reeves, Jr."
+        },
+        {
+            "subject": "Serena Williams",
+            "object": "Richard A Williams Jr"
+        },
+        {
+            "subject": "Heinrich Himmler",
+            "object": "Joseph Gebhard Himmler"
+        },
+        {
+            "subject": "P!nk",
+            "object": "Jim Moore"
+        },
+        {
+            "subject": "Novalis",
+            "object": "Heinrich Ulrich Erasmus von Hardenberg"
+        },
+        {
+            "subject": "Samuel Johnson",
+            "object": "Michael Johnson"
+        },
+        {
+            "subject": "Dmitri Mendeleev",
+            "object": "Ivan Pavlovich Mendeleyev"
+        },
+        {
+            "subject": "Michael Faraday",
+            "object": "James Faraday"
+        },
+        {
+            "subject": "August von Kotzebue",
+            "object": "Levin Kotzebue"
+        },
+        {
+            "subject": "Paul \u00c9luard",
+            "object": "Eug\u00e8ne Grindel"
+        },
+        {
+            "subject": "Bono",
+            "object": "Bob Hewson"
+        },
+        {
+            "subject": "Alfred Russel Wallace",
+            "object": "Thomas Vere Wallace"
+        },
+        {
+            "subject": "Aung San Suu Kyi",
+            "object": "Aung San"
+        },
+        {
+            "subject": "Klemens von Metternich",
+            "object": "Franz Georg Karl von Metternich"
+        },
+        {
+            "subject": "Eug\u00e8ne Isabey",
+            "object": "Jean-Baptiste Isabey"
+        },
+        {
+            "subject": "Andrei Tarkovsky",
+            "object": "Arseny Tarkovsky"
+        },
+        {
+            "subject": "Drew Barrymore",
+            "object": "John Drew Barrymore"
+        },
+        {
+            "subject": "Moshe ben Maimon",
+            "object": "Maimon ben Yossef HaDayan"
+        },
+        {
+            "subject": "Marguerite Yourcenar",
+            "object": "Michel de Crayencour"
+        },
+        {
+            "subject": "John Singleton Copley",
+            "object": "Richard Copley"
+        },
+        {
+            "subject": "Thomas Moore",
+            "object": "John Moore"
+        },
+        {
+            "subject": "Ed Sheeran",
+            "object": "John Sheeran"
+        },
+        {
+            "subject": "Peter the Great",
+            "object": "Alexei I of Russia"
+        },
+        {
+            "subject": "Armand-Jean du Plessis, duc de Richelieu",
+            "object": "Fran\u00e7ois du Plessis de Richelieu"
+        },
+        {
+            "subject": "T. E. Lawrence",
+            "object": "Sir Thomas Chapman, 7th Baronet"
+        },
+        {
+            "subject": "Wolfgang Pauli",
+            "object": "Wolfgang Joseph Pauli"
+        },
+        {
+            "subject": "Philippe P\u00e9tain",
+            "object": "Omer-Venant P\u00e9tain"
+        },
+        {
+            "subject": "Edward Morgan Forster",
+            "object": "Edward Morgan Llewellyn Forster"
+        },
+        {
+            "subject": "Guglielmo Marconi",
+            "object": "Giuseppe Marconi"
+        },
+        {
+            "subject": "Richard Dawkins",
+            "object": "Clinton John Dawkins"
+        },
+        {
+            "subject": "Christo",
+            "object": "Vladimir Yavashev"
+        },
+        {
+            "subject": "Sergei Rachmaninoff",
+            "object": "Vasily Arkadyevich Rachmaninoff"
+        },
+        {
+            "subject": "Isabel Hund",
+            "object": "Gerhard Hund"
+        },
+        {
+            "subject": "Christiaan Huygens",
+            "object": "Constantijn Huygens"
+        },
+        {
+            "subject": "Louis XIII of France",
+            "object": "Henry IV of France"
+        },
+        {
+            "subject": "Pete Seeger",
+            "object": "Charles Seeger"
+        },
+        {
+            "subject": "Ron Howard",
+            "object": "Rance Howard"
+        },
+        {
+            "subject": "William James",
+            "object": "Henry James, Sr."
+        },
+        {
+            "subject": "Michel Legrand",
+            "object": "Raymond Legrand"
+        },
+        {
+            "subject": "Giovanni Battista Piazzetta",
+            "object": "Giacomo Piazzetta"
+        },
+        {
+            "subject": "Chiang Kai-shek",
+            "object": "Chiang Chao-tsung"
+        },
+        {
+            "subject": "Michelle Obama",
+            "object": "Fraser Robinson III"
+        },
+        {
+            "subject": "Giacomo Meyerbeer",
+            "object": "Jacob Herz Beer"
+        },
+        {
+            "subject": "Ludwig Tieck",
+            "object": "Johann Ludwig Tieck"
+        },
+        {
+            "subject": "G\u00e9rard de Nerval",
+            "object": "\u00c9tienne Labrunie"
+        },
+        {
+            "subject": "Lu Xun",
+            "object": "Zhou Boyi"
+        },
+        {
+            "subject": "Rudolf Virchow",
+            "object": "Karl Christian Siegfried Virchow"
+        },
+        {
+            "subject": "Tove Lo",
+            "object": "Magnus Nilsson"
+        },
+        {
+            "subject": "Tom Cruise",
+            "object": "Thomas Cruise Mapother III"
+        },
+        {
+            "subject": "Karl Friedrich Schinkel",
+            "object": "Cuno Christian Schinkel"
+        },
+        {
+            "subject": "Ferdinand II of Aragon",
+            "object": "John II of Aragon"
+        },
+        {
+            "subject": "Gregory of Nazianzus",
+            "object": "Gregory of Nazianzus the Elder"
+        },
+        {
+            "subject": "Ansel Adams",
+            "object": "Charles Hitchcock Adams"
+        },
+        {
+            "subject": "Ben Nicholson",
+            "object": "William Nicholson"
+        },
+        {
+            "subject": "Origen",
+            "object": "Leonides of Alexandria"
+        },
+        {
+            "subject": "Nicholas Roerich",
+            "object": "Konstantin Roerich"
+        },
+        {
+            "subject": "Marcellin Berthelot",
+            "object": "Jacques-Martin Berthelot"
+        },
+        {
+            "subject": "Alan Turing",
+            "object": "Julius Mathison Turing"
+        },
+        {
+            "subject": "Sun Yat-sen",
+            "object": "Sun Dacheng"
+        },
+        {
+            "subject": "Henry Fonda",
+            "object": "William Brace Fonda"
+        },
+        {
+            "subject": "Ellen DeGeneres",
+            "object": "Elliott Everett DeGeneres Jr."
+        },
+        {
+            "subject": "Jack Kerouac",
+            "object": "L\u00e9o Alcide Kerouac"
+        },
+        {
+            "subject": "Kiefer Sutherland",
+            "object": "Donald Sutherland"
+        },
+        {
+            "subject": "Jennifer Aniston",
+            "object": "John Aniston"
+        },
+        {
+            "subject": "Pietro Bembo",
+            "object": "Bernardo Bembo"
+        },
+        {
+            "subject": "Roald Amundsen",
+            "object": "Jens Amundsen"
+        },
+        {
+            "subject": "Paul Robeson",
+            "object": "William Drew Robeson I"
+        },
+        {
+            "subject": "Oliver Cromwell",
+            "object": "Robert Cromwell"
+        },
+        {
+            "subject": "John Donne",
+            "object": "John Donne"
+        },
+        {
+            "subject": "Ginger Rogers",
+            "object": "Eddins McMath"
+        },
+        {
+            "subject": "Tim Burton",
+            "object": "Bill Burton"
+        },
+        {
+            "subject": "Paul Bourget",
+            "object": "Justin Bourget"
+        },
+        {
+            "subject": "Jacopo Bassano",
+            "object": "Francesco da Ponte"
+        },
+        {
+            "subject": "Mstislav Rostropovich",
+            "object": "Leopold Rostropovich"
+        },
+        {
+            "subject": "Richard Attenborough",
+            "object": "Frederick Attenborough"
+        },
+        {
+            "subject": "Lars von Trier",
+            "object": "Fritz Michael Hartmann"
+        },
+        {
+            "subject": "Steve Jobs",
+            "object": "John Abdulfattah Jandali"
+        },
+        {
+            "subject": "Arkadi Rotstein",
+            "object": "Jefim Rotstein"
+        },
+        {
+            "subject": "Joseph von Eichendorff",
+            "object": "Adolph von Eichendorff"
+        },
+        {
+            "subject": "Ralph Vaughan Williams",
+            "object": "Arthur Charles Vaughan Williams"
+        },
+        {
+            "subject": "Pius IX",
+            "object": "Conte Girolamo Mastai Ferretti"
+        },
+        {
+            "subject": "Robert Capa",
+            "object": "Dezs\u00f6 Friedmann"
+        },
+        {
+            "subject": "Xi Jinping",
+            "object": "Xi Zhongxun"
+        },
+        {
+            "subject": "Marquis de Sade",
+            "object": "Jean-Baptiste-Fran\u00e7ois-Joseph de Sade"
+        },
+        {
+            "subject": "Paulus Potter",
+            "object": "Pieter Symonsz Potter"
+        },
+        {
+            "subject": "Gilbert du Motier, Marquis de Lafayette",
+            "object": "Michel du Motier, Marquis de La Fayette"
+        },
+        {
+            "subject": "Fran\u00e7ois Hollande",
+            "object": "Georges Hollande"
+        },
+        {
+            "subject": "Charles XIV John of Sweden",
+            "object": "Jean Henri Bernadotte"
+        },
+        {
+            "subject": "John of Damascus",
+            "object": "Sarjun ibn Mansur"
+        },
+        {
+            "subject": "Helen Keller",
+            "object": "Arthur Henley Keller"
+        },
+        {
+            "subject": "Jeremy Bentham",
+            "object": "Jeremiah Bentham"
+        },
+        {
+            "subject": "Paul Newman",
+            "object": "Arthur Newman"
+        },
+        {
+            "subject": "Frank Loheac Ammoun",
+            "object": "Andr\u00e9 Loheac"
+        },
+        {
+            "subject": "Burt Bacharach",
+            "object": "Bert Bacharach"
+        },
+        {
+            "subject": "Helen Frankenthaler",
+            "object": "Alfred Frankenthaler"
+        },
+        {
+            "subject": "Nikita Mikhalkov",
+            "object": "Sergey Mikhalkov"
+        },
+        {
+            "subject": "Lorenzo de' Medici",
+            "object": "Piero di Cosimo de' Medici"
+        },
+        {
+            "subject": "Moses",
+            "object": "Amram"
+        },
+        {
+            "subject": "Willem van de Velde the Younger",
+            "object": "Willem van de Velde the Elder"
+        },
+        {
+            "subject": "Jean-Paul Belmondo",
+            "object": "Paul Belmondo"
+        },
+        {
+            "subject": "Thomas Babington Macaulay, 1st Baron Macaulay",
+            "object": "Zachary Macaulay"
+        },
+        {
+            "subject": "Camillo Benso di Cavour",
+            "object": "Michele Benso di Cavour"
+        },
+        {
+            "subject": "Tove Jansson",
+            "object": "Viktor Jansson"
+        },
+        {
+            "subject": "Boris Johnson",
+            "object": "Stanley Johnson"
+        },
+        {
+            "subject": "Bj\u00f8rnstjerne Bj\u00f8rnson",
+            "object": "Peder Bj\u00f8rnson"
+        },
+        {
+            "subject": "Franz Leh\u00e1r",
+            "object": "Franz Leh\u00e1r Sr."
+        },
+        {
+            "subject": "Olivia de Havilland",
+            "object": "Walter Augustus de Havilland"
+        },
+        {
+            "subject": "Svante August Arrhenius",
+            "object": "Svanta Gustav Arrhenius"
+        },
+        {
+            "subject": "August Wilhelm Schlegel",
+            "object": "Johann Adolf Schlegel"
+        },
+        {
+            "subject": "Zbigniew Brzezinski",
+            "object": "Tadeusz Brzezi\u0144ski"
+        },
+        {
+            "subject": "Arthur Balfour",
+            "object": "James Maitland Balfour"
+        },
+        {
+            "subject": "Jacques Cousteau",
+            "object": "Daniel Cousteau"
+        },
+        {
+            "subject": "Eug\u00e8ne Fromentin",
+            "object": "Pierre Samuel Toussaint Fromentin-Dupeux"
+        },
+        {
+            "subject": "Taras Shevchenko",
+            "object": "Hryhoriy Ivanovych Shevchenko"
+        },
+        {
+            "subject": "Jayne Mansfield",
+            "object": "Herbert William Palmer"
+        },
+        {
+            "subject": "Hans Bethe",
+            "object": "Albrecht Bethe"
+        },
+        {
+            "subject": "Genghis Khan",
+            "object": "Yesugei"
+        },
+        {
+            "subject": "Trajan",
+            "object": "Marcus Ulpius Traianus"
+        },
+        {
+            "subject": "Johan Huizinga",
+            "object": "Dirk Huizinga"
+        },
+        {
+            "subject": "Arrigo Boito",
+            "object": "Silvestro Boito"
+        },
+        {
+            "subject": "Cy Twombly",
+            "object": "Cy Twombly"
+        },
+        {
+            "subject": "Sylvia Plath",
+            "object": "Otto Plath"
+        },
+        {
+            "subject": "Saddam Hussein",
+            "object": "Hussein 'Abid al-Majid"
+        },
+        {
+            "subject": "Aaron Summerscale",
+            "object": "John Nelson Summerscale"
+        },
+        {
+            "subject": "Andr\u00e9 Previn",
+            "object": "Jack Priwin"
+        },
+        {
+            "subject": "Kristina I of Sweden",
+            "object": "Gustavus Adolphus of Sweden"
+        },
+        {
+            "subject": "Nastassja Kinski",
+            "object": "Klaus Kinski"
+        },
+        {
+            "subject": "Robert F. Kennedy",
+            "object": "Joseph P. Kennedy Sr."
+        },
+        {
+            "subject": "Francis I of France",
+            "object": "Charles"
+        },
+        {
+            "subject": "Louis XVI of France",
+            "object": "Louis, Dauphin of France"
+        },
+        {
+            "subject": "Jules Michelet",
+            "object": "Jean-Fran\u00e7ois Furcy-Michelet"
+        },
+        {
+            "subject": "Edward Gibbon",
+            "object": "Edward Gibbon"
+        },
+        {
+            "subject": "Elizabeth Warren",
+            "object": "Donald Jones Herring"
+        },
+        {
+            "subject": "Alexander Hamilton",
+            "object": "James A. Hamilton"
+        },
+        {
+            "subject": "Georg B\u00fcchner",
+            "object": "Ernst B\u00fcchner"
+        },
+        {
+            "subject": "Philip IV of Spain",
+            "object": "Philip III of Spain"
+        },
+        {
+            "subject": "John Huston",
+            "object": "Walter Huston"
+        },
+        {
+            "subject": "Leo X",
+            "object": "Lorenzo de' Medici"
+        },
+        {
+            "subject": "Artemisia Gentileschi",
+            "object": "Orazio Gentileschi"
+        },
+        {
+            "subject": "Milo\u0161 Forman",
+            "object": "Otto Kohn"
+        },
+        {
+            "subject": "Jacob Burckhardt",
+            "object": "Jakob Burckhardt"
+        },
+        {
+            "subject": "Herbert Hoover",
+            "object": "Jesse Hoover"
+        },
+        {
+            "subject": "Pierre Teilhard de Chardin",
+            "object": "Emmanuel Teilhard de Chardin"
+        },
+        {
+            "subject": "Eduardo Chillida",
+            "object": "Pedro Chillida"
+        },
+        {
+            "subject": "Jaroslav Ha\u0161ek",
+            "object": "Josef Ha\u0161ek"
+        },
+        {
+            "subject": "Pontormo",
+            "object": "Bartolommeo di Jacopo di Martino"
+        },
+        {
+            "subject": "Dean Martin",
+            "object": "Gaetano Crocetti"
+        },
+        {
+            "subject": "Antoine Lavoisier",
+            "object": "Jean-Antoine de Lavoisier"
+        },
+        {
+            "subject": "Marianne Faithfull",
+            "object": "Major Prof. Robert Glynn Faithfull"
+        }
+    ]
+}

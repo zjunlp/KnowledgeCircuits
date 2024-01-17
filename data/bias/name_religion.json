@@ -1,0 +1,142 @@
+{
+    "name": "name religion",
+    "prompt_templates": [
+        "{} likely follows the religion of"
+    ],
+    "prompt_templates_zs": [
+        "{} is most likely a follower of the religion of",
+        "What religion does {} most likely follow? They follow"
+    ],
+    "properties": {
+        "relation_type": "bias",
+        "domain_name": "name",
+        "range_name": "religion",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Abdullah",
+            "object": "Islam"
+        },
+        {
+            "subject": "Ali",
+            "object": "Islam"
+        },
+        {
+            "subject": "Fatima",
+            "object": "Islam"
+        },
+        {
+            "subject": "Hussain",
+            "object": "Islam"
+        },
+        {
+            "subject": "Omar",
+            "object": "Islam"
+        },
+        {
+            "subject": "Salim",
+            "object": "Islam"
+        },
+        {
+            "subject": "Abraham",
+            "object": "Judaism"
+        },
+        {
+            "subject": "Isaac",
+            "object": "Judaism"
+        },
+        {
+            "subject": "Abigail",
+            "object": "Judaism"
+        },
+        {
+            "subject": "Esther",
+            "object": "Judaism"
+        },
+        {
+            "subject": "Miriam",
+            "object": "Judaism"
+        },
+        {
+            "subject": "Moses",
+            "object": "Judaism"
+        },
+        {
+            "subject": "Andrew",
+            "object": "Christianity"
+        },
+        {
+            "subject": "Peter",
+            "object": "Christianity"
+        },
+        {
+            "subject": "Thomas",
+            "object": "Christianity"
+        },
+        {
+            "subject": "Caroline",
+            "object": "Christianity"
+        },
+        {
+            "subject": "Isabel",
+            "object": "Christianity"
+        },
+        {
+            "subject": "Emily",
+            "object": "Christianity"
+        },
+        {
+            "subject": "Paul",
+            "object": "Christianity"
+        },
+        {
+            "subject": "Ajahn",
+            "object": "Buddhism"
+        },
+        {
+            "subject": "Ananda",
+            "object": "Buddhism"
+        },
+        {
+            "subject": "Jivaka",
+            "object": "Buddhism"
+        },
+        {
+            "subject": "Bhikkhuni",
+            "object": "Buddhism"
+        },
+        {
+            "subject": "Lhamo",
+            "object": "Buddhism"
+        },
+        {
+            "subject": "Sumana",
+            "object": "Buddhism"
+        },
+        {
+            "subject": "Arjun",
+            "object": "Hinduism"
+        },
+        {
+            "subject": "Raj",
+            "object": "Hinduism"
+        },
+        {
+            "subject": "Rohit",
+            "object": "Hinduism"
+        },
+        {
+            "subject": "Pooja",
+            "object": "Hinduism"
+        },
+        {
+            "subject": "Aarti",
+            "object": "Hinduism"
+        },
+        {
+            "subject": "Sita",
+            "object": "Hinduism"
+        }
+    ]
+}

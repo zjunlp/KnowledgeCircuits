@@ -1,0 +1,140 @@
+{
+    "name":"country currency",
+    "prompt_templates":[
+       "The official currency of {} is the",
+       "{}'s official currency is the"
+    ],
+    "prompt_templates_zs":[
+      "What is the official currency of {}? It is called the",
+      "{}'s official currency is called the",
+      "The name of {}'s currency is the"
+   ],
+    "properties":{
+       "relation_type":"factual",
+       "domain_name":"country",
+       "range_name":"currency",
+       "symmetric":false
+    },
+    "samples":[
+       {
+          "subject":"United States",
+          "object":"Dollar"
+       },
+       {
+          "subject":"United Kingdom",
+          "object":"Pound"
+       },
+       {
+          "subject":"Japan",
+          "object":"Yen"
+       },
+       {
+          "subject":"Canada",
+          "object":"Dollar"
+       },
+       {
+          "subject":"Australia",
+          "object":"Dollar"
+       },
+       {
+          "subject":"Brazil",
+          "object":"Real"
+       },
+       {
+          "subject":"China",
+          "object":"Yuan"
+       },
+       {
+          "subject":"India",
+          "object":"Rupee"
+       },
+       {
+          "subject":"Russia",
+          "object":"Ruble"
+       },
+       {
+          "subject":"South Africa",
+          "object":"Rand"
+       },
+       {
+          "subject":"Mexico",
+          "object":"Peso"
+       },
+       {
+          "subject":"New Zealand",
+          "object":"Dollar"
+       },
+       {
+          "subject":"South Korea",
+          "object":"Won"
+       },
+       {
+          "subject":"Switzerland",
+          "object":"Franc"
+       },
+       {
+          "subject":"Turkey",
+          "object":"Lira"
+       },
+       {
+          "subject":"Argentina",
+          "object":"Peso"
+       },
+       {
+          "subject":"Norway",
+          "object":"Krone"
+       },
+       {
+          "subject":"Sweden",
+          "object":"Krona"
+       },
+       {
+          "subject":"Denmark",
+          "object":"Krone"
+       },
+       {
+          "subject":"Poland",
+          "object":"Zloty"
+       },
+       {
+          "subject":"Hungary",
+          "object":"Forint"
+       },
+       {
+          "subject":"Czech Republic",
+          "object":"Koruna"
+       },
+       {
+          "subject":"Israel",
+          "object":"Shekel"
+       },
+       {
+          "subject":"Saudi Arabia",
+          "object":"Riyal"
+       },
+       {
+          "subject":"United Arab Emirates",
+          "object":"Dirham"
+       },
+       {
+          "subject":"Singapore",
+          "object":"Dollar"
+       },
+       {
+          "subject":"Malaysia",
+          "object":"Ringgit"
+       },
+       {
+          "subject":"Indonesia",
+          "object":"Rupiah"
+       },
+       {
+          "subject":"Thailand",
+          "object":"Baht"
+       },
+       {
+          "subject":"Philippines",
+          "object":"Peso"
+       }
+    ]
+}

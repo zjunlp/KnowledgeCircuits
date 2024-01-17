@@ -1,0 +1,338 @@
+{
+    "name": "adjective superlative",
+    "prompt_templates": [
+        "The superlative form of {} is"
+    ],
+    "prompt_templates_zs": [
+        "The superlative form of {} is",
+        "What is the superlative form of {}? It is"
+    ],
+    "properties": {
+        "relation_type": "linguistic",
+        "domain_name": "adjective",
+        "range_name": "adjective",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "angry",
+            "object": "angriest"
+        },
+        {
+            "subject": "bad",
+            "object": "worst"
+        },
+        {
+            "subject": "big",
+            "object": "biggest"
+        },
+        {
+            "subject": "brave",
+            "object": "bravest"
+        },
+        {
+            "subject": "bright",
+            "object": "brightest"
+        },
+        {
+            "subject": "calm",
+            "object": "calmest"
+        },
+        {
+            "subject": "cheap",
+            "object": "cheapest"
+        },
+        {
+            "subject": "clean",
+            "object": "cleanest"
+        },
+        {
+            "subject": "cold",
+            "object": "coldest"
+        },
+        {
+            "subject": "crazy",
+            "object": "craziest"
+        },
+        {
+            "subject": "cruel",
+            "object": "cruelest"
+        },
+        {
+            "subject": "dark",
+            "object": "darkest"
+        },
+        {
+            "subject": "deep",
+            "object": "deepest"
+        },
+        {
+            "subject": "dirty",
+            "object": "dirtiest"
+        },
+        {
+            "subject": "dry",
+            "object": "driest"
+        },
+        {
+            "subject": "dull",
+            "object": "dullest"
+        },
+        {
+            "subject": "easy",
+            "object": "easiest"
+        },
+        {
+            "subject": "fast",
+            "object": "fastest"
+        },
+        {
+            "subject": "fierce",
+            "object": "fiercest"
+        },
+        {
+            "subject": "fresh",
+            "object": "freshest"
+        },
+        {
+            "subject": "friendly",
+            "object": "friendliest"
+        },
+        {
+            "subject": "full",
+            "object": "fullest"
+        },
+        {
+            "subject": "funny",
+            "object": "funniest"
+        },
+        {
+            "subject": "gentle",
+            "object": "gentlest"
+        },
+        {
+            "subject": "good",
+            "object": "best"
+        },
+        {
+            "subject": "great",
+            "object": "greatest"
+        },
+        {
+            "subject": "happy",
+            "object": "happiest"
+        },
+        {
+            "subject": "hard",
+            "object": "hardest"
+        },
+        {
+            "subject": "healthy",
+            "object": "healthiest"
+        },
+        {
+            "subject": "heavy",
+            "object": "heaviest"
+        },
+        {
+            "subject": "high",
+            "object": "highest"
+        },
+        {
+            "subject": "hot",
+            "object": "hottest"
+        },
+        {
+            "subject": "hungry",
+            "object": "hungriest"
+        },
+        {
+            "subject": "kind",
+            "object": "kindest"
+        },
+        {
+            "subject": "large",
+            "object": "largest"
+        },
+        {
+            "subject": "lazy",
+            "object": "laziest"
+        },
+        {
+            "subject": "light",
+            "object": "lightest"
+        },
+        {
+            "subject": "little",
+            "object": "smallest"
+        },
+        {
+            "subject": "long",
+            "object": "longest"
+        },
+        {
+            "subject": "loud",
+            "object": "loudest"
+        },
+        {
+            "subject": "low",
+            "object": "lowest"
+        },
+        {
+            "subject": "mad",
+            "object": "maddest"
+        },
+        {
+            "subject": "mean",
+            "object": "meanest"
+        },
+        {
+            "subject": "messy",
+            "object": "messiest"
+        },
+        {
+            "subject": "narrow",
+            "object": "narrowest"
+        },
+        {
+            "subject": "near",
+            "object": "nearest"
+        },
+        {
+            "subject": "new",
+            "object": "newest"
+        },
+        {
+            "subject": "old",
+            "object": "oldest"
+        },
+        {
+            "subject": "polite",
+            "object": "politest"
+        },
+        {
+            "subject": "poor",
+            "object": "poorest"
+        },
+        {
+            "subject": "quick",
+            "object": "quickest"
+        },
+        {
+            "subject": "quiet",
+            "object": "quietest"
+        },
+        {
+            "subject": "rich",
+            "object": "richest"
+        },
+        {
+            "subject": "sad",
+            "object": "saddest"
+        },
+        {
+            "subject": "safe",
+            "object": "safest"
+        },
+        {
+            "subject": "short",
+            "object": "shortest"
+        },
+        {
+            "subject": "shy",
+            "object": "shyest"
+        },
+        {
+            "subject": "simple",
+            "object": "simplest"
+        },
+        {
+            "subject": "slow",
+            "object": "slowest"
+        },
+        {
+            "subject": "small",
+            "object": "smallest"
+        },
+        {
+            "subject": "smart",
+            "object": "smartest"
+        },
+        {
+            "subject": "smooth",
+            "object": "smoothest"
+        },
+        {
+            "subject": "strong",
+            "object": "strongest"
+        },
+        {
+            "subject": "sweet",
+            "object": "sweetest"
+        },
+        {
+            "subject": "tall",
+            "object": "tallest"
+        },
+        {
+            "subject": "thick",
+            "object": "thickest"
+        },
+        {
+            "subject": "thin",
+            "object": "thinnest"
+        },
+        {
+            "subject": "tiny",
+            "object": "tiniest"
+        },
+        {
+            "subject": "tough",
+            "object": "toughest"
+        },
+        {
+            "subject": "true",
+            "object": "truest"
+        },
+        {
+            "subject": "ugly",
+            "object": "ugliest"
+        },
+        {
+            "subject": "weak",
+            "object": "weakest"
+        },
+        {
+            "subject": "wet",
+            "object": "wettest"
+        },
+        {
+            "subject": "wide",
+            "object": "widest"
+        },
+        {
+            "subject": "wild",
+            "object": "wildest"
+        },
+        {
+            "subject": "wise",
+            "object": "wisest"
+        },
+        {
+            "subject": "witty",
+            "object": "wittiest"
+        },
+        {
+            "subject": "wrong",
+            "object": "wrongest"
+        },
+        {
+            "subject": "young",
+            "object": "youngest"
+        },
+        {
+            "subject": "zesty",
+            "object": "zestiest"
+        }
+    ]
+}

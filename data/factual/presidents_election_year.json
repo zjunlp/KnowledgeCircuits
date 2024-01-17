@@ -1,0 +1,93 @@
+{
+  "name": "president election year",
+  "prompt_templates": [
+    "{} was elected in"
+  ],
+  "prompt_templates_zs": [
+    "{} was elected in"
+  ],
+  "properties": {
+    "relation_type": "factual",
+    "domain_name": "person",
+    "range_name": "year",
+    "symmetric": false
+  },
+  "samples": [
+    {
+      "subject": "John Adams",
+      "object": "1796"
+    },
+    {
+      "subject": "Thomas Jefferson",
+      "object": "1800"
+    },
+    {
+      "subject": "James Madison",
+      "object": "1808"
+    },
+    {
+      "subject": "James Monroe",
+      "object": "1816"
+    },
+    {
+      "subject": "John Quincy Adams",
+      "object": "1824"
+    },
+    {
+      "subject": "Andrew Jackson",
+      "object": "1828"
+    },
+    {
+      "subject": "Martin Van Buren",
+      "object": "1836"
+    },
+    {
+      "subject": "William Henry Harrison",
+      "object": "1840"
+    },
+    {
+      "subject": "Richard M. Nixon",
+      "object": "1968"
+    },
+    {
+      "subject": "John F. Kennedy",
+      "object": "1960"
+    },
+    {
+      "subject": "Richard Nixon",
+      "object": "1968"
+    },
+    {
+      "subject": "Bill Clinton",
+      "object": "1992"
+    },
+    {
+      "subject": "George W. Bush",
+      "object": "2000"
+    },
+    {
+      "subject": "Barack Obama",
+      "object": "2008"
+    },
+    {
+      "subject": "Jimmy Carter ",
+      "object": "1976"
+    },
+    {
+      "subject": "Ronald Reagan",
+      "object": "1980"
+    },
+    {
+      "subject": "George H. W. Bush",
+      "object": "1988"
+    },
+    {
+      "subject": "Joe Biden",
+      "object": "2020"
+    },
+    {
+      "subject": "Franklin D. Roosevelt",
+      "object": "1932"
+    }
+  ]
+}

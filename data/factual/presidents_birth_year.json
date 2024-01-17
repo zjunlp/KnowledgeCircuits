@@ -1,0 +1,93 @@
+{
+  "name": "president birth year",
+  "prompt_templates": [
+    "{} was born in"
+  ],
+  "prompt_templates_zs": [
+    "{} was born in"
+  ],
+  "properties": {
+    "relation_type": "factual",
+    "domain_name": "person",
+    "range_name": "year",
+    "symmetric": false
+  },
+  "samples": [
+    {
+      "subject": "John Adams",
+      "object": "1735"
+    },
+    {
+      "subject": "Thomas Jefferson",
+      "object": "1743"
+    },
+    {
+      "subject": "James Madison",
+      "object": "1751"
+    },
+    {
+      "subject": "James Monroe",
+      "object": "1758"
+    },
+    {
+      "subject": "John Quincy Adams",
+      "object": "1767"
+    },
+    {
+      "subject": "Andrew Jackson",
+      "object": "1767"
+    },
+    {
+      "subject": "Martin Van Buren",
+      "object": "1782"
+    },
+    {
+      "subject": "William Henry Harrison",
+      "object": "1773"
+    },
+    {
+      "subject": "Richard Nixon",
+      "object": "1913"
+    },
+    {
+      "subject": "John F. Kennedy",
+      "object": "1917"
+    },
+    {
+      "subject": "Richard Nixon",
+      "object": "1913"
+    },
+    {
+      "subject": "Bill Clinton",
+      "object": "1946"
+    },
+    {
+      "subject": "George W. Bush",
+      "object": "1946"
+    },
+    {
+      "subject": "Barack Obama",
+      "object": "1961"
+    },
+    {
+      "subject": "Jimmy Carter ",
+      "object": "1924"
+    },
+    {
+      "subject": "Ronald Reagan",
+      "object": "1911"
+    },
+    {
+      "subject": "George H. W. Bush",
+      "object": "1924"
+    },
+    {
+      "subject": "Joe Biden",
+      "object": "1942"
+    },
+    {
+      "subject": "Franklin D. Roosevelt",
+      "object": "1882"
+    }
+  ]
+}

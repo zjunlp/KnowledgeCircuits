@@ -1,0 +1,161 @@
+{
+    "name": "fruit inside color",
+    "prompt_templates": [
+        "On the inside, {} are"
+    ],
+    "prompt_templates_zs": [
+        "What color are {} on the inside? They are"
+    ],
+    "properties": {
+        "relation_type": "commonsense",
+        "domain_name": "fruit",
+        "range_name": "color",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "bananas",
+            "object": "white"
+        },
+        {
+            "subject": "apples",
+            "object": "white"
+        },
+        {
+            "subject": "watermelons",
+            "object": "red"
+        },
+        {
+            "subject": "kiwis",
+            "object": "green"
+        },
+        {
+            "subject": "dragon fruits",
+            "object": "white"
+        },
+        {
+            "subject": "eggplants",
+            "object": "white"
+        },
+        {
+            "subject": "zucchinis",
+            "object": "white"
+        },
+        {
+            "subject": "pineapples",
+            "object": "yellow"
+        },
+        {
+            "subject": "mangoes",
+            "object": "orange"
+        },
+        {
+            "subject": "cucumbers",
+            "object": "white"
+        },
+        {
+            "subject": "radishes",
+            "object": "white"
+        },
+        {
+            "subject": "passion fruits",
+            "object": "yellow"
+        },
+        {
+            "subject": "nectarines",
+            "object": "yellow"
+        },
+        {
+            "subject": "plums",
+            "object": "red"
+        },
+        {
+            "subject": "potatos",
+            "object": "white"
+        },
+        {
+            "subject": "strawberries",
+            "object": "red"
+        },
+        {
+            "subject": "avocados",
+            "object": "green"
+        },
+        {
+            "subject": "peaches",
+            "object": "yellow"
+        },
+        {
+            "subject": "pomegranates",
+            "object": "red"
+        },
+        {
+            "subject": "cherries",
+            "object": "red"
+        },
+        {
+            "subject": "grapes",
+            "object": "green"
+        },
+        {
+            "subject": "blueberries",
+            "object": "green"
+        },
+        {
+            "subject": "oranges",
+            "object": "orange"
+        },
+        {
+            "subject": "lemons",
+            "object": "yellow"
+        },
+        {
+            "subject": "limes",
+            "object": "green"
+        },
+        {
+            "subject": "grapefruits",
+            "object": "pink"
+        },
+        {
+            "subject": "blackberries",
+            "object": "red"
+        },
+        {
+            "subject": "raspberries",
+            "object": "red"
+        },
+        {
+            "subject": "papayas",
+            "object": "orange"
+        },
+        {
+            "subject": "apricots",
+            "object": "orange"
+        },
+        {
+            "subject": "tomatoes",
+            "object": "red"
+        },
+        {
+            "subject": "bell peppers",
+            "object": "red"
+        },
+        {
+            "subject": "persimmons",
+            "object": "orange"
+        },
+        {
+            "subject": "lychees",
+            "object": "white"
+        },
+        {
+            "subject": "coconuts",
+            "object": "white"
+        },
+        {
+            "subject": "cantaloupes",
+            "object": "orange"
+        }
+    ]
+}

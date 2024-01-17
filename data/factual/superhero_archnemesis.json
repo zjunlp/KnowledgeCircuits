@@ -1,0 +1,402 @@
+{
+    "name": "superhero archnemesis",
+    "prompt_templates": [
+        "The superhero archnemesis of {} is"
+    ],
+    "prompt_templates_zs": [
+        "Who is the superhero archnemesis of {}? It is",
+        "The name of the superhero archnemesis of {} is"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "superhero",
+        "range_name": "superhero",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Superman",
+            "object": "Lex Luthor"
+        },
+        {
+            "subject": "Batman",
+            "object": "The Joker"
+        },
+        {
+            "subject": "Wonder Woman",
+            "object": "Cheetah"
+        },
+        {
+            "subject": "Spider-Man",
+            "object": "Green Goblin"
+        },
+        {
+            "subject": "The Flash",
+            "object": "Reverse-Flash"
+        },
+        {
+            "subject": "Green Lantern",
+            "object": "Sinestro"
+        },
+        {
+            "subject": "Captain America",
+            "object": "Red Skull"
+        },
+        {
+            "subject": "Iron Man",
+            "object": "The Mandarin"
+        },
+        {
+            "subject": "Thor",
+            "object": "Loki"
+        },
+        {
+            "subject": "Black Panther",
+            "object": "Killmonger"
+        },
+        {
+            "subject": "Doctor Strange",
+            "object": "Baron Mordo"
+        },
+        {
+            "subject": "Aquaman",
+            "object": "Black Manta"
+        },
+        {
+            "subject": "Hawkeye",
+            "object": "Crossfire"
+        },
+        {
+            "subject": "Daredevil",
+            "object": "Kingpin"
+        },
+        {
+            "subject": "The Hulk",
+            "object": "The Abomination"
+        },
+        {
+            "subject": "Cyclops",
+            "object": "Mister Sinister"
+        },
+        {
+            "subject": "Wolverine",
+            "object": "Sabretooth"
+        },
+        {
+            "subject": "Ant-Man",
+            "object": "Yellowjacket"
+        },
+        {
+            "subject": "The Wasp",
+            "object": "Whirlwind"
+        },
+        {
+            "subject": "Captain Marvel",
+            "object": "Yon-Rogg"
+        },
+        {
+            "subject": "Deadpool",
+            "object": "T-Ray"
+        },
+        {
+            "subject": "Nightwing",
+            "object": "Deathstroke"
+        },
+        {
+            "subject": "Batgirl",
+            "object": "James Gordon Jr."
+        },
+        {
+            "subject": "Raven",
+            "object": "Trigon"
+        },
+        {
+            "subject": "Starfire",
+            "object": "Blackfire"
+        },
+        {
+            "subject": "Beast Boy",
+            "object": "The Brain"
+        },
+        {
+            "subject": "Supergirl",
+            "object": "Reign"
+        },
+        {
+            "subject": "Black Widow",
+            "object": "Taskmaster"
+        },
+        {
+            "subject": "Silver Surfer",
+            "object": "Galactus"
+        },
+        {
+            "subject": "Punisher",
+            "object": "Jigsaw"
+        },
+        {
+            "subject": "Luke Cage",
+            "object": "Diamondback"
+        },
+        {
+            "subject": "Ghost Rider",
+            "object": "Mephisto"
+        },
+        {
+            "subject": "Jessica Jones",
+            "object": "Kilgrave"
+        },
+        {
+            "subject": "Green Arrow",
+            "object": "Malcolm Merlyn"
+        },
+        {
+            "subject": "Hawkman",
+            "object": "Shadow Thief"
+        },
+        {
+            "subject": "Martian Manhunter",
+            "object": "Despero"
+        },
+        {
+            "subject": "Black Canary",
+            "object": "White Canary"
+        },
+        {
+            "subject": "Storm",
+            "object": "Shadow King"
+        },
+        {
+            "subject": "Human Torch",
+            "object": "Doctor Doom"
+        },
+        {
+            "subject": "Mr. Fantastic",
+            "object": "Doctor Doom"
+        },
+        {
+            "subject": "Invisible Woman",
+            "object": "Doctor Doom"
+        },
+        {
+            "subject": "The Thing",
+            "object": "Doctor Doom"
+        },
+        {
+            "subject": "Ms. Marvel",
+            "object": "Mystique"
+        },
+        {
+            "subject": "Shazam",
+            "object": "Black Adam"
+        },
+        {
+            "subject": "Blue Beetle",
+            "object": "Maxwell Lord"
+        },
+        {
+            "subject": "Zatanna",
+            "object": "Felix Faust"
+        },
+        {
+            "subject": "Constantine",
+            "object": "Nergal"
+        },
+        {
+            "subject": "Swamp Thing",
+            "object": "Arcane"
+        },
+        {
+            "subject": "Robin",
+            "object": "Two-Face"
+        },
+        {
+            "subject": "Catwoman",
+            "object": "Black Mask"
+        },
+        {
+            "subject": "Rorschach",
+            "object": "Ozymandias"
+        },
+        {
+            "subject": "Moon Knight",
+            "object": "Bushman"
+        },
+        {
+            "subject": "Hawkgirl",
+            "object": "Shadow Thief"
+        },
+        {
+            "subject": "She-Hulk",
+            "object": "Titania"
+        },
+        {
+            "subject": "Red Hood",
+            "object": "The Joker"
+        },
+        {
+            "subject": "Dr. Fate",
+            "object": "Wotan"
+        },
+        {
+            "subject": "Plastic Man",
+            "object": "Dr. Dome"
+        },
+        {
+            "subject": "Scarlet Witch",
+            "object": "Morgan Le Fay"
+        },
+        {
+            "subject": "Vision",
+            "object": "Ultron"
+        },
+        {
+            "subject": "Power Girl",
+            "object": "Ultra-Humanite"
+        },
+        {
+            "subject": "Mystique",
+            "object": "Bishop"
+        },
+        {
+            "subject": "Shadowcat",
+            "object": "White Queen"
+        },
+        {
+            "subject": "Colossus",
+            "object": "Juggernaut"
+        },
+        {
+            "subject": "Magneto",
+            "object": "Professor X"
+        },
+        {
+            "subject": "Gamora",
+            "object": "Thanos"
+        },
+        {
+            "subject": "Groot",
+            "object": "Collector"
+        },
+        {
+            "subject": "Rocket Raccoon",
+            "object": "Collector"
+        },
+        {
+            "subject": "Star-Lord",
+            "object": "Ronan the Accuser"
+        },
+        {
+            "subject": "Nick Fury",
+            "object": "Baron Strucker"
+        },
+        {
+            "subject": "Black Bolt",
+            "object": "Maximus"
+        },
+        {
+            "subject": "Hellboy",
+            "object": "Grigori Rasputin"
+        },
+        {
+            "subject": "Judge Dredd",
+            "object": "Judge Death"
+        },
+        {
+            "subject": "Teenage Mutant Ninja Turtles",
+            "object": "Shredder"
+        },
+        {
+            "subject": "Sailor Moon",
+            "object": "Queen Beryl"
+        },
+        {
+            "subject": "Astro Boy",
+            "object": "Dr. Tenma"
+        },
+        {
+            "subject": "Goku",
+            "object": "Frieza"
+        },
+        {
+            "subject": "Spawn",
+            "object": "Malebolgia"
+        },
+        {
+            "subject": "Venom",
+            "object": "Carnage"
+        },
+        {
+            "subject": "Elektra",
+            "object": "Bullseye"
+        },
+        {
+            "subject": "Buffy the Vampire Slayer",
+            "object": "The Master"
+        },
+        {
+            "subject": "RoboCop",
+            "object": "Clarence Boddicker"
+        },
+        {
+            "subject": "John Constantine",
+            "object": "First of the Fallen"
+        },
+        {
+            "subject": "The Tick",
+            "object": "Chairface Chippendale"
+        },
+        {
+            "subject": "Blade",
+            "object": "Deacon Frost"
+        },
+        {
+            "subject": "Kick-Ass",
+            "object": "Red Mist"
+        },
+        {
+            "subject": "Xena: Warrior Princess",
+            "object": "Callisto"
+        },
+        {
+            "subject": "Hercules",
+            "object": "Hades"
+        },
+        {
+            "subject": "The Powerpuff Girls",
+            "object": "Mojo Jojo"
+        },
+        {
+            "subject": "Hellcat",
+            "object": "Mad Dog"
+        },
+        {
+            "subject": "Moon Girl",
+            "object": "Mel-Varr"
+        },
+        {
+            "subject": "Captain Planet",
+            "object": "Captain Pollution"
+        },
+        {
+            "subject": "The Phantom",
+            "object": "The Python"
+        },
+        {
+            "subject": "Usagi Yojimbo",
+            "object": "Lord Hikiji"
+        },
+        {
+            "subject": "Kim Possible",
+            "object": "Dr. Drakken"
+        },
+        {
+            "subject": "Ben 10",
+            "object": "Vilgax"
+        },
+        {
+            "subject": "Scooby-Doo",
+            "object": "Ghost Clown"
+        }
+    ]
+}

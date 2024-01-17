@@ -1,0 +1,2715 @@
+{
+    "name": "company hq",
+    "prompt_templates": [
+        "{} is headquartered in the city of",
+        "The headquarters of {} are in the city of"
+    ],
+    "prompt_templates_zs": [
+        "The headquarters of {} is in the city of",
+        "Where are the headquarters of {}? It is in the city of"
+    ],
+    "properties": {
+        "relation_type": "factual",
+        "domain_name": "company",
+        "range_name": "city",
+        "symmetric": false
+    },
+    "samples": [
+        {
+            "subject": "Monell Chemical Senses Center",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Majorette",
+            "object": "Lyon"
+        },
+        {
+            "subject": "Ipsos MORI",
+            "object": "London"
+        },
+        {
+            "subject": "Newcomen Society",
+            "object": "London"
+        },
+        {
+            "subject": "Northeastern University",
+            "object": "Boston"
+        },
+        {
+            "subject": "Pappas Restaurants",
+            "object": "Houston"
+        },
+        {
+            "subject": "Veracode",
+            "object": "Burlington"
+        },
+        {
+            "subject": "British Tanker Company",
+            "object": "London"
+        },
+        {
+            "subject": "Heart Attack Grill",
+            "object": "Chandler"
+        },
+        {
+            "subject": "BSC Young Boys",
+            "object": "Bern"
+        },
+        {
+            "subject": "Caribbean Community Secretariat",
+            "object": "Georgetown"
+        },
+        {
+            "subject": "Irish Ferries",
+            "object": "Dublin"
+        },
+        {
+            "subject": "Crown Airways",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Tata Steel Europe",
+            "object": "London"
+        },
+        {
+            "subject": "Sporveien",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Amirkabir University of Technology",
+            "object": "Tehran"
+        },
+        {
+            "subject": "Bajaj Electricals",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Chinese Skating Association",
+            "object": "Beijing"
+        },
+        {
+            "subject": "Elsevier",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Microland",
+            "object": "Bangalore"
+        },
+        {
+            "subject": "Kemira",
+            "object": "Helsinki"
+        },
+        {
+            "subject": "British Railways Board",
+            "object": "London"
+        },
+        {
+            "subject": "Ministry of Foreign Affairs",
+            "object": "Moscow"
+        },
+        {
+            "subject": "LG Chem",
+            "object": "Seoul"
+        },
+        {
+            "subject": "Redpath Sugar",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Pagan Federation",
+            "object": "London"
+        },
+        {
+            "subject": "Artnet",
+            "object": "Berlin"
+        },
+        {
+            "subject": "Cinven",
+            "object": "London"
+        },
+        {
+            "subject": "Strait Shipping",
+            "object": "Wellington"
+        },
+        {
+            "subject": "Amalgamated Wireless",
+            "object": "Sydney"
+        },
+        {
+            "subject": "Brown University",
+            "object": "Providence"
+        },
+        {
+            "subject": "Physikalisch-Technische Bundesanstalt",
+            "object": "Brunswick"
+        },
+        {
+            "subject": "Beetham Organization",
+            "object": "Liverpool"
+        },
+        {
+            "subject": "Hellenic Army",
+            "object": "Athens"
+        },
+        {
+            "subject": "Co-operative Commonwealth Federation (Ontario Section)",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Digital Eel",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Gazi University",
+            "object": "Ankara"
+        },
+        {
+            "subject": "Bank Mellat",
+            "object": "Tehran"
+        },
+        {
+            "subject": "Sciences Po",
+            "object": "Paris"
+        },
+        {
+            "subject": "RotorWay International",
+            "object": "Chandler"
+        },
+        {
+            "subject": "University of Oklahoma",
+            "object": "Norman"
+        },
+        {
+            "subject": "Nordic Institute for Theoretical Physics",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Long-Term Capital Management",
+            "object": "Greenwich"
+        },
+        {
+            "subject": "World Trade Organization",
+            "object": "Geneva"
+        },
+        {
+            "subject": "Vergo Retail",
+            "object": "Liverpool"
+        },
+        {
+            "subject": "Crawford Composites",
+            "object": "Denver"
+        },
+        {
+            "subject": "RoboCop",
+            "object": "Detroit"
+        },
+        {
+            "subject": "OMRON",
+            "object": "Kyoto"
+        },
+        {
+            "subject": "BBC Radio",
+            "object": "London"
+        },
+        {
+            "subject": "Stroytransgaz",
+            "object": "Moscow"
+        },
+        {
+            "subject": "University of Kentucky",
+            "object": "Lexington"
+        },
+        {
+            "subject": "TU Wien",
+            "object": "Vienna"
+        },
+        {
+            "subject": "Ernst & Young",
+            "object": "London"
+        },
+        {
+            "subject": "Northern & Shell",
+            "object": "London"
+        },
+        {
+            "subject": "Samsung",
+            "object": "Seoul"
+        },
+        {
+            "subject": "The Imaginarium Studios",
+            "object": "London"
+        },
+        {
+            "subject": "Mater Health Services",
+            "object": "Brisbane"
+        },
+        {
+            "subject": "St Patrick's Athletic F.C.",
+            "object": "Dublin"
+        },
+        {
+            "subject": "Trafigura Beheer B.V.",
+            "object": "Amsterdam"
+        },
+        {
+            "subject": "Ericsson",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "EDP Renewables North America",
+            "object": "Houston"
+        },
+        {
+            "subject": "RPG Group",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Stop & Shop",
+            "object": "Quincy"
+        },
+        {
+            "subject": "Argo Tea",
+            "object": "Chicago"
+        },
+        {
+            "subject": "P&O Cruises Australia",
+            "object": "Southampton"
+        },
+        {
+            "subject": "Co-operative College",
+            "object": "Manchester"
+        },
+        {
+            "subject": "Center for Jewish\u2013Christian Understanding and Cooperation",
+            "object": "Jerusalem"
+        },
+        {
+            "subject": "Reading Company",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Liquor Control Board of Ontario",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Jim Beam",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Famous Players Film Company",
+            "object": "Hollywood"
+        },
+        {
+            "subject": "Diabetes UK",
+            "object": "London"
+        },
+        {
+            "subject": "American Indian Center",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Schibsted",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Terra Firma Capital Partners",
+            "object": "London"
+        },
+        {
+            "subject": "Slightly Mad Studios",
+            "object": "London"
+        },
+        {
+            "subject": "Vanderbilt University",
+            "object": "Nashville"
+        },
+        {
+            "subject": "Heilmann & Littmann",
+            "object": "Berlin"
+        },
+        {
+            "subject": "Rauch and Lang",
+            "object": "Cleveland"
+        },
+        {
+            "subject": "Sullivan Bluth Studios",
+            "object": "Dublin"
+        },
+        {
+            "subject": "United Grain Growers",
+            "object": "Winnipeg"
+        },
+        {
+            "subject": "Amoco",
+            "object": "Chicago"
+        },
+        {
+            "subject": "El Dorado Wrestling",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "tronc, Inc.",
+            "object": "Chicago"
+        },
+        {
+            "subject": "University of Washington",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Northern Foods",
+            "object": "Leeds"
+        },
+        {
+            "subject": "Acid Jazz Records",
+            "object": "London"
+        },
+        {
+            "subject": "Czechoslovak Television",
+            "object": "Prague"
+        },
+        {
+            "subject": "David McKay Publications",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Brown, Shipley & Co.",
+            "object": "London"
+        },
+        {
+            "subject": "Asprey",
+            "object": "London"
+        },
+        {
+            "subject": "Glitch Mode Recordings",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Hambros Bank",
+            "object": "London"
+        },
+        {
+            "subject": "TGV Cinemas",
+            "object": "Malaysia"
+        },
+        {
+            "subject": "TV Magazine",
+            "object": "Paris"
+        },
+        {
+            "subject": "Nintendo Software Planning & Development",
+            "object": "Kyoto"
+        },
+        {
+            "subject": "Nazi Party",
+            "object": "Munich"
+        },
+        {
+            "subject": "Boston Market",
+            "object": "Golden"
+        },
+        {
+            "subject": "Norwegian News Agency",
+            "object": "Oslo"
+        },
+        {
+            "subject": "RioCan Real Estate Investment Trust",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Republic Airways Holdings",
+            "object": "Indianapolis"
+        },
+        {
+            "subject": "Scottish Handball Association",
+            "object": "Scotland"
+        },
+        {
+            "subject": "Shelbourne F.C.",
+            "object": "Dublin"
+        },
+        {
+            "subject": "Jewel-Osco",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Double Helix Games",
+            "object": "Irvine"
+        },
+        {
+            "subject": "Nortel",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Lokalbahn AG",
+            "object": "Munich"
+        },
+        {
+            "subject": "Gray Television",
+            "object": "Atlanta"
+        },
+        {
+            "subject": "Century 21 Real Estate",
+            "object": "Madison"
+        },
+        {
+            "subject": "Eros International",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "McGill University",
+            "object": "Montreal"
+        },
+        {
+            "subject": "National City Corp.",
+            "object": "Cleveland"
+        },
+        {
+            "subject": "Alitalia-Linee Aeree Italiane",
+            "object": "Rome"
+        },
+        {
+            "subject": "OneWest Bank",
+            "object": "Pasadena"
+        },
+        {
+            "subject": "ACTIVE Network, LLC",
+            "object": "Dallas"
+        },
+        {
+            "subject": "Fantasy Studios",
+            "object": "Berkeley"
+        },
+        {
+            "subject": "Lion Air",
+            "object": "Jakarta"
+        },
+        {
+            "subject": "Deutsche Reichsbahn (GDR)",
+            "object": "Berlin"
+        },
+        {
+            "subject": "Prairie Mountain Publishing",
+            "object": "Boulder"
+        },
+        {
+            "subject": "State University of New York",
+            "object": "Albany"
+        },
+        {
+            "subject": "Norcem",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Umm Al-Qura University",
+            "object": "Mecca"
+        },
+        {
+            "subject": "CPP Investment Board",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Partick Thistle F.C.",
+            "object": "Glasgow"
+        },
+        {
+            "subject": "Melodiya",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Crosley Broadcasting Corporation",
+            "object": "Cincinnati"
+        },
+        {
+            "subject": "Gerasimov Institute of Cinematography",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Palace Software",
+            "object": "London"
+        },
+        {
+            "subject": "PopLlama Records",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Beykent University",
+            "object": "Istanbul"
+        },
+        {
+            "subject": "BP",
+            "object": "London"
+        },
+        {
+            "subject": "Red Star Line",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "National Party of Australia",
+            "object": "Canberra"
+        },
+        {
+            "subject": "FUN Technologies",
+            "object": "Toronto"
+        },
+        {
+            "subject": "All India Anna Dravida Munnetra Kazhagam",
+            "object": "Chennai"
+        },
+        {
+            "subject": "Rosbank",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Canada Life Financial",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Democratic Arab Socialist Union",
+            "object": "Paris"
+        },
+        {
+            "subject": "Hellas Online",
+            "object": "Athens"
+        },
+        {
+            "subject": "UBM plc",
+            "object": "London"
+        },
+        {
+            "subject": "Coles Group",
+            "object": "Melbourne"
+        },
+        {
+            "subject": "Human Entertainment",
+            "object": "Japan"
+        },
+        {
+            "subject": "ARM Holdings",
+            "object": "Cambridge"
+        },
+        {
+            "subject": "Berenberg Bank",
+            "object": "Hamburg"
+        },
+        {
+            "subject": "PGi",
+            "object": "Atlanta"
+        },
+        {
+            "subject": "East China Normal University",
+            "object": "Shanghai"
+        },
+        {
+            "subject": "Il Sole 24 Ore",
+            "object": "Milan"
+        },
+        {
+            "subject": "Spendrups",
+            "object": "Sweden"
+        },
+        {
+            "subject": "9 Story Media Group",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Osler, Hoskin & Harcourt",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Faygo",
+            "object": "Detroit"
+        },
+        {
+            "subject": "Tatts Group",
+            "object": "Queensland"
+        },
+        {
+            "subject": "Wimm-Bill-Dann Foods",
+            "object": "Moscow"
+        },
+        {
+            "subject": "John B. Stetson Company",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Telia Company",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Propellerhead Software",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "FC Dynamo Kyiv",
+            "object": "Kiev"
+        },
+        {
+            "subject": "Geo D. Whitcomb Company",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Chivas Regal",
+            "object": "Aberdeen"
+        },
+        {
+            "subject": "Visy Industries",
+            "object": "Melbourne"
+        },
+        {
+            "subject": "Gianni Versace S.p.A.",
+            "object": "Milan"
+        },
+        {
+            "subject": "The Weather Channel",
+            "object": "Atlanta"
+        },
+        {
+            "subject": "TNK-BP",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Miran Pastourma",
+            "object": "Athens"
+        },
+        {
+            "subject": "True Value",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Scottish Socialist Party",
+            "object": "Glasgow"
+        },
+        {
+            "subject": "International Tea Co. Stores",
+            "object": "London"
+        },
+        {
+            "subject": "SunTrust Banks",
+            "object": "Atlanta"
+        },
+        {
+            "subject": "Independent Newspapers",
+            "object": "Wellington"
+        },
+        {
+            "subject": "Danish Film Institute",
+            "object": "Copenhagen"
+        },
+        {
+            "subject": "International Trade Centre",
+            "object": "Geneva"
+        },
+        {
+            "subject": "Grey Nuns",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Grattan plc",
+            "object": "Bradford"
+        },
+        {
+            "subject": "Alligator Records",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Serono",
+            "object": "Geneva"
+        },
+        {
+            "subject": "Anadol",
+            "object": "Istanbul"
+        },
+        {
+            "subject": "Vijaya Vauhini Studios",
+            "object": "Chennai"
+        },
+        {
+            "subject": "Norwegian Industrial Property Office",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Stronach Group",
+            "object": "Aurora"
+        },
+        {
+            "subject": "United States Patent and Trademark Office",
+            "object": "Alexandria"
+        },
+        {
+            "subject": "Uprok Records",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Far East Organization",
+            "object": "Singapore"
+        },
+        {
+            "subject": "Zillow",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Institute of Chartered Secretaries and Administrators",
+            "object": "London"
+        },
+        {
+            "subject": "Popular Prakashan",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Annick Press",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Minerva Press",
+            "object": "London"
+        },
+        {
+            "subject": "Canada West Foundation",
+            "object": "Calgary"
+        },
+        {
+            "subject": "DFDS",
+            "object": "Copenhagen"
+        },
+        {
+            "subject": "HealthCap",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Keystone Bridge Company",
+            "object": "Pittsburgh"
+        },
+        {
+            "subject": "Associated British Foods",
+            "object": "London"
+        },
+        {
+            "subject": "SKY Perfect Well Think",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "Edda Media",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Iron Mountain Incorporated",
+            "object": "Boston"
+        },
+        {
+            "subject": "Phaidon Press",
+            "object": "London"
+        },
+        {
+            "subject": "CHUM Limited",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Iraqi Republic Railways",
+            "object": "Baghdad"
+        },
+        {
+            "subject": "Track Record",
+            "object": "London"
+        },
+        {
+            "subject": "Atlantis FC",
+            "object": "Helsinki"
+        },
+        {
+            "subject": "Polydor Records",
+            "object": "London"
+        },
+        {
+            "subject": "Lenovo",
+            "object": "Beijing"
+        },
+        {
+            "subject": "Zeneca",
+            "object": "London"
+        },
+        {
+            "subject": "EasyJet Switzerland",
+            "object": "Geneva"
+        },
+        {
+            "subject": "LWRC International",
+            "object": "Cambridge"
+        },
+        {
+            "subject": "World Association of Girl Guides and Girl Scouts",
+            "object": "London"
+        },
+        {
+            "subject": "Magen David Adom",
+            "object": "Israel"
+        },
+        {
+            "subject": "Ross Stores",
+            "object": "Dublin"
+        },
+        {
+            "subject": "Canadian Cancer Society",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Candover Investments",
+            "object": "London"
+        },
+        {
+            "subject": "Johnson Publishing Company",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Royal Dramatic Theatre",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Big C",
+            "object": "Bangkok"
+        },
+        {
+            "subject": "HAVELSAN",
+            "object": "Ankara"
+        },
+        {
+            "subject": "Sunoco",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "AIK Fotboll",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Hang Seng Bank",
+            "object": "Central"
+        },
+        {
+            "subject": "Rank Organisation",
+            "object": "London"
+        },
+        {
+            "subject": "Digital Chameleon",
+            "object": "Winnipeg"
+        },
+        {
+            "subject": "Healthways",
+            "object": "Franklin"
+        },
+        {
+            "subject": "Swedish Orphan Biovitrum",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Stelco",
+            "object": "Hamilton"
+        },
+        {
+            "subject": "Alinta Energy",
+            "object": "Sydney"
+        },
+        {
+            "subject": "Rudolph Wurlitzer Company",
+            "object": "Cincinnati"
+        },
+        {
+            "subject": "NTUC FairPrice",
+            "object": "Singapore"
+        },
+        {
+            "subject": "Smurfit-Stone Container",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Supermarine",
+            "object": "Southampton"
+        },
+        {
+            "subject": "Vortex Comics",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Peroni Brewery",
+            "object": "Rome"
+        },
+        {
+            "subject": "BC Hydro",
+            "object": "Vancouver"
+        },
+        {
+            "subject": "Sega Sports R&D",
+            "object": "Japan"
+        },
+        {
+            "subject": "Liberty Mutual",
+            "object": "Boston"
+        },
+        {
+            "subject": "People's Democratic Party of Afghanistan",
+            "object": "Kabul"
+        },
+        {
+            "subject": "Cummins",
+            "object": "Columbus"
+        },
+        {
+            "subject": "Sherwin-Williams",
+            "object": "Cleveland"
+        },
+        {
+            "subject": "MAMA & Company",
+            "object": "London"
+        },
+        {
+            "subject": "Overkill Software",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Sora Ltd.",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "Irish Citizen Army",
+            "object": "Dublin"
+        },
+        {
+            "subject": "Heilmann & Littmann",
+            "object": "Munich"
+        },
+        {
+            "subject": "Sukhoi",
+            "object": "Moscow"
+        },
+        {
+            "subject": "John Thompson Productions",
+            "object": "Berlin"
+        },
+        {
+            "subject": "Acne Studios",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Smith & Nephew",
+            "object": "London"
+        },
+        {
+            "subject": "WWE",
+            "object": "Stamford"
+        },
+        {
+            "subject": "Taft Broadcasting",
+            "object": "Cincinnati"
+        },
+        {
+            "subject": "Brooks Sports",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Partners HealthCare",
+            "object": "Boston"
+        },
+        {
+            "subject": "Russian Post",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Royal Numismatic Society",
+            "object": "London"
+        },
+        {
+            "subject": "Polish Socialist Party",
+            "object": "Warsaw"
+        },
+        {
+            "subject": "CreativeLive",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Cognos",
+            "object": "Ottawa"
+        },
+        {
+            "subject": "University of New Mexico",
+            "object": "Albuquerque"
+        },
+        {
+            "subject": "Jimdo",
+            "object": "Hamburg"
+        },
+        {
+            "subject": "IF Brommapojkarna",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Chinese Academy of Sciences",
+            "object": "Beijing"
+        },
+        {
+            "subject": "Boulton Paul Aircraft",
+            "object": "Norwich"
+        },
+        {
+            "subject": "Eos Press",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Euromoney Institutional Investor",
+            "object": "London"
+        },
+        {
+            "subject": "Emily Carr University of Art and Design",
+            "object": "Vancouver"
+        },
+        {
+            "subject": "Reaktion Books",
+            "object": "London"
+        },
+        {
+            "subject": "Iranian reform movement",
+            "object": "Tehran"
+        },
+        {
+            "subject": "Disneyland Resort",
+            "object": "Anaheim"
+        },
+        {
+            "subject": "Remstar",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Telespazio",
+            "object": "Rome"
+        },
+        {
+            "subject": "Graduate Institute of International and Development Studies",
+            "object": "Geneva"
+        },
+        {
+            "subject": "Cineflix",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Henry Boot PLC",
+            "object": "Sheffield"
+        },
+        {
+            "subject": "Dickins & Jones",
+            "object": "London"
+        },
+        {
+            "subject": "ATA Airlines",
+            "object": "Indianapolis"
+        },
+        {
+            "subject": "Schwan Food Company",
+            "object": "Marshall"
+        },
+        {
+            "subject": "North British Locomotive Company",
+            "object": "Glasgow"
+        },
+        {
+            "subject": "Historic New England",
+            "object": "Boston"
+        },
+        {
+            "subject": "Christiania Bank",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Guinness World Records",
+            "object": "London"
+        },
+        {
+            "subject": "Polistil",
+            "object": "Milan"
+        },
+        {
+            "subject": "Assyrian Church of the East",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Tesch & Stabenow",
+            "object": "Hamburg"
+        },
+        {
+            "subject": "Weta Digital",
+            "object": "Wellington"
+        },
+        {
+            "subject": "Gerrit Rietveld Academie",
+            "object": "Amsterdam"
+        },
+        {
+            "subject": "Green Party of England and Wales",
+            "object": "London"
+        },
+        {
+            "subject": "Coffee Time",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Ladenburg Thalmann",
+            "object": "Miami"
+        },
+        {
+            "subject": "Delage",
+            "object": "Paris"
+        },
+        {
+            "subject": "Karolinska Institute",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Trussed Concrete Steel Company",
+            "object": "Detroit"
+        },
+        {
+            "subject": "TEAC Corporation",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "North Carolina Central University",
+            "object": "Durham"
+        },
+        {
+            "subject": "Skinner & Eddy",
+            "object": "Seattle"
+        },
+        {
+            "subject": "ITC Entertainment",
+            "object": "London"
+        },
+        {
+            "subject": "Sandvine",
+            "object": "Waterloo"
+        },
+        {
+            "subject": "Micro Instrumentation and Telemetry Systems",
+            "object": "Albuquerque"
+        },
+        {
+            "subject": "Infogrames Entertainment",
+            "object": "Lyon"
+        },
+        {
+            "subject": "World Class Championship Wrestling",
+            "object": "Dallas"
+        },
+        {
+            "subject": "Optomen",
+            "object": "London"
+        },
+        {
+            "subject": "GIC Private Limited",
+            "object": "Singapore"
+        },
+        {
+            "subject": "Centers for Disease Control and Prevention",
+            "object": "Atlanta"
+        },
+        {
+            "subject": "American Eagle Outfitters",
+            "object": "Pittsburgh"
+        },
+        {
+            "subject": "Urban Outfitters",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "United Airlines",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Bank Polska Kasa Opieki",
+            "object": "Warsaw"
+        },
+        {
+            "subject": "Cogeco",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Germanwings",
+            "object": "Cologne"
+        },
+        {
+            "subject": "Autodesk Media and Entertainment",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Dynegy",
+            "object": "Houston"
+        },
+        {
+            "subject": "Rogers TV",
+            "object": "Ottawa"
+        },
+        {
+            "subject": "Clover Studio",
+            "object": "Japan"
+        },
+        {
+            "subject": "Crossroads Christian Communications",
+            "object": "Burlington"
+        },
+        {
+            "subject": "Ahlstrom-Munksj\u00f6",
+            "object": "Helsinki"
+        },
+        {
+            "subject": "WaterAid",
+            "object": "London"
+        },
+        {
+            "subject": "Nordic Museum",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Mimar Sinan Fine Arts University",
+            "object": "Istanbul"
+        },
+        {
+            "subject": "King Chulalongkorn Memorial Hospital",
+            "object": "Bangkok"
+        },
+        {
+            "subject": "Union for the Mediterranean",
+            "object": "Barcelona"
+        },
+        {
+            "subject": "Ayn Rand Institute",
+            "object": "Irvine"
+        },
+        {
+            "subject": "Smyths",
+            "object": "Ireland"
+        },
+        {
+            "subject": "BayernLB",
+            "object": "Munich"
+        },
+        {
+            "subject": "Sun Life Financial",
+            "object": "Toronto"
+        },
+        {
+            "subject": "J. G. Brill Company",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Seibu Kaihatsu",
+            "object": "Japan"
+        },
+        {
+            "subject": "Turkish Radio and Television Corporation",
+            "object": "Ankara"
+        },
+        {
+            "subject": "Jisc",
+            "object": "Bristol"
+        },
+        {
+            "subject": "Lyndon B. Johnson Space Center",
+            "object": "Houston"
+        },
+        {
+            "subject": "STX Europe",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Aigle Azur",
+            "object": "Paris"
+        },
+        {
+            "subject": "Politics Can Be Different",
+            "object": "Budapest"
+        },
+        {
+            "subject": "Case Western Reserve University",
+            "object": "Cleveland"
+        },
+        {
+            "subject": "Comintern",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Crossley Motors",
+            "object": "Manchester"
+        },
+        {
+            "subject": "Austereo Radio Network",
+            "object": "Melbourne"
+        },
+        {
+            "subject": "Service Electric",
+            "object": "Bethlehem"
+        },
+        {
+            "subject": "Euro1080",
+            "object": "Belgium"
+        },
+        {
+            "subject": "Campari Group",
+            "object": "Milan"
+        },
+        {
+            "subject": "Harvard Medical School",
+            "object": "Boston"
+        },
+        {
+            "subject": "Obsidian Entertainment",
+            "object": "Irvine"
+        },
+        {
+            "subject": "University of Western Australia",
+            "object": "Perth"
+        },
+        {
+            "subject": "Sysco",
+            "object": "Houston"
+        },
+        {
+            "subject": "Common Purpose UK",
+            "object": "London"
+        },
+        {
+            "subject": "German Football Association",
+            "object": "Frankfurt"
+        },
+        {
+            "subject": "P2P Foundation",
+            "object": "Amsterdam"
+        },
+        {
+            "subject": "American Wrestling Association",
+            "object": "Minneapolis"
+        },
+        {
+            "subject": "SK Group",
+            "object": "Seoul"
+        },
+        {
+            "subject": "National Development and Reform Commission",
+            "object": "Beijing"
+        },
+        {
+            "subject": "Interislander",
+            "object": "Wellington"
+        },
+        {
+            "subject": "Cray Wanderers F.C.",
+            "object": "London"
+        },
+        {
+            "subject": "Sega Wow",
+            "object": "Japan"
+        },
+        {
+            "subject": "AZLK",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Free Association Books",
+            "object": "London"
+        },
+        {
+            "subject": "HSH Nordbank",
+            "object": "Hamburg"
+        },
+        {
+            "subject": "Midvale Steel",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "James Purdey & Sons",
+            "object": "London"
+        },
+        {
+            "subject": "Hooters",
+            "object": "Atlanta"
+        },
+        {
+            "subject": "Musicland Studios",
+            "object": "Munich"
+        },
+        {
+            "subject": "Club Med",
+            "object": "Paris"
+        },
+        {
+            "subject": "Intransitive Recordings",
+            "object": "Cambridge"
+        },
+        {
+            "subject": "Orion Publishing Group",
+            "object": "London"
+        },
+        {
+            "subject": "Northern Championship Wrestling",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Cirque du Soleil",
+            "object": "Montreal"
+        },
+        {
+            "subject": "E-CO Energi",
+            "object": "Oslo"
+        },
+        {
+            "subject": "United Nations Economic Commission for Latin America and the Caribbean",
+            "object": "Santiago"
+        },
+        {
+            "subject": "Golden Spike Company",
+            "object": "Colorado"
+        },
+        {
+            "subject": "Global Humanitarian Forum",
+            "object": "Geneva"
+        },
+        {
+            "subject": "Krauss-Maffei",
+            "object": "Munich"
+        },
+        {
+            "subject": "Carlton Communications",
+            "object": "London"
+        },
+        {
+            "subject": "Scotiabank",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Holt Renfrew",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Hinkley Locomotive Works",
+            "object": "Boston"
+        },
+        {
+            "subject": "Jacobs Engineering Group",
+            "object": "Pasadena"
+        },
+        {
+            "subject": "Mitre Corporation",
+            "object": "Bedford"
+        },
+        {
+            "subject": "University of Strathclyde",
+            "object": "Glasgow"
+        },
+        {
+            "subject": "American Bar Association",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Christian Salvesen",
+            "object": "Edinburgh"
+        },
+        {
+            "subject": "SNK European Democrats",
+            "object": "Prague"
+        },
+        {
+            "subject": "BlueSky Software",
+            "object": "California"
+        },
+        {
+            "subject": "Euronext",
+            "object": "Amsterdam"
+        },
+        {
+            "subject": "Christian Democrats",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Takara",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "Castlemaine Perkins",
+            "object": "Brisbane"
+        },
+        {
+            "subject": "Ace Hardware",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Mercure de France",
+            "object": "Paris"
+        },
+        {
+            "subject": "International Socialist Tendency",
+            "object": "London"
+        },
+        {
+            "subject": "FIBA Africa",
+            "object": "Cairo"
+        },
+        {
+            "subject": "Rushes Postproduction",
+            "object": "London"
+        },
+        {
+            "subject": "Aer Arann",
+            "object": "Dublin"
+        },
+        {
+            "subject": "Middle East Forum",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Sunbeam Television",
+            "object": "Miami"
+        },
+        {
+            "subject": "NI Railways",
+            "object": "Belfast"
+        },
+        {
+            "subject": "Grameen Bank",
+            "object": "Bangladesh"
+        },
+        {
+            "subject": "Nasdaq AB",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Lotte Hotels & Resorts",
+            "object": "Seoul"
+        },
+        {
+            "subject": "Venoco",
+            "object": "Denver"
+        },
+        {
+            "subject": "CTV Television Network",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Sharp, Stewart and Company",
+            "object": "Glasgow"
+        },
+        {
+            "subject": "Green Ronin Publishing",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Pennzoil",
+            "object": "Houston"
+        },
+        {
+            "subject": "Ewing family",
+            "object": "Dallas"
+        },
+        {
+            "subject": "Scott Free Productions",
+            "object": "London"
+        },
+        {
+            "subject": "Starwood Capital Group",
+            "object": "Greenwich"
+        },
+        {
+            "subject": "Miller Brewing Company",
+            "object": "Milwaukee"
+        },
+        {
+            "subject": "DB Netz",
+            "object": "Frankfurt"
+        },
+        {
+            "subject": "Talbot",
+            "object": "Paris"
+        },
+        {
+            "subject": "DCD Media",
+            "object": "London"
+        },
+        {
+            "subject": "Gamigo AG",
+            "object": "Hamburg"
+        },
+        {
+            "subject": "Destineer",
+            "object": "Minnesota"
+        },
+        {
+            "subject": "Communist Party of Indonesia",
+            "object": "Jakarta"
+        },
+        {
+            "subject": "Syrian Arab Army",
+            "object": "Damascus"
+        },
+        {
+            "subject": "Wood Gundy",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Combatant Clergy Association",
+            "object": "Tehran"
+        },
+        {
+            "subject": "Fairfax Media",
+            "object": "Sydney"
+        },
+        {
+            "subject": "Fore River Shipyard",
+            "object": "Quincy"
+        },
+        {
+            "subject": "Schwartz Publishing",
+            "object": "Melbourne"
+        },
+        {
+            "subject": "Nahdlatul Ulama",
+            "object": "Jakarta"
+        },
+        {
+            "subject": "Tundra Books",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Vosper & Company",
+            "object": "Portsmouth"
+        },
+        {
+            "subject": "Partisan Records",
+            "object": "Brooklyn"
+        },
+        {
+            "subject": "Halliburton",
+            "object": "Houston"
+        },
+        {
+            "subject": "Fuji Kyuko",
+            "object": "Japan"
+        },
+        {
+            "subject": "Ocean Pacific",
+            "object": "Irvine"
+        },
+        {
+            "subject": "Pars Khodro",
+            "object": "Tehran"
+        },
+        {
+            "subject": "\u00c9cole des hautes \u00e9tudes commerciales du nord",
+            "object": "Paris"
+        },
+        {
+            "subject": "Caproni",
+            "object": "Milan"
+        },
+        {
+            "subject": "Lavalin",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Gillig Corporation",
+            "object": "Hayward"
+        },
+        {
+            "subject": "ESPN Plus",
+            "object": "Charlotte"
+        },
+        {
+            "subject": "Norwegian Public Roads Administration",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Stephenson Blake",
+            "object": "Sheffield"
+        },
+        {
+            "subject": "Italian Social Movement",
+            "object": "Rome"
+        },
+        {
+            "subject": "Six Shooter Records",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Sunrise Party",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "University of South Florida",
+            "object": "Tampa"
+        },
+        {
+            "subject": "Popular National Union",
+            "object": "Warsaw"
+        },
+        {
+            "subject": "Lippo Group",
+            "object": "Jakarta"
+        },
+        {
+            "subject": "Aviation Industry Corporation of China",
+            "object": "Beijing"
+        },
+        {
+            "subject": "Bell TV",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Allen & Overy",
+            "object": "London"
+        },
+        {
+            "subject": "Bianet",
+            "object": "Istanbul"
+        },
+        {
+            "subject": "Transwede Airways",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Da Capo Press",
+            "object": "Boston"
+        },
+        {
+            "subject": "French Academy of Sciences",
+            "object": "Paris"
+        },
+        {
+            "subject": "Spencer Stuart",
+            "object": "Chicago"
+        },
+        {
+            "subject": "China Poly Group Corporation",
+            "object": "Beijing"
+        },
+        {
+            "subject": "Real Academia de Bellas Artes de San Fernando",
+            "object": "Madrid"
+        },
+        {
+            "subject": "Omni Hotels & Resorts",
+            "object": "Dallas"
+        },
+        {
+            "subject": "Eurocreme",
+            "object": "London"
+        },
+        {
+            "subject": "TransGaming Inc.",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Crazy Eddie",
+            "object": "Brooklyn"
+        },
+        {
+            "subject": "Alberta Liberal Party",
+            "object": "Edmonton"
+        },
+        {
+            "subject": "American Licorice Company",
+            "object": "Bend"
+        },
+        {
+            "subject": "Telfort",
+            "object": "Netherlands"
+        },
+        {
+            "subject": "J.M. Meulenhoff",
+            "object": "Amsterdam"
+        },
+        {
+            "subject": "Dominican Order",
+            "object": "Rome"
+        },
+        {
+            "subject": "ChemAxon",
+            "object": "Budapest"
+        },
+        {
+            "subject": "Muse Entertainment",
+            "object": "Montreal"
+        },
+        {
+            "subject": "European Aviation Safety Agency",
+            "object": "Cologne"
+        },
+        {
+            "subject": "OMERS",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Pontifical Catholic University of Chile",
+            "object": "Santiago"
+        },
+        {
+            "subject": "Qimonda",
+            "object": "Munich"
+        },
+        {
+            "subject": "Bayerischer Rundfunk",
+            "object": "Munich"
+        },
+        {
+            "subject": "Layar",
+            "object": "Amsterdam"
+        },
+        {
+            "subject": "Viper Comics",
+            "object": "Dallas"
+        },
+        {
+            "subject": "Pepe Jeans",
+            "object": "London"
+        },
+        {
+            "subject": "CenturyLink",
+            "object": "Monroe"
+        },
+        {
+            "subject": "Citilink",
+            "object": "Jakarta"
+        },
+        {
+            "subject": "FIDE",
+            "object": "Athens"
+        },
+        {
+            "subject": "Cassella",
+            "object": "Frankfurt"
+        },
+        {
+            "subject": "Nintendo",
+            "object": "Kyoto"
+        },
+        {
+            "subject": "AstraZeneca",
+            "object": "London"
+        },
+        {
+            "subject": "Czech National Bank",
+            "object": "Prague"
+        },
+        {
+            "subject": "Land Securities",
+            "object": "London"
+        },
+        {
+            "subject": "IndusInd Bank",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Kewpee",
+            "object": "Lima"
+        },
+        {
+            "subject": "Matson, Inc.",
+            "object": "Hawaii"
+        },
+        {
+            "subject": "Tube Investments of India Limited",
+            "object": "Chennai"
+        },
+        {
+            "subject": "Bristol Aerospace",
+            "object": "Winnipeg"
+        },
+        {
+            "subject": "South Side Elevated Railroad",
+            "object": "Chicago"
+        },
+        {
+            "subject": "FTSE Group",
+            "object": "London"
+        },
+        {
+            "subject": "CEDADE",
+            "object": "Barcelona"
+        },
+        {
+            "subject": "Smirnoff",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Renault Trucks",
+            "object": "Lyon"
+        },
+        {
+            "subject": "Videocon",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Nippon Cultural Broadcasting",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "Pakistan Steel Mills",
+            "object": "Karachi"
+        },
+        {
+            "subject": "Politiken",
+            "object": "Copenhagen"
+        },
+        {
+            "subject": "Getlink",
+            "object": "Paris"
+        },
+        {
+            "subject": "Boldklubben Frem",
+            "object": "Copenhagen"
+        },
+        {
+            "subject": "Army of the Guardians of the Islamic Revolution",
+            "object": "Tehran"
+        },
+        {
+            "subject": "Packard",
+            "object": "Detroit"
+        },
+        {
+            "subject": "Chello Multicanal",
+            "object": "Madrid"
+        },
+        {
+            "subject": "Atletico Roma F.C.",
+            "object": "Rome"
+        },
+        {
+            "subject": "Soviet Air Defence Forces",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Northlands",
+            "object": "Edmonton"
+        },
+        {
+            "subject": "MacMillan Bloedel",
+            "object": "Vancouver"
+        },
+        {
+            "subject": "Minerva",
+            "object": "London"
+        },
+        {
+            "subject": "Millennium & Copthorne Hotels",
+            "object": "London"
+        },
+        {
+            "subject": "Vision Research Phantom",
+            "object": "Wayne"
+        },
+        {
+            "subject": "Burnham and Root",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Astronomische Gesellschaft",
+            "object": "Hamburg"
+        },
+        {
+            "subject": "Lakeshore Technical College",
+            "object": "Cleveland"
+        },
+        {
+            "subject": "Henry Ford Health System",
+            "object": "Detroit"
+        },
+        {
+            "subject": "Brentford F.C.",
+            "object": "London"
+        },
+        {
+            "subject": "Matrix Software",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "Morr Music",
+            "object": "Berlin"
+        },
+        {
+            "subject": "X5 Music Group",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Motosacoche",
+            "object": "Geneva"
+        },
+        {
+            "subject": "FFA Private Bank",
+            "object": "Beirut"
+        },
+        {
+            "subject": "Jan De Nul",
+            "object": "Luxembourg"
+        },
+        {
+            "subject": "Black Sparrow Books",
+            "object": "Boston"
+        },
+        {
+            "subject": "Piramal Enterprises Ltd",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Power Jets",
+            "object": "Rugby"
+        },
+        {
+            "subject": "Miracle Mart",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Kita-Osaka Kyuko Railway",
+            "object": "Japan"
+        },
+        {
+            "subject": "United Nations High Commissioner for Human Rights",
+            "object": "Geneva"
+        },
+        {
+            "subject": "IONIS Education Group",
+            "object": "Paris"
+        },
+        {
+            "subject": "Ganger Rolf ASA",
+            "object": "Oslo"
+        },
+        {
+            "subject": "Kering",
+            "object": "Paris"
+        },
+        {
+            "subject": "Bergverlag Rother",
+            "object": "Munich"
+        },
+        {
+            "subject": "Sun Shipbuilding & Drydock Co.",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Pitchfork",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Rolex",
+            "object": "Geneva"
+        },
+        {
+            "subject": "La Caixa",
+            "object": "Barcelona"
+        },
+        {
+            "subject": "Ontario Hydro",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Vertigo Films",
+            "object": "London"
+        },
+        {
+            "subject": "game companies named Stern",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Progressive Conservative Association of Alberta",
+            "object": "Edmonton"
+        },
+        {
+            "subject": "Virtue Party",
+            "object": "Ankara"
+        },
+        {
+            "subject": "IMRB International",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "EMI",
+            "object": "London"
+        },
+        {
+            "subject": "Lebedev Physical Institute",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Tonkam",
+            "object": "France"
+        },
+        {
+            "subject": "Wagram Music",
+            "object": "Paris"
+        },
+        {
+            "subject": "BMC Software",
+            "object": "Houston"
+        },
+        {
+            "subject": "SBS Transit",
+            "object": "Singapore"
+        },
+        {
+            "subject": "Kroger",
+            "object": "Cincinnati"
+        },
+        {
+            "subject": "Brown Company",
+            "object": "Berlin"
+        },
+        {
+            "subject": "Carnival Films",
+            "object": "London"
+        },
+        {
+            "subject": "Canadian Jewish Congress",
+            "object": "Ottawa"
+        },
+        {
+            "subject": "Frederick & Nelson",
+            "object": "Seattle"
+        },
+        {
+            "subject": "L&L Hawaiian Barbecue",
+            "object": "Honolulu"
+        },
+        {
+            "subject": "Black Mark Productions",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "Rundell and Bridge",
+            "object": "London"
+        },
+        {
+            "subject": "Oratory of Saint Philip Neri",
+            "object": "Rome"
+        },
+        {
+            "subject": "Second Bank of the United States",
+            "object": "Philadelphia"
+        },
+        {
+            "subject": "Wayne State University Press",
+            "object": "Detroit"
+        },
+        {
+            "subject": "Royal Mail Steam Packet Company",
+            "object": "London"
+        },
+        {
+            "subject": "World Championship Wrestling",
+            "object": "Atlanta"
+        },
+        {
+            "subject": "Metroplex",
+            "object": "Detroit"
+        },
+        {
+            "subject": "Royal Australian Air Force",
+            "object": "Canberra"
+        },
+        {
+            "subject": "MillerCoors",
+            "object": "Chicago"
+        },
+        {
+            "subject": "HHCL",
+            "object": "London"
+        },
+        {
+            "subject": "Modern Love Records",
+            "object": "Manchester"
+        },
+        {
+            "subject": "GTCR",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Susquehanna Radio Corporation",
+            "object": "York"
+        },
+        {
+            "subject": "Velocette",
+            "object": "Birmingham"
+        },
+        {
+            "subject": "State Street Corporation",
+            "object": "Boston"
+        },
+        {
+            "subject": "National Provincial Bank",
+            "object": "London"
+        },
+        {
+            "subject": "Northland Communications",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Caudill Rowlett Scott",
+            "object": "Houston"
+        },
+        {
+            "subject": "Institution of Structural Engineers",
+            "object": "London"
+        },
+        {
+            "subject": "Tata Teleservices",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Electrolux",
+            "object": "Stockholm"
+        },
+        {
+            "subject": "United States Soccer Federation",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Smith & Wesson",
+            "object": "Springfield"
+        },
+        {
+            "subject": "Egyptian Exchange",
+            "object": "Cairo"
+        },
+        {
+            "subject": "TMF Nederland",
+            "object": "Amsterdam"
+        },
+        {
+            "subject": "Fudan University",
+            "object": "Shanghai"
+        },
+        {
+            "subject": "Environics",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Taito Corporation",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "DQE",
+            "object": "Pittsburgh"
+        },
+        {
+            "subject": "Freud Communications",
+            "object": "London"
+        },
+        {
+            "subject": "Banque Misr",
+            "object": "Cairo"
+        },
+        {
+            "subject": "GMR Group",
+            "object": "Bangalore"
+        },
+        {
+            "subject": "Tata Consultancy Services",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "International Tennis Federation",
+            "object": "London"
+        },
+        {
+            "subject": "Square Enix Europe",
+            "object": "London"
+        },
+        {
+            "subject": "Republic Pictures",
+            "object": "Hollywood"
+        },
+        {
+            "subject": "Fraser Institute",
+            "object": "Vancouver"
+        },
+        {
+            "subject": "c2c",
+            "object": "London"
+        },
+        {
+            "subject": "Baja Fresh",
+            "object": "Irvine"
+        },
+        {
+            "subject": "Colefax Group",
+            "object": "London"
+        },
+        {
+            "subject": "Jane Goodall Institute",
+            "object": "Vienna"
+        },
+        {
+            "subject": "Cinevistaas Limited",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Sportskeeda",
+            "object": "Bangalore"
+        },
+        {
+            "subject": "Short Brothers",
+            "object": "Belfast"
+        },
+        {
+            "subject": "Narrative Science",
+            "object": "Chicago"
+        },
+        {
+            "subject": "David Suzuki Foundation",
+            "object": "Vancouver"
+        },
+        {
+            "subject": "Fat Cat Records",
+            "object": "Brighton"
+        },
+        {
+            "subject": "Dargaud",
+            "object": "Paris"
+        },
+        {
+            "subject": "Warp Films",
+            "object": "Sheffield"
+        },
+        {
+            "subject": "Russian State Archive of Literature and Art",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Commerzbank",
+            "object": "Frankfurt"
+        },
+        {
+            "subject": "Bauer Type Foundry",
+            "object": "Frankfurt"
+        },
+        {
+            "subject": "Zulily",
+            "object": "Seattle"
+        },
+        {
+            "subject": "Robert Allan Ltd.",
+            "object": "Vancouver"
+        },
+        {
+            "subject": "Phoenix Group",
+            "object": "London"
+        },
+        {
+            "subject": "United Continental Holdings",
+            "object": "Chicago"
+        },
+        {
+            "subject": "WeMade Entertainment",
+            "object": "Seoul"
+        },
+        {
+            "subject": "B. Hick and Sons",
+            "object": "Bolton"
+        },
+        {
+            "subject": "Cable & Wireless Communications",
+            "object": "London"
+        },
+        {
+            "subject": "Eurasian Natural Resources Corporation",
+            "object": "London"
+        },
+        {
+            "subject": "ISG Business School",
+            "object": "Paris"
+        },
+        {
+            "subject": "Minnesota Strikers",
+            "object": "Minneapolis"
+        },
+        {
+            "subject": "Hitachi Consulting",
+            "object": "Dallas"
+        },
+        {
+            "subject": "Graphisoft SE",
+            "object": "Budapest"
+        },
+        {
+            "subject": "Alberta Government Telephones",
+            "object": "Edmonton"
+        },
+        {
+            "subject": "Bisexual Resource Center",
+            "object": "Boston"
+        },
+        {
+            "subject": "Sabrang Communications",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Playdead",
+            "object": "Copenhagen"
+        },
+        {
+            "subject": "Allied Command Transformation",
+            "object": "Norfolk"
+        },
+        {
+            "subject": "Staver",
+            "object": "Chicago"
+        },
+        {
+            "subject": "PACE Sports Management",
+            "object": "London"
+        },
+        {
+            "subject": "Ensco plc",
+            "object": "London"
+        },
+        {
+            "subject": "LaSalle Bank",
+            "object": "Chicago"
+        },
+        {
+            "subject": "DNB ASA",
+            "object": "Oslo"
+        },
+        {
+            "subject": "SoundCloud",
+            "object": "Berlin"
+        },
+        {
+            "subject": "UAL Corporation",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Library House",
+            "object": "Cambridge"
+        },
+        {
+            "subject": "Richer Sounds",
+            "object": "London"
+        },
+        {
+            "subject": "Hamilton Bradshaw",
+            "object": "London"
+        },
+        {
+            "subject": "Wien-Film",
+            "object": "Vienna"
+        },
+        {
+            "subject": "Aviastroitel",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Marilyn Agency",
+            "object": "Paris"
+        },
+        {
+            "subject": "Beacon Press",
+            "object": "Boston"
+        },
+        {
+            "subject": "Uranium One",
+            "object": "Toronto"
+        },
+        {
+            "subject": "New Zealand Labour Party",
+            "object": "Wellington"
+        },
+        {
+            "subject": "Starz Inc.",
+            "object": "Meridian"
+        },
+        {
+            "subject": "Mac Guff",
+            "object": "Paris"
+        },
+        {
+            "subject": "Republican Left of Catalonia",
+            "object": "Barcelona"
+        },
+        {
+            "subject": "Slip-n-Slide Records",
+            "object": "Miami"
+        },
+        {
+            "subject": "DataWind",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Wadia Group",
+            "object": "Mumbai"
+        },
+        {
+            "subject": "Telehouse Europe",
+            "object": "London"
+        },
+        {
+            "subject": "Wiener AC",
+            "object": "Vienna"
+        },
+        {
+            "subject": "Canadian National Railway",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Indian Space Research Organisation",
+            "object": "Bangalore"
+        },
+        {
+            "subject": "Roger Dubuis",
+            "object": "Geneva"
+        },
+        {
+            "subject": "Seiyu Group",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "Transarc",
+            "object": "Pittsburgh"
+        },
+        {
+            "subject": "United Aircraft Corporation",
+            "object": "Moscow"
+        },
+        {
+            "subject": "Arcadia Group",
+            "object": "London"
+        },
+        {
+            "subject": "Astaldi",
+            "object": "Rome"
+        },
+        {
+            "subject": "The Royal Conservatory of Music",
+            "object": "Toronto"
+        },
+        {
+            "subject": "FontShop International",
+            "object": "Berlin"
+        },
+        {
+            "subject": "Cadillac",
+            "object": "Detroit"
+        },
+        {
+            "subject": "Keshavarz F.C.",
+            "object": "Tehran"
+        },
+        {
+            "subject": "Polson Iron Works Limited",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Adeline Software International",
+            "object": "Lyon"
+        },
+        {
+            "subject": "Dresdner SC",
+            "object": "Dresden"
+        },
+        {
+            "subject": "Gyldendal",
+            "object": "Copenhagen"
+        },
+        {
+            "subject": "Packt Publishing Ltd.",
+            "object": "Birmingham"
+        },
+        {
+            "subject": "Tamarrod Movement",
+            "object": "Egypt"
+        },
+        {
+            "subject": "Merisant",
+            "object": "Chicago"
+        },
+        {
+            "subject": "College Football News",
+            "object": "Chicago"
+        },
+        {
+            "subject": "Interpol",
+            "object": "Lyon"
+        },
+        {
+            "subject": "Source Cable",
+            "object": "Hamilton"
+        },
+        {
+            "subject": "International Airlines Group",
+            "object": "London"
+        },
+        {
+            "subject": "Nymphenburg Porcelain Manufactory",
+            "object": "Munich"
+        },
+        {
+            "subject": "Klipfolio Dashboard",
+            "object": "Ottawa"
+        },
+        {
+            "subject": "Boulton & Paul",
+            "object": "Norwich"
+        },
+        {
+            "subject": "Mitsubishi Corporation",
+            "object": "Tokyo"
+        },
+        {
+            "subject": "Mumtaz Group",
+            "object": "Bradford"
+        },
+        {
+            "subject": "Mayo Clinic",
+            "object": "Rochester"
+        },
+        {
+            "subject": "Csepel SC",
+            "object": "Budapest"
+        },
+        {
+            "subject": "Bloc populaire",
+            "object": "Montreal"
+        },
+        {
+            "subject": "Socimi",
+            "object": "Italy"
+        },
+        {
+            "subject": "Hibernian L.F.C.",
+            "object": "Edinburgh"
+        },
+        {
+            "subject": "Harlan and Hollingsworth",
+            "object": "Wilmington"
+        },
+        {
+            "subject": "TSAR Publications",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Centralwings",
+            "object": "Warsaw"
+        },
+        {
+            "subject": "Alberta University of the Arts",
+            "object": "Calgary"
+        },
+        {
+            "subject": "Epitome Pictures",
+            "object": "Toronto"
+        },
+        {
+            "subject": "Germanischer Lloyd SE",
+            "object": "Hamburg"
+        },
+        {
+            "subject": "Swordfish Studios",
+            "object": "Birmingham"
+        },
+        {
+            "subject": "Kids Can Press",
+            "object": "Toronto"
+        }
+    ]
+}

@@ -1,0 +1,1467 @@
+{
+   "name": "star constellation name",
+   "prompt_templates": [
+      "{} is part of the constellation named"
+   ],
+   "prompt_templates_zs": [
+      "What is the name of the constellation that {} is part of? It is part of",
+      "{} is part of the constellation named",
+      "What is the name of the constellation that {} belongs to? It belongs to"
+   ],
+   "properties": {
+      "relation_type": "factual",
+      "domain_name": "star",
+      "range_name": "constellation",
+      "symmetric": false
+   },
+   "samples": [
+      {
+         "subject": "Sirius",
+         "object": "Canis Major"
+      },
+      {
+         "subject": "Vega",
+         "object": "Lyra"
+      },
+      {
+         "subject": "Arcturus",
+         "object": "Bo\u00f6tes"
+      },
+      {
+         "subject": "Capella",
+         "object": "Auriga"
+      },
+      {
+         "subject": "Procyon",
+         "object": "Canis Minor"
+      },
+      {
+         "subject": "Altair",
+         "object": "Aquila"
+      },
+      {
+         "subject": "Aldebaran",
+         "object": "Taurus"
+      },
+      {
+         "subject": "Antares",
+         "object": "Scorpius"
+      },
+      {
+         "subject": "Fomalhaut",
+         "object": "Piscis Austrinus"
+      },
+      {
+         "subject": "Deneb",
+         "object": "Cygnus"
+      },
+      {
+         "subject": "Castor",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Mizar",
+         "object": "Ursa Major"
+      },
+      {
+         "subject": "Dubhe",
+         "object": "Ursa Major"
+      },
+      {
+         "subject": "Alcor",
+         "object": "Ursa Major"
+      },
+      {
+         "subject": "Alphecca",
+         "object": "Corona Borealis"
+      },
+      {
+         "subject": "Zubenelgenubi",
+         "object": "Libra"
+      },
+      {
+         "subject": "Gacrux",
+         "object": "Crux"
+      },
+      {
+         "subject": "Alnair",
+         "object": "Grus"
+      },
+      {
+         "subject": "Shaula",
+         "object": "Scorpius"
+      },
+      {
+         "subject": "Kaus Australis",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Diphda",
+         "object": "Cetus"
+      },
+      {
+         "subject": "Schedar",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Mirfak",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Theta2 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Chi1 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Gliese 570A",
+         "object": "Libra"
+      },
+      {
+         "subject": "Iota Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Pi3 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "23 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Mu Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Theta Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Theta1 Orionis B",
+         "object": "Orion"
+      },
+      {
+         "subject": "Gliese 581",
+         "object": "Libra"
+      },
+      {
+         "subject": "83 Leonis A",
+         "object": "Leo"
+      },
+      {
+         "subject": "Phi2 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Gliese 205",
+         "object": "Orion"
+      },
+      {
+         "subject": "Theta1 Orionis C",
+         "object": "Orion"
+      },
+      {
+         "subject": "Wolf 359",
+         "object": "Leo"
+      },
+      {
+         "subject": "Rigel",
+         "object": "Orion"
+      },
+      {
+         "subject": "V520 Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Betelgeuse",
+         "object": "Orion"
+      },
+      {
+         "subject": "Iota Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Algol",
+         "object": "Perseus"
+      },
+      {
+         "subject": "AD Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Gamma Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Denebola",
+         "object": "Leo"
+      },
+      {
+         "subject": "NGC 1275",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Alpha Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Epsilon Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Kappa Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Gliese 436",
+         "object": "Leo"
+      },
+      {
+         "subject": "Gamma Leonis A",
+         "object": "Leo"
+      },
+      {
+         "subject": "71 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "89 Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Omicron Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "35 Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "37 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "50 Persei E",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Theta Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Gliese 436 b",
+         "object": "Leo"
+      },
+      {
+         "subject": "Gliese 204",
+         "object": "Orion"
+      },
+      {
+         "subject": "X Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "11 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Gliese 402",
+         "object": "Leo"
+      },
+      {
+         "subject": "29 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "48 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "4C 01.28",
+         "object": "Leo"
+      },
+      {
+         "subject": "Alnilam",
+         "object": "Orion"
+      },
+      {
+         "subject": "12 Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "40 Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Bellatrix",
+         "object": "Orion"
+      },
+      {
+         "subject": "Alpha1 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Eta Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Mintaka",
+         "object": "Orion"
+      },
+      {
+         "subject": "Iota Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Tau Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "39 Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Mu Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "V1386 Ori",
+         "object": "Orion"
+      },
+      {
+         "subject": "49 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Xi Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Phi Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Delta Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "88 Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "QSO B1514-24",
+         "object": "Libra"
+      },
+      {
+         "subject": "Regulus",
+         "object": "Leo"
+      },
+      {
+         "subject": "Zeta Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Gliese 555",
+         "object": "Libra"
+      },
+      {
+         "subject": "16 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Delta Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Sigma Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "93 Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Theta Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Rho Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "74 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Ross 47",
+         "object": "Orion"
+      },
+      {
+         "subject": "54 Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Iota1 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Alpha2 Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "Mu Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Eta Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Saiph",
+         "object": "Orion"
+      },
+      {
+         "subject": "22 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Pi1 Orionis",
+         "object": "Orion"
+      },
+      {
+         "subject": "Tau Leonis",
+         "object": "Leo"
+      },
+      {
+         "subject": "Gliese 179",
+         "object": "Orion"
+      },
+      {
+         "subject": "9 Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Sigma Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "48 Persei",
+         "object": "Perseus"
+      },
+      {
+         "subject": "Epsilon Librae",
+         "object": "Libra"
+      },
+      {
+         "subject": "51 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Beta Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "61 Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Iota Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "70 Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "54 Piscium A",
+         "object": "Pisces"
+      },
+      {
+         "subject": "107 Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "HN Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "59 Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "85 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Epsilon Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Xi Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "U Sagittarii",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Sigma Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Gliese 908",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Gamma Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Omicron Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Iota Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Epsilon Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Gumala",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Ross 128",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Messier 87",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Iota Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "16 Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "15 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "109 Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "112 Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Mu Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "35 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Gliese 514",
+         "object": "Virgo"
+      },
+      {
+         "subject": "BD+17 4708",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Chi Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "DT Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Theta Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Mu Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Gamma Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Beta Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Gliese 880",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "9 Sagittarii",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Nu Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "34 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Spica",
+         "object": "Virgo"
+      },
+      {
+         "subject": "53 Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Eta Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Phi Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "17 Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "56 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Lambda Sagittarii",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Lambda Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Upsilon Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Van Maanen's star",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Delta Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "3C 273",
+         "object": "Virgo"
+      },
+      {
+         "subject": "II Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "7 Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "1 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Ross 154",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Mu Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "70 Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Epsilon Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Kappa Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "1RXS J141146.2-123634",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Omega Sagittarii",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Omicron Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Theta Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Eta Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "5 Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "EO Psc",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Gamma Virginis A",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Omicron Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Wolf 424",
+         "object": "Virgo"
+      },
+      {
+         "subject": "BD+09 2636",
+         "object": "Virgo"
+      },
+      {
+         "subject": "MT Pegasi",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Rho Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Nu Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "BD+26 4251",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "BD+08 4887",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "Mu Sagittarii",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Tau Sagittarii",
+         "object": "Sagittarius"
+      },
+      {
+         "subject": "Tau Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Xi Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Gliese 536",
+         "object": "Virgo"
+      },
+      {
+         "subject": "V* PX Vir",
+         "object": "Virgo"
+      },
+      {
+         "subject": "4C 06.69",
+         "object": "Pegasus"
+      },
+      {
+         "subject": "20 Piscium",
+         "object": "Pisces"
+      },
+      {
+         "subject": "Zeta Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "33 Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Gliese 486",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Theta Virginis",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Wolf 433",
+         "object": "Virgo"
+      },
+      {
+         "subject": "4C 04.42",
+         "object": "Virgo"
+      },
+      {
+         "subject": "Pollux",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Mu Herculis A",
+         "object": "Hercules"
+      },
+      {
+         "subject": "72 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Zeta Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Chi Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "110 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "14 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "99 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Epsilon Indi A",
+         "object": "Indus"
+      },
+      {
+         "subject": "Eta Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Gliese 349",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Beta Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Rho Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Xi Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Kappa Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Gliese 649",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Nu Indi",
+         "object": "Indus"
+      },
+      {
+         "subject": "Gamma Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Alphard",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Gliese 251",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Iota Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "OU Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Delta Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Gliese 686",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Xi Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Zeta Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Sigma Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Theta Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Iota Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Gamma Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Epsilon Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Zeta Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Omega Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "109 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "V774 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Delta Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Rho Indi",
+         "object": "Indus"
+      },
+      {
+         "subject": "V401 Hya",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Epsilon Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "YY Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Gamma Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Phi Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Lambda Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "37 Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "89 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "BD+18 3423",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Tau Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "V377 Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "BD+42 2667",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Nu Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "* del Gem",
+         "object": "Gemini"
+      },
+      {
+         "subject": "39 Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Pi Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Gliese 453",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Kappa Herculis A",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Upsilon1 Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Xi Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "30 Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "V647 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "QSO J0738+1742",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Iota Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "V* LQ Hya",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Upsilon Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Furuhjelm 46",
+         "object": "Hercules"
+      },
+      {
+         "subject": "111 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Nu Hydrae",
+         "object": "Hydra"
+      },
+      {
+         "subject": "81 Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Tau Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Markarian 501",
+         "object": "Hercules"
+      },
+      {
+         "subject": "V1090 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "1 Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Gliese 433",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Eta Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "Mu Geminorum",
+         "object": "Gemini"
+      },
+      {
+         "subject": "87 Herculis",
+         "object": "Hercules"
+      },
+      {
+         "subject": "Ross 889",
+         "object": "Hydra"
+      },
+      {
+         "subject": "Upsilon Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Mu Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "rho01 Cnc",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Eta Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "GX Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "V987 Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Milky Way",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "91 Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Andromeda",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Gliese 876",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Chi Cancri",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Epsilon Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Lambda Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "GJ 28",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Alpha Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "14 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Ross 248",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "11 Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Delta Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Phi Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Alpha Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Beta Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Upsilon2 Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "V453 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Zeta Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Psi2 Cancri",
+         "object": "Cancer"
+      },
+      {
+         "subject": "51 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Gliese 849",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Beta Cancri",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Beta Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Mu2 Cancri",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Gliese 49",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "GQ Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Beta Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "5 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Navi",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "94 Aquarii A",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "6 Persei",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Alpha Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Delta Cancri",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Kappa Cancri",
+         "object": "Cancer"
+      },
+      {
+         "subject": "BD+38 4955",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Gliese 90",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Pi Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Gamma\u00b9 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Iota Cancri A",
+         "object": "Cancer"
+      },
+      {
+         "subject": "QSO B2134+0028",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Omega Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Buna",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "44 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "3 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Chi Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "6 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "28 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Zeta Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Pi Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "HZ Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "7C 082754.29+242103.00",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Kappa Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Sigma3 Cancri A",
+         "object": "Cancer"
+      },
+      {
+         "subject": "81 Cancri AB",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Xi Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "FF Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "GN Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Kappa Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Omicron Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "BD+47 612",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Delta Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "Epsilon Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "75 Cancri",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Mu Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "1 Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Theta Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "BD+59 2723",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "108 Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "BD+10 1857",
+         "object": "Cancer"
+      },
+      {
+         "subject": "Psi Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Eta Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "96 Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "Gamma Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "12 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "56 Andromedae",
+         "object": "Andromeda"
+      },
+      {
+         "subject": "Omicron Cassiopeiae",
+         "object": "Cassiopeia"
+      },
+      {
+         "subject": "EZ Aquarii",
+         "object": "Aquarius"
+      },
+      {
+         "subject": "FK Aquarii",
+         "object": "Aquarius"
+      }
+   ]
+}
