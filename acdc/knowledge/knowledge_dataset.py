@@ -370,8 +370,30 @@ class KnowledgeDataset:
         self.answers = [
             sample.object for sample in self.relation.samples
         ]
+
         # valid_data, test_data = relation.split(N)
         self.toks = torch.Tensor(self.tokenizer(self.sentences, padding=True).input_ids).type(
             torch.int
         )
-        
+
+def get_and_filter_dataset(knowledge_type='factual/',
+                           relation_name='city_in_country.json',
+                           tokenizer=None,
+                        #    model=None,
+                           data_path="./data/",
+                           ):
+    relation = load_dataset(data_path+knowledge_type+relation_name)[0]
+    prompt_template = relation.prompt_templates[0]
+    sentences = [
+        prompt_template.format(sample.subject) for sample in self.relation.samples
+    ]  # a list of strings. Renamed as this should NOT be forward passed
+    answers = [
+        sample.object for sample in relation.samples
+    ]
+    toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
+            torch.int
+        )
+    answer_toks = torch.Tensor(tokenizer(answers, padding=True).input_ids).type(
+            torch.int
+        )
+    return toks, answer_toks

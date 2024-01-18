@@ -23,7 +23,7 @@ from typing import (
 )
 import warnings
 import networkx as nx
-from acdc.knowledge.knowledge_dataset import KnowledgeDataset
+from acdc.knowledge.knowledge_dataset import KnowledgeDataset,get_and_filter_dataset
 from acdc.acdc_utils import (
     MatchNLLMetric,
     make_nd_dict,
@@ -91,16 +91,6 @@ def load_model(
         if fp16:
             kwargs["revision"] = "float16"
 
-    # If model is not automatically downloadable from huggingface, assume it is
-    # available locally in the project models directory.
-    # if name not in DOWNLOADABLE_MODELS:
-    #     models_dir = env_utils.determine_models_dir()
-    #     logger.debug(f"{name} not downloadable, will look for weights in {models_dir}")
-
-    #     path = Path(name)
-    #     if not path.is_absolute() and not path.is_relative_to(models_dir):
-    #         name = str(models_dir / name)
-
     logger.info(f"loading {name} (fp16={fp16})")
 
     model = transformers.AutoModelForCausalLM.from_pretrained(name, **kwargs)
@@ -118,8 +108,7 @@ def load_model(
     return model, tokenizer
 
 
-def get_model(name, device="cuda") -> HookedTransformer:
-    hf_model, tokenizer = load_model(name,fp16=False)
+def get_model(name, hf_model, tokenizer, device="cuda") -> HookedTransformer:
     tl_model = HookedTransformer.from_pretrained(name, hf_model=hf_model, tokenizer=tokenizer)
     tl_model = tl_model.to(device)
     tl_model.set_use_attn_result(True)
@@ -143,44 +132,26 @@ def get_data(num_examples=None, seq_len=None, device=None):
     else:
         return validation_data[:num_examples][:seq_len]
 
-def get_mask_repeat_candidates(num_examples=None, seq_len=None, device=None):
-    # mask_repeat_candidates_fname = huggingface_hub.hf_hub_download(
-    #     repo_id="ArthurConmy/redwood_attn_2l", filename="mask_repeat_candidates.pkl"
-    # )
-    mask_repeat_candidates_fname = "/data/yunzhi/hugging_cache/redwood_attn_2l/mask_repeat_candidates.pkl"
-    mask_repeat_candidates = torch.load(mask_repeat_candidates_fname, map_location=device)
-    mask_repeat_candidates.requires_grad = False
-
-    if num_examples is None:
-        return mask_repeat_candidates
-    else:
-        return mask_repeat_candidates[:num_examples, :seq_len]
-
-
 def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_seed=42, metric="kl_div", return_one_element=True) -> AllDataThings:
-    tl_model = get_model(name=model,device=device)
-    knowledge_data = KnowledgeDataset(
+    hf_model, tokenizer = load_model(model,fp16=False)
+    tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device)
+    knowledge_data, knowledge_label = get_and_filter_dataset(
         knowledge_type="factual",
         N=num_examples*2,
         nb_templates=1,
         seed = 0,
     )
-    default_data = knowledge_data.toks[:num_examples].to(device)
-    labels = knowledge_data.toks[:num_examples]
+    default_data = knowledge_data.to(device)
+    labels = knowledge_label.to(device)
     labels = labels.to(device)
-    # TO DO
-    patch_data = s.toks.long()[:num_examples*2, : seq_len - 1].to(device) 
-    mask_orig = get_mask_repeat_candidates(num_examples=None, device=device) # None so we get all
     
     validation_data = default_data[:num_examples, :]
-    validation_patch_data = patch_data[:num_examples, :]
+    validation_patch_data = shuffle_tensor(validation_data, seed=data_seed).contiguous()
     validation_labels = labels[:num_examples]
-    # validation_wrong_labels = wrong_labels[:num_examples]
 
     test_data = default_data[num_examples:, :]
-    test_patch_data = patch_data[num_examples:, :]
+    test_patch_data = shuffle_tensor(test_data, seed=data_seed).contiguous()
     test_labels = labels[num_examples:]
-    # test_wrong_labels = wrong_labels[num_examples:]
 
     with torch.no_grad():
         base_val_logprobs = F.log_softmax(tl_model(validation_data), dim=-1).detach()
@@ -190,21 +161,16 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         validation_metric = partial(
             kl_divergence,
             base_model_logprobs=base_val_logprobs,
-            mask_repeat_candidates=validation_mask,
-            last_seq_element_only=False,
             return_one_element=return_one_element,
         )
     elif metric == "nll":
         validation_metric = partial(
             negative_log_probs,
             labels=validation_labels,
-            mask_repeat_candidates=validation_mask,
-            last_seq_element_only=False,
         )
     elif metric == "match_nll":
         validation_metric = MatchNLLMetric(
-            labels=validation_labels, base_model_logprobs=base_val_logprobs, mask_repeat_candidates=validation_mask,
-            last_seq_element_only=False,
+            labels=validation_labels, base_model_logprobs=base_val_logprobs,
         )
     else:
         raise ValueError(f"Unknown metric {metric}")
@@ -213,18 +179,13 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         "kl_div": partial(
             kl_divergence,
             base_model_logprobs=base_test_logprobs,
-            mask_repeat_candidates=test_mask,
-            last_seq_element_only=False,
         ),
         "nll": partial(
             negative_log_probs,
             labels=test_labels,
-            mask_repeat_candidates=test_mask,
-            last_seq_element_only=False,
         ),
         "match_nll": MatchNLLMetric(
-            labels=test_labels, base_model_logprobs=base_test_logprobs, mask_repeat_candidates=test_mask,
-            last_seq_element_only=False,
+            labels=test_labels, base_model_logprobs=base_test_logprobs,
         ),
     }
     return AllDataThings(
@@ -232,12 +193,10 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         validation_metric=validation_metric,
         validation_data=validation_data,
         validation_labels=validation_labels,
-        validation_mask=validation_mask,
         validation_patch_data=validation_patch_data,
         test_metrics=test_metrics,
         test_data=test_data,
         test_labels=test_labels,
-        test_mask=test_mask,
         test_patch_data=test_patch_data,
     )
 
