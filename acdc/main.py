@@ -97,6 +97,7 @@ except Exception as e:
     print(f"Could not import `tracr` because {e}; the rest of the file should work but you cannot use the tracr tasks")
 from acdc.docstring.utils import get_all_docstring_things
 from acdc.logic_gates.utils import get_all_logic_gate_things
+from acdc.knowledge.utils import get_all_knowledge_things
 from acdc.acdc_utils import (
     make_nd_dict,
     reset_network,
@@ -145,7 +146,7 @@ torch.autograd.set_grad_enabled(False)
 parser = argparse.ArgumentParser(description="Used to launch ACDC runs. Only task and threshold are required")
 
 
-task_choices = ['ioi', 'docstring', 'induction', 'tracr-reverse', 'tracr-proportion', 'greaterthan', 'or_gate']
+task_choices = ['ioi', 'docstring', 'induction', 'tracr-reverse', 'tracr-proportion', 'greaterthan', 'or_gate','knowledge']
 parser.add_argument('--task', type=str, required=True, choices=task_choices, help=f'Choose a task from the available options: {task_choices}')
 parser.add_argument('--threshold', type=float, required=True, help='Value for THRESHOLD')
 parser.add_argument('--first-cache-cpu', type=str, required=False, default="True", help='Value for FIRST_CACHE_CPU (the old name for the `online_cache`)')
@@ -173,7 +174,7 @@ if ipython is not None:
     # We are in a notebook
     # you can put the command you would like to run as the ... in r"""..."""
     args = parser.parse_args(
-        [line.strip() for line in r"""--task=induction\
+        [line.strip() for line in r"""--task=knowledge\
 --zero-ablation\
 --threshold=0.71\
 --indices-mode=reverse\
@@ -229,6 +230,7 @@ SINGLE_STEP = True if args.single_step else False
 second_metric = None  # some tasks only have one metric
 use_pos_embed = TASK.startswith("tracr")
 
+
 if TASK == "ioi":
     num_examples = 100
     things = get_all_ioi_things(
@@ -280,6 +282,14 @@ elif TASK == "greaterthan":
     num_examples = 100
     things = get_all_greaterthan_things(
         num_examples=num_examples, metric_name=args.metric, device=DEVICE
+    )
+elif TASK == "knowledge":
+    num_examples = 100
+    things = get_all_knowledge_things(
+        metric_name=args.metric,
+        num_examples=num_examples,
+        seq_len=100,#感觉不需要这个
+        device=DEVICE,
     )
 else:
     raise ValueError(f"Unknown task {TASK}")

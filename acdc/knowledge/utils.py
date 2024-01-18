@@ -40,6 +40,7 @@ from transformer_lens import HookedTransformer
 from acdc.acdc_utils import kl_divergence, negative_log_probs
 logger = logging.getLogger(__name__)
 
+
 GPT_J_NAME_SHORT = "gptj"  # A useful alias for the CLI.
 GPT_J_NAME = "EleutherAI/gpt-j-6B"
 
@@ -113,18 +114,19 @@ def get_model(name, hf_model, tokenizer, device="cuda") -> HookedTransformer:
     tl_model = tl_model.to(device)
     tl_model.set_use_attn_result(True)
     tl_model.set_use_split_qkv_input(False)
+    #改了这个地方后面绘图应该会报错
     if "use_hook_mlp_in" in tl_model.cfg.to_dict():
         tl_model.set_use_hook_mlp_in(True)
-    logger.info(
-        f"dtype: {tl_model.dtype}, device: {tl_model.device}, memory: {tl_model.get_memory_footprint()}"
-    )
+    # logger.info(
+    #     f"dtype: {tl_model.type}, device: {tl_model.device}, memory: {tl_model.get_memory_footprint()}"
+    # )
     return tl_model
 
 def get_data(num_examples=None, seq_len=None, device=None):
     # validation_fname = huggingface_hub.hf_hub_download(
     #     repo_id="ArthurConmy/redwood_attn_2l", filename="validation_data.pt"
     # )
-    validation_fname = "/data/yunzhi/hugging_cache/redwood_attn_2l/validation_data.pt"
+    validation_fname = "/newdisk3/xzk/Knowledge-Circuit/data"
     validation_data = torch.load(validation_fname, map_location=device).long()
 
     if num_examples is None:
@@ -132,13 +134,13 @@ def get_data(num_examples=None, seq_len=None, device=None):
     else:
         return validation_data[:num_examples][:seq_len]
 
-def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_seed=42, metric="kl_div", return_one_element=True) -> AllDataThings:
+def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_seed=42, metric_name="kl_div", return_one_element=True) -> AllDataThings:
     hf_model, tokenizer = load_model(model,fp16=False)
     tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device)
     knowledge_data, knowledge_label = get_and_filter_dataset(
         knowledge_type="factual",
         N=num_examples*2,
-        nb_templates=1,
+        #nb_templates=1,
         seed = 0,
     )
     default_data = knowledge_data.to(device)
@@ -157,23 +159,23 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         base_val_logprobs = F.log_softmax(tl_model(validation_data), dim=-1).detach()
         base_test_logprobs = F.log_softmax(tl_model(test_data), dim=-1).detach()
 
-    if metric == "kl_div":
+    if metric_name == "kl_div":
         validation_metric = partial(
             kl_divergence,
             base_model_logprobs=base_val_logprobs,
             return_one_element=return_one_element,
         )
-    elif metric == "nll":
+    elif metric_name == "nll":
         validation_metric = partial(
             negative_log_probs,
             labels=validation_labels,
         )
-    elif metric == "match_nll":
+    elif metric_name == "match_nll":
         validation_metric = MatchNLLMetric(
             labels=validation_labels, base_model_logprobs=base_val_logprobs,
         )
     else:
-        raise ValueError(f"Unknown metric {metric}")
+        raise ValueError(f"Unknown metric {metric_name}")
 
     test_metrics = {
         "kl_div": partial(

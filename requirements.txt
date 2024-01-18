@@ -1,3 +1,15 @@
+nvidia-cublas-cu11==11.10.3.66
+nvidia-cuda-cupti-cu11==11.7.101
+nvidia-cuda-nvrtc-cu11==11.7.99
+nvidia-cuda-runtime-cu11==11.7.99
+nvidia-cudnn-cu11==8.5.0.96
+nvidia-cufft-cu11==10.9.0.58
+nvidia-curand-cu11==10.2.10.91
+nvidia-cusolver-cu11==11.4.0.1
+nvidia-cusparse-cu11==11.7.4.91
+nvidia-ml-py==12.535.133
+nvidia-nccl-cu11==2.14.3
+nvidia-nvtx-cu11==11.7.91
 absl-py==2.0.0
 accelerate==0.25.0
 aiohttp==3.9.1
@@ -103,18 +115,7 @@ nltk==3.6.5
 notebook==7.0.6
 notebook_shim==0.2.3
 numpy==1.26.3
-nvidia-cublas-cu11==11.10.3.66
-nvidia-cuda-cupti-cu11==11.7.101
-nvidia-cuda-nvrtc-cu11==11.7.99
-nvidia-cuda-runtime-cu11==11.7.99
-nvidia-cudnn-cu11==8.5.0.96
-nvidia-cufft-cu11==10.9.0.58
-nvidia-curand-cu11==10.2.10.91
-nvidia-cusolver-cu11==11.4.0.1
-nvidia-cusparse-cu11==11.7.4.91
-nvidia-ml-py==12.535.133
-nvidia-nccl-cu11==2.14.3
-nvidia-nvtx-cu11==11.7.91
+
 omegaconf==2.1.1
 openai==0.27.9
 opencv-python==4.8.0.76
@@ -142,7 +143,6 @@ pyarrow==14.0.2
 pyarrow-hotfix==0.6
 pycparser==2.21
 Pygments==2.17.2
-pygraphviz @ file:///home/conda/feedstock_root/build_artifacts/pygraphviz_1700370404163/work
 pyparsing==3.1.1
 python-dateutil==2.8.2
 python-json-logger==2.0.7
@@ -187,7 +187,7 @@ torchtyping==0.1.4
 torchvision==0.15.2
 tornado==6.4
 tqdm==4.66.1
-tracr @ file:///mnt/16t/xzk/tracr
+tracr @ file:///newdisk3/xzk/tracr
 traitlets==5.14.1
 transformer-lens==1.12.1
 transformers==4.30.1
@@ -206,3 +206,4 @@ widgetsnbextension==4.0.9
 xxhash==3.4.1
 yarl==1.9.4
 zipp==3.17.0
+# pygraphviz Use: conda install --channel conda-forge pygraphviz

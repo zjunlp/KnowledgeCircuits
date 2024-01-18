@@ -1,0 +1,13 @@
+.idea
+hugging_cache
+data
+.vscode
+logs
+
+__pycache__/
+*.pyc
+*.pyo
+*.swp
+*~
+.DS_Store
+.env
