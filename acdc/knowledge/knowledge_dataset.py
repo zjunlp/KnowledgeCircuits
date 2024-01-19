@@ -1,4 +1,4 @@
-
+import os
 import io
 import logging
 from logging import warning
@@ -284,7 +284,7 @@ def load_relation(file) -> Relation:
     return Relation.from_dict(load_relation_dict(file))
 
 
-def load_dataset(*paths) -> RelationDataset:
+def load_dataset(paths):
     """Load relations from json files in a folder.
 
     Accepts one or more directories or files. If a file, should be JSON format, and will
@@ -294,18 +294,7 @@ def load_dataset(*paths) -> RelationDataset:
     print(paths)
     files = []
     for path in paths:
-        # path = Path(path)
         files.append(path)
-        # if path.is_file():
-        #     print("hello")
-        #     logger.debug(f"found relation file: {path}")
-        #     files.append(path)
-        # else:
-        #     print("fuck")
-        #     logger.debug(f"{path} is directory, globbing for json files...")
-        #     for file in sorted(path.glob("**/*.json")):
-        #         logger.debug(f"found relation file: {file}")
-        #         files.append(file)
     logger.debug(f"found {len(files)} relation files total, loading...")
     relation_dicts = [load_relation_dict(file) for file in files]
     # Mark all disambiguating relations
@@ -328,93 +317,69 @@ def load_dataset(*paths) -> RelationDataset:
     # Create Relation objects
     relations = [Relation.from_dict(relation_dict) for relation_dict in relation_dicts]
 
-    return RelationDataset(relations)
+    return relations
 
 def patch(sentence: str):
 
     return sentence
 
-class KnowledgeDataset:
-    def __init__(
-        self,
-        N = 1,
-        knowledge_type='factual/',
-        relation_name='/city_in_country.json',
-        tokenizer=None,
-        prompts=None,
-        data_path="./data/",
-        prepend_bos=False,
-        seed=None,
-    ):
-        """
-        type:
-            different knowledge type including: [factual, commonsense,linguistic]
-        """
-        assert seed is not None
-        random.seed(seed)
+def get_path(data_path,knowledge_type=None,relation_name=None):
+    def list_json_files_in_directory(directory):
+        json_files = []
+        for root, dirs, files in os.walk(directory):
+            for file in files:
+                if file.endswith('.json'):
+                    json_files.append(os.path.join(root, file))
+        return json_files
 
-        if not (
-            N == 1
-            or prepend_bos == False
-            or tokenizer.bos_token_id == tokenizer.eos_token_id
-        ):
-            warnings.warn(
-                "Probably word_idx will be calculated incorrectly due to this formatting"
-            )
-        
-        if tokenizer is None:
-            self.tokenizer = AutoTokenizer.from_pretrained("gpt2")
-            self.tokenizer.pad_token = self.tokenizer.eos_token
+    if knowledge_type is None:
+        return list_json_files_in_directory(data_path)
+    else:
+        knowledge_path = os.path.join(data_path, knowledge_type)
+        if relation_name is None:
+            return list_json_files_in_directory(knowledge_path)
         else:
-            self.tokenizer = tokenizer
-        self.relation = load_dataset(data_path+knowledge_type+relation_name).relations[0]#TODO 这个地方也有问题，先跑起来再说吧
+            specific_path = os.path.join(knowledge_path, relation_name)
+            if os.path.isdir(specific_path):
+                return list_json_files_in_directory(specific_path)
+            elif os.path.isfile(specific_path) and specific_path.endswith('.json'):
+                return [specific_path]
+            else:
+                return []
+    return []
 
-
-        prompt_template = self.relation.prompt_templates[0]#TODO 一个文件有2个模版我只选第一个
-        self.sentences = [
-            prompt_template.format(sample.subject) for sample in self.relation.samples
-        ]  # a list of strings. Renamed as this should NOT be forward passed
-        self.patch_sentences = [
-            patch(prompt_template.format(sample.subject)) for sample in self.relation.samples
+def get_and_filter_dataset(
+    knowledge_type='factual',
+    relation_name='city_in_country.json',
+    data_path="./data",
+    tokenizer=None,
+):
+    paths=get_path(data_path,knowledge_type,relation_name)
+    relations = load_dataset(paths)
+    for relation in relations:
+        prompt_templates = relation.prompt_templates
+        sentences = [
+            prompt_template.format(sample.subject) for prompt_template in prompt_templates for sample in relation.samples 
         ]
-        self.answers = [
-            sample.object for sample in self.relation.samples
-        ]
-
-        # valid_data, test_data = relation.split(N)
-        self.toks = torch.Tensor(self.tokenizer(self.sentences, padding=True).input_ids).type(
-            torch.int
-        )
-
-def get_and_filter_dataset(knowledge_type='factual/',
-                           relation_name='city_in_country.json',
-                           tokenizer=None,
-                        #    model=None,
-                           data_path="./data/",
-                           ):
-    relation = load_dataset(data_path+knowledge_type+relation_name)[0]
-    prompt_template = relation.prompt_templates[0]
-    sentences = [
-        prompt_template.format(sample.subject) for sample in relation.samples
-    ]  # a list of strings. Renamed as this should NOT be forward passed
-    answers = [
-        sample.object for sample in relation.samples
-    ]
-    inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
-    toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
-            torch.int
-        )
-    num_prompt_toks = [int((i != tokenizer.pad_token_id).sum()) for i in toks]
-    # answer_toks = torch.Tensor(tokenizer(answers, padding=True).input_ids).type(
-    #         torch.int
-    #     )
-    input_ids = torch.Tensor(tokenizer(inputs, padding=True).input_ids).type(
-            torch.int
-        )
-    labels = input_ids.clone()
-    num_pad_toks = [int((i == tokenizer.pad_token_id).sum()) for i in input_ids]
-    for i in range(len(sentences)):
-        labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
-    labels[input_ids == tokenizer.pad_token_id] = -100
+        answers = [
+            sample.object for sample in relation.samples
+        ]*2
+        #每个模版都有两个句子，所以两倍答案
+        inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
+        toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
+                torch.int
+            )
+        num_prompt_toks = [int((i != tokenizer.pad_token_id).sum()) for i in toks]
+        
+        input_ids = torch.Tensor(tokenizer(inputs, padding=True).input_ids).type(
+                torch.int
+            )
+        labels = input_ids.clone()
+        num_pad_toks = [int((i == tokenizer.pad_token_id).sum()) for i in input_ids]
+        for i in range(len(sentences)):
+            labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
+        labels[input_ids == tokenizer.pad_token_id] = -100        
+            
+        return input_ids, labels
     
-    return input_ids, labels
+    
