@@ -395,15 +395,26 @@ def get_and_filter_dataset(knowledge_type='factual/',
     relation = load_dataset(data_path+knowledge_type+relation_name)[0]
     prompt_template = relation.prompt_templates[0]
     sentences = [
-        prompt_template.format(sample.subject) for sample in self.relation.samples
+        prompt_template.format(sample.subject) for sample in relation.samples
     ]  # a list of strings. Renamed as this should NOT be forward passed
     answers = [
         sample.object for sample in relation.samples
     ]
+    inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
     toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
             torch.int
         )
-    answer_toks = torch.Tensor(tokenizer(answers, padding=True).input_ids).type(
+    num_prompt_toks = [int((i != tokenizer.pad_token_id).sum()) for i in toks]
+    # answer_toks = torch.Tensor(tokenizer(answers, padding=True).input_ids).type(
+    #         torch.int
+    #     )
+    input_ids = torch.Tensor(tokenizer(inputs, padding=True).input_ids).type(
             torch.int
         )
-    return toks, answer_toks
+    labels = input_ids.clone()
+    num_pad_toks = [int((i == tokenizer.pad_token_id).sum()) for i in input_ids]
+    for i in range(len(sentences)):
+        labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
+    labels[input_ids == tokenizer.pad_token_id] = -100
+    
+    return input_ids, labels

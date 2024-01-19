@@ -122,17 +122,6 @@ def get_model(name, hf_model, tokenizer, device="cuda") -> HookedTransformer:
     # )
     return tl_model
 
-def get_data(num_examples=None, seq_len=None, device=None):
-    # validation_fname = huggingface_hub.hf_hub_download(
-    #     repo_id="ArthurConmy/redwood_attn_2l", filename="validation_data.pt"
-    # )
-    validation_fname = "/newdisk3/xzk/Knowledge-Circuit/data"
-    validation_data = torch.load(validation_fname, map_location=device).long()
-
-    if num_examples is None:
-        return validation_data
-    else:
-        return validation_data[:num_examples][:seq_len]
 
 def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_seed=42, metric_name="kl_div", return_one_element=True) -> AllDataThings:
     hf_model, tokenizer = load_model(model,fp16=False)
@@ -169,10 +158,11 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         validation_metric = partial(
             negative_log_probs,
             labels=validation_labels,
+            last_seq_element_only=False,
         )
     elif metric_name == "match_nll":
         validation_metric = MatchNLLMetric(
-            labels=validation_labels, base_model_logprobs=base_val_logprobs,
+            labels=validation_labels, base_model_logprobs=base_val_logprobs,last_seq_element_only=False,
         )
     else:
         raise ValueError(f"Unknown metric {metric_name}")
@@ -234,5 +224,4 @@ def one_item_per_batch(toks_int_values, toks_int_values_other, mask_rep, base_mo
         last_seq_element_only=False, 
         return_one_element=False
     )
-    
     return return_tensor, toks_int_values_other_batch, end_positions_tensor, metric
