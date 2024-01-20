@@ -378,7 +378,8 @@ def get_and_filter_dataset(
         num_pad_toks = [int((i == tokenizer.pad_token_id).sum()) for i in input_ids]
         for i in range(len(sentences)):
             labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
-        labels[input_ids == tokenizer.pad_token_id] = -100        
+            #left padding
+        labels[input_ids == tokenizer.pad_token_id] = -100   
             
         return input_ids, labels
     
