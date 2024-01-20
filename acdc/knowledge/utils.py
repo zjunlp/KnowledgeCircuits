@@ -23,7 +23,7 @@ from typing import (
 )
 import warnings
 import networkx as nx
-from acdc.knowledge.knowledge_dataset import KnowledgeDataset,get_and_filter_dataset
+from acdc.knowledge.knowledge_dataset import get_and_filter_dataset
 from acdc.acdc_utils import (
     MatchNLLMetric,
     make_nd_dict,
@@ -127,10 +127,8 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
     hf_model, tokenizer = load_model(model,fp16=False)
     tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device)
     knowledge_data, knowledge_label = get_and_filter_dataset(
+        tokenizer=tokenizer,
         knowledge_type="factual",
-        N=num_examples*2,
-        #nb_templates=1,
-        seed = 0,
     )
     default_data = knowledge_data.to(device)
     labels = knowledge_label.to(device)
@@ -177,7 +175,7 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
             labels=test_labels,
         ),
         "match_nll": MatchNLLMetric(
-            labels=test_labels, base_model_logprobs=base_test_logprobs,
+            labels=test_labels, base_model_logprobs=base_test_logprobs,last_seq_element_only=False
         ),
     }
     return AllDataThings(
@@ -186,10 +184,12 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         validation_data=validation_data,
         validation_labels=validation_labels,
         validation_patch_data=validation_patch_data,
+        validation_mask=None,
         test_metrics=test_metrics,
         test_data=test_data,
         test_labels=test_labels,
         test_patch_data=test_patch_data,
+        test_mask=None
     )
 
 
