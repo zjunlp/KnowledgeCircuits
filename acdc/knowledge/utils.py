@@ -114,7 +114,7 @@ def get_model(name, hf_model, tokenizer, device="cuda",local_path=None) -> Hooke
     tl_model = HookedTransformer.from_pretrained(name, hf_model=hf_model, tokenizer=tokenizer,local_path=local_path)
     tl_model = tl_model.to(device)
     tl_model.set_use_attn_result(True)
-    tl_model.set_use_split_qkv_input(False)
+    tl_model.set_use_split_qkv_input(True) 
     #改了这个地方后面绘图应该会报错
     if "use_hook_mlp_in" in tl_model.cfg.to_dict():
         tl_model.set_use_hook_mlp_in(True)
@@ -124,12 +124,13 @@ def get_model(name, hf_model, tokenizer, device="cuda",local_path=None) -> Hooke
     return tl_model
 
 
-def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", model_path="", data_seed=42, metric_name="kl_div", return_one_element=True) -> AllDataThings:
+def get_all_knowledge_things(num_examples, device, model="gpt2", model_path="", data_path="",data_seed=42, metric_name="match_nll", return_one_element=True) -> AllDataThings:
     hf_model, tokenizer = load_model(model_path,fp16=False)
-    tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device)
+    tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device,local_path=model_path)
     knowledge_data, knowledge_label = get_and_filter_dataset(
         tokenizer=tokenizer,
         knowledge_type="factual",
+        data_path=data_path,
     )
     default_data = knowledge_data.to(device)
     labels = knowledge_label.to(device)

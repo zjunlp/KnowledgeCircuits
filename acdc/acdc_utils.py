@@ -80,7 +80,6 @@ def negative_log_probs(
     if last_seq_element_only:
         logprobs = logprobs[:, -1, :]
     if shift:
-        labels = labels[..., 1:].contiguous()
         logprobs = logprobs[..., :-1, :].contiguous()
     # Subtract a baseline for each element -- which could be 0 or the NLL of the base_model_logprobs
     nll_all = (
@@ -125,11 +124,13 @@ class MatchNLLMetric:
             assert logprobs.ndim == 2
         else:
             assert logprobs.ndim == 3
+        self.shift = False
         if shift:
-            labels = labels[..., 1:].contiguous()
+            self.shift = True
+            self.labels = labels[..., 1:].contiguous()
             logprobs = logprobs[..., :-1, :].contiguous()
         self.base_nll_unreduced = F.nll_loss(
-            logprobs.view(-1, logprobs.size(-1)), labels.view(-1), reduction="none"
+            logprobs.view(-1, logprobs.size(-1)), self.labels.view(-1), reduction="none"
         ).view(logprobs.size()[:-1])
         if mask_repeat_candidates is not None:
             assert self.base_nll_unreduced.shape == mask_repeat_candidates.shape
@@ -144,6 +145,7 @@ class MatchNLLMetric:
             baseline=self.base_nll_unreduced,
             last_seq_element_only=self.last_seq_element_only,
             return_one_element=self.return_one_element,
+            shift=self.shift,
         )
 
 def logit_diff_metric(logits, correct_labels, wrong_labels, return_one_element: bool=True) -> torch.Tensor:
