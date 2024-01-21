@@ -54,7 +54,7 @@ LLAMA_NAME_SHORT = "llama"
 # DOWNLOADABLE_MODELS = frozenset({GPT_J_NAME, GPT_NEO_X_NAME, "gpt2-xl"})
 
 def load_model(
-    name: str, fp16: Optional[bool] = None
+    name: str, device = torch.device('cpu'), fp16: Optional[bool] = None
 ):
     """Load the model given its string name.
 
@@ -96,6 +96,7 @@ def load_model(
 
     model = transformers.AutoModelForCausalLM.from_pretrained(name, **kwargs)
     model.to(torch_dtype)
+    model.to(device)
     model.eval()
 
     if is_llama_variant:
@@ -105,12 +106,12 @@ def load_model(
     else:
         tokenizer = transformers.AutoTokenizer.from_pretrained(name)
         tokenizer.pad_token = tokenizer.eos_token
-
+    tokenizer.padding_side = "left"
     return model, tokenizer
 
 
-def get_model(name, hf_model, tokenizer, device="cuda") -> HookedTransformer:
-    tl_model = HookedTransformer.from_pretrained(name, hf_model=hf_model, tokenizer=tokenizer)
+def get_model(name, hf_model, tokenizer, device="cuda",local_path=None) -> HookedTransformer:
+    tl_model = HookedTransformer.from_pretrained(name, hf_model=hf_model, tokenizer=tokenizer,local_path=local_path)
     tl_model = tl_model.to(device)
     tl_model.set_use_attn_result(True)
     tl_model.set_use_split_qkv_input(False)
@@ -123,8 +124,8 @@ def get_model(name, hf_model, tokenizer, device="cuda") -> HookedTransformer:
     return tl_model
 
 
-def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_seed=42, metric_name="kl_div", return_one_element=True) -> AllDataThings:
-    hf_model, tokenizer = load_model(model,fp16=False)
+def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", model_path="", data_seed=42, metric_name="kl_div", return_one_element=True) -> AllDataThings:
+    hf_model, tokenizer = load_model(model_path,fp16=False)
     tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device)
     knowledge_data, knowledge_label = get_and_filter_dataset(
         tokenizer=tokenizer,
@@ -132,7 +133,6 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
     )
     default_data = knowledge_data.to(device)
     labels = knowledge_label.to(device)
-    labels = labels.to(device)
     
     validation_data = default_data[:num_examples, :]
     validation_patch_data = shuffle_tensor(validation_data, seed=data_seed).contiguous()
@@ -157,10 +157,11 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
             negative_log_probs,
             labels=validation_labels,
             last_seq_element_only=False,
+            shift=True,
         )
     elif metric_name == "match_nll":
         validation_metric = MatchNLLMetric(
-            labels=validation_labels, base_model_logprobs=base_val_logprobs,last_seq_element_only=False,
+            labels=validation_labels, base_model_logprobs=base_val_logprobs,last_seq_element_only=False,shift=True,
         )
     else:
         raise ValueError(f"Unknown metric {metric_name}")
@@ -173,9 +174,11 @@ def get_all_knowledge_things(num_examples, seq_len, device, model="gpt2", data_s
         "nll": partial(
             negative_log_probs,
             labels=test_labels,
+            last_seq_element_only=False,
+            shift=True,
         ),
         "match_nll": MatchNLLMetric(
-            labels=test_labels, base_model_logprobs=base_test_logprobs,last_seq_element_only=False
+            labels=test_labels, base_model_logprobs=base_test_logprobs,last_seq_element_only=False, shift=True,
         ),
     }
     return AllDataThings(

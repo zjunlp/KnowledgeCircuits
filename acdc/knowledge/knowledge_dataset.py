@@ -12,16 +12,13 @@ from collections import defaultdict
 import numpy as np
 from tqdm import tqdm
 import pandas as pd
-from transformers import AutoTokenizer
 import random
 import re
 import json
 import matplotlib.pyplot as plt
 import copy
 from dataclasses_json import DataClassJsonMixin
-
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
 # PathLike = str | Path
 logger = logging.getLogger(__name__)
 
@@ -291,7 +288,6 @@ def load_dataset(paths):
     be read as one relation. If a directory, will recursively search for all JSON files.
     """
     # Load all relation files
-    print(paths)
     files = []
     for path in paths:
         files.append(path)
@@ -355,32 +351,30 @@ def get_and_filter_dataset(
     tokenizer=None,
 ):
     paths=get_path(data_path,knowledge_type,relation_name)
-    relations = load_dataset(paths)
-    for relation in relations:
-        prompt_templates = relation.prompt_templates
-        sentences = [
-            prompt_template.format(sample.subject) for prompt_template in prompt_templates for sample in relation.samples 
-        ]
-        answers = [
-            sample.object for sample in relation.samples
-        ]*2
-        #每个模版都有两个句子，所以两倍答案
-        inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
-        toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
-                torch.int
-            )
-        num_prompt_toks = [int((i != tokenizer.pad_token_id).sum()) for i in toks]
-        
-        input_ids = torch.Tensor(tokenizer(inputs, padding=True).input_ids).type(
-                torch.int
-            )
-        labels = input_ids.clone()
-        num_pad_toks = [int((i == tokenizer.pad_token_id).sum()) for i in input_ids]
-        for i in range(len(sentences)):
-            labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
-            #left padding
-        labels[input_ids == tokenizer.pad_token_id] = -100   
-            
-        return input_ids, labels
+    relation = load_dataset(paths)[0]
+    prompt_templates = relation.prompt_templates
+    sentences = [
+        prompt_template.format(sample.subject) for prompt_template in prompt_templates for sample in relation.samples 
+    ]
+    answers = [
+        sample.object for sample in relation.samples
+    ]*2
+    #每个模版都有两个句子，所以两倍答案
+    inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
+    toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
+            torch.long
+        )
+    num_prompt_toks = [int((i != tokenizer.pad_token_id).sum()) for i in toks]
+    
+    input_ids = torch.Tensor(tokenizer(inputs, padding=True).input_ids).type(
+            torch.long
+        )
+    labels = input_ids.clone()
+    num_pad_toks = [int((i == tokenizer.pad_token_id).sum()) for i in input_ids]
+    for i in range(len(sentences)):
+        labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
+        #left padding
+    labels[input_ids == tokenizer.pad_token_id] = -100     
+    return input_ids, labels
     
     
