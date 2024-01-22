@@ -100,6 +100,7 @@ def negative_log_probs(
         answer = nll_all
 
     if return_one_element:
+        answer = answer.sum(dim=-1)
         return answer.mean()
 
     return answer
