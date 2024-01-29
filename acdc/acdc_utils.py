@@ -95,12 +95,14 @@ def negative_log_probs(
         answer = nll_all[mask_repeat_candidates]
     elif not last_seq_element_only:
         assert nll_all.ndim == 2, nll_all.shape
+        mask = labels != -100
+        n_tokens = mask.float().sum(-1)
+        answer = (nll_all * mask.float()).sum(-1) / n_tokens
         answer = nll_all.view(-1)
     else:
         answer = nll_all
 
     if return_one_element:
-        answer = answer.sum(dim=-1)
         return answer.mean()
 
     return answer

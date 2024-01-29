@@ -347,25 +347,25 @@ def get_path(data_path,knowledge_type=None,relation_name=None):
 def get_and_filter_dataset(
     knowledge_type='factual',
     relation_name='city_in_country.json',
+    index_name='city_in_country.pt',
     data_path="./data",
     tokenizer=None,
 ):
     paths=get_path(data_path,knowledge_type,relation_name)
     relation = load_dataset(paths)[0]
-    prompt_templates = relation.prompt_templates
+    prompt_template = relation.prompt_templates[0]
     sentences = [
-        prompt_template.format(sample.subject) for prompt_template in prompt_templates for sample in relation.samples 
+        prompt_template.format(sample.subject) for sample in relation.samples 
     ]
     answers = [
         sample.object for sample in relation.samples
-    ]*2
+    ]
     #每个模版都有两个句子，所以两倍答案
     inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
     toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
             torch.long
         )
     num_prompt_toks = [int((i != tokenizer.pad_token_id).sum()) for i in toks]
-    
     input_ids = torch.Tensor(tokenizer(inputs, padding=True).input_ids).type(
             torch.long
         )
@@ -374,7 +374,14 @@ def get_and_filter_dataset(
     for i in range(len(sentences)):
         labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
         #left padding
-    labels[input_ids == tokenizer.pad_token_id] = -100     
-    return input_ids, labels
+    labels[input_ids == tokenizer.pad_token_id] = -100 
+    # return input_ids, labels
+    pt_path = os.path.join(data_path, knowledge_type,index_name)
+    if os.path.exists(pt_path):
+        select_index = torch.load(pt_path)
+        assert select_index.shape[0] == input_ids.shape[0]
+        return input_ids[select_index,], labels[select_index,]
+    else:
+        return input_ids, labels
     
     
