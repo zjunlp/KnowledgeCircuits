@@ -362,6 +362,7 @@ def get_and_filter_dataset(
     ]
     #每个模版都有两个句子，所以两倍答案
     inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
+    # inputs = sentences
     toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
             torch.long
         )
@@ -371,17 +372,18 @@ def get_and_filter_dataset(
         )
     labels = input_ids.clone()
     num_pad_toks = [int((i == tokenizer.pad_token_id).sum()) for i in input_ids]
+    prompt_len = [x+y for x,y in zip(num_pad_toks,num_prompt_toks)]
     for i in range(len(sentences)):
         labels[i][num_pad_toks[i]:num_pad_toks[i]+num_prompt_toks[i]] = -100
         #left padding
     labels[input_ids == tokenizer.pad_token_id] = -100 
     # return input_ids, labels
-    pt_path = os.path.join(data_path, knowledge_type,index_name)
+    pt_path = os.path.join(data_path, 'pt_gpt2_large',index_name)
     if os.path.exists(pt_path):
         select_index = torch.load(pt_path)
         assert select_index.shape[0] == input_ids.shape[0]
         return input_ids[select_index,], labels[select_index,]
     else:
-        return input_ids, labels
+        return input_ids, labels,prompt_len
     
     
