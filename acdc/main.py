@@ -58,6 +58,8 @@ except Exception as e:
 # <h2>Imports etc</h2>
 
 #%%
+import sys
+sys.path.append('..')
 import wandb
 import IPython
 from IPython.display import Image, display
@@ -176,7 +178,9 @@ if ipython is not None:
     args = parser.parse_args(
         [line.strip() for line in r"""--task=knowledge\
 --zero-ablation\
---threshold=0.71\
+--threshold=0.1\
+--device=cuda:3\
+--metric=match_nll\
 --indices-mode=reverse\
 --first-cache-cpu=False\
 --second-cache-cpu=False\
@@ -284,12 +288,15 @@ elif TASK == "greaterthan":
         num_examples=num_examples, metric_name=args.metric, device=DEVICE
     )
 elif TASK == "knowledge":
-    num_examples = 100
+    num_examples = 40
     things = get_all_knowledge_things(
-        metric_name=args.metric,
-        num_examples=num_examples,
-        seq_len=100,#感觉不需要这个
-        device=DEVICE,
+        num_examples=num_examples, metric_name=args.metric, device=DEVICE,
+        model="gpt2-large",
+        model_path="/newdisk3/yunzhi/gpt2-large", 
+        data_path="../data",
+        knowledge_type="linguistic",
+        relation_name="adj_antonym.json",
+        index_name="adj_antonym.pt",
     )
 else:
     raise ValueError(f"Unknown task {TASK}")

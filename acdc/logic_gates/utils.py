@@ -6,7 +6,6 @@ import torch
 from typing import Literal, Optional
 from transformer_lens.HookedTransformer import HookedTransformer, HookedTransformerConfig
 from acdc.docstring.utils import AllDataThings
-from acdc.tracr_task.utils import get_perm
 from acdc.acdc_utils import kl_divergence
 import torch.nn.functional as F
 
