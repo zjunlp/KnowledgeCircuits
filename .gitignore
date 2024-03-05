@@ -13,4 +13,7 @@ __pycache__/
 .env
 */__pycache__/
 *ims
-*/ims/
+*/*ims*/
+*.out
+*.pt
+*pkl
