@@ -164,6 +164,10 @@ parser.add_argument("--wandb-mode", type=str, default="online")
 parser.add_argument('--indices-mode', type=str, default="normal")
 parser.add_argument('--names-mode', type=str, default="normal")
 parser.add_argument('--device', type=str, default="cuda")
+parser.add_argument('--specific-knowledge', type=str)
+parser.add_argument('--num-examples', type=int)
+parser.add_argument('--knowledge-type', type=str, default="factual")
+parser.add_argument('--relation-reverse', type=str, required=False, default="False")
 parser.add_argument('--reset-network', type=int, default=0, help="Whether to reset the network we're operating on before running interp on it")
 parser.add_argument('--metric', type=str, default="kl_div", help="Which metric to use for the experiment")
 parser.add_argument('--torch-num-threads', type=int, default=0, help="How many threads to use for torch (0=all)")
@@ -225,7 +229,7 @@ NAMES_MODE = args.names_mode
 DEVICE = args.device
 RESET_NETWORK = args.reset_network
 SINGLE_STEP = True if args.single_step else False
-
+specific_knowledge = args.specific_knowledge
 #%% [markdown] 
 # <h2>Setup Task</h2>
 
@@ -288,15 +292,16 @@ elif TASK == "greaterthan":
         num_examples=num_examples, metric_name=args.metric, device=DEVICE
     )
 elif TASK == "knowledge":
-    num_examples = 40
+    num_examples = args.num_examples
     things = get_all_knowledge_things(
         num_examples=num_examples, metric_name=args.metric, device=DEVICE,
-        model="gpt2-large",
-        model_path="/newdisk3/yunzhi/gpt2-large", 
+        model="gpt2",
+        model_path="/newdisk3/yunzhi/gpt2", 
         data_path="../data",
-        knowledge_type="linguistic",
-        relation_name="adj_antonym.json",
-        index_name="adj_antonym.pt",
+        knowledge_type=args.knowledge_type,
+        relation_name=f"{specific_knowledge}.json",
+        index_name=f"{specific_knowledge}.pt",
+        reverse=True if args.relation_reverse == 'True' else False,
     )
 else:
     raise ValueError(f"Unknown task {TASK}")
@@ -378,19 +383,25 @@ exp = TLACDCExperiment(
 
 import datetime
 exp_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-
+threshold = args.threshold
+if args.relation_reverse == 'True':
+    fold_name = f"reverse_ims_{specific_knowledge}_{threshold}"
+else:
+    fold_name = f"ims_{specific_knowledge}_{threshold}"
+if not os.path.exists(fold_name):
+    os.makedirs(fold_name)
 for i in range(args.max_num_epochs):
     exp.step(testing=False)
 
     show(
         exp.corr,
-        f"ims/img_new_{i+1}.png",
+        f"{fold_name}/img_new_{i+1}.png",
         show_full_index=False,
     )
 
     if IN_COLAB or ipython is not None:
         # so long as we're not running this as a script, show the image!
-        display(Image(f"ims/img_new_{i+1}.png"))
+        display(Image(f"{fold_name}/img_new_{i+1}.png"))
 
     print(i, "-" * 50)
     print(exp.count_no_edges())
@@ -401,15 +412,15 @@ for i in range(args.max_num_epochs):
     if exp.current_node is None or SINGLE_STEP:
         show(
             exp.corr,
-            f"ims/ACDC_img_{exp_time}.png",
+            f"{fold_name}/ACDC_img_{exp_time}.png",
 
         )
         break
 
-exp.save_edges("another_final_edges.pkl")
+exp.save_edges(f"{fold_name}/another_final_edges.pkl")
 
 if USING_WANDB:
-    edges_fname = f"edges.pth"
+    edges_fname = f"{fold_name}/edges.pth"
     exp.save_edges(edges_fname)
     artifact = wandb.Artifact(edges_fname, type="dataset")
     artifact.add_file(edges_fname)

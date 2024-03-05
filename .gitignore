@@ -11,3 +11,6 @@ __pycache__/
 *~
 .DS_Store
 .env
+*/__pycache__/
+*ims
+*/ims/

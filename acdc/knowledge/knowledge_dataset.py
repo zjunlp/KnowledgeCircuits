@@ -71,7 +71,7 @@ class Relation(DataClassJsonMixin):
 
     _domain: list[str] | None = None
     _range: list[str] | None = None
-
+    reverse_prompt_templates: list[str] | None = None
     @property
     def domain(self) -> set[str]:
         if self._domain is not None:
@@ -350,16 +350,27 @@ def get_and_filter_dataset(
     index_name='city_in_country.pt',
     data_path="./data",
     tokenizer=None,
+    reverse=False,
 ):
     paths=get_path(data_path,knowledge_type,relation_name)
     relation = load_dataset(paths)[0]
-    prompt_template = relation.prompt_templates[0]
-    sentences = [
-        prompt_template.format(sample.subject) for sample in relation.samples 
-    ]
-    answers = [
-        sample.object for sample in relation.samples
-    ]
+    if reverse:
+        print("reverse_relation")
+        prompt_template = relation.reverse_prompt_templates[0]
+        sentences = [
+            prompt_template.format(sample.object) for sample in relation.samples 
+        ]
+        answers = [
+            sample.subject for sample in relation.samples
+        ]
+    else:
+        prompt_template = relation.prompt_templates[0]
+        sentences = [
+            prompt_template.format(sample.subject) for sample in relation.samples 
+        ]
+        answers = [
+            sample.object for sample in relation.samples
+        ]
     #每个模版都有两个句子，所以两倍答案
     inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
     # inputs = sentences
@@ -378,7 +389,7 @@ def get_and_filter_dataset(
         #left padding
     labels[input_ids == tokenizer.pad_token_id] = -100 
     # return input_ids, labels
-    pt_path = os.path.join(data_path, 'pt_gpt2_large',index_name)
+    pt_path = os.path.join(data_path, 'pt',index_name)
     if os.path.exists(pt_path):
         select_index = torch.load(pt_path)
         assert select_index.shape[0] == input_ids.shape[0]

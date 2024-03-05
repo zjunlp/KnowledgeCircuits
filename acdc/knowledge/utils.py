@@ -124,7 +124,7 @@ def get_model(name, hf_model, tokenizer, device="cuda",local_path=None) -> Hooke
     return tl_model
 
 
-def get_all_knowledge_things(num_examples, device, model="gpt2", model_path="",knowledge_type="", data_path="", relation_name="",index_name="",data_seed=42, metric_name="match_nll", return_one_element=True) -> AllDataThings:
+def get_all_knowledge_things(num_examples, device, model="gpt2", model_path="",knowledge_type="", data_path="", relation_name="",index_name="",reverse = False, data_seed=42, metric_name="match_nll", return_one_element=True) -> AllDataThings:
     hf_model, tokenizer = load_model(model_path,fp16=False)
     tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device,local_path=model_path)
     knowledge_data, knowledge_label = get_and_filter_dataset(
@@ -133,6 +133,7 @@ def get_all_knowledge_things(num_examples, device, model="gpt2", model_path="",k
         relation_name=relation_name,
         index_name=index_name,
         data_path=data_path,
+        reverse=reverse,
     )
     default_data = knowledge_data.to(device)
     labels = knowledge_label.to(device)
