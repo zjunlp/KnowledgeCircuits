@@ -352,7 +352,8 @@ def get_and_filter_dataset(
     tokenizer=None,
     reverse=False,
 ):
-    paths=get_path(data_path,knowledge_type,relation_name)
+    paths = os.path.join(data_path,knowledge_type,relation_name)
+    paths = [paths]
     relation = load_dataset(paths)[0]
     if reverse:
         print("reverse_relation")
