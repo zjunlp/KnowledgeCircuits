@@ -353,6 +353,8 @@ def get_and_filter_dataset(
 ):
     paths=get_path(data_path,knowledge_type,relation_name)
     relation = load_dataset(paths)[0]
+    random.seed(0)
+    random.shuffle(relation.samples)
     if reverse:
         print("reverse_relation")
         prompt_template = relation.reverse_prompt_templates[0]
@@ -363,7 +365,7 @@ def get_and_filter_dataset(
             sample.subject for sample in relation.samples
         ]
     else:
-        prompt_template = relation.prompt_templates[0]
+        prompt_template = relation.prompt_templates_zs[0]
         sentences = [
             prompt_template.format(sample.subject) for sample in relation.samples 
         ]
