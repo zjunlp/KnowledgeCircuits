@@ -1,4 +1,4 @@
-torch==1.12.1
+torch==1.13.1
 transformer-lens==1.15.0
 pygraphviz #conda install --channel conda-forge pygraphviz
 pytest==8.1.1
