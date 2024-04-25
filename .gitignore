@@ -17,3 +17,7 @@ __pycache__/
 *.out
 *.pt
 *pkl
+*/*results*/
+*results
+*output
+*factual_results

@@ -191,7 +191,6 @@ def show(
         base_fname = ".".join(str(fname).split(".")[:-1])
 
         base_path = Path(base_fname)
-        base_path.mkdir(exist_ok=True)
         for k, s in groups.items():
             g2 = pgv.AGraph(directed=True, bgcolor="transparent", overlap="false", splines="true", layout="neato")
             for node_name in s:
@@ -203,6 +202,7 @@ def show(
             for i in range(len(s)):
                 for j in range(i + 1, len(s)):
                     g2.add_edge(s[i], s[j], style="invis", weight=200)
+            base_path.mkdir(exist_ok=True)
             g2.write(path=base_path / f"{k}.gv")
 
         g.write(path=base_fname + ".gv")

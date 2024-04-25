@@ -41,8 +41,8 @@ except Exception as e:
     # disable this option when developing rather than generating notebook outputs
 
     import os # make images folder
-    if not os.path.exists("ims/"):
-        os.mkdir("ims/")
+    # if not os.path.exists("ims/"):
+    #     os.mkdir("ims/")
 
     from IPython import get_ipython
 
@@ -166,6 +166,9 @@ parser.add_argument('--names-mode', type=str, default="normal")
 parser.add_argument('--device', type=str, default="cuda")
 parser.add_argument('--specific-knowledge', type=str)
 parser.add_argument('--num-examples', type=int)
+parser.add_argument('--model-name', type=str, default="gpt2")
+parser.add_argument('--model-path', type=str, default="gpt2")
+parser.add_argument('--pt-path', type=str, default="gpt2")
 parser.add_argument('--knowledge-type', type=str, default="factual")
 parser.add_argument('--relation-reverse', type=str, required=False, default="False")
 parser.add_argument('--reset-network', type=int, default=0, help="Whether to reset the network we're operating on before running interp on it")
@@ -293,14 +296,15 @@ elif TASK == "greaterthan":
     )
 elif TASK == "knowledge":
     num_examples = args.num_examples
+    model_name = args.model_name
     things = get_all_knowledge_things(
         num_examples=num_examples, metric_name=args.metric, device=DEVICE,
-        model="gpt2",
-        model_path="/newdisk3/yunzhi/gpt2", 
-        data_path="../data",
+        model=args.model_name,
+        model_path=args.model_path, 
+        # data_path=f"../data/{model_name}",
+        data_path=f"../data",
         knowledge_type=args.knowledge_type,
         relation_name=f"{specific_knowledge}.json",
-        index_name=f"{specific_knowledge}.pt",
         reverse=True if args.relation_reverse == 'True' else False,
     )
 else:
@@ -385,18 +389,19 @@ import datetime
 exp_time = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 threshold = args.threshold
 if args.relation_reverse == 'True':
-    fold_name = f"reverse_ims_{specific_knowledge}_{threshold}"
+    fold_name = f"{args.knowledge_type}_results/{model_name}/reverse_ims_{specific_knowledge}_{threshold}"
 else:
-    fold_name = f"ims_{specific_knowledge}_{threshold}"
+    fold_name = f"{args.knowledge_type}_results/{model_name}/ims_{specific_knowledge}_{threshold}"
 if not os.path.exists(fold_name):
     os.makedirs(fold_name)
 for i in range(args.max_num_epochs):
-    exp.step(testing=False)
+    exp.step(testing=False,fold_name=fold_name)
 
     show(
         exp.corr,
         f"{fold_name}/img_new_{i+1}.png",
         show_full_index=False,
+        # remove_qkv=True,
     )
 
     if IN_COLAB or ipython is not None:
@@ -413,7 +418,7 @@ for i in range(args.max_num_epochs):
         show(
             exp.corr,
             f"{fold_name}/ACDC_img_{exp_time}.png",
-
+            # remove_qkv=True,
         )
         break
 

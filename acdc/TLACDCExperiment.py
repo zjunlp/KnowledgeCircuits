@@ -525,7 +525,7 @@ class TLACDCExperiment:
         return True
 
 
-    def step(self, early_stop=False, testing=False):
+    def step(self, early_stop=False, testing=False,fold_name='ims'):
         if self.current_node is None:
             return
 
@@ -654,7 +654,7 @@ class TLACDCExperiment:
             self.remove_redundant_node(self.current_node)
 
         if is_this_node_used and self.current_node.incoming_edge_type.value != EdgeType.PLACEHOLDER.value:
-            fname = f"ims/img_new_{self.step_idx}.png"
+            fname = f"{fold_name}/img_new_{self.step_idx}.png"
             show(
                 self.corr,
                 fname=fname,
