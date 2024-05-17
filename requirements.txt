@@ -1,10 +1,21 @@
-torch==1.13.1
-transformer-lens==1.15.0
-pygraphviz #conda install --channel conda-forge pygraphviz
-pytest==8.1.1
+tqdm
+huggingface_hub
+pandas
+datasets
+jaxtyping
+rich
+better_abc
+fancy_einsum
 matplotlib==3.8.4
+transformers>=4.37.2
+einops==0.7.0
+torch==1.13.1
+plotly==5.21.0
+wandb==0.16.6
+pytest==8.1.1
 dataclasses_json==0.6.4
 networkx==3.3
 torchtyping==0.1.4
-plotly==5.21.0
 cmapy==0.6.6
+circuitsvis==1.43.2
+pygraphviz #conda install --channel conda-forge pygraphviz
