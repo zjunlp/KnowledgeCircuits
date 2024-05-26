@@ -1021,7 +1021,7 @@ def convert_hf_model_config(model_name: str, **kwargs):
             "act_fn": hf_config.hidden_act,
             "n_key_value_heads": (
                 hf_config.num_key_value_heads
-                if hf_config.num_key_value_heads != hf_config.num_attention_heads
+                if hf_config.num_key_value_heads != hf_config.num_attention_heads and "tinyllama" not in official_model_name.lower()
                 else None
             ),
             # This is done because the current implementation of GQA will use Grouped-Query Attention if
@@ -1310,7 +1310,6 @@ def get_pretrained_model_config(
     cfg_dict["n_devices"] = n_devices
     cfg_dict["default_prepend_bos"] = default_prepend_bos
     if hf_cfg is not None:
-        print(official_model_name)
         cfg_dict["load_in_4bit"] = hf_cfg.get("quantization_config", {}).get("load_in_4bit", False)
 
     cfg = HookedTransformerConfig.from_dict(cfg_dict)
@@ -1851,10 +1850,9 @@ def convert_tinyllama_weights(llama, cfg: HookedTransformerConfig):
 
     # Some models with the Llama architecture use Grouped Query Attention, and so for these we need to modify
     # the state dict keys for the K/V attention weight/biases, prepending "_" to the key names.
-    using_gqa = cfg.n_key_value_heads is not None
-    gqa_uscore = "_" if using_gqa else ""
+    gqa_uscore = ""
     # need a cast since MyPy isn't smart enough to realize that using_gqa implies n_key_value_heads is not None
-    n_kv_heads = cast(int, cfg.n_key_value_heads if using_gqa else cfg.n_heads)
+    n_kv_heads = 4
 
     # llama has no biases anywhere and deals with everything else roughly like
     # GPTNeoX with different names
@@ -1872,7 +1870,8 @@ def convert_tinyllama_weights(llama, cfg: HookedTransformerConfig):
         W_V = einops.rearrange(W_V, "(n h) m->n m h", n=n_kv_heads)
         # in case of quantization,
         # parameters should stay as bitsandbytes.nn.modules.Params4bit
-
+        W_K = torch.repeat_interleave(W_K,dim=0,repeats=8)
+        W_V = torch.repeat_interleave(W_V,dim=0,repeats=8)
         state_dict[f"blocks.{l}.attn.W_Q"] = W_Q
         state_dict[f"blocks.{l}.attn.{gqa_uscore}W_K"] = W_K
         state_dict[f"blocks.{l}.attn.{gqa_uscore}W_V"] = W_V
@@ -1881,22 +1880,23 @@ def convert_tinyllama_weights(llama, cfg: HookedTransformerConfig):
             cfg.n_heads, cfg.d_head, dtype=cfg.dtype, device=cfg.device
         )
         state_dict[f"blocks.{l}.attn.{gqa_uscore}b_K"] = torch.zeros(
-            n_kv_heads,
+            cfg.n_heads,
             cfg.d_head,
             dtype=cfg.dtype,
             device=cfg.device,
         )
         state_dict[f"blocks.{l}.attn.{gqa_uscore}b_V"] = torch.zeros(
-            n_kv_heads,
+            cfg.n_heads,
             cfg.d_head,
             dtype=cfg.dtype,
             device=cfg.device,
         )
 
         W_O = llama.model.layers[l].self_attn.o_proj.weight
-        W_O = einops.rearrange(W_O, "m (n h)->n h m", n=cfg.n_heads)
-        state_dict[f"blocks.{l}.attn.W_O"] = W_O.to(device=cfg.device)
+        if not cfg.load_in_4bit:
+            W_O = einops.rearrange(W_O, "m (n h)->n h m", n=cfg.n_heads)
 
+        state_dict[f"blocks.{l}.attn.W_O"] = W_O.to(device=cfg.device)
         state_dict[f"blocks.{l}.attn.b_O"] = torch.zeros(
             cfg.d_model, dtype=cfg.dtype, device=cfg.device
         )
