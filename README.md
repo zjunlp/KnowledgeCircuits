@@ -1,4 +1,4 @@
-# Knowledge-Circuit
+# Knowledge-Circuit (Code cleanup in progress, will be fully open soon.)
 Finding Knowledge Circuit in PLM.
 
 ## Get the circuit
