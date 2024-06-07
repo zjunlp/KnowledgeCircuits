@@ -23,7 +23,7 @@ MODEL_PATH=/path/to/the/model
 KT=factual 
 KNOWLEDGE=country_capital_city
 NUM_EXAMPLES=20
-MODEL_NAME=gpt2_medium
+MODEL_NAME=gpt2-medium
 
 python main.py --task=knowledge \
 --zero-ablation \
