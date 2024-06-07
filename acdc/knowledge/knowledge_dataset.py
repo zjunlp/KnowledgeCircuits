@@ -345,6 +345,7 @@ def get_path(data_path,knowledge_type=None,relation_name=None):
     return []
 
 def get_and_filter_dataset(
+    model,
     knowledge_type='factual',
     relation_name='city_in_country.json',
     data_path="./data",
@@ -370,13 +371,11 @@ def get_and_filter_dataset(
             prompt_template.format(sample.subject) for sample in relation.samples 
         ]
         answers = [
-            sample.object for sample in relation.samples
+            model.to_str_tokens(' '+sample.object, prepend_bos=False)[0].strip() for sample in relation.samples
         ]
     # sentences = ["Paris, France. Ottawa,"]
     # answers = ["Canada"]
-    #每个模版都有两个句子，所以两倍答案
     inputs = [f"{p} {l}" for p, l in zip(sentences, answers)]
-    # inputs = sentences
     toks = torch.Tensor(tokenizer(sentences, padding=True).input_ids).type(
             torch.long
         )
@@ -393,5 +392,3 @@ def get_and_filter_dataset(
     labels[input_ids == tokenizer.pad_token_id] = -100 
 
     return input_ids, labels
-    
-    

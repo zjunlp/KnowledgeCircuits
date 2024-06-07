@@ -4,12 +4,12 @@ pandas
 datasets
 jaxtyping
 rich
+torch==1.13.1
 better_abc
 fancy_einsum
 matplotlib==3.8.4
 transformers>=4.37.2
 einops==0.7.0
-torch==1.13.1
 plotly==5.21.0
 wandb==0.16.6
 pytest==8.1.1

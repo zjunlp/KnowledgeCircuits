@@ -79,13 +79,13 @@ from tqdm import tqdm
 import yaml
 import pandas
 from transformers import AutoModelForCausalLM, AutoConfig, AutoTokenizer
-
+import json
 import matplotlib.pyplot as plt
 import plotly.express as px
 import plotly.io as pio
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
-
+from collections import defaultdict
 from transformer_lens.hook_points import HookedRootModule, HookPoint
 from transformer_lens.HookedTransformer import (
     HookedTransformer,
@@ -99,7 +99,7 @@ except Exception as e:
     print(f"Could not import `tracr` because {e}; the rest of the file should work but you cannot use the tracr tasks")
 from acdc.docstring.utils import get_all_docstring_things
 from acdc.logic_gates.utils import get_all_logic_gate_things
-from acdc.knowledge.utils import get_all_knowledge_things
+from acdc.knowledge.utils import get_all_knowledge_things, get_hit10
 from acdc.acdc_utils import (
     make_nd_dict,
     reset_network,
@@ -166,6 +166,7 @@ parser.add_argument('--names-mode', type=str, default="normal")
 parser.add_argument('--device', type=str, default="cuda")
 parser.add_argument('--specific-knowledge', type=str)
 parser.add_argument('--num-examples', type=int)
+parser.add_argument('--test-result', action='store_true')
 parser.add_argument('--model-name', type=str, default="gpt2")
 parser.add_argument('--model-path', type=str, default="gpt2")
 parser.add_argument('--pt-path', type=str, default="gpt2")
@@ -302,7 +303,7 @@ elif TASK == "knowledge":
         model=args.model_name,
         model_path=args.model_path, 
         # data_path=f"../data/{model_name}",
-        data_path=f"../data",
+        data_path=f"../data/{model_name}",
         knowledge_type=args.knowledge_type,
         relation_name=f"{specific_knowledge}.json",
         reverse=True if args.relation_reverse == 'True' else False,
@@ -320,7 +321,7 @@ validation_metric = things.validation_metric # metric we use (e.g KL divergence)
 toks_int_values = things.validation_data # clean data x_i
 toks_int_values_other = things.validation_patch_data # corrupted data x_i'
 tl_model = things.tl_model # transformerlens model
-
+assert things.validation_data.shape[0] <= things.test_data.shape[0]
 if RESET_NETWORK:
     reset_network(TASK, DEVICE, tl_model)
 
@@ -378,7 +379,8 @@ exp = TLACDCExperiment(
     remove_redundant=False,
     show_full_index=use_pos_embed,
 )
-
+test_logits = exp.model(things.test_data)
+valid_logits= exp.model(things.validation_data)
 # %% [markdown]
 # <h2>Run steps of ACDC: iterate over a NODE in the model's computational graph</h2>
 # <p>WARNING! This will take a few minutes to run, but there should be rolling nice pictures too : )</p>
@@ -444,3 +446,17 @@ exp.save_subgraph(
     return_it=True,
 )
 # %%
+if args.test_result:
+    test_logits_circuit = exp.model(things.test_data)
+    valid_logits_circuit= exp.model(things.validation_data)
+    results = defaultdict(int)
+    hit10 = get_hit10(test_logits,things.validation_data)
+    results['pre']['test']['hit10'] = hit10
+    hit10 = get_hit10(valid_logits,things.validation_data)
+    results['pre']['valid']['hit10'] = hit10
+    hit10 = get_hit10(test_logits_circuit,things.validation_data)
+    results['post']['test']['hit10'] = hit10
+    hit10 = get_hit10(valid_logits_circuit,things.validation_data)
+    results['post']['valid']['hit10'] = hit10
+    print(results)
+    json.dump(results,open(f'{fold_name}/results.json',"w"),indent=4)

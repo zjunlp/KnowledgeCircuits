@@ -30,7 +30,7 @@ from acdc.acdc_utils import (
     shuffle_tensor,
 )
 import transformers
-
+import numpy as np
 from acdc.TLACDCEdge import (
     TorchIndex,
     Edge, 
@@ -130,9 +130,10 @@ def get_model(name, hf_model, tokenizer, device="cuda",local_path=None) -> Hooke
 
 def get_all_knowledge_things(num_examples, device, model="gpt2", model_path="",knowledge_type="", data_path="", relation_name="",
                              reverse = False, data_seed=42, metric_name="match_nll", return_one_element=True) -> AllDataThings:
-    hf_model, tokenizer = load_model(model_path,fp16=False)
+    hf_model, tokenizer = load_model(model_path)
     tl_model = get_model(name=model, hf_model=hf_model, tokenizer=tokenizer,device=device,local_path=model_path)
     knowledge_data, knowledge_label = get_and_filter_dataset(
+        model=tl_model,
         tokenizer=tokenizer,
         knowledge_type=knowledge_type,
         relation_name=relation_name,
@@ -145,9 +146,9 @@ def get_all_knowledge_things(num_examples, device, model="gpt2", model_path="",k
     validation_patch_data = shuffle_tensor(validation_data, seed=data_seed).contiguous()
     validation_labels = labels[:num_examples]
     
-    test_data = default_data[num_examples:, :]
+    test_data = default_data[num_examples:num_examples*2, :]
     test_patch_data = shuffle_tensor(test_data, seed=data_seed).contiguous()
-    test_labels = labels[num_examples:]
+    test_labels = labels[num_examples:num_examples*2]
 
     with torch.no_grad():
         base_val_logprobs = F.log_softmax(tl_model(validation_data), dim=-1).detach()
@@ -235,3 +236,18 @@ def one_item_per_batch(toks_int_values, toks_int_values_other, mask_rep, base_mo
         return_one_element=False
     )
     return return_tensor, toks_int_values_other_batch, end_positions_tensor, metric
+
+def get_hit10(logits,knowledge_data):
+    test_logprobs = F.log_softmax(logits, dim=-1)[:,-2,:]
+    labels = knowledge_data[:,-1]
+    # original_loss = F.nll_loss(test_logprobs, labels, reduction="none")
+    hit_at_10 = 0
+    labels = labels.squeeze().detach().cpu().numpy().tolist()
+    logits = logits[:, -2, :].detach().cpu().numpy()
+    for logits, label in zip(logits, labels):
+        rank = np.argsort(logits)[::-1].tolist().index(label) + 1
+        if rank <= 10:
+            hit_at_10 += 1
+    hit_at_10_accuracy = hit_at_10 / len(labels)
+    print('hit10', hit_at_10_accuracy)
+    return hit_at_10_accuracy
