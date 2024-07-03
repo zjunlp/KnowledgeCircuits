@@ -449,7 +449,7 @@ exp.save_subgraph(
 if args.test_result:
     test_logits_circuit = exp.model(things.test_data)
     valid_logits_circuit= exp.model(things.validation_data)
-    results = defaultdict(int)
+    results = {'pre':{'test':{'hit10':0},'valid':{'hit10':0}},'post':{'test':{'hit10':0},'valid':{'hit10':0}}}
     hit10 = get_hit10(test_logits,things.validation_data)
     results['pre']['test']['hit10'] = hit10
     hit10 = get_hit10(valid_logits,things.validation_data)

@@ -112,7 +112,7 @@ def load_model(
 
 def get_model(name, hf_model, tokenizer, device="cuda",local_path=None) -> HookedTransformer:
     if 'Llama' in name or 'llama' in name:
-        tl_model =HookedTransformer.from_pretrained(name, hf_model=hf_model, device="cpu", fold_ln=False, 
+        tl_model =HookedTransformer.from_pretrained(name, hf_model=hf_model, device="cpu", fold_ln=False, dtype=torch.float16,
                                                     local_path=local_path, center_writing_weights=False, center_unembed=False, tokenizer=tokenizer)
     else:
         tl_model = HookedTransformer.from_pretrained(name, hf_model=hf_model, tokenizer=tokenizer,local_path=local_path)
@@ -238,14 +238,14 @@ def one_item_per_batch(toks_int_values, toks_int_values_other, mask_rep, base_mo
     return return_tensor, toks_int_values_other_batch, end_positions_tensor, metric
 
 def get_hit10(logits,knowledge_data):
-    test_logprobs = F.log_softmax(logits, dim=-1)[:,-2,:]
+    # test_logprobs = F.log_softmax(logits, dim=-1)[:,-2,:]
     labels = knowledge_data[:,-1]
     # original_loss = F.nll_loss(test_logprobs, labels, reduction="none")
     hit_at_10 = 0
     labels = labels.squeeze().detach().cpu().numpy().tolist()
     logits = logits[:, -2, :].detach().cpu().numpy()
-    for logits, label in zip(logits, labels):
-        rank = np.argsort(logits)[::-1].tolist().index(label) + 1
+    for logit, label in zip(logits, labels):
+        rank = np.argsort(logit)[::-1].tolist().index(label) + 1
         if rank <= 10:
             hit_at_10 += 1
     hit_at_10_accuracy = hit_at_10 / len(labels)
