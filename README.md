@@ -3,16 +3,15 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2405.17969">📄arXiv</a> •
-  <a href="https://www.youtube.com/watch?v=qDgCLeDs4Kg">
-  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="19" height="19" viewBox="0 0 48 30">
-<path fill="#FF3D00" d="M43.2,33.9c-0.4,2.1-2.1,3.7-4.2,4c-3.3,0.5-8.8,1.1-15,1.1c-6.1,0-11.6-0.6-15-1.1c-2.1-0.3-3.8-1.9-4.2-4C4.4,31.6,4,28.2,4,24c0-4.2,0.4-7.6,0.8-9.9c0.4-2.1,2.1-3.7,4.2-4C12.3,9.6,17.8,9,24,9c6.2,0,11.6,0.6,15,1.1c2.1,0.3,3.8,1.9,4.2,4c0.4,2.3,0.9,5.7,0.9,9.9C44,28.2,43.6,31.6,43.2,33.9z"></path><path fill="#FFF" d="M20 31L20 17 32 24z"></path>
-</svg> Youtube</a> • 
+  <a href="https://www.youtube.com/watch?v=qDgCLeDs4Kg"> <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" height="20" width="20"> Youtube</a> • 
     <a href="https://x.com/zxlzr/status/1797261767674138924">𝕏 Blog</a>
 </p>
 
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/zjunlp/KnowledgeCircuits) 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/github/last-commit/zjunlp/KnowledgeCircuits?color=green) 
+
+
 
 ## Table of Contents
 - 🌟[Overview](#overview)
