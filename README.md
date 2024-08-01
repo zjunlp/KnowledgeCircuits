@@ -35,6 +35,7 @@ The filtered data for each kind of model is at [here](https://pan.zju.edu.cn/sha
 
 Build the environement:
 ```
+conda create -n knowledgecircuit python=3.10
 pip install -r requirements.txt
 ```
 ❗️The code may fail under torch 2.x.x. We recommend torch 1.x.x
