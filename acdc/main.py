@@ -62,6 +62,7 @@ import sys
 sys.path.append('..')
 import wandb
 import IPython
+import pickle
 from IPython.display import Image, display
 import torch
 import gc
@@ -69,6 +70,7 @@ from tqdm import tqdm
 import networkx as nx
 import os
 import torch
+import pygraphviz as pgv
 import huggingface_hub
 import torch.nn as nn
 import torch.nn.functional as F
@@ -132,6 +134,7 @@ from acdc.greaterthan.utils import get_all_greaterthan_things
 
 from acdc.acdc_graphics import (
     build_colorscheme,
+    redraw_picture,
     show
 )
 import argparse
@@ -396,6 +399,7 @@ else:
     fold_name = f"{args.knowledge_type}_results/{model_name}/ims_{specific_knowledge}_{threshold}"
 if not os.path.exists(fold_name):
     os.makedirs(fold_name)
+last_i = 0
 for i in range(args.max_num_epochs):
     exp.step(testing=False,fold_name=fold_name)
 
@@ -415,7 +419,7 @@ for i in range(args.max_num_epochs):
 
     if i == 0:
         exp.save_edges("edges.pkl")
-
+    last_i = i
     if exp.current_node is None or SINGLE_STEP:
         show(
             exp.corr,
@@ -425,6 +429,14 @@ for i in range(args.max_num_epochs):
         break
 
 exp.save_edges(f"{fold_name}/another_final_edges.pkl")
+
+with open(f"{fold_name}/another_final_edges.pkl", 'rb') as f:
+    graph = pickle.load(f)
+g = pgv.AGraph(f"{fold_name}/img_new_{last_i+1}.gv")
+new_g = redraw_picture(graph, g)
+new_g.layout(prog='dot')
+new_g.write(path=f"{fold_name}/final_graph" + ".gv")
+new_g.draw(f"{fold_name}/final_graph.pdf", format='pdf')
 
 if USING_WANDB:
     edges_fname = f"{fold_name}/edges.pth"

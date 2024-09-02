@@ -349,3 +349,65 @@ def dict_merge(dct, merge_dct):
             dict_merge(dct[k], merge_dct[k])
         else:
             dct[k] = merge_dct[k]
+
+def get_nodes_and_edges(data_loaded):
+    simple_edges = []
+    all_nodes = []
+    for item in data_loaded:
+        edge,weight = item
+        child_name, child_index, parent_name, parent_index = edge
+        child_node, child_layer = get_node_name(child_name, child_index)
+        # print(get_node_name(parent_name, parent_index))
+        parent_node, parent_layer = get_node_name(parent_name, parent_index)
+        # if remove_qkv:
+        parent_node = parent_node.replace("_q>", ">").replace("_k>", ">").replace("_v>", ">")
+        child_node = child_node.replace("_q>", ">").replace("_k>", ">").replace("_v>", ">")
+        if parent_node == child_node:
+            # Important this go after the qkv removal
+            continue
+        all_nodes.append((parent_node, int(parent_layer)+1))
+        all_nodes.append((child_node, int(child_layer)+1))
+        simple_edges.append((parent_node,child_node))
+        all_nodes = list(set(all_nodes))
+    return all_nodes, simple_edges
+
+def remove_unconnected_nodes(graph):
+    nodes, edges = get_nodes_and_edges(graph)
+    G = nx.DiGraph()
+    G.add_edges_from(edges)
+
+    G.number_of_edges()
+    G.number_of_nodes()
+    unreachable_nodes = set(G.nodes())
+    for node in nx.dfs_tree(G, 'embed'):  # dfs_tree returns a tree rooted at 'start_node'
+        if node in unreachable_nodes:
+            unreachable_nodes.remove(node)
+
+    # 删除所有不能追溯到起始节点的节点和边
+    G.remove_nodes_from(unreachable_nodes)
+    return G
+
+def redraw_picture(graph,g):
+    G=remove_unconnected_nodes(graph)
+    new_g = pgv.AGraph(directed=True, bgcolor="transparent", overlap="false", splines="true", layout='dot')
+    for node in g.nodes():
+        attr = g.get_node(node).attr
+        # 在 new_g 中添加节点，并设置属性
+        new_g.add_node(node, **attr)
+    for edge in g.edges_iter():
+        attr = g.get_edge(*edge).attr
+        # 添加新的边到 new_g，并设置属性
+        new_pa, new_child = edge[0], edge[1]
+        new_pa = new_pa.replace("_q>", ">").replace("_k>", ">").replace("_v>", ">")
+        new_child = new_child.replace("_q>", ">").replace("_k>", ">").replace("_v>", ">")
+        if new_child not in G.nodes() or new_pa not in G.nodes():
+            continue
+        if new_child == new_pa:
+            continue
+        new_edge = (new_pa, new_child)
+        new_g.add_edge(*new_edge, **attr)
+    nodes_to_remove = [node for node in new_g.nodes() if new_g.degree(node) == 0]
+    for node in nodes_to_remove:
+        new_g.delete_node(node)
+
+    return new_g

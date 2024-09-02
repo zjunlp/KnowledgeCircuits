@@ -3,6 +3,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2405.17969">📄arXiv</a> •
+  <a href="http://knowledgecircuits.zjukg.cn/">🌐Demo</a> •
   <a href="https://www.youtube.com/watch?v=qDgCLeDs4Kg"> <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" height="20" width="20"> Youtube</a> • 
     <a href="https://x.com/zxlzr/status/1797261767674138924">𝕏 Blog</a>
 </p>
@@ -27,6 +28,7 @@
 ## 🌟Overview
 
 This work aims to build the circuits in the pretrained language models that are responsible for the specific knowledge and analyze the behavior of these components.
+We construct a [demo](http://knowledgecircuits.zjukg.cn/) to see the discovered circuit.
 
 
 ## 🔧Installation
@@ -72,7 +74,7 @@ python main.py --task=knowledge \
 --model-path=$MODEL_PATH
 ```
 
-You would get the results in `acdc/factual_results/gpt2-medium`.
+You would get the results in `acdc/factual_results/gpt2-medium` and the  `final_graph.pdf` is the computed circuits.
 
 ## 🧐Analyze component
 
