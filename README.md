@@ -29,7 +29,7 @@
 
 This work aims to build the circuits in the pretrained language models that are responsible for the specific knowledge and analyze the behavior of these components.
 We construct a [demo](http://knowledgecircuits.zjukg.cn/) to see the discovered circuit.
-
+* A new method [EAP-IG](https://arxiv.org/abs/2403.17806) is integrated in the eap folder. This method takes less time than the ACDC method and you can use it in the `knowledge_eap.ipynb`.
 
 ## 🔧Installation
 
