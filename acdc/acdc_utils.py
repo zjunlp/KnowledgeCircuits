@@ -82,6 +82,10 @@ def negative_log_probs(
     if shift:
         logprobs = logprobs[..., :-1, :].contiguous()
     # Subtract a baseline for each element -- which could be 0 or the NLL of the base_model_logprobs
+    device = logits.device
+    labels = labels.to(device)
+    baseline = baseline.to(device) if isinstance(baseline, torch.Tensor) else baseline
+
     nll_all = (
         F.nll_loss(logprobs.view(-1, logprobs.size(-1)), labels.view(-1), reduction="none").view(logprobs.size()[:-1])
         - baseline
@@ -132,6 +136,7 @@ class MatchNLLMetric:
             self.shift = True
             self.labels = labels[..., 1:].contiguous()
             logprobs = logprobs[..., :-1, :].contiguous()
+        self.labels = self.labels.to(logprobs.device)
         self.base_nll_unreduced = F.nll_loss(
             logprobs.view(-1, logprobs.size(-1)), self.labels.view(-1), reduction="none"
         ).view(logprobs.size()[:-1])
