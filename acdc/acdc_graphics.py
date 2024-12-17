@@ -350,15 +350,57 @@ def dict_merge(dct, merge_dct):
         else:
             dct[k] = merge_dct[k]
 
+def get_node_name_and_layer(pre_name,index,remove_qkv=True):
+    name = ""
+    layer = pre_name.split(".")[1]
+    qkv_substrings = [f"hook_{letter}" for letter in ["q", "k", "v"]]
+    qkv_input_substrings = [f"hook_{letter}_input" for letter in ["q", "k", "v"]]
+    # Handle embedz
+    if "resid_pre" in pre_name:
+        assert "0" in pre_name and not any([str(i) in pre_name for i in range(1, 10)])
+        name += "embed"
+        if len(index.hashable_tuple) > 2:
+            name += f"_[{index.hashable_tuple[2]}]"
+        return name, -1
+
+    elif "embed" in pre_name:
+        name = "pos_embeds" if "pos" in pre_name else "token_embeds"
+
+    # Handle q_input and hook_q etc
+    elif any([pre_name.endswith(qkv_input_substring) for qkv_input_substring in qkv_input_substrings]):
+        relevant_letter = None
+        for letter, qkv_substring in zip(["q", "k", "v"], qkv_substrings):
+            if qkv_substring in pre_name:
+                assert relevant_letter is None
+                relevant_letter = letter
+        name += "a" + pre_name.split(".")[1] + "." + str(index.hashable_tuple[2]) + "_" + relevant_letter
+
+    # Handle attention hook_result
+    elif "hook_result" in pre_name or any([qkv_substring in pre_name for qkv_substring in qkv_substrings]):
+        name = "a" + pre_name.split(".")[1] + "." + str(index.hashable_tuple[2])
+
+    # Handle MLPs
+    elif pre_name.endswith("resid_mid"):
+        raise ValueError("We removed resid_mid annotations. Call these mlp_in now.")
+    elif pre_name.endswith("mlp_out") or pre_name.endswith("mlp_in"):
+        name = "m" + pre_name.split(".")[1]
+
+    # Handle resid_post
+    elif "resid_post" in pre_name:
+        name += "resid_post"
+    # if remove_qkv:
+    #     pre_name = pre_name.replace("_q>", ">").replace("_k>", ">").replace("_v>", ">")
+    return "<" + name + ">" , layer
 def get_nodes_and_edges(data_loaded):
+
     simple_edges = []
     all_nodes = []
     for item in data_loaded:
         edge,weight = item
         child_name, child_index, parent_name, parent_index = edge
-        child_node, child_layer = get_node_name(child_name, child_index)
-        # print(get_node_name(parent_name, parent_index))
-        parent_node, parent_layer = get_node_name(parent_name, parent_index)
+        child_node, child_layer = get_node_name_and_layer(child_name, child_index)
+        # print(get_node_name_and_layer(parent_name, parent_index))
+        parent_node, parent_layer = get_node_name_and_layer(parent_name, parent_index)
         # if remove_qkv:
         parent_node = parent_node.replace("_q>", ">").replace("_k>", ">").replace("_v>", ">")
         child_node = child_node.replace("_q>", ">").replace("_k>", ">").replace("_v>", ">")
