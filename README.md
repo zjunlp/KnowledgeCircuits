@@ -12,6 +12,11 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 ![](https://img.shields.io/github/last-commit/zjunlp/KnowledgeCircuits?color=green) 
 
+## 🔔News
+
+- <strong>[2025-02-16]</strong> We release our new paper [How Do LLMs Acquire New Knowledge? A Knowledge Circuits Perspective on Continual Pre-Training](https://arxiv.org/abs/2502.11196), analyzing the evolution of knowledge circuits throughout continual pre-training. Check it out:)
+- <strong>[2024-09-26]</strong> Our paper [Knowledge Circuits in Pretrained Transformers](https://arxiv.org/abs/2405.17969) is accepetd by <strong>NeurIPS 2024</strong>!
+- <strong>[2024-05-28]</strong> We release our paper [Knowledge Circuits in Pretrained Transformers](https://arxiv.org/abs/2405.17969).
 
 
 ## Table of Contents
