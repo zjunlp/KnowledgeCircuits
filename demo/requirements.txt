@@ -1,0 +1,3 @@
+langid==1.1.6
+streamlit==1.38.0
+streamlit_react_flow==0.0.3
