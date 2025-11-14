@@ -3,7 +3,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2405.17969">📄arXiv</a> •
-  <a href="http://knowledgecircuits.zjukg.cn/">🌐Demo</a> •
+  <a href="http://121.41.117.246:9001/">🌐Demo</a> •
   <a href="https://www.youtube.com/watch?v=qDgCLeDs4Kg"> <img src="https://img.icons8.com/?size=100&id=19318&format=png&color=000000" height="20" width="20"> Youtube</a> • 
     <a href="https://x.com/zxlzr/status/1797261767674138924">𝕏 Blog</a>
 </p>
